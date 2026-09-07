@@ -41,7 +41,7 @@ export default function Sluzby() {
   return (
     <>
       <Section>
-        <Eyebrow>Services / 01–04</Eyebrow>
+        <Eyebrow>Services / 01–05</Eyebrow>
         <H1>Od prvního zjištění k dlouhodobé digitální autoritě.</H1>
         <P>
           Pomáhám firmám zjistit, jak je dnes vidí vyhledávače a AI, navrhnout
@@ -64,9 +64,13 @@ export default function Sluzby() {
             <span className="text-[15px] text-cream/85">Víte, co změnit?</span>
             <span className="text-sm text-gold-light">Implementace strategie →</span>
           </Link>
-          <Link href="/sluzby/digital-authority" className="group flex items-baseline justify-between py-3 transition-colors hover:border-gold/40">
+          <Link href="/sluzby/digital-authority" className="group flex items-baseline justify-between border-b border-white/10 py-3 transition-colors hover:border-gold/40">
             <span className="text-[15px] text-cream/85">Má vaše značka dost důkazů, že jí lze věřit?</span>
             <span className="text-sm text-gold-light">Digital Authority →</span>
+          </Link>
+          <Link href="/sluzby/strategicka-konzultace" className="group flex items-baseline justify-between py-3 transition-colors hover:border-gold/40">
+            <span className="text-[15px] text-cream/85">Nejste si jistí, kde začít?</span>
+            <span className="text-sm text-gold-light">Strategická konzultace →</span>
           </Link>
         </div>
       </Section>
