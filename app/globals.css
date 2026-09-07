@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --navy-deep: #0B1726;
+  --navy-mid: #12233A;
+  --gold: #B89A5A;
+  --gold-light: #D4BC85;
+  --cream: #F3EEE4;
+  --ink: #1A2333;
+  --muted: #8a8577;
+  --line: rgba(243, 238, 228, 0.12);
+}
+
+@theme inline {
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-mid: var(--navy-mid);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --font-serif: var(--font-instrument-serif);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1100px 550px at 12% -8%, rgba(184, 154, 90, 0.05), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(184, 154, 90, 0.03), transparent 55%),
+    linear-gradient(180deg, var(--navy-deep), var(--navy-mid) 45%, var(--navy-deep));
+  background-attachment: fixed;
+  color: var(--cream);
+  font-family: var(--font-sans), sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+main > section {
+  animation: fadeInUp 0.55s ease-out both;
+}
+main > section:nth-of-type(1) { animation-delay: 0s; }
+main > section:nth-of-type(2) { animation-delay: 0.08s; }
+main > section:nth-of-type(3) { animation-delay: 0.16s; }
+main > section:nth-of-type(4) { animation-delay: 0.24s; }
+main > section:nth-of-type(5) { animation-delay: 0.32s; }
+main > section:nth-of-type(n+6) { animation-delay: 0.4s; }
