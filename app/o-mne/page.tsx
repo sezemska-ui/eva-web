@@ -16,7 +16,7 @@ export default function OMne() {
     <>
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "O mně" }]} />
-        <Eyebrow>About / Eva Sezemská</Eyebrow>
+        <Eyebrow>About / Eva Sezemská · Mladá Boleslav</Eyebrow>
         <H1>Dívám se na vyhledávání z druhé strany.</H1>
         <P>
           Zajímá mě okamžik, kdy zákazník ještě nehledá konkrétní firmu. Hledá
@@ -101,6 +101,14 @@ export default function OMne() {
             </div>
           ))}
         </div>
+      </Section>
+
+      <Section>
+        <H2>Certifikace</H2>
+        <P>
+          V srpnu 2026 jsem absolvovala certifikaci HubSpot AEO Fundamentals
+          (ID 64bh5v4s), zaměřenou na optimalizaci pro odpovědi AI systémů.
+        </P>
       </Section>
 
       <Section>

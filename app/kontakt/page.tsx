@@ -1,14 +1,12 @@
 import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Kontakt — Eva Sezemská",
   description:
     "Nejste si jistí, jak vás vyhledávače a AI systémy vnímají? Vyplňte krátký vstupní dotazník, nebo napište přímo.",
   alternates: { canonical: "/kontakt" },
 };
-
 export default function Kontakt() {
   return (
     <>
@@ -22,7 +20,6 @@ export default function Kontakt() {
           zjistíme, kde skutečně stojíte.
         </P>
       </Section>
-
       <Section>
         <div className="rounded-sm bg-cream p-8 text-ink">
           <H2>Vstupní dotazník</H2>
@@ -39,7 +36,6 @@ export default function Kontakt() {
           </a>
         </div>
       </Section>
-
       <Section>
         <H2>Co bude následovat</H2>
         <div className="flex flex-col gap-4">
@@ -55,7 +51,6 @@ export default function Kontakt() {
           ))}
         </div>
       </Section>
-
       <Section>
         <P>
           Nebo napište přímo:{" "}
@@ -77,6 +72,7 @@ export default function Kontakt() {
             LinkedIn
           </a>
         </P>
+        <p className="mt-2 font-mono text-[12px] text-cream/50">Mladá Boleslav</p>
       </Section>
     </>
   );

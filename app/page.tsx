@@ -123,6 +123,10 @@ export default function Home() {
             Budujeme důkazy, které podporují vaši důvěryhodnost napříč
             webem, médii a katalogy.
           </ServiceCard>
+          <ServiceCard title="Strategická konzultace">
+            Šedesát minut na to, abychom zjistili, kde je problém a jaký
+            další krok dává smysl.
+          </ServiceCard>
         </div>
         <Link
           href="/sluzby"

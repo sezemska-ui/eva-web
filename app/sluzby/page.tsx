@@ -1,14 +1,8 @@
 import Link from "next/link";
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
-import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Služby — Eva Sezemská",
-  description:
-    "Čtyři na sebe navazující kroky: AI Search Visibility Audit, AI Search Strategie, Implementace strategie a Digital Authority.",
-  alternates: { canonical: "/sluzby" },
-};
+export const metadata: Metadata = { title: "Služby — Eva Sezemská" };
 
 const services = [
   {
@@ -35,13 +29,18 @@ const services = [
     href: "/sluzby/digital-authority",
     text: "Budujeme důkazy, které podporují vaši důvěryhodnost. Web, Google, média, katalogy, recenze a další zdroje skládáme do konzistentního digitálního obrazu firmy.",
   },
+  {
+    n: "05",
+    title: "Strategická konzultace",
+    href: "/sluzby/strategicka-konzultace",
+    text: "Šedesát minut na to, abychom společně zjistili, kde je problém a jaký další krok dává v tuto chvíli smysl.",
+  },
 ];
 
 export default function Sluzby() {
   return (
     <>
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby" }]} />
         <Eyebrow>Services / 01–04</Eyebrow>
         <H1>Od prvního zjištění k dlouhodobé digitální autoritě.</H1>
         <P>
