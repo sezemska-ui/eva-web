@@ -78,7 +78,7 @@ export default function Home() {
           tyto zdroje společně vytvářejí obraz vaší firmy, ze kterého AI a
           vyhledávače skládají doporučení.
         </P>
-        <div className="mt-4 flex flex-wrap gap-x-2 gap-y-4 text-[13px] text-cream/50">
+        <div className="mt-4 flex flex-wrap justify-center gap-x-2 gap-y-4 text-center text-[13px] text-cream/50">
           <Annotated word="WEBSITE" note="váš vlastní zdroj pravdy" />
           <span className="self-center text-cream/20">+</span>
           <Annotated word="GOOGLE" note="mapy, profil, recenze" />
@@ -95,6 +95,7 @@ export default function Home() {
       <Section>
         <H2>Zjistím, kde se ztrácíte.</H2>
         <div className="flex flex-col gap-4">
+          <Annotated word="00 CONSULT" note="když nevíte, kde začít" />
           <Annotated word="01 DISCOVER" note="zjišťuji, co se skutečně děje" />
           <Annotated word="02 DIAGNOSE" note="hledám příčinu, ne jen symptom" />
           <Annotated word="03 STRATEGIZE" note="navrhuji plán a priority" />
@@ -138,15 +139,17 @@ export default function Home() {
 
       {/* 07 THE CONSEQUENCE */}
       <Section>
-        <H2>
-          Možná máte skvělý produkt. Možná skvělé recenze. Možná web, do
-          kterého jste investovali statisíce.
-        </H2>
-        <P>
-          Ale pokud vás zákazník při rozhodování nenajde, v daném okamžiku se
-          to nepočítá. Nejdřív potřebujete vědět, co dnes zákazník skutečně
-          vidí.
-        </P>
+        <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
+          <h2 className="mb-4 font-serif text-2xl text-cream">
+            Možná máte skvělý produkt. Možná skvělé recenze. Možná web, do
+            kterého jste investovali statisíce.
+          </h2>
+          <p className="text-[15.5px] leading-relaxed text-cream/75">
+            Ale pokud vás zákazník při rozhodování nenajde, v daném okamžiku
+            se to nepočítá. Nejdřív potřebujete vědět, co dnes zákazník
+            skutečně vidí.
+          </p>
+        </div>
       </Section>
 
       {/* 08 ABOUT PREVIEW */}

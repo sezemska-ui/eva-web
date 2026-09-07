@@ -47,7 +47,7 @@ export default function OMne() {
           někde online — zajímá mě, zda je dohledatelná, pochopitelná,
           relevantní, důvěryhodná a nakonec doporučitelná.
         </P>
-        <div className="mt-4 flex flex-wrap gap-x-1 gap-y-4">
+        <div className="mt-4 flex flex-wrap justify-center gap-x-1 gap-y-4 text-center">
           <Annotated word="FOUND" note="lze vás najít" />
           <span className="self-center text-cream/20">→</span>
           <Annotated word="UNDERSTOOD" note="systémy chápou, kdo jste" />
@@ -61,17 +61,22 @@ export default function OMne() {
       </Section>
 
       <Section>
-        <H2 >Přenáším autoritu firem z reálného světa do digitálního.</H2>
-        <P>
-          Firma může mít roky zkušeností, stovky spokojených zákazníků,
-          skvělou pověst a silné postavení ve svém regionu. Digitální systémy
-          ale tuto autoritu nevnímají automaticky.
-        </P>
-        <P>
-          Potřebují ji vidět v datech, obsahu, vztazích, zmínkách, recenzích,
-          strukturách a dalších signálech napříč webem. Mojí prací je tyto
-          signály identifikovat, propojit a systematicky posilovat.
-        </P>
+        <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
+          <h2 className="mb-4 font-serif text-2xl text-cream">
+            Přenáším autoritu firem z reálného světa do digitálního.
+          </h2>
+          <p className="mb-4 text-[15.5px] leading-relaxed text-cream/75">
+            Firma může mít roky zkušeností, stovky spokojených zákazníků,
+            skvělou pověst a silné postavení ve svém regionu. Digitální
+            systémy ale tuto autoritu nevnímají automaticky.
+          </p>
+          <p className="text-[15.5px] leading-relaxed text-cream/75">
+            Potřebují ji vidět v datech, obsahu, vztazích, zmínkách,
+            recenzích, strukturách a dalších signálech napříč webem. Mojí
+            prací je tyto signály identifikovat, propojit a systematicky
+            posilovat.
+          </p>
+        </div>
       </Section>
 
       <Section>
@@ -95,7 +100,7 @@ export default function OMne() {
             ["03 — Prioritizuji", "Nezahlcuji klienta desítkami úkolů. Hledám zásahy s největším významem."],
             ["04 — Propojuji", "Web, Google, AI, obsah, lokální zdroje, recenze a externí autoritu vnímám jako jeden ekosystém."],
           ].map(([t, d]) => (
-            <div key={t}>
+            <div key={t} className="rounded-sm border border-white/10 p-4 sm:p-5">
               <h3 className="mb-1 font-serif text-lg text-cream">{t}</h3>
               <p className="text-[15px] text-cream/75">{d}</p>
             </div>
