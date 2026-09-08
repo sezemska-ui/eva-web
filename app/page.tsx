@@ -11,7 +11,7 @@ export default function Home() {
       <Section>
         <div className="mb-8 flex items-center justify-between">
           <div className="font-mono text-[11px] uppercase tracking-widest text-cream/45">
-            AI Search Strategist
+            Eva Sezemská — AI Search Strategist · Mladá Boleslav
           </div>
           <div className="hidden font-mono text-[11px] uppercase tracking-widest text-cream/30 sm:block">
             01 / The Search Moment
