@@ -24,7 +24,7 @@ export default function TamMotif() {
         className="absolute inset-0 h-full w-full"
         aria-hidden="true"
       >
-        {nodes.map((n) => {
+        {nodes.map((n, i) => {
           const p = pointOnCircle(n.angle, radius);
           return (
             <line
@@ -36,6 +36,10 @@ export default function TamMotif() {
               stroke="var(--gold)"
               strokeWidth="0.25"
               opacity="0.45"
+              strokeDasharray="40"
+              style={{
+                animation: `drawRay 0.6s ease-out ${0.3 + i * 0.08}s both`,
+              }}
             />
           );
         })}
