@@ -1,5 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
-import { ServiceJsonLd, Breadcrumbs } from "@/components/Seo";
+import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,11 +12,6 @@ export const metadata: Metadata = {
 export default function Audit() {
   return (
     <>
-      <ServiceJsonLd
-        name="AI Search Visibility Audit"
-        description="Audit AI viditelnosti firmy — testování reálných odpovědí ChatGPT, Perplexity a Google AI Overview, kontrola konzistence dat a technických základů."
-        url="/sluzby/ai-search-visibility-audit"
-      />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "AI Search Visibility Audit" }]} />
         <Eyebrow>AI Search Visibility Audit</Eyebrow>

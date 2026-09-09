@@ -1,5 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
-import { ServiceJsonLd, Breadcrumbs } from "@/components/Seo";
+import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,11 +12,6 @@ export const metadata: Metadata = {
 export default function Implementace() {
   return (
     <>
-      <ServiceJsonLd
-        name="Implementace strategie"
-        description="Koordinace technického nasazení AI Search strategie ve spolupráci s webmasterem klienta."
-        url="/sluzby/implementace-strategie"
-      />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Implementace strategie" }]} />
         <Eyebrow>Implementace strategie</Eyebrow>

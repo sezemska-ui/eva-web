@@ -1,27 +1,6 @@
 import Link from "next/link";
 import { SITE_URL } from "./SiteJsonLd";
 
-export function ServiceJsonLd({ name, description, url }: { name: string; description: string; url: string }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name,
-    description,
-    url: `${SITE_URL}${url}`,
-    provider: {
-      "@type": "Person",
-      name: "Eva Sezemská",
-    },
-    areaServed: "CZ",
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-}
-
 export function ArticleJsonLd({
   headline,
   description,

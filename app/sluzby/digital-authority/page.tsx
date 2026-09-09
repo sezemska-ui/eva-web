@@ -1,5 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
-import { ServiceJsonLd, Breadcrumbs } from "@/components/Seo";
+import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,11 +12,6 @@ export const metadata: Metadata = {
 export default function DigitalAuthority() {
   return (
     <>
-      <ServiceJsonLd
-        name="Digital Authority"
-        description="Budování digitální autority firmy skrze obsah a externí signály důvěryhodnosti."
-        url="/sluzby/digital-authority"
-      />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Digital Authority" }]} />
         <Eyebrow>Digital Authority</Eyebrow>
