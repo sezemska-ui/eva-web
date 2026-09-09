@@ -124,11 +124,24 @@ export default function Home() {
             Budujeme důkazy, které podporují vaši důvěryhodnost napříč
             webem, médii a katalogy.
           </ServiceCard>
-          <ServiceCard title="Strategická konzultace">
-            Šedesát minut na to, abychom zjistili, kde je problém a jaký
-            další krok dává smysl.
-          </ServiceCard>
         </div>
+
+        <div className="mt-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
+          <p className="mb-1 text-[15px] font-semibold text-cream">
+            Nevíte, kde začít?
+          </p>
+          <p className="mb-3 text-[14px] text-cream/70">
+            Strategická konzultace je šedesát minut na to, abychom společně
+            zjistili, kde je problém a jaký další krok dává smysl.
+          </p>
+          <Link
+            href="/sluzby/strategicka-konzultace"
+            className="text-sm font-semibold text-gold-light underline decoration-gold/40 underline-offset-4"
+          >
+            Prozkoumat konzultaci →
+          </Link>
+        </div>
+
         <Link
           href="/sluzby"
           className="mt-6 inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"

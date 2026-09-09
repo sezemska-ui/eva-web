@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
+import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Služby — Eva Sezemská" };
+export const metadata: Metadata = {
+  title: "Služby — Eva Sezemská",
+  description:
+    "Audit, strategie, implementace a digitální autorita — čtyři kroky k tomu, aby vás vyhledávače a AI dohledaly, pochopily a doporučily.",
+  alternates: { canonical: "/sluzby" },
+};
 
 const services = [
   {
@@ -29,23 +35,23 @@ const services = [
     href: "/sluzby/digital-authority",
     text: "Budujeme důkazy, které podporují vaši důvěryhodnost. Web, Google, média, katalogy, recenze a další zdroje skládáme do konzistentního digitálního obrazu firmy.",
   },
-  {
-    n: "05",
-    title: "Strategická konzultace",
-    href: "/sluzby/strategicka-konzultace",
-    text: "Šedesát minut na to, abychom společně zjistili, kde je problém a jaký další krok dává v tuto chvíli smysl.",
-  },
 ];
 
 export default function Sluzby() {
   return (
     <>
       <Section>
-        <Eyebrow>Services / 01–05</Eyebrow>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby" }]} />
+        <Eyebrow>Services / 01–04</Eyebrow>
         <H1>Od prvního zjištění k dlouhodobé digitální autoritě.</H1>
         <P>
-          Pomáhám firmám zjistit, jak je dnes vidí vyhledávače a AI, navrhnout
-          cestu ke zlepšení a následně změny skutečně implementovat.
+          Pomáhám firmám zjistit, co se děje ve chvíli, kdy jejich zákazník
+          hledá bez znalosti jejich jména.
+        </P>
+        <P>
+          Testuji, jak je v těchto situacích vidí Google a AI, proč doporučují
+          jiné firmy místo nich a co je potřeba změnit, aby se jejich značka
+          stala dohledatelnou, pochopitelnou a doporučitelnou.
         </P>
       </Section>
 
@@ -64,15 +70,22 @@ export default function Sluzby() {
             <span className="text-[15px] text-cream/85">Víte, co změnit?</span>
             <span className="text-sm text-gold-light">Implementace strategie →</span>
           </Link>
-          <Link href="/sluzby/digital-authority" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
+          <Link href="/sluzby/digital-authority" className="group flex flex-col gap-1 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
             <span className="text-[15px] text-cream/85">Má vaše značka dost důkazů, že jí lze věřit?</span>
             <span className="text-sm text-gold-light">Digital Authority →</span>
           </Link>
-          <Link href="/sluzby/strategicka-konzultace" className="group flex flex-col gap-1 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Nejste si jistí, kde začít?</span>
-            <span className="text-sm text-gold-light">Strategická konzultace →</span>
-          </Link>
         </div>
+
+        <div className="mt-6 flex items-center gap-3 text-cream/30">
+          <span className="h-px flex-1 bg-white/10" />
+          <span className="font-mono text-[11px] uppercase tracking-widest">nebo</span>
+          <span className="h-px flex-1 bg-white/10" />
+        </div>
+
+        <Link href="/sluzby/strategicka-konzultace" className="group mt-4 flex flex-col gap-1 rounded-sm border border-gold/30 bg-white/5 p-4 transition-colors hover:border-gold/50 sm:flex-row sm:items-center sm:justify-between">
+          <span className="text-[15px] text-cream/85">Nejste si jistí, kde začít?</span>
+          <span className="text-sm text-gold-light">Strategická konzultace →</span>
+        </Link>
       </Section>
 
       <Section>
