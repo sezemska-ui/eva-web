@@ -1,12 +1,19 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
+import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Strategická konzultace — Eva Sezemská" };
+export const metadata: Metadata = {
+  title: "Strategická konzultace — Eva Sezemská",
+  description:
+    "Individuální 60minutová konzultace pro firmy, které nevědí, kde začít s viditelností ve vyhledávání a AI, a potřebují doporučení dalšího kroku.",
+  alternates: { canonical: "/sluzby/strategicka-konzultace" },
+};
 
 export default function StrategickaKonzultace() {
   return (
     <>
       <Section>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Strategická konzultace" }]} />
         <Eyebrow>Strategická konzultace</Eyebrow>
         <H1>60 minut na to, abychom zjistili, kde začít.</H1>
         <P>
