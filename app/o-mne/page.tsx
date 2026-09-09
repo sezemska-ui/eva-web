@@ -136,7 +136,7 @@ export default function OMne() {
             className="h-[220px] w-[220px] flex-none rounded-sm object-cover grayscale-[15%]"
           />
           <div className="flex-1">
-            <h2 className="mb-1 font-serif text-2xl text-cream">Eva Sezemská</h2>
+            <p className="mb-1 font-serif text-2xl text-cream">Eva Sezemská</p>
             <p className="mb-5 text-[14px] text-cream/60">AI Search Strategist</p>
 
             <div className="mb-4">

@@ -4,7 +4,7 @@ import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Co jsme museli nasadit, aby AI web přečetla — Field Notes",
+  title: "Co jsme museli nasadit, aby AI web přečetla — Eva Sezemská",
   description:
     "Druhá část případové studie: jaká technická a strategická rozhodnutí dělají web čitelný pro AI systémy.",
   alternates: { canonical: "/field-notes/co-jsme-museli-nasadit" },

@@ -4,7 +4,7 @@ import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jak AI zaměnila identitu mé klientky — Field Notes",
+  title: "Jak AI zaměnila identitu mé klientky — Eva Sezemská",
   description:
     "Případová studie z auditu AI viditelnosti: proč AI systémy klientku nedoporučily a jednou dokonce zaměnily za jinou osobu.",
   alternates: { canonical: "/field-notes/proc-ai-zamenila-identitu" },
