@@ -24,7 +24,7 @@ export default function NavBar() {
           onClick={() => setOpen(false)}
           className="font-serif text-xl tracking-tight text-cream transition-opacity duration-200 hover:opacity-80"
         >
-          Eva <span className="italic text-gold-light">Sezemská</span>
+          Eva <span className="italic tracking-wide text-gold-light">Sezemská</span>
         </Link>
 
         {/* Menu pro počítač */}
