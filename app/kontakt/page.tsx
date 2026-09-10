@@ -1,5 +1,6 @@
 import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
+import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kontakt — Eva Sezemská",
@@ -29,7 +30,7 @@ export default function Kontakt() {
             začátku.
           </p>
           <a
-            href="https://script.google.com/macros/s/AKfycbzP3VLI0hSpFds4PHc9oMsynueY8snUzI_THmtx4B3K8AaZTFh6x-7B7YI1xFBMHg0P/exec"
+            href={FORM_URL}
             className="inline-block rounded-sm bg-navy-deep px-6 py-3 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-[#223652]"
           >
             Vyplnit vstupní dotazník →

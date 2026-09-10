@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { H2, P, Section, ServiceCard, CtaBox, Annotated } from "@/components/Ui";
+import { FORM_URL } from "@/components/SiteJsonLd";
 import RecommendationTest from "@/components/RecommendationTest";
 import TamMotif from "@/components/TamMotif";
 import SignalFlow from "@/components/SignalFlow";
@@ -185,7 +186,7 @@ export default function Home() {
       <Section>
         <CtaBox
           title="Otázka není, jestli jste online."
-          href="https://script.google.com/macros/s/AKfycbzP3VLI0hSpFds4PHc9oMsynueY8snUzI_THmtx4B3K8AaZTFh6x-7B7YI1xFBMHg0P/exec"
+          href={FORM_URL}
           ctaLabel="Zjistit, jak jste vidět →"
         >
           Otázka je, jestli jste tou odpovědí, kterou AI dá vašemu

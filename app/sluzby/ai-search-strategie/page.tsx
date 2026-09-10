@@ -1,5 +1,6 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
+import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -57,7 +58,7 @@ export default function Strategie() {
       <Section>
         <CtaBox
           title="Máte audit. Teď potřebujete plán."
-          href="https://script.google.com/macros/s/AKfycbzP3VLI0hSpFds4PHc9oMsynueY8snUzI_THmtx4B3K8AaZTFh6x-7B7YI1xFBMHg0P/exec"
+          href={FORM_URL}
           ctaLabel="Probrat strategii →"
         >
           Pojďme probrat, jak by mohla vypadat strategie pro vaši firmu.
