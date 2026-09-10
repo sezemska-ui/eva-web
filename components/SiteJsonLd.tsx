@@ -1,4 +1,5 @@
 const SITE_URL = "https://searchstrategy.cz";
+export const CONSULTATION_FORM_URL = "https://script.google.com/macros/s/AKfycbyR-WfhVUrkw_K2-ENqtMZlUimWSXsH4rpW4NjmdaRP5an9X2cWGOt5p-ICPKcSHPA5qQ/exec";
 export const FORM_URL = "https://script.google.com/macros/s/AKfycbzP3VLI0hSpFds4PHc9oMsynueY8snUzI_THmtx4B3K8AaZTFh6x-7B7YI1xFBMHg0P/exec";
 
 const services = [

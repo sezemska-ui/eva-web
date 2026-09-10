@@ -1,6 +1,6 @@
-import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
+import ConsultationForm from "@/components/ConsultationForm";
 import { Breadcrumbs } from "@/components/Seo";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -49,13 +49,7 @@ export default function StrategickaKonzultace() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Domluvme si hodinu na vaši situaci."
-          href={FORM_URL}
-          ctaLabel="Domluvit konzultaci →"
-        >
-          Nejrychlejší cesta, jak začít, je krátký vstupní dotazník.
-        </CtaBox>
+        <ConsultationForm />
       </Section>
     </>
   );
