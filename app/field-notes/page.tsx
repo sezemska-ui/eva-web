@@ -25,6 +25,13 @@ const notes = [
     title: "Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla\"",
     href: "/field-notes/co-jsme-museli-nasadit",
   },
+  {
+    n: "03",
+    category: "Implementace strategie · Case Note",
+    date: "15. 9. 2026",
+    title: "Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje ověření po nasazení.",
+    href: "/field-notes/implementace-a-overeni",
+  },
 ];
 
 export default function FieldNotes() {
