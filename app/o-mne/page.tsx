@@ -114,6 +114,11 @@ export default function OMne() {
           V srpnu 2026 jsem absolvovala certifikaci HubSpot AEO Fundamentals
           (ID 64bh5v4s), zaměřenou na optimalizaci pro odpovědi AI systémů.
         </P>
+        <P>
+          Tento obor bývá označovaný také jako GEO (Generative Engine
+          Optimization) nebo AEO (Answer Engine Optimization) — souhrnně pro
+          něj používám pojem AI Search.
+        </P>
       </Section>
 
       <Section>

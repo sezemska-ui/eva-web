@@ -76,8 +76,8 @@ export default function Home() {
         <H2>Být online nestačí.</H2>
         <P>
           Web, Google, mapy, recenze, katalogy i zmínky v médiích — všechny
-          tyto zdroje společně vytvářejí obraz vaší firmy, ze kterého AI a
-          vyhledávače skládají doporučení.
+          tyto zdroje společně vytvářejí obraz vaší firmy, ze kterého AI
+          vyhledávání a klasické vyhledávače skládají doporučení.
         </P>
         <div className="mt-4 flex flex-wrap justify-center gap-x-2 gap-y-4 text-center text-[13px] text-cream/50">
           <Annotated word="WEBSITE" note="váš vlastní zdroj pravdy" />
@@ -122,8 +122,8 @@ export default function Home() {
             webmasterem a mluvím oběma jazyky.
           </ServiceCard>
           <ServiceCard title="Digital Authority">
-            Budujeme důkazy, které podporují vaši důvěryhodnost napříč
-            webem, médii a katalogy.
+            Budujeme vaši digitální autoritu — důkazy, které podporují vaši
+            důvěryhodnost napříč webem, médii a katalogy.
           </ServiceCard>
         </div>
 

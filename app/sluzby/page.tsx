@@ -33,7 +33,7 @@ const services = [
     n: "04",
     title: "Digital Authority",
     href: "/sluzby/digital-authority",
-    text: "Budujeme důkazy, které podporují vaši důvěryhodnost. Web, Google, média, katalogy, recenze a další zdroje skládáme do konzistentního digitálního obrazu firmy.",
+    text: "Budujeme vaši digitální autoritu — důkazy, které podporují vaši důvěryhodnost. Web, Google, média, katalogy, recenze a další zdroje skládáme do konzistentního digitálního obrazu firmy.",
   },
 ];
 

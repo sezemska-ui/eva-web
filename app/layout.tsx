@@ -28,7 +28,7 @@ const plexMono = IBM_Plex_Mono({
 
 const TITLE = "Eva Sezemská — AI Search Strategist";
 const DESCRIPTION =
-  "Buďte tam, kde vás zákazníci hledají. Pomáhám firmám být vidět, když je zákazník hledá – ve vyhledávači, v AI odpovědích i na mapách a platformách, kde se rozhoduje.";
+  "Buďte tam, kde vás zákazníci hledají. Pomáhám firmám být vidět v AI vyhledávání, AI odpovědích i na mapách a platformách, kde se rozhoduje.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://searchstrategy.cz"),
