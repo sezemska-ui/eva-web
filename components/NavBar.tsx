@@ -9,6 +9,7 @@ const links = [
   { href: "/sluzby", label: "Služby" },
   { href: "/o-mne", label: "O mně" },
   { href: "/field-notes", label: "Field Notes" },
+  { href: "/faq", label: "FAQ" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 
