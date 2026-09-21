@@ -230,8 +230,8 @@ export default function Article() {
           </li>
           <li className="text-[15px] text-cream/80">
             <span className="font-semibold text-cream">ImageObject</span> —
-            popisky fotografií v portfoliu, jasný důkaz, že reálně fotí to,
-            co web tvrdí.
+            popisek profilové fotografie, aby AI měla jasně přiřazený vizuální
+            podklad k autorčině identitě.
           </li>
           <li className="text-[15px] text-cream/80">
             <span className="font-semibold text-cream">FAQPage</span> —
