@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { H2, P, Section, ServiceCard, CtaBox, Annotated } from "@/components/Ui";
 import { FORM_URL } from "@/components/SiteJsonLd";
 import RecommendationTest from "@/components/RecommendationTest";
@@ -46,7 +47,34 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 02 THE RECOMMENDATION TEST */}
+      {/* 02 ABOUT PREVIEW (moved up from the end, now with photo) */}
+      <Section>
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
+          <Image
+            src="/images/eva-portrait-laptop.png"
+            alt="Eva Sezemská, AI Search Strategist"
+            width={220}
+            height={220}
+            className="h-[220px] w-[220px] flex-none rounded-sm object-cover grayscale-[15%]"
+          />
+          <div>
+            <H2>Dívám se na vyhledávání z druhé strany.</H2>
+            <P>
+              Eva Sezemská, AI Search Strategist. Zajímá ji, co se stane ve
+              chvíli, kdy zákazník nezná jméno firmy a požádá AI, aby mu
+              někoho doporučila.
+            </P>
+            <Link
+              href="/o-mne"
+              className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+            >
+              Více o mně →
+            </Link>
+          </div>
+        </div>
+      </Section>
+
+      {/* 03 THE RECOMMENDATION TEST */}
       <Section>
         <H2>Co se stane, když zákazník nezná vaše jméno?</H2>
         <P>
@@ -58,7 +86,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 03 THE PROBLEM */}
+      {/* 04 THE PROBLEM */}
       <Section>
         <H2>Vaši zákazníci vás nehledají vždy jménem.</H2>
         <P>
@@ -71,7 +99,7 @@ export default function Home() {
         </P>
       </Section>
 
-      {/* 04 THE ECOSYSTEM */}
+      {/* 05 THE ECOSYSTEM */}
       <Section>
         <H2>Být online nestačí.</H2>
         <P>
@@ -92,7 +120,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 05 THE METHOD */}
+      {/* 06 THE METHOD */}
       <Section>
         <H2>Zjistím, kde se ztrácíte.</H2>
         <div className="flex flex-col gap-4">
@@ -104,7 +132,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 06 THE PRODUCT */}
+      {/* 07 THE PRODUCT */}
       <Section>
         <H2>Kdo dostane doporučení?</H2>
         <div className="flex flex-col gap-6">
@@ -151,7 +179,7 @@ export default function Home() {
         </Link>
       </Section>
 
-      {/* 07 THE CONSEQUENCE */}
+      {/* 08 THE CONSEQUENCE */}
       <Section>
         <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
           <h2 className="mb-4 font-serif text-2xl text-cream">
@@ -164,22 +192,6 @@ export default function Home() {
             skutečně vidí.
           </p>
         </div>
-      </Section>
-
-      {/* 08 ABOUT PREVIEW */}
-      <Section>
-        <H2>Dívám se na vyhledávání z druhé strany.</H2>
-        <P>
-          Eva Sezemská, AI Search Strategist. Zajímá ji, co se stane ve
-          chvíli, kdy zákazník nezná jméno firmy a požádá AI, aby mu někoho
-          doporučila.
-        </P>
-        <Link
-          href="/o-mne"
-          className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
-        >
-          Více o mně →
-        </Link>
       </Section>
 
       {/* FINAL CTA */}
