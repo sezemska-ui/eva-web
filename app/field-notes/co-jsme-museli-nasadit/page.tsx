@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
@@ -62,7 +63,12 @@ export default function Article() {
         <P>
           Blog jako budoucí zdroj odborné autority dlouhodobě podporuje
           důvěryhodnost, kterou AI i lidé vyhodnocují jako důkaz skutečné
-          expertízy.
+          expertízy. Konkrétní čísla, která tahle opatření přinesla po měsíci
+          provozu, ukazuju v článku{" "}
+          <Link href="/field-notes/vysledky-po-31-dnech" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+            Od záměny identity k 23 z 30 doporučení
+          </Link>
+          .
         </P>
       </Section>
 
@@ -75,6 +81,16 @@ export default function Article() {
           ]}
           ctaLabel="Probrat AI Search Strategii →"
           ctaHref="/sluzby/ai-search-strategie"
+        />
+      </Section>
+
+      <Section>
+        <RelatedNotes
+          notes={[
+            { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },
+            { title: "Strategie nestačí — jak jsme ji dostali na živý web", href: "/field-notes/implementace-a-overeni" },
+            { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
+          ]}
         />
       </Section>
     </>

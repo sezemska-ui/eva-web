@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
@@ -59,6 +60,14 @@ export default function Article() {
           Nekonzistentní NAP údaje a nízký počet recenzí (oproti počtu
           reálných klientů) dál oslabovaly důvěryhodnost v očích AI systémů.
         </P>
+        <P>
+          Jak se to nakonec podařilo vyřešit a jaký to mělo dopad po měsíci
+          provozu, popisuju v článku{" "}
+          <Link href="/field-notes/vysledky-po-31-dnech" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+            Od záměny identity k 23 z 30 doporučení
+          </Link>
+          .
+        </P>
       </Section>
 
       <Section>
@@ -70,6 +79,16 @@ export default function Article() {
           ]}
           ctaLabel="Probrat AI Search Visibility Audit →"
           ctaHref="/sluzby/ai-search-visibility-audit"
+        />
+      </Section>
+
+      <Section>
+        <RelatedNotes
+          notes={[
+            { title: "Co jsme museli nasadit, aby AI web přečetla", href: "/field-notes/co-jsme-museli-nasadit" },
+            { title: "Strategie nestačí — jak jsme ji dostali na živý web", href: "/field-notes/implementace-a-overeni" },
+            { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
+          ]}
         />
       </Section>
     </>

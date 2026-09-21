@@ -32,6 +32,13 @@ const notes = [
     title: "Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje ověření po nasazení.",
     href: "/field-notes/implementace-a-overeni",
   },
+  {
+    n: "04",
+    category: "Výsledky a měření · Case Note",
+    date: "18. 9. 2026",
+    title: "Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech",
+    href: "/field-notes/vysledky-po-31-dnech",
+  },
 ];
 
 export default function FieldNotes() {

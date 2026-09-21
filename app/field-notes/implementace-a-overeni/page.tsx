@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 
@@ -137,7 +138,12 @@ export default function Article() {
         <P>
           Projekt je stále v rané fázi a výsledky zatím nejde přičítat
           jednotlivým úpravám izolovaně. V dalších dílech budu pracovat se
-          standardizovanými testy stejných dotazů a sledovat vývoj v čase.
+          standardizovanými testy stejných dotazů a sledovat vývoj v čase —
+          přesně to shrnuje článek{" "}
+          <Link href="/field-notes/vysledky-po-31-dnech" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+            Od záměny identity k 23 z 30 doporučení
+          </Link>
+          , kde porovnávám výsledky po 31 dnech provozu.
         </P>
       </Section>
 
@@ -150,6 +156,16 @@ export default function Article() {
           ]}
           ctaLabel="Probrat Implementaci strategie →"
           ctaHref="/sluzby/implementace-strategie"
+        />
+      </Section>
+
+      <Section>
+        <RelatedNotes
+          notes={[
+            { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },
+            { title: "Co jsme museli nasadit, aby AI web přečetla", href: "/field-notes/co-jsme-museli-nasadit" },
+            { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
+          ]}
         />
       </Section>
     </>

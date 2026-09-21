@@ -39,3 +39,28 @@ export function WhatThisMeans({
     </div>
   );
 }
+
+export function RelatedNotes({
+  notes,
+}: {
+  notes: { title: string; href: string }[];
+}) {
+  return (
+    <div>
+      <div className="mb-4 font-mono text-[11px] uppercase tracking-widest text-cream/45">
+        Další field notes
+      </div>
+      <div className="flex flex-col gap-4">
+        {notes.map((note) => (
+          <Link
+            key={note.href}
+            href={note.href}
+            className="text-[15px] text-cream/80 underline decoration-gold/30 underline-offset-4 transition-colors duration-200 hover:text-gold-light hover:decoration-gold"
+          >
+            {note.title} →
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
