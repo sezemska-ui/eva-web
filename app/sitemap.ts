@@ -10,10 +10,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sluzby/ai-search-strategie",
     "/sluzby/implementace-strategie",
     "/sluzby/digital-authority",
+    "/sluzby/strategicka-konzultace",
     "/o-mne",
+    "/faq",
     "/field-notes",
     "/field-notes/proc-ai-zamenila-identitu",
     "/field-notes/co-jsme-museli-nasadit",
+    "/field-notes/implementace-a-overeni",
+    "/field-notes/vysledky-po-31-dnech",
     "/kontakt",
   ];
 
