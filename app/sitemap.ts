@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/field-notes/implementace-a-overeni",
     "/field-notes/vysledky-po-31-dnech",
     "/kontakt",
+    "/ochrana-osobnich-udaju",
   ];
 
   return routes.map((route) => ({
