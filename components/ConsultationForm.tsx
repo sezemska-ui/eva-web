@@ -22,7 +22,7 @@ export default function ConsultationForm() {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "text/plain" },
-        body: JSON.stringify({ jmeno, email, zprava }),
+        body: JSON.stringify({ jmeno, email, zprava, souhlas }),
       });
       setStatus("sent");
     } catch {
