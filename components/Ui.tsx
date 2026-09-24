@@ -57,22 +57,36 @@ export function CtaBox({
   children,
   href,
   ctaLabel,
+  secondaryHref,
+  secondaryCtaLabel,
 }: {
   title: string;
   children: React.ReactNode;
   href: string;
   ctaLabel: string;
+  secondaryHref?: string;
+  secondaryCtaLabel?: string;
 }) {
   return (
     <div className="rounded-sm bg-cream p-8 text-ink">
       <h2 className="mb-3 font-serif text-2xl text-ink">{title}</h2>
       <p className="mb-5 text-[15px] text-[#4b4536]">{children}</p>
-      <a
-        href={href}
-        className="inline-block rounded-sm bg-navy-deep px-6 py-3 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-[#223652]"
-      >
-        {ctaLabel}
-      </a>
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+        <a
+          href={href}
+          className="inline-block rounded-sm bg-navy-deep px-6 py-3 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-[#223652]"
+        >
+          {ctaLabel}
+        </a>
+        {secondaryHref && secondaryCtaLabel && (
+          <a
+            href={secondaryHref}
+            className="inline-block text-sm font-semibold text-ink underline decoration-navy-deep/40 underline-offset-4 transition-colors duration-200 hover:decoration-navy-deep"
+          >
+            {secondaryCtaLabel}
+          </a>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { H2, P, Section, ServiceCard, CtaBox, Annotated } from "@/components/Ui";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import RecommendationTest from "@/components/RecommendationTest";
 import TamMotif from "@/components/TamMotif";
 import SignalFlow from "@/components/SignalFlow";
@@ -38,21 +37,29 @@ export default function Home() {
 
         <div className="mt-10 flex flex-col items-center gap-6">
           <SignalFlow />
-          <Link
-            href="/sluzby/ai-search-visibility-audit"
-            className="inline-block rounded-sm bg-cream px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
-          >
-            Zjistit, jak jste vidět →
-          </Link>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-5">
+            <Link
+              href="/sluzby/ai-search-visibility-audit"
+              className="inline-block rounded-sm bg-cream px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
+            >
+              Zjistit, jak jste vidět →
+            </Link>
+            <Link
+              href="/sluzby/strategicka-konzultace"
+              className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+            >
+              Nevím, kde začít →
+            </Link>
+          </div>
         </div>
       </Section>
 
-      {/* 02 ABOUT PREVIEW (moved up from the end, now with photo) */}
+      {/* 02 ABOUT PREVIEW */}
       <Section>
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image
             src="/images/eva-portrait-laptop.png"
-            alt="Eva Sezemská, AI Search Strategist"
+            alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi"
             width={220}
             height={220}
             className="h-[220px] w-[220px] flex-none rounded-sm object-cover grayscale-[15%]"
@@ -198,8 +205,10 @@ export default function Home() {
       <Section>
         <CtaBox
           title="Otázka není, jestli jste online."
-          href={FORM_URL}
+          href="/sluzby/ai-search-visibility-audit"
           ctaLabel="Zjistit, jak jste vidět →"
+          secondaryHref="/sluzby/strategicka-konzultace"
+          secondaryCtaLabel="Nevím, kde začít →"
         >
           Otázka je, jestli jste tou odpovědí, kterou AI dá vašemu
           zákazníkovi.
