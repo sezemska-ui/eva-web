@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { CONSULTATION_FORM_URL } from "./SiteJsonLd";
 
 export default function ConsultationForm() {
   const [jmeno, setJmeno] = useState("");
   const [email, setEmail] = useState("");
   const [zprava, setZprava] = useState("");
+  const [souhlas, setSouhlas] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
@@ -73,6 +75,26 @@ export default function ConsultationForm() {
           rows={4}
           className="rounded-sm border border-white/15 bg-transparent px-4 py-3 text-[15px] text-cream placeholder:text-cream/40 focus:border-gold/50 focus:outline-none"
         />
+
+        <label className="flex items-start gap-3 text-[13px] text-cream/70">
+          <input
+            type="checkbox"
+            required
+            checked={souhlas}
+            onChange={(e) => setSouhlas(e.target.checked)}
+            className="mt-0.5 h-4 w-4 flex-none accent-gold"
+          />
+          <span>
+            Souhlasím se zpracováním osobních údajů podle{" "}
+            <Link
+              href="/ochrana-osobnich-udaju"
+              className="underline decoration-gold/50 hover:decoration-gold"
+            >
+              zásad ochrany osobních údajů
+            </Link>
+            .
+          </span>
+        </label>
 
         <button
           type="submit"
