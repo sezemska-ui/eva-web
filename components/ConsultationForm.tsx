@@ -9,6 +9,7 @@ export default function ConsultationForm() {
   const [email, setEmail] = useState("");
   const [zprava, setZprava] = useState("");
   const [souhlas, setSouhlas] = useState(false);
+  const [website, setWebsite] = useState(""); // honeypot — skryté pole pro roboty
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
@@ -22,7 +23,7 @@ export default function ConsultationForm() {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "text/plain" },
-        body: JSON.stringify({ jmeno, email, zprava, souhlas }),
+        body: JSON.stringify({ jmeno, email, zprava, souhlas, website }),
       });
       setStatus("sent");
     } catch {
@@ -74,6 +75,17 @@ export default function ConsultationForm() {
           onChange={(e) => setZprava(e.target.value)}
           rows={4}
           className="rounded-sm border border-white/15 bg-transparent px-4 py-3 text-[15px] text-cream placeholder:text-cream/40 focus:border-gold/50 focus:outline-none"
+        />
+
+        <input
+          type="text"
+          name="website"
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden"
         />
 
         <label className="flex items-start gap-3 text-[13px] text-cream/70">
