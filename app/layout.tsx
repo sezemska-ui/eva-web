@@ -31,7 +31,7 @@ const DESCRIPTION =
   "Buďte tam, kde vás zákazníci hledají. Pomáhám firmám být vidět v AI vyhledávání, AI odpovědích i na mapách a platformách, kde se rozhoduje.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://searchstrategy.cz"),
+  metadataBase: new URL("https://www.searchstrategy.cz"),
   title: { default: TITLE, template: "%s" },
   description: DESCRIPTION,
   alternates: { canonical: "/" },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "cs_CZ",
-    url: "https://searchstrategy.cz",
+    url: "https://www.searchstrategy.cz",
     siteName: TITLE,
     title: TITLE,
     description: DESCRIPTION,

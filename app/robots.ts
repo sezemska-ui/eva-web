@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://searchstrategy.cz/sitemap.xml",
+    sitemap: "https://www.searchstrategy.cz/sitemap.xml",
   };
 }
