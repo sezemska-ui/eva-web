@@ -4,7 +4,7 @@ Jméno: Eva Sezemská
 Obor: AI Search Strategist
 IČO: 29800544
 Sídlo: Mladá Boleslav, Česká republika
-Web: https://searchstrategy.cz
+Web: https://www.searchstrategy.cz
 E-mail: sezemska@searchstrategy.cz
 
 ## Čím se zabývá
