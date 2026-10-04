@@ -108,8 +108,8 @@ export default function Article() {
           <Image
             src="/images/ai-viditelnost-pred-a-po-31-dnech.png"
             alt="Srovnání úspěšnosti doporučení Michaely Čížkové v ChatGPT, Google AI Overview a Perplexity: květen 2026 a září 2026, celkově z 20 % na 76,7 %"
-            width={1650}
-            height={975}
+            width={1600}
+            height={900}
             sizes="(min-width: 896px) 848px, calc(100vw - 48px)"
             className="h-auto w-full rounded-sm"
           />
