@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/field-notes/co-jsme-museli-nasadit",
     "/field-notes/implementace-a-overeni",
     "/field-notes/vysledky-po-31-dnech",
+    "/field-notes/jak-budovat-ai-viditelnost-v-case",
     "/kontakt",
     "/ochrana-osobnich-udaju",
   ];
