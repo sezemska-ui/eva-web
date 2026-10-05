@@ -165,6 +165,7 @@ export default function Article() {
             { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },
             { title: "Co jsme museli nasadit, aby AI web přečetla", href: "/field-notes/co-jsme-museli-nasadit" },
             { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
+            { title: "Jak budovat AI viditelnost v čase", href: "/field-notes/jak-budovat-ai-viditelnost-v-case" },
           ]}
         />
       </Section>

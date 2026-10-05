@@ -39,6 +39,13 @@ const notes = [
     title: "Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech",
     href: "/field-notes/vysledky-po-31-dnech",
   },
+  {
+    n: "05",
+    category: "Budování AI viditelnosti · Case Note · část 4/4",
+    date: "4. 10. 2026",
+    title: "Jak budovat AI viditelnost v čase",
+    href: "/field-notes/jak-budovat-ai-viditelnost-v-case",
+  },
 ];
 
 export default function FieldNotes() {

@@ -90,6 +90,7 @@ export default function Article() {
             { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },
             { title: "Strategie nestačí — jak jsme ji dostali na živý web", href: "/field-notes/implementace-a-overeni" },
             { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
+            { title: "Jak budovat AI viditelnost v čase", href: "/field-notes/jak-budovat-ai-viditelnost-v-case" },
           ]}
         />
       </Section>
