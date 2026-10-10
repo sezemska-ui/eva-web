@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sluzby/implementace-strategie",
     "/sluzby/digital-authority",
     "/sluzby/strategicka-konzultace",
+    "/pro-koho",
     "/o-mne",
     "/faq",
     "/field-notes",

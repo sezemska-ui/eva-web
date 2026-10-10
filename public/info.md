@@ -18,3 +18,11 @@ Eva Sezemská pomáhá firmám zjistit, jak je dnes vidí vyhledávače a AI sys
 3. Implementace strategie
 4. Digital Authority
 5. Strategická konzultace (60 min)
+
+## Pro koho pracuje
+
+- Lokální firmy a provozovny
+- Živnostníci a OSVČ
+- B2B firmy a služby
+
+Podrobně: https://www.searchstrategy.cz/pro-koho
