@@ -104,6 +104,12 @@ export default function Home() {
           V těchto momentech se rozhoduje ještě předtím, než zákazník
           navštíví váš web.
         </P>
+        <Link
+          href="/pro-koho"
+          className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+        >
+          Pro koho pracuji →
+        </Link>
       </Section>
 
       {/* 05 THE ECOSYSTEM */}

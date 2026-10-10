@@ -7,6 +7,7 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Domů" },
   { href: "/sluzby", label: "Služby" },
+  { href: "/pro-koho", label: "Pro koho" },
   { href: "/o-mne", label: "O mně" },
   { href: "/field-notes", label: "Field Notes" },
   { href: "/faq", label: "FAQ" },
@@ -29,7 +30,7 @@ export default function NavBar() {
         </Link>
 
         {/* Menu pro počítač */}
-        <nav className="hidden sm:flex gap-5">
+        <nav className="hidden md:flex gap-5">
           {links.map((l) => {
             const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
             return (
@@ -57,7 +58,7 @@ export default function NavBar() {
           aria-label={open ? "Zavřít menu" : "Otevřít menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex flex-col justify-center gap-[5px] p-2 sm:hidden"
+          className="flex flex-col justify-center gap-[5px] p-2 md:hidden"
         >
           <span
             className={`block h-px w-6 bg-cream transition-transform duration-200 ${
@@ -79,7 +80,7 @@ export default function NavBar() {
 
       {/* Rozbalené menu pro mobil */}
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-white/10 px-6 py-4 sm:hidden">
+        <nav className="flex flex-col gap-1 border-t border-white/10 px-6 py-4 md:hidden">
           {links.map((l) => {
             const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
             return (
