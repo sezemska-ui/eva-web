@@ -27,7 +27,7 @@ const services = [
     n: "03",
     title: "Implementace strategie",
     href: "/sluzby/implementace-strategie",
-    text: "Strategie musí skončit změnou. Technické, obsahové, strukturální a lokální úpravy realizujeme podle priorit — ve spolupráci s vaším webmasterem.",
+    text: "Strategie musí skončit změnou. Na začátku si rozdělíme, co uděláte vy, co váš webmaster a co já. Hlídám priority a pořadí kroků, aby se technické, obsahové, strukturální a lokální úpravy opravdu dostaly na web.",
   },
   {
     n: "04",
@@ -65,15 +65,15 @@ export default function Sluzby() {
         <H2>Nezačínáme optimalizací. Začínáme otázkou.</H2>
         <div className="flex flex-col gap-4">
           <Link href="/sluzby/ai-search-visibility-audit" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Jste vidět?</span>
+            <span className="text-[15px] text-cream/85">Víte, jak vás AI vidí a proč vás nevybírá?</span>
             <span className="text-sm text-gold-light">AI Search Visibility Audit →</span>
           </Link>
           <Link href="/sluzby/ai-search-strategie" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Víte, proč vás systémy nevybírají?</span>
+            <span className="text-[15px] text-cream/85">Víte, co změnit?</span>
             <span className="text-sm text-gold-light">AI Search Strategie →</span>
           </Link>
           <Link href="/sluzby/implementace-strategie" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Víte, co změnit?</span>
+            <span className="text-[15px] text-cream/85">Potřebujete pomoct změny nasadit?</span>
             <span className="text-sm text-gold-light">Implementace strategie →</span>
           </Link>
           <Link href="/sluzby/digital-authority" className="group flex flex-col gap-1 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">

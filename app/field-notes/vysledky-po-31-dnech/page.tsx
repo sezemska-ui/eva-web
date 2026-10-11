@@ -22,7 +22,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Výsledky po 31 dnech" }]} />
-        <ArticleMeta category="Výsledky a měření · Case Note" date="18. 9. 2026" />
+        <ArticleMeta category="Výsledky a měření · samostatné testování" date="18. 9. 2026" />
         <H1>Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech</H1>
         <P>
           Michaela Čížková je profesionální fotografka od roku 2022, žije v
@@ -83,7 +83,7 @@ export default function Article() {
         <P>
           Přesto se potýkala s klasickým problémem sezónnosti: „Přes léto
           mám práce dost, ale v zimě nevím, co dělat, i když jsem na
-          sociálních sítích aktivní,“ svěřila se Michaela při našem prvním
+          sociálních sítích aktivní“, svěřila se Michaela při našem prvním
           rozhovoru.
         </P>
         <P>

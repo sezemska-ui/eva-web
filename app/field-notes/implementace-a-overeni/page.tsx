@@ -22,7 +22,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Od strategie k nasazení" }]} />
-        <ArticleMeta category="Implementace strategie · Case Note" date="15. 9. 2026" />
+        <ArticleMeta category="Implementace strategie · Case Note · část 3/4" date="15. 9. 2026" />
         <H1>
           Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje
           ověření po nasazení.

@@ -225,7 +225,7 @@ const obecneQuestions = [
 const obecnePlain = [
   {
     q: obecneQuestions[0].q,
-    a: "Nejjednodušší způsob je otevřít Google nebo ChatGPT a zeptat se, ideálně odhlášeni z firemní wifi, v anonymním režimu a bez GPS. Zeptejte se tak, jak by vaše služby hledal zákazník, bez uvedení názvu firmy. Pokud se neobjevíte, zkuste brandový dotaz typu Proč jsi mi nedoporučil/a [název firmy]?",
+    a: "Nejjednodušší způsob je otevřít Google nebo ChatGPT a zeptat se, ideálně odpojeni od firemní wifi, v anonymním režimu a bez GPS. Zeptejte se tak, jak by vaše služby hledal zákazník, bez uvedení názvu firmy. Pokud se neobjevíte, zkuste brandový dotaz typu Proč jsi mi nedoporučil/a [název firmy]?",
   },
   {
     q: obecneQuestions[1].q,

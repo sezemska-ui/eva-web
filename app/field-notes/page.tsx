@@ -13,28 +13,28 @@ export const metadata: Metadata = {
 const notes = [
   {
     n: "01",
-    category: "AI Search Visibility Audit · Case Note",
+    category: "AI Search Visibility Audit · Case Note · část 1/4",
     date: "20. 8. 2026",
     title: "Jak AI zaměnila identitu mé klientky — a co to prozradilo o její viditelnosti",
     href: "/field-notes/proc-ai-zamenila-identitu",
   },
   {
     n: "02",
-    category: "AI Search Strategie · Case Note",
+    category: "AI Search Strategie · Case Note · část 2/4",
     date: "Září 2026",
     title: "Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“",
     href: "/field-notes/co-jsme-museli-nasadit",
   },
   {
     n: "03",
-    category: "Implementace strategie · Case Note",
+    category: "Implementace strategie · Case Note · část 3/4",
     date: "15. 9. 2026",
     title: "Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje ověření po nasazení.",
     href: "/field-notes/implementace-a-overeni",
   },
   {
     n: "04",
-    category: "Výsledky a měření · Case Note",
+    category: "Výsledky a měření · samostatné testování",
     date: "18. 9. 2026",
     title: "Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech",
     href: "/field-notes/vysledky-po-31-dnech",
