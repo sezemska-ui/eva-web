@@ -14,7 +14,7 @@ export default function NotFound() {
         href="/"
         className="mt-4 inline-block rounded-sm bg-cream px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
       >
-        Zpět na domů →
+        Zpět na úvod →
       </Link>
     </Section>
   );

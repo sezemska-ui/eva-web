@@ -24,7 +24,7 @@ const obecneQuestions = [
           ale potřeba dodržet základní kroky pro správné testování:
         </P>
         <ul className="mb-4 flex flex-col gap-2 text-[15px] text-cream/80">
-          <li>— odhlaste se z firemní wifi, použijte mobilní data,</li>
+          <li>— odpojte se od firemní wifi, použijte mobilní data,</li>
           <li>
             — zapněte Google v anonymním režimu (inkognito) a v ChatGPT nový
             nebo nepersonalizovaný chat,
@@ -32,7 +32,7 @@ const obecneQuestions = [
           <li>— zakažte přístup k GPS, pokud se vás prohlížeč zeptá,</li>
           <li>
             — zeptejte se tak, jak by vaše služby mohl hledat váš zákazník,
-            ale nezmiňujte váš název, např. „Najdi mi místo na svatbu v
+            ale nezmiňujte svůj název, např. „Najdi mi místo na svatbu v
             Českém ráji, kde mohu ubytovat 100 lidí“, a klidně dotaz
             opakujte v novém chatu nebo zadejte nový.
           </li>
@@ -149,10 +149,9 @@ const obecneQuestions = [
     a: (
       <>
         <P>
-          Ano. Strategie AI viditelnosti je práce, kterou vytvořím,
-          společně schválíme a v rámci implementace ji pro vás mohu
-          zajistit s vaším webmasterem tak, abyste se o technické kroky
-          nemuseli starat.
+          Ano, na obsahu a digitální identitě. O technické kroky se starat
+          nemusíte: strategii vytvořím, společně ji schválíme a v rámci
+          implementace ji mohu zajistit s vaším webmasterem.
         </P>
         <P>
           Pro udržení AI viditelnosti je potřeba stále pracovat na odborném
@@ -246,7 +245,7 @@ const obecnePlain = [
   },
   {
     q: obecneQuestions[5].q,
-    a: "Ano, dlouhodobá AI viditelnost vyžaduje průběžnou práci na odborném obsahu a budování digitální identity i mimo web. Implementaci lze zajistit společně s vaším webmasterem.",
+    a: "Ano, na obsahu a digitální identitě. O technické kroky se starat nemusíte: strategii vytvořím, společně ji schválíme a v rámci implementace ji mohu zajistit s vaším webmasterem. Pro udržení AI viditelnosti je potřeba stále pracovat na odborném obsahu a budovat digitální identitu i mimo web.",
   },
   {
     q: obecneQuestions[6].q,
@@ -271,8 +270,8 @@ export default function FAQ() {
         <Eyebrow>FAQ</Eyebrow>
         <H1>Máte otázku? Začněme tady.</H1>
         <P>
-          Od toho, jak AI vidí vaši firmu, přes průběh auditu až po
-          implementaci a dlouhodobé budování digitální autority.
+          Od toho, jak AI vidí vaši firmu, po to, co pro svou viditelnost
+          můžete udělat.
         </P>
 
         <nav className="mb-2 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[12px] uppercase tracking-widest text-cream/50">

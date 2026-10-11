@@ -21,8 +21,8 @@ const notes = [
   {
     n: "02",
     category: "AI Search Strategie · Case Note",
-    date: "Zář 2026",
-    title: "Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla\"",
+    date: "Září 2026",
+    title: "Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“",
     href: "/field-notes/co-jsme-museli-nasadit",
   },
   {

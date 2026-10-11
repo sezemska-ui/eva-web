@@ -90,7 +90,7 @@ export default function Article() {
         </ul>
         <P>
           Design a obsah šly ruku v ruce se stejnou pečlivostí: do hero sekce
-          bylo potřeba přidat, kdo klientka je — "Fotografka z Českého ráje" —
+          bylo potřeba přidat, kdo klientka je — „Fotografka z Českého ráje“ —
           a lokality, kde působí, aniž by to narušilo dominantní postavení
           jejího jména. Řešením bylo menší písmo, verzálky a nižší
           průhlednost pro popisek i lokality.
@@ -110,12 +110,12 @@ export default function Article() {
           Neformální testování konkrétních dotazů v ChatGPT, Google AI
           Overview a Perplexity ukázalo zlepšení oproti květnu. Až s
           odstupem ale technická validace na produkci odhalila nesrovnalost:
-          schema.org validátor našel neplatnou hodnotu "Photographer" místo
-          správného "LocalBusiness" jako součásti typu business entity — ne
+          schema.org validátor našel neplatnou hodnotu „Photographer“ místo
+          správného „LocalBusiness“ jako součásti typu business entity — ne
           kritická chyba, ale stálo za to ji opravit kvůli čistotě dat.
         </P>
         <P>
-          Test v PageSpeed Insights zase v sekci "Procházení agenty" odhalil,
+          Test v PageSpeed Insights zase v sekci „Procházení agenty“ odhalil,
           že odkazy na podstránky služeb chyběly hned u výčtu služeb a byly
           až na konci souboru — přesunula jsem je přímo k příslušným sekcím.
           Stejný test zachytil i výrazné zrychlení načítání hlavního obsahu
@@ -151,7 +151,7 @@ export default function Article() {
         <WhatThisMeans
           points={[
             "Strategie bez implementace zůstává jen dokumentem — potřebuje webmastera, jasnou komunikaci a někoho, kdo hlídá pořadí kroků.",
-            "Automatická validace (schema.org, PageSpeed Insights) najde chyby, které při běžném testování přehlédnete — stojí za to je po nasazení projít ručně.",
+            "Validátory (schema.org, PageSpeed Insights) najdou chyby, které při běžném testování přehlédnete. Stojí za to je po nasazení spustit a jejich výsledky projít.",
             "Rychlost načítání není jen otázka pohodlí uživatele — ovlivňuje i to, jak snadno vás dokážou přečíst vyhledávače a AI systémy.",
           ]}
           ctaLabel="Probrat Implementaci strategie →"

@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
       <Section>
         <H2>Komu údaje předávám</H2>
         <P>
-          Údaje z vstupního dotazníku ukládám kromě Google Sheets i do
+          Údaje ze vstupního dotazníku ukládám kromě Google Sheets i do
           Notionu, kde si spravuji přehled klientů — Notion tak vystupuje
           jako zpracovatel osobních údajů. Data z Google Analytics zpracovává
           Google Ireland Limited, přičemž část dat může být přenášena na

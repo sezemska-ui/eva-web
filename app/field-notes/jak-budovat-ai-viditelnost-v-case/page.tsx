@@ -52,7 +52,7 @@ export default function Article() {
         <ArticleMeta category="Budování AI viditelnosti · Case Note · část 4/4" date="4. 10. 2026" />
         <H1>Jak budovat AI viditelnost v čase</H1>
         <P>
-          <strong className={strongClass}>Autor:</strong> Eva Sezemská, AI Search
+          <strong className={strongClass}>Autorka:</strong> Eva Sezemská, AI Search
           Strategist (
           <Link href="/o-mne" className={linkClass}>
             o autorce
@@ -191,8 +191,8 @@ export default function Article() {
             tomto článku.
           </li>
           <li className={listItemClass}>
-            Sociální sítě jako poslední vrstva, které jsou blíže lidem než
-            vyhledávačům. Neznamená ale, že jsou zbytečné – jen nejsou tak
+            Sociální sítě tvoří poslední vrstvu, která je blíž lidem než
+            vyhledávačům. To ale neznamená, že jsou zbytečné – jen nejsou tak
             důležité pro AI jako ostatní vrstvy.
           </li>
         </ul>
@@ -203,7 +203,7 @@ export default function Article() {
         <P>
           Na budoucí fázi budování autority bylo potřeba myslet už při stavění
           nového webu, kde byla připravena nová stránka blogu s názvem „Fotoblog
-          z Ráje&quot;.
+          z Ráje“.
         </P>
         <P>
           Do blogu bude Michaela psát{" "}
@@ -249,7 +249,7 @@ export default function Article() {
           vyšlo jasně najevo, že lokality jako Turnov a Mladá Boleslav je nutné
           posílit a Michaela na ně nebyla doporučována. Blogové články jsou tedy
           místem, kde může Michaela posílit svou lokální autoritu i pro tato
-          místa v Českém ráji. Nutno dodat, že se to nestane jedním blog článkem
+          místa. Nutno dodat, že se to nestane jedním blog článkem
           a tato autorita bude muset být vybudována až časem.
         </P>
       </Section>
@@ -321,7 +321,7 @@ export default function Article() {
           Při testování jsem si všimla, že i když se na webu nikde nevyskytují
           informace o tom, že by Michaela fotila rodiny i s domácím mazlíčkem,
           Google to v odpovědi uvedl. Proč? V jedné z recenzí je totiž napsáno,
-          že „pejsci nebyli problém.&quot;
+          že „pejsci nebyli problém.“
         </P>
         <P>
           Vhodné je také na recenze průběžně odpovídat. Pomáhá to udržovat
@@ -455,7 +455,7 @@ export default function Article() {
             >
               Creating helpful, reliable, people-first content
             </a>{" "}
-            – zdroj pojmu E-E-A-T a otázek „kdo, jak a proč&quot; při tvorbě
+            – zdroj pojmu E-E-A-T a otázek „kdo, jak a proč“ při tvorbě
             obsahu.
           </li>
           <li className={listItemClass}>

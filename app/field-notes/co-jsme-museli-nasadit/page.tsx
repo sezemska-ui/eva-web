@@ -23,7 +23,7 @@ export default function Article() {
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Co jsme museli nasadit" }]} />
         <ArticleMeta category="AI Search Strategie · Case Note" date="Září 2026" />
-        <H1>Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla"</H1>
+        <H1>Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“</H1>
         <P>
           Nový, rychlý, hezký web na Next.js. A přesto by bez dalšího kroku
           zůstal pro AI systémy stejně neviditelný jako ten předchozí. Druhá
@@ -38,12 +38,12 @@ export default function Article() {
         <P>
           Server-side rendering (SSR) zajišťuje, že AI crawler vidí obsah
           stránky stejně jako běžný návštěvník — na rozdíl od client-side
-          renderingu, kde AI musí čekat, než se stránka „dokreslí".
+          renderingu, kde AI musí čekat, než se stránka „dokreslí“.
         </P>
       </Section>
 
       <Section>
-        <H2>Schema markup jako „občanský průkaz" firmy</H2>
+        <H2>Schema markup jako „občanský průkaz“ firmy</H2>
         <P>
           Strukturovaná data jasně, bez marketingové omáčky říkají AI, kdo
           jste, co nabízíte a kde vás najít. Nasazeny byly typy Person,
@@ -76,7 +76,7 @@ export default function Article() {
         <WhatThisMeans
           points={[
             "Vizuálně hezký web bez technického základu (schema, SSR, správné meta tagy) zůstává pro AI prakticky neviditelný.",
-            "Klíčová slova musí být konkrétní a přirozená — obecné fráze jako „kvalitní služby\" AI nic neřeknou.",
+            "Klíčová slova musí být konkrétní a přirozená — obecné fráze jako „kvalitní služby“ AI nic neřeknou.",
             "Strategie není jednorázová oprava — je to soubor návazných kroků, které se ověřují měřením v čase, ne odhadem.",
           ]}
           ctaLabel="Probrat AI Search Strategii →"
