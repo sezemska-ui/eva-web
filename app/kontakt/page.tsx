@@ -22,9 +22,9 @@ export default function Kontakt() {
         </P>
       </Section>
       <Section>
-        <div className="rounded-sm bg-cream p-8 text-ink">
-          <H2>Vstupní dotazník</H2>
-          <p className="mb-5 text-[15px] text-[#4b4536]">
+        <div className="rounded-sm bg-cream p-6 text-ink">
+          <h2 className="mb-2 font-serif text-2xl text-ink">Vstupní dotazník</h2>
+          <p className="mb-4 text-[15px] text-[#4b4536]">
             Nejrychlejší cesta, jak začít — zabere 10–15 minut a pomůže mi
             připravit náš první rozhovor tak, aby byl užitečný hned od
             začátku.
