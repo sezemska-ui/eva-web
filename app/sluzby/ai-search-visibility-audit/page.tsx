@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Search Visibility Audit — Eva Sezemská",
   description:
-    "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč vás AI někdy nedoporučí místo konkurence.",
+    "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
   alternates: { canonical: "/sluzby/ai-search-visibility-audit" },
 };
 
@@ -37,7 +37,7 @@ export default function Audit() {
         <div className="flex flex-col gap-5">
           {[
             ["01 — AI Visibility", "Jak si vedete v relevantních zákaznických dotazech."],
-            ["02 — Moment rozhodnutí", "Kdy vás systém může považovat za relevantní, ale přesto doporučí konkurenci."],
+            ["02 — Decision Moment", "Kdy vás systém může považovat za relevantní, ale přesto doporučí konkurenci."],
             ["03 — Competition", "Kdo dostává doporučení místo vás."],
             ["04 — Digital Entity", "Jak konzistentně systémy chápou, kdo jste — včetně shody NAP údajů napříč platformami."],
             ["05 — Content", "Zda váš obsah odpovídá skutečným rozhodovacím situacím zákazníků."],
@@ -59,7 +59,7 @@ export default function Audit() {
 
       <Section>
         <CtaBox
-          title="Zjistěte, co vidí systémy místo vás."
+          title="Zjistěte, koho systémy doporučují místo vás."
           href={FORM_URL}
           ctaLabel="Probrat AI Search Visibility Audit →"
         >

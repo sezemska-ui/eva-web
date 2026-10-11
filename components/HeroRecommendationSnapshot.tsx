@@ -7,7 +7,7 @@ export default function HeroRecommendationSnapshot() {
         Real customer query
       </div>
       <p className="mb-4 font-serif text-[15px] italic text-cream/85">
-        „Romantický wellness hotel v Českém ráji"
+        „Romantický wellness hotel v Českém ráji“
       </p>
 
       <div className="mb-3 uppercase tracking-widest text-gold">

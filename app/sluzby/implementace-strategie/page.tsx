@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Implementace strategie — Eva Sezemská",
   description:
-    "Koordinuji s vaším webmasterem technické nasazení doporučených změn — od struktury po Schema.org — aby vás AI skutečně začala doporučovat.",
+    "Pomáhám dostat změny ze strategie na web. Rozdělíme si, co uděláte vy, co váš webmaster a co já, a nasazení koordinuji od struktury po Schema.org.",
   alternates: { canonical: "/sluzby/implementace-strategie" },
 };
 
@@ -19,7 +19,8 @@ export default function Implementace() {
         <H1>Strategie bez implementace nic nezmění.</H1>
         <P>
           Proto nekončím u doporučení. Ve spolupráci s vaším webmasterem
-          pomáhám změny dostat do webu a digitálního ekosystému firmy.
+          pomáhám změny dostat do webu a digitálního ekosystému firmy. Na
+          začátku si rozdělíme, co uděláte vy, co váš webmaster a co já.
         </P>
       </Section>
 
@@ -34,7 +35,7 @@ export default function Implementace() {
       </Section>
 
       <Section>
-        <H2>Co implementuji</H2>
+        <H2>Co společně nasazujeme</H2>
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <h3 className="mb-2 font-serif text-lg text-cream">Technical</h3>

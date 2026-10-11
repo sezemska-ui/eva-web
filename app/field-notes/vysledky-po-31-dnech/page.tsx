@@ -22,12 +22,12 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Výsledky po 31 dnech" }]} />
-        <ArticleMeta category="Výsledky a měření · Case Note" date="18. 9. 2026" />
+        <ArticleMeta category="Výsledky a měření · samostatné testování" date="18. 9. 2026" />
         <H1>Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech</H1>
         <P>
           Michaela Čížková je profesionální fotografka od roku 2022, žije v
-          Mladějově v Čechách a fotí rodinné, těhotenské, newborn a svatební
-          focení v Českém ráji. Kvalitní portfolio, skvělé reference — a
+          Mladějově v Čechách a fotí rodiny, těhotenství, miminka (newborn) a
+          svatby v Českém ráji. Kvalitní portfolio, skvělé reference — a
           přesto ji AI systémy buď nedoporučovaly vůbec, nebo si ji pletly s
           někým jiným. Tohle je záznam toho, co se změnilo za 31 dní po
           nasazení nového webu.
@@ -83,7 +83,7 @@ export default function Article() {
         <P>
           Přesto se potýkala s klasickým problémem sezónnosti: „Přes léto
           mám práce dost, ale v zimě nevím, co dělat, i když jsem na
-          sociálních sítích aktivní," svěřila se Michaela při našem prvním
+          sociálních sítích aktivní“, svěřila se Michaela při našem prvním
           rozhovoru.
         </P>
         <P>
@@ -118,7 +118,7 @@ export default function Article() {
             <span className="font-semibold text-cream">
               Záměna identity u Google AI
             </span>{" "}
-            — na branded dotaz „Michaela Čížková fotografka – je dobrá?"
+            — na branded dotaz „Michaela Čížková fotografka – je dobrá?“
             Google AI Overview zobrazil informace o jiné fotografce a
             školitelce spojené s Foto Škoda. Michaele tak přisoudil cizí
             identitu.
@@ -171,7 +171,7 @@ export default function Article() {
           </li>
         </ul>
         <P>
-          Podobný problém se záměnou identity jsme popsali dřív v článku{" "}
+          Začátek tohoto příběhu jsem popsala v článku{" "}
           <Link href="/field-notes/proc-ai-zamenila-identitu" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
             Jak AI zaměnila identitu mé klientky
           </Link>
@@ -279,7 +279,7 @@ export default function Article() {
                 <th className="py-3 pr-4">AI systém</th>
                 <th className="py-3 pr-4">Květen 2026 (před)</th>
                 <th className="py-3 pr-4">Září 2026 (po 31 dnech)</th>
-                <th className="py-3">Změna</th>
+                <th className="py-3">Změna (procentní body)</th>
               </tr>
             </thead>
             <tbody>
@@ -287,25 +287,25 @@ export default function Article() {
                 <td className="py-3 pr-4 text-cream">ChatGPT</td>
                 <td className="py-3 pr-4">10 % (1/10)</td>
                 <td className="py-3 pr-4 text-gold-light">90 % (9/10)</td>
-                <td className="py-3">+80 %</td>
+                <td className="py-3">+80</td>
               </tr>
               <tr className="border-b border-white/10">
                 <td className="py-3 pr-4 text-cream">Google AI Overview</td>
                 <td className="py-3 pr-4">30 % (3/10)</td>
                 <td className="py-3 pr-4 text-gold-light">80 % (8/10)</td>
-                <td className="py-3">+50 %</td>
+                <td className="py-3">+50</td>
               </tr>
               <tr className="border-b border-white/10">
                 <td className="py-3 pr-4 text-cream">Perplexity</td>
                 <td className="py-3 pr-4">20 % (2/10)</td>
                 <td className="py-3 pr-4 text-gold-light">60 % (6/10)</td>
-                <td className="py-3">+40 %</td>
+                <td className="py-3">+40</td>
               </tr>
               <tr>
                 <td className="py-3 pr-4 font-semibold text-cream">Celková úspěšnost</td>
                 <td className="py-3 pr-4 font-semibold text-cream">20 % (6/30)</td>
                 <td className="py-3 pr-4 font-semibold text-gold-light">76,7 % (23/30)</td>
-                <td className="py-3 font-semibold text-cream">+56,7 %</td>
+                <td className="py-3 font-semibold text-cream">+56,7</td>
               </tr>
             </tbody>
           </table>
@@ -323,15 +323,15 @@ export default function Article() {
         <H2>5. Konkrétní příklady z AI vyhledávačů</H2>
         <P>
           Konec záměny identity. U branded dotazu „Michaela Čížková
-          fotografka – je dobrá? Co fotí?" ji teď všechny tři systémy
+          fotografka – je dobrá? Co fotí?“ ji teď všechny tři systémy
           uvádějí správně, bez záměny s jinou osobou.
         </P>
         <P>
           ChatGPT jako aktivní doporučení. Na dotaz „Doporuč mi dobrou
-          fotografku na rodinné focení v Českém ráji" ChatGPT odpověděl: „Za
+          fotografku na rodinné focení v Českém ráji“ ChatGPT odpověděl: „Za
           mě bych se nejdřív podívala na portfolio Michaely Čížkové – na
           rodinné focení v přírodě Českého ráje se její styl podle
-          dostupných informací hodí opravdu dobře."
+          dostupných informací hodí opravdu dobře.“
         </P>
       </Section>
 

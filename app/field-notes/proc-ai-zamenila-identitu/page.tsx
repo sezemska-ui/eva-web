@@ -22,11 +22,11 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Jak AI zaměnila identitu" }]} />
-        <ArticleMeta category="AI Search Visibility Audit · Case Note" date="20. 8. 2026" />
+        <ArticleMeta category="AI Search Visibility Audit · Case Note · část 1/4" date="20. 8. 2026" />
         <H1>Jak AI zaměnila identitu mé klientky — a co to prozradilo o její viditelnosti</H1>
         <P>
           Fotografka s kvalitním portfoliem a spokojenými klienty. A přesto ji
-          ve třech ze čtyř AI systémů nedoporučí — a jednou ji dokonce zamění
+          tři testované AI systémy doporučí jen v 6 z 30 testů — a jednou ji dokonce zamění
           za jinou osobu stejného jména. Případová studie z auditu, který
           ukázal, kde přesně se autorita v reálném světě ztrácí cestou do
           digitálního.

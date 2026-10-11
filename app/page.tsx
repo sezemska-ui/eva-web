@@ -67,9 +67,9 @@ export default function Home() {
           <div>
             <H2>Dívám se na vyhledávání z druhé strany.</H2>
             <P>
-              Eva Sezemská, AI Search Strategist. Zajímá ji, co se stane ve
-              chvíli, kdy zákazník nezná jméno firmy a požádá AI, aby mu
-              někoho doporučila.
+              Jsem Eva Sezemská, AI Search Strategist z Mladé Boleslavi.
+              Zajímá mě, co se stane ve chvíli, kdy zákazník nezná jméno
+              firmy a požádá AI, aby mu někoho doporučila.
             </P>
             <Link
               href="/o-mne"
@@ -159,8 +159,8 @@ export default function Home() {
             změny k tomu povedou.
           </ServiceCard>
           <ServiceCard title="Implementace strategie">
-            Strategie musí skončit změnou. Koordinuji nasazení s vaším
-            webmasterem a mluvím oběma jazyky.
+            Strategie musí skončit změnou. Rozdělíme si, co uděláte vy, co váš
+            webmaster a co já. Nasazení koordinuji a mluvím oběma jazyky.
           </ServiceCard>
           <ServiceCard title="Digital Authority">
             Budujeme vaši digitální autoritu — důkazy, které podporují vaši

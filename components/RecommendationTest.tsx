@@ -20,7 +20,7 @@ export default function RecommendationTest() {
       </div>
 
       <p className="mb-6 font-serif text-xl italic text-cream/90 md:text-2xl">
-        „Romantický wellness hotel v Českém ráji"
+        „Romantický wellness hotel v Českém ráji“
       </p>
 
       {!revealed ? (
