@@ -149,9 +149,9 @@ const obecneQuestions = [
     a: (
       <>
         <P>
-          Ano, na obsahu a digitální identitě. O technické kroky se starat
-          nemusíte: strategii vytvořím, společně ji schválíme a v rámci
-          implementace ji mohu zajistit s vaším webmasterem.
+          Ano, na obsahu a digitální identitě. Technické kroky mohu v rámci
+          implementace zajistit s vaším webmasterem. Na začátku si vždy
+          rozdělíme, co uděláte vy, co webmaster a co já.
         </P>
         <P>
           Pro udržení AI viditelnosti je potřeba stále pracovat na odborném
@@ -245,7 +245,7 @@ const obecnePlain = [
   },
   {
     q: obecneQuestions[5].q,
-    a: "Ano, na obsahu a digitální identitě. O technické kroky se starat nemusíte: strategii vytvořím, společně ji schválíme a v rámci implementace ji mohu zajistit s vaším webmasterem. Pro udržení AI viditelnosti je potřeba stále pracovat na odborném obsahu a budovat digitální identitu i mimo web.",
+    a: "Ano, na obsahu a digitální identitě. Technické kroky mohu v rámci implementace zajistit s vaším webmasterem. Na začátku si vždy rozdělíme, co uděláte vy, co webmaster a co já. Pro udržení AI viditelnosti je potřeba stále pracovat na odborném obsahu a budovat digitální identitu i mimo web.",
   },
   {
     q: obecneQuestions[6].q,

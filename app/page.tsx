@@ -159,8 +159,8 @@ export default function Home() {
             změny k tomu povedou.
           </ServiceCard>
           <ServiceCard title="Implementace strategie">
-            Strategie musí skončit změnou. Koordinuji nasazení s vaším
-            webmasterem a mluvím oběma jazyky.
+            Strategie musí skončit změnou. Rozdělíme si, co uděláte vy, co váš
+            webmaster a co já. Nasazení koordinuji a mluvím oběma jazyky.
           </ServiceCard>
           <ServiceCard title="Digital Authority">
             Budujeme vaši digitální autoritu — důkazy, které podporují vaši

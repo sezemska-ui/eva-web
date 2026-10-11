@@ -19,7 +19,7 @@ const services = [
     slug: "implementace-strategie",
     name: "Implementace strategie",
     description:
-      "Implementace technických, obsahových, strukturálních, lokálních a AI-readability změn podle priorit strategie ve spolupráci s webmasterem firmy.",
+      "Implementace technických, obsahových, strukturálních, lokálních a AI-readability změn podle priorit strategie. Práci si na začátku rozdělí klient, jeho webmaster a Eva Sezemská, která nasazení koordinuje.",
   },
   {
     slug: "digital-authority",

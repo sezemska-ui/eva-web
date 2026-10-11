@@ -8,7 +8,7 @@ Sídlo: Mladá Boleslav, Česká republika.
 
 - [AI Search Visibility Audit](https://www.searchstrategy.cz/sluzby/ai-search-visibility-audit): Diagnostika toho, jak firmu dnes vidí vyhledávače a AI systémy.
 - [AI Search Strategie](https://www.searchstrategy.cz/sluzby/ai-search-strategie): Strategický plán postavený na zjištěních z auditu.
-- [Implementace strategie](https://www.searchstrategy.cz/sluzby/implementace-strategie): Realizace technických, obsahových a lokálních změn ve spolupráci s webmasterem.
+- [Implementace strategie](https://www.searchstrategy.cz/sluzby/implementace-strategie): Nasazení technických, obsahových a lokálních změn. Práci si rozdělí klient, jeho webmaster a Eva Sezemská, která nasazení koordinuje.
 - [Digital Authority](https://www.searchstrategy.cz/sluzby/digital-authority): Budování důvěryhodnosti napříč webem, médii a katalogy.
 - [Strategická konzultace](https://www.searchstrategy.cz/sluzby/strategicka-konzultace): 60minutová konzultace pro rychlé zorientování v další strategii.
 
