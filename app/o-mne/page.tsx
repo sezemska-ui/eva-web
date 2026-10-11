@@ -36,7 +36,7 @@ export default function OMne() {
           Zajímavější je okamžik předtím — když hledá hotel, specialistu,
           řešení, když se ptá, koho by měl vybrat.
         </P>
-        <P>A potom: koho mu vyhledávač doporučí? To je přesně tvoje území.</P>
+        <P>A potom: koho mu vyhledávač doporučí? To je přesně moje území.</P>
       </Section>
 
       <Section>
