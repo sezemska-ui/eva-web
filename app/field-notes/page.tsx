@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 
 const notes = [
   {
+    n: "06",
+    category: "Průvodce",
+    date: "14. 10. 2026",
+    title: "Jak funguje AI vyhledávání a čím se liší od klasického Googlu",
+    href: "/field-notes/jak-funguje-ai-vyhledavani",
+  },
+  {
     n: "01",
     category: "AI Search Visibility Audit · Case Note · část 1/4",
     date: "20. 8. 2026",
