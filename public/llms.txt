@@ -17,4 +17,5 @@ Sídlo: Mladá Boleslav, Česká republika.
 - [Pro koho](https://www.searchstrategy.cz/pro-koho): Pro koho Eva Sezemská pracuje — lokální firmy a provozovny, živnostníci a OSVČ, B2B firmy a služby — a pro koho ne.
 - [O mně](https://www.searchstrategy.cz/o-mne): Profil Evy Sezemské a jejího přístupu.
 - [Field Notes](https://www.searchstrategy.cz/field-notes): Pozorování a případové studie z reálné práce s klienty.
+- [Jak funguje AI vyhledávání](https://www.searchstrategy.cz/field-notes/jak-funguje-ai-vyhledavani): Průvodce rozdílem mezi AI vyhledáváním a klasickým Googlem a tím, co znamená pro firmy.
 - [Kontakt](https://www.searchstrategy.cz/kontakt): Kontaktní údaje a vstupní dotazník.
