@@ -357,7 +357,7 @@ export default function Article() {
           doporučily jen v 6 z 30 odpovědí. Jednou ji dokonce zaměnily s jinou
           fotografkou stejného jména. Po 31 dnech úprav ji doporučovaly ve 23 z
           30 odpovědí.{" "}
-          <Link href="/field-notes/proc-ai-zamenila-identitu" className={linkClass}>
+          <Link href="/field-notes/vysledky-po-31-dnech" className={linkClass}>
             Jak jsme to napravili, popisuji v případové studii.
           </Link>
         </P>
