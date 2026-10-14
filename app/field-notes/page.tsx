@@ -29,7 +29,7 @@ const caseStudy: Note[] = [
     href: "/field-notes/proc-ai-zamenila-identitu",
   },
   {
-    label: "Díl 2/4 · Září 2026",
+    label: "Díl 2/4 · 1. 9. 2026",
     title: "Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“",
     href: "/field-notes/co-jsme-museli-nasadit",
   },
