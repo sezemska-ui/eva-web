@@ -91,6 +91,7 @@ export default function Article() {
             { title: "Strategie nestačí — jak jsme ji dostali na živý web", href: "/field-notes/implementace-a-overeni" },
             { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
             { title: "Jak budovat AI viditelnost v čase", href: "/field-notes/jak-budovat-ai-viditelnost-v-case" },
+            { title: "Průvodce: Jak funguje AI vyhledávání", href: "/field-notes/jak-funguje-ai-vyhledavani" },
           ]}
         />
       </Section>

@@ -379,6 +379,7 @@ export default function Article() {
             { title: "Co jsme museli nasadit, aby AI web přečetla", href: "/field-notes/co-jsme-museli-nasadit" },
             { title: "Strategie nestačí — jak jsme ji dostali na živý web", href: "/field-notes/implementace-a-overeni" },
             { title: "Jak budovat AI viditelnost v čase", href: "/field-notes/jak-budovat-ai-viditelnost-v-case" },
+            { title: "Průvodce: Jak funguje AI vyhledávání", href: "/field-notes/jak-funguje-ai-vyhledavani" },
           ]}
         />
       </Section>
