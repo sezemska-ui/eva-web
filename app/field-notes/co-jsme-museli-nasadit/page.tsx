@@ -22,7 +22,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Co jsme museli nasadit" }]} />
-        <ArticleMeta category="AI Search Strategie · Case Note · část 2/4" date="Září 2026" />
+        <ArticleMeta category="AI Search Strategie · Case Note · část 2/4" date="1. 9. 2026" />
         <H1>Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“</H1>
         <P>
           Nový, rychlý, hezký web na Next.js. A přesto by bez dalšího kroku
@@ -91,6 +91,7 @@ export default function Article() {
             { title: "Strategie nestačí — jak jsme ji dostali na živý web", href: "/field-notes/implementace-a-overeni" },
             { title: "Od záměny identity k 23 z 30 doporučení", href: "/field-notes/vysledky-po-31-dnech" },
             { title: "Jak budovat AI viditelnost v čase", href: "/field-notes/jak-budovat-ai-viditelnost-v-case" },
+            { title: "Průvodce: Jak funguje AI vyhledávání", href: "/field-notes/jak-funguje-ai-vyhledavani" },
           ]}
         />
       </Section>
