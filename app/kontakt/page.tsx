@@ -63,7 +63,7 @@ export default function Kontakt() {
           </a>
         </P>
         <P>
-          Nebo na{" "}
+          Nebo přes{" "}
           <a
             href="https://www.linkedin.com/in/eva-sezemská-466292417/"
             target="_blank"
@@ -71,6 +71,15 @@ export default function Kontakt() {
             className="font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
           >
             LinkedIn
+          </a>{" "}
+          nebo{" "}
+          <a
+            href="https://www.instagram.com/searchstrategy.cz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+          >
+            Instagram
           </a>
         </P>
         <p className="mt-2 font-mono text-[12px] text-cream/50">Mladá Boleslav</p>

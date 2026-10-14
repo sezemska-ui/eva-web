@@ -71,6 +71,7 @@ export default function SiteJsonLd() {
         sameAs: [
           "https://www.google.com/search?kgmid=/g/11zhdhh8r6",
           "https://www.firmy.cz/detail/14051726-eva-sezemska-ai-search-strategist-mlada-boleslav-ii.html",
+          "https://www.instagram.com/searchstrategy.cz/",
         ],
         founder: { "@id": `${SITE_URL}/#person` },
         hasOfferCatalog: {
