@@ -49,6 +49,8 @@ export default function SiteJsonLd() {
         email: "sezemska@searchstrategy.cz",
         address: {
           "@type": "PostalAddress",
+          streetAddress: "Havlíčkova 1490",
+          postalCode: "293 01",
           addressLocality: "Mladá Boleslav",
           addressCountry: "CZ",
         },
@@ -64,6 +66,8 @@ export default function SiteJsonLd() {
         email: "sezemska@searchstrategy.cz",
         address: {
           "@type": "PostalAddress",
+          streetAddress: "Havlíčkova 1490",
+          postalCode: "293 01",
           addressLocality: "Mladá Boleslav",
           addressCountry: "CZ",
         },
