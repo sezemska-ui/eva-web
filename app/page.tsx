@@ -147,22 +147,22 @@ export default function Home() {
 
       {/* 07 THE PRODUCT */}
       <Section>
-        <H2>Kdo dostane doporučení?</H2>
+        <H2>Jak vám mohu pomoci</H2>
         <div className="flex flex-col gap-6">
-          <ServiceCard title="AI Search Visibility Audit">
+          <ServiceCard title="AI Search Visibility Audit" href="/sluzby/ai-search-visibility-audit">
             Zjistíme, jak vás skutečně vidí Google a AI — testuji konkrétní
             zákaznické scénáře, konkurenci, digitální entitu i technické
             základy.
           </ServiceCard>
-          <ServiceCard title="AI Search Strategie">
+          <ServiceCard title="AI Search Strategie" href="/sluzby/ai-search-strategie">
             Z diagnostiky vytvoříme plán — kde potřebujete být vidět a jaké
             změny k tomu povedou.
           </ServiceCard>
-          <ServiceCard title="Implementace strategie">
+          <ServiceCard title="Implementace strategie" href="/sluzby/implementace-strategie">
             Strategie musí skončit změnou. Rozdělíme si, co uděláte vy, co váš
             webmaster a co já. Nasazení koordinuji a mluvím oběma jazyky.
           </ServiceCard>
-          <ServiceCard title="Digital Authority">
+          <ServiceCard title="Digital Authority" href="/sluzby/digital-authority">
             Budujeme vaši digitální autoritu — důkazy, které podporují vaši
             důvěryhodnost napříč webem, médii a katalogy.
           </ServiceCard>

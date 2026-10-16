@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div className="mb-4 flex items-center gap-3 font-mono text-[12px] uppercase tracking-widest text-cream/45">
@@ -39,14 +41,27 @@ export function Section({ children }: { children: React.ReactNode }) {
 
 export function ServiceCard({
   title,
+  href,
   children,
 }: {
   title: string;
+  href?: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="border-l border-white/15 pl-5 transition-colors duration-300 hover:border-gold/50">
-      <h3 className="mb-2 font-serif text-lg text-cream">{title}</h3>
+      <h3 className="mb-2 font-serif text-lg text-cream">
+        {href ? (
+          <Link
+            href={href}
+            className="underline decoration-gold/40 underline-offset-4 transition-colors duration-200 hover:text-gold-light hover:decoration-gold"
+          >
+            {title} →
+          </Link>
+        ) : (
+          title
+        )}
+      </h3>
       <p className="text-[15px] text-cream/75">{children}</p>
     </div>
   );
