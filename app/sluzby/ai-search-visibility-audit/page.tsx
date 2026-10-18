@@ -2,13 +2,14 @@ import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "AI Search Visibility Audit — Eva Sezemská",
   description:
     "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
-  alternates: { canonical: "/sluzby/ai-search-visibility-audit" },
-};
+  path: "/sluzby/ai-search-visibility-audit",
+});
 
 export default function Audit() {
   return (

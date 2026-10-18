@@ -3,13 +3,14 @@ import { H1, H2, P, Section } from "@/components/Ui";
 import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Od strategie k nasazení — Eva Sezemská",
   description:
     "Případová studie: spolupráce s webmasterem, implementace AI viditelnosti a co odhalilo ověření po nasazení — zrychlení načítání z 14,5 s na 2,9 s.",
-  alternates: { canonical: "/field-notes/implementace-a-overeni" },
-};
+  path: "/field-notes/implementace-a-overeni",
+});
 
 export default function Article() {
   return (

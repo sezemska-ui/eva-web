@@ -2,13 +2,14 @@ import Link from "next/link";
 import { Eyebrow, H1, P, Section } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Field Notes — Eva Sezemská",
   description:
     "Průvodce AI vyhledáváním a případová studie z praxe: jak Google a AI systémy rozhodují o tom, koho zákazník uvidí.",
-  alternates: { canonical: "/field-notes" },
-};
+  path: "/field-notes",
+});
 
 type Note = { label: string; title: string; href: string };
 

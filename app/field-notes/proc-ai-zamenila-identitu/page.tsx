@@ -3,13 +3,14 @@ import { H1, H2, P, Section } from "@/components/Ui";
 import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Jak AI zaměnila identitu mé klientky — Eva Sezemská",
   description:
     "Případová studie z auditu AI viditelnosti: proč AI systémy klientku nedoporučily a jednou dokonce zaměnily za jinou osobu.",
-  alternates: { canonical: "/field-notes/proc-ai-zamenila-identitu" },
-};
+  path: "/field-notes/proc-ai-zamenila-identitu",
+});
 
 export default function Article() {
   return (

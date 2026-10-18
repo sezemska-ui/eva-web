@@ -3,6 +3,7 @@ import { H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { ArticleMeta } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs, FAQJsonLd } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
 const TITLE = "Jak funguje AI vyhledávání a čím se liší od Googlu — Eva Sezemská";
 const HEADLINE = "Jak funguje AI vyhledávání a čím se liší od klasického Googlu?";
@@ -10,28 +11,12 @@ const DESCRIPTION =
   "Klasický Google vám dá seznam odkazů, AI rovnou odpověď a doporučení. Co to mění pro firmy a jak zjistit, jestli vás AI zákazníkům doporučuje.";
 const URL_PATH = "/field-notes/jak-funguje-ai-vyhledavani";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: URL_PATH },
-  openGraph: {
-    type: "article",
-    locale: "cs_CZ",
-    url: URL_PATH,
-    siteName: "Eva Sezemská — AI Search Strategist",
-    title: TITLE,
-    description: DESCRIPTION,
-    publishedTime: "2026-10-14",
-    authors: ["Eva Sezemská"],
-    images: [{ url: "/images/eva-portrait.png", width: 800, height: 800, alt: "Eva Sezemská" }],
-  },
-  twitter: {
-    card: "summary",
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ["/images/eva-portrait.png"],
-  },
-};
+  path: URL_PATH,
+  article: { publishedTime: "2026-10-14" },
+});
 
 const linkClass =
   "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";

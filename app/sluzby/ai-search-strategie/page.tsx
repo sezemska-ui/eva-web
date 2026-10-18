@@ -2,13 +2,14 @@ import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "AI Search Strategie — Eva Sezemská",
   description:
     "Strategický plán, co konkrétně opravit a v jakém pořadí, aby se z vaší firmy stala pro AI jasně rozpoznatelná a doporučovaná entita.",
-  alternates: { canonical: "/sluzby/ai-search-strategie" },
-};
+  path: "/sluzby/ai-search-strategie",
+});
 
 export default function Strategie() {
   return (
