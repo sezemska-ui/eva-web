@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { H2, P, Section, ServiceCard, CtaBox, Annotated, ConsultationButton } from "@/components/Ui";
+import { H2, P, Section, CtaBox, BigNumber, ConsultationButton } from "@/components/Ui";
 import RecommendationTest from "@/components/RecommendationTest";
 import TamMotif from "@/components/TamMotif";
-import SignalFlow from "@/components/SignalFlow";
+import ServicePath from "@/components/ServicePath";
+import NoteList from "@/components/NoteList";
+import { latestNotes } from "@/lib/fieldNotes";
 
 export default function Home() {
   return (
@@ -35,13 +37,97 @@ export default function Home() {
           <TamMotif />
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-6">
-          <SignalFlow />
+        <div className="mt-10 flex justify-center">
           <ConsultationButton tone="light" />
         </div>
       </Section>
 
-      {/* 02 ABOUT PREVIEW */}
+      {/* 02 VÝSLEDKY A RECENZE */}
+      <Section>
+        <div className="grid gap-8 md:grid-cols-2 md:items-start">
+          <div>
+            <BigNumber n="z 6 na 23" label="doporučení z 30 za 31 dní" />
+            <p className="mb-4 mt-4 text-[15.5px] leading-relaxed text-cream/75">
+              Fotografka Michaela Čížková z Českého ráje. Tři AI systémy
+              (ChatGPT, Google AI Overview a Perplexity) ji na začátku
+              doporučily v 6 z 30 testovaných zákaznických dotazů. Po 31 dnech
+              úprav ve 23.
+            </p>
+            <Link href="/field-notes/vysledky-po-31-dnech" className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold">
+              Celá případová studie →
+            </Link>
+          </div>
+          <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
+            <blockquote className="text-[15.5px] leading-relaxed text-cream/80">
+              <p>
+                „Díky jejímu úsilí je můj web lépe dohledatelný a mám větší
+                šanci oslovit nové klienty. (…) Pokud hledáte někoho, kdo své
+                práci opravdu rozumí, přemýšlí nad věcmi v souvislostech a
+                odvádí svou práci s maximální péčí, Evu mohu jedině doporučit.“
+              </p>
+            </blockquote>
+            <figcaption className="mt-4 font-mono text-[12px] text-cream/55">
+              Michaela Čížková, fotografka ·{" "}
+              <a
+                href="https://www.google.com/search?kgmid=/g/11zhdhh8r6"
+                target="_blank"
+                rel="noopener"
+                className="underline decoration-gold/40 underline-offset-4 hover:text-cream/80 hover:decoration-gold"
+              >
+                recenze na Googlu
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </Section>
+
+      {/* 03 PROBLÉM */}
+      <Section>
+        <H2>Vaši zákazníci vás nehledají vždy jménem.</H2>
+        <P>
+          Kam na víkend? Koho doporučujete pro firemní akci? Který hotel má
+          nejlepší wellness? Kterého dodavatele mám vybrat?
+        </P>
+        <P>
+          V těchto momentech se rozhoduje ještě předtím, než zákazník
+          navštíví váš web.
+        </P>
+      </Section>
+
+      {/* 03 RECOMMENDATION TEST */}
+      <Section>
+        <H2>Co se stane, když zákazník nezná vaše jméno?</H2>
+        <P>
+          Tohle je skutečný výstup Google AI na běžný zákaznický dotaz — bez
+          jména jakékoli konkrétní firmy, jen s popisem toho, co člověk hledá.
+        </P>
+        <div className="mt-6">
+          <RecommendationTest />
+        </div>
+      </Section>
+
+      {/* 04 JAK VÁM MOHU POMOCI */}
+      <Section>
+        <H2>Jak vám mohu pomoci</H2>
+        <ServicePath />
+        <Link href="/pro-koho" className="mt-6 inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold">
+          Pro koho pracuji →
+        </Link>
+      </Section>
+
+      {/* 05 JAK PŘEMÝŠLÍM */}
+      <Section>
+        <H2>Jak přemýšlím</H2>
+        <p className="mb-6 text-[15.5px] leading-relaxed text-cream/75">
+          Pozorování a případové studie z reálné práce s klienty.
+        </p>
+        <NoteList notes={latestNotes(3)} />
+        <Link href="/field-notes" className="mt-6 inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold">
+          Všechny články →
+        </Link>
+      </Section>
+
+      {/* 06 O MNĚ */}
       <Section>
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image
@@ -65,132 +151,6 @@ export default function Home() {
               Více o mně →
             </Link>
           </div>
-        </div>
-      </Section>
-
-      {/* 03 THE RECOMMENDATION TEST */}
-      <Section>
-        <H2>Co se stane, když zákazník nezná vaše jméno?</H2>
-        <P>
-          Tohle je skutečný výstup Google AI na běžný zákaznický dotaz — bez
-          jména jakékoli konkrétní firmy, jen s popisem toho, co člověk hledá.
-        </P>
-        <div className="mt-6">
-          <RecommendationTest />
-        </div>
-      </Section>
-
-      {/* 04 THE PROBLEM */}
-      <Section>
-        <H2>Vaši zákazníci vás nehledají vždy jménem.</H2>
-        <P>
-          Kam na víkend? Koho doporučujete pro firemní akci? Který hotel má
-          nejlepší wellness? Kterého dodavatele mám vybrat?
-        </P>
-        <P>
-          V těchto momentech se rozhoduje ještě předtím, než zákazník
-          navštíví váš web.
-        </P>
-        <Link
-          href="/pro-koho"
-          className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
-        >
-          Pro koho pracuji →
-        </Link>
-      </Section>
-
-      {/* 05 THE ECOSYSTEM */}
-      <Section>
-        <H2>Být online nestačí.</H2>
-        <P>
-          Web, Google, mapy, recenze, katalogy i zmínky v médiích — všechny
-          tyto zdroje společně vytvářejí obraz vaší firmy, ze kterého AI
-          vyhledávání a klasické vyhledávače skládají doporučení.
-        </P>
-        <div className="mt-4 flex flex-wrap justify-center gap-x-2 gap-y-4 text-center text-[13px] text-cream/50">
-          <Annotated word="WEBSITE" note="váš vlastní zdroj pravdy" />
-          <span className="self-center text-cream/20">+</span>
-          <Annotated word="GOOGLE" note="mapy, profil, recenze" />
-          <span className="self-center text-cream/20">+</span>
-          <Annotated word="MÉDIA" note="zmínky, katalogy" />
-          <span className="self-center text-cream/20">→</span>
-          <Annotated word="DIGITÁLNÍ ENTITA" note="jak vás AI chápe" />
-          <span className="self-center text-cream/20">→</span>
-          <Annotated word="DOPORUČENÍ" note="výsledek" />
-        </div>
-      </Section>
-
-      {/* 06 THE METHOD */}
-      <Section>
-        <H2>Zjistím, kde se ztrácíte.</H2>
-        <div className="flex flex-col gap-4">
-          <Annotated word="00 CONSULT" note="když nevíte, kde začít" />
-          <Annotated word="01 DISCOVER" note="zjišťuji, co se skutečně děje" />
-          <Annotated word="02 DIAGNOSE" note="hledám příčinu, ne jen symptom" />
-          <Annotated word="03 STRATEGIZE" note="navrhuji plán a priority" />
-          <Annotated word="04 BUILD" note="pomáhám změny reálně nasadit" />
-        </div>
-      </Section>
-
-      {/* 07 THE PRODUCT */}
-      <Section>
-        <H2>Jak vám mohu pomoci</H2>
-        <div className="flex flex-col gap-6">
-          <ServiceCard title="AI Search Visibility Audit" href="/sluzby/ai-search-visibility-audit">
-            Zjistíme, jak vás skutečně vidí Google a AI — testuji konkrétní
-            zákaznické scénáře, konkurenci, digitální entitu i technické
-            základy.
-          </ServiceCard>
-          <ServiceCard title="AI Search Strategie" href="/sluzby/ai-search-strategie">
-            Z diagnostiky vytvoříme plán — kde potřebujete být vidět a jaké
-            změny k tomu povedou.
-          </ServiceCard>
-          <ServiceCard title="Implementace strategie" href="/sluzby/implementace-strategie">
-            Strategie musí skončit změnou. Rozdělíme si, co uděláte vy, co váš
-            webmaster a co já. Nasazení koordinuji a mluvím oběma jazyky.
-          </ServiceCard>
-          <ServiceCard title="Digital Authority" href="/sluzby/digital-authority">
-            Budujeme vaši digitální autoritu — důkazy, které podporují vaši
-            důvěryhodnost napříč webem, médii a katalogy.
-          </ServiceCard>
-        </div>
-
-        <div className="mt-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
-          <p className="mb-1 text-[15px] font-semibold text-cream">
-            Nevíte, kde začít?
-          </p>
-          <p className="mb-3 text-[14px] text-cream/70">
-            Strategická konzultace je šedesát minut na to, abychom společně
-            zjistili, kde je problém a jaký další krok dává smysl.
-          </p>
-          <Link
-            href="/sluzby/strategicka-konzultace"
-            className="text-sm font-semibold text-gold-light underline decoration-gold/40 underline-offset-4"
-          >
-            Prozkoumat konzultaci →
-          </Link>
-        </div>
-
-        <Link
-          href="/sluzby"
-          className="mt-6 inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
-        >
-          Prozkoumat všechny služby →
-        </Link>
-      </Section>
-
-      {/* 08 THE CONSEQUENCE */}
-      <Section>
-        <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
-          <h2 className="mb-4 font-serif text-2xl text-cream">
-            Možná máte skvělý produkt. Možná skvělé recenze. Možná web, do
-            kterého jste investovali statisíce.
-          </h2>
-          <p className="text-[15.5px] leading-relaxed text-cream/75">
-            Ale pokud vás zákazník při rozhodování nenajde, v daném okamžiku
-            se to nepočítá. Nejdřív potřebujete vědět, co dnes zákazník
-            skutečně vidí.
-          </p>
         </div>
       </Section>
 
