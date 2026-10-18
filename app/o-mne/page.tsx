@@ -3,13 +3,14 @@ import Link from "next/link";
 import { Eyebrow, H1, H2, P, Section, Annotated } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "O mně — Eva Sezemská",
   description:
     "Dívám se na vyhledávání z druhé strany. Eva Sezemská, AI Search Strategist — jak přemýšlím o AI viditelnosti firem.",
-  alternates: { canonical: "/o-mne" },
-};
+  path: "/o-mne",
+});
 
 export default function OMne() {
   return (

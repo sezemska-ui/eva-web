@@ -3,13 +3,14 @@ import { H1, H2, P, Section } from "@/components/Ui";
 import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Od záměny identity k 23 z 30 doporučení — Eva Sezemská",
   description:
     "Případová studie: jak se AI viditelnost fotografky Michaely Čížkové zvýšila z 20 % na 76,7 % za 31 dní po nasazení strukturovaných dat a NAP konzistence.",
-  alternates: { canonical: "/field-notes/vysledky-po-31-dnech" },
-};
+  path: "/field-notes/vysledky-po-31-dnech",
+});
 
 export default function Article() {
   return (

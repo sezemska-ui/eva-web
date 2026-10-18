@@ -2,12 +2,13 @@ import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Kontakt — Eva Sezemská",
   description:
     "Nejste si jistí, jak vás vyhledávače a AI systémy vnímají? Vyplňte krátký vstupní dotazník, nebo napište přímo.",
-  alternates: { canonical: "/kontakt" },
-};
+  path: "/kontakt",
+});
 export default function Kontakt() {
   return (
     <>

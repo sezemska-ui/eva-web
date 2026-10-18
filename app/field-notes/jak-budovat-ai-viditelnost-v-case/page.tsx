@@ -4,34 +4,19 @@ import { H1, H2, P, Section } from "@/components/Ui";
 import { ArticleMeta } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
 const TITLE = "Jak budovat AI viditelnost v čase — Eva Sezemská";
 const DESCRIPTION =
   "Po technickém základu přichází obsah, recenze a lokální autorita. Závěr případové studie AI viditelnosti fotografky z Českého ráje: co dělat průběžně.";
 const URL_PATH = "/field-notes/jak-budovat-ai-viditelnost-v-case";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: URL_PATH },
-  openGraph: {
-    type: "article",
-    locale: "cs_CZ",
-    url: URL_PATH,
-    siteName: "Eva Sezemská — AI Search Strategist",
-    title: TITLE,
-    description: DESCRIPTION,
-    publishedTime: "2026-10-04",
-    authors: ["Eva Sezemská"],
-    images: [{ url: "/images/eva-portrait.png", width: 800, height: 800, alt: "Eva Sezemská" }],
-  },
-  twitter: {
-    card: "summary",
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ["/images/eva-portrait.png"],
-  },
-};
+  path: URL_PATH,
+  article: { publishedTime: "2026-10-04" },
+});
 
 const linkClass =
   "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";

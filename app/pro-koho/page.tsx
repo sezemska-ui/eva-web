@@ -2,13 +2,14 @@ import Link from "next/link";
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Pro koho — Eva Sezemská",
   description:
     "Pro lokální firmy, živnostníky a B2B firmy, které chtějí být mezi možnostmi, když se zákazník zeptá vyhledávače nebo AI, koho si má vybrat.",
-  alternates: { canonical: "/pro-koho" },
-};
+  path: "/pro-koho",
+});
 
 type GroupLink = { label: string; href: string };
 

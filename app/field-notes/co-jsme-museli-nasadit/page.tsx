@@ -3,13 +3,14 @@ import { H1, H2, P, Section } from "@/components/Ui";
 import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Co jsme museli nasadit, aby AI web přečetla — Eva Sezemská",
   description:
     "Druhá část případové studie: jaká technická a strategická rozhodnutí dělají web čitelný pro AI systémy.",
-  alternates: { canonical: "/field-notes/co-jsme-museli-nasadit" },
-};
+  path: "/field-notes/co-jsme-museli-nasadit",
+});
 
 export default function Article() {
   return (

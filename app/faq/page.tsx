@@ -1,13 +1,14 @@
 import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
 import { Breadcrumbs, FAQJsonLd } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "FAQ — Eva Sezemská",
   description:
     "Odpovědi na otázky o AI Search viditelnosti, auditu, strategii, implementaci a digitální autoritě.",
-  alternates: { canonical: "/faq" },
-};
+  path: "/faq",
+});
 
 const categories = [
   { id: "obecne", label: "OBECNÉ" },

@@ -2,13 +2,14 @@ import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Implementace strategie — Eva Sezemská",
   description:
     "Pomáhám dostat změny ze strategie na web. Rozdělíme si, co uděláte vy, co váš webmaster a co já, a nasazení koordinuji od struktury po Schema.org.",
-  alternates: { canonical: "/sluzby/implementace-strategie" },
-};
+  path: "/sluzby/implementace-strategie",
+});
 
 export default function Implementace() {
   return (

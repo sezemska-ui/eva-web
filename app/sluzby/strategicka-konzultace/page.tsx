@@ -2,13 +2,14 @@ import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
 import ConsultationForm from "@/components/ConsultationForm";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Strategická konzultace — Eva Sezemská",
   description:
     "Individuální 60minutová konzultace pro firmy, které nevědí, kde začít s viditelností ve vyhledávání a AI, a potřebují doporučení dalšího kroku.",
-  alternates: { canonical: "/sluzby/strategicka-konzultace" },
-};
+  path: "/sluzby/strategicka-konzultace",
+});
 
 export default function StrategickaKonzultace() {
   return (

@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SiteJsonLd from "@/components/SiteJsonLd";
 import "./globals.css";
+import { pageMetadata } from "@/lib/metadata";
 
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -32,25 +33,10 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.searchstrategy.cz"),
+  // Úvodní stránka nemá vlastní metadata, náhledy pro sdílení bere odsud
+  ...pageMetadata({ title: TITLE, description: DESCRIPTION, path: "/" }),
   title: { default: TITLE, template: "%s" },
-  description: DESCRIPTION,
-  alternates: { canonical: "/" },
   robots: { index: true, follow: true },
-  openGraph: {
-    type: "website",
-    locale: "cs_CZ",
-    url: "https://www.searchstrategy.cz",
-    siteName: TITLE,
-    title: TITLE,
-    description: DESCRIPTION,
-    images: [{ url: "/images/eva-portrait.png", width: 800, height: 800, alt: "Eva Sezemská" }],
-  },
-  twitter: {
-    card: "summary",
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ["/images/eva-portrait.png"],
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

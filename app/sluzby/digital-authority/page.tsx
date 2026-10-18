@@ -2,13 +2,14 @@ import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Digital Authority — Eva Sezemská",
   description:
     "Budování digitální autority skrze obsah a signály důvěryhodnosti — web, Google, média, katalogy a recenze skládané do konzistentního obrazu firmy.",
-  alternates: { canonical: "/sluzby/digital-authority" },
-};
+  path: "/sluzby/digital-authority",
+});
 
 export default function DigitalAuthority() {
   return (

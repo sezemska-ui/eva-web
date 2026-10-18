@@ -2,13 +2,14 @@ import Link from "next/link";
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Služby — Eva Sezemská",
   description:
     "Audit, strategie, implementace a digitální autorita — čtyři kroky k tomu, aby vás vyhledávače a AI dohledaly, pochopily a doporučily.",
-  alternates: { canonical: "/sluzby" },
-};
+  path: "/sluzby",
+});
 
 const services = [
   {

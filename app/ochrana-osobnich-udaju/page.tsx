@@ -1,13 +1,14 @@
 import { H1, H2, P, Section } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Ochrana osobních údajů — Eva Sezemská",
   description:
     "Zásady ochrany osobních údajů: jaké údaje Eva Sezemská shromažďuje, proč, jak dlouho je uchovává a jaká máte práva.",
-  alternates: { canonical: "/ochrana-osobnich-udaju" },
-};
+  path: "/ochrana-osobnich-udaju",
+});
 
 export default function PrivacyPolicy() {
   return (
