@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
         <P>
           Tyto zásady popisují, jaké osobní údaje na searchstrategy.cz
           shromažďuji, proč, jak dlouho je uchovávám a jaká máte práva. Platí
-          od 21. 9. 2026.
+          od 18. 10. 2026.
         </P>
       </Section>
 
@@ -45,11 +45,11 @@ export default function PrivacyPolicy() {
         </P>
         <P>
           <span className="font-semibold text-cream">Vstupní dotazník.</span>{" "}
-          Pokud vyplníte vstupní dotazník před naší schůzkou, ukládám údaje o
-          vaší firmě a kontaktní osobě (název firmy, jméno, e-mail, telefon,
-          web) a vaše odpovědi na otázky o byznysu, cílech a technickém
-          zázemí webu. Tyto údaje používám k přípravě naší první schůzky a
-          návrhu spolupráce.
+          Pokud vám po konzultaci pošlu vstupní dotazník a vyplníte ho,
+          ukládám údaje o vaší firmě a kontaktní osobě (název firmy, jméno,
+          e-mail, telefon, web) a vaše odpovědi na otázky o byznysu, cílech a
+          technickém zázemí webu. Tyto údaje používám k přípravě návrhu
+          spolupráce.
         </P>
         <P>
           <span className="font-semibold text-cream">
