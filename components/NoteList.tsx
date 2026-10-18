@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { formatNoteDate, type FieldNote } from "@/lib/fieldNotes";
+import { type FieldNote } from "@/lib/fieldNotes";
+import { NoteDates } from "./ArticleParts";
 
 // Seznam článků Field Notes: štítek (díl a datum) a název
 export default function NoteList({ notes, showPart }: { notes: FieldNote[]; showPart?: boolean }) {
@@ -13,7 +14,7 @@ export default function NoteList({ notes, showPart }: { notes: FieldNote[]; show
         >
           <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-cream/45">
             {showPart && note.part ? `${note.part} · ` : ""}
-            {formatNoteDate(note.datePublished)}
+            <NoteDates note={note} />
           </div>
           <h3 className="font-serif text-xl text-cream transition-colors group-hover:text-gold-light">
             {note.title}

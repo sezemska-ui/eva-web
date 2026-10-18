@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { H1, H2, P, Section, CtaBox } from "@/components/Ui";
-import { ArticleMeta } from "@/components/ArticleParts";
+import { ArticleMeta, AuthorBox } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs, FAQJsonLd } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import { getNote } from "@/lib/fieldNotes";
 
 const TITLE = "Jak funguje AI vyhledávání a čím se liší od Googlu — Eva Sezemská";
 const HEADLINE = "Jak funguje AI vyhledávání a čím se liší od klasického Googlu?";
@@ -15,7 +16,10 @@ export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
   path: URL_PATH,
-  article: { publishedTime: "2026-10-14" },
+  article: {
+    publishedTime: getNote(URL_PATH).datePublished,
+    modifiedTime: getNote(URL_PATH).dateModified,
+  },
 });
 
 const linkClass =
@@ -47,12 +51,11 @@ export default function Article() {
         headline={HEADLINE}
         description={DESCRIPTION}
         url={URL_PATH}
-        datePublished="2026-10-14"
       />
       <FAQJsonLd items={faq} />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Jak funguje AI vyhledávání" }]} />
-        <ArticleMeta category="Průvodce" date="14. 10. 2026" />
+        <ArticleMeta category="Průvodce" href="/field-notes/jak-funguje-ai-vyhledavani" />
         <H1>{HEADLINE}</H1>
         <P>
           <strong className={strongClass}>Autorka:</strong> Eva Sezemská, AI Search
@@ -389,6 +392,7 @@ export default function Article() {
             <P>{item.a}</P>
           </div>
         ))}
+        <AuthorBox />
       </Section>
     </>
   );

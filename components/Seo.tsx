@@ -1,28 +1,32 @@
 import Link from "next/link";
 import { SITE_URL } from "./SiteJsonLd";
+import { getNote } from "@/lib/fieldNotes";
 
+// Data publikace a aktualizace bere z lib/fieldNotes.ts
 export function ArticleJsonLd({
   headline,
   description,
   url,
-  datePublished,
 }: {
   headline: string;
   description: string;
   url: string;
-  datePublished: string;
 }) {
+  const note = getNote(url);
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline,
     description,
     url: `${SITE_URL}${url}`,
-    datePublished,
+    datePublished: note.datePublished,
+    dateModified: note.dateModified,
+    image: `${SITE_URL}/images/eva-portrait.png`,
     author: {
       "@type": "Person",
       name: "Eva Sezemská",
     },
+    publisher: { "@id": `${SITE_URL}/#business` },
   };
   return (
     <script

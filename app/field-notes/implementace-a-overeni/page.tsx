@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, AuthorBox, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -19,11 +19,10 @@ export default function Article() {
         headline="Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje ověření po nasazení."
         description="Případová studie o implementaci AI viditelnosti fotografky ve spolupráci s webmasterem a o ověření výsledků po nasazení."
         url="/field-notes/implementace-a-overeni"
-        datePublished="2026-09-15"
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Od strategie k nasazení" }]} />
-        <ArticleMeta category="Implementace strategie · Case Note · část 3/4" date="15. 9. 2026" />
+        <ArticleMeta category="Implementace strategie · Case Note · část 3/4" href="/field-notes/implementace-a-overeni" />
         <H1>
           Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje
           ověření po nasazení.
@@ -159,6 +158,7 @@ export default function Article() {
       </Section>
 
       <Section>
+        <AuthorBox />
         <RelatedNotes
           notes={[
             { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },

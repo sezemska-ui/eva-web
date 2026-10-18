@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, AuthorBox, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -19,11 +19,10 @@ export default function Article() {
         headline="Jak AI zaměnila identitu mé klientky — a co to prozradilo o její viditelnosti"
         description="Případová studie z auditu AI viditelnosti fotografky."
         url="/field-notes/proc-ai-zamenila-identitu"
-        datePublished="2026-08-20"
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Jak AI zaměnila identitu" }]} />
-        <ArticleMeta category="AI Search Visibility Audit · Case Note · část 1/4" date="20. 8. 2026" />
+        <ArticleMeta category="AI Search Visibility Audit · Case Note · část 1/4" href="/field-notes/proc-ai-zamenila-identitu" />
         <H1>Jak AI zaměnila identitu mé klientky — a co to prozradilo o její viditelnosti</H1>
         <P>
           Fotografka s kvalitním portfoliem a spokojenými klienty. A přesto ji
@@ -82,6 +81,7 @@ export default function Article() {
       </Section>
 
       <Section>
+        <AuthorBox />
         <RelatedNotes
           notes={[
             { title: "Co jsme museli nasadit, aby AI web přečetla", href: "/field-notes/co-jsme-museli-nasadit" },

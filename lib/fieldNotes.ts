@@ -8,7 +8,7 @@ export type FieldNote = {
   // Označení dílu v případové studii, např. „Díl 1/4“
   part?: string;
   datePublished: string; // RRRR-MM-DD
-  dateModified: string; // RRRR-MM-DD, poslední úprava obsahu
+  dateModified: string; // RRRR-MM-DD, poslední commit, který měnil text článku
 };
 
 export const fieldNotes: FieldNote[] = [
@@ -25,7 +25,7 @@ export const fieldNotes: FieldNote[] = [
     group: "caseStudy",
     part: "Díl 1/4",
     datePublished: "2026-08-20",
-    dateModified: "2026-10-14",
+    dateModified: "2026-10-11",
   },
   {
     href: "/field-notes/co-jsme-museli-nasadit",
@@ -33,7 +33,7 @@ export const fieldNotes: FieldNote[] = [
     group: "caseStudy",
     part: "Díl 2/4",
     datePublished: "2026-09-01",
-    dateModified: "2026-10-14",
+    dateModified: "2026-10-11",
   },
   {
     href: "/field-notes/implementace-a-overeni",
@@ -41,7 +41,7 @@ export const fieldNotes: FieldNote[] = [
     group: "caseStudy",
     part: "Díl 3/4",
     datePublished: "2026-09-15",
-    dateModified: "2026-10-14",
+    dateModified: "2026-10-11",
   },
   {
     href: "/field-notes/vysledky-po-31-dnech",
@@ -49,7 +49,7 @@ export const fieldNotes: FieldNote[] = [
     group: "caseStudy",
     part: "Mezikrok: výsledky po 31 dnech",
     datePublished: "2026-09-18",
-    dateModified: "2026-10-14",
+    dateModified: "2026-10-11",
   },
   {
     href: "/field-notes/jak-budovat-ai-viditelnost-v-case",
@@ -60,6 +60,12 @@ export const fieldNotes: FieldNote[] = [
     dateModified: "2026-10-11",
   },
 ];
+
+export function getNote(href: string): FieldNote {
+  const note = fieldNotes.find((n) => n.href === href);
+  if (!note) throw new Error(`Článek ${href} chybí v lib/fieldNotes.ts`);
+  return note;
+}
 
 // „2026-09-01“ → „1. 9. 2026“
 export function formatNoteDate(iso: string): string {
