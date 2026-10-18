@@ -78,8 +78,6 @@ export default function Article() {
             "I jedna nesrovnalost v datech (jméno, adresa, telefon) může znamenat, že vás AI zamění s někým jiným, nebo vás radši nezmíní vůbec.",
             "Chybějící struktura (schema markup, jasné nadpisy, lokalita v textu) dělá z kvalitního webu jen vizitku, ne zdroj pravdy pro AI.",
           ]}
-          ctaLabel="Probrat AI Search Visibility Audit →"
-          ctaHref="/sluzby/ai-search-visibility-audit"
         />
       </Section>
 

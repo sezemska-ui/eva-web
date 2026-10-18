@@ -1,6 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -63,11 +62,7 @@ export default function Implementace() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Máte strategii. Teď ji uvedeme do reality."
-          href={FORM_URL}
-          ctaLabel="Probrat implementaci →"
-        >
+        <CtaBox title="Máte strategii. Teď ji uvedeme do reality.">
           Pojďme probrat, jak by implementace mohla vypadat u vás.
         </CtaBox>
       </Section>

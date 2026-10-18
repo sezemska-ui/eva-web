@@ -17,7 +17,7 @@ Eva Sezemská pomáhá firmám zjistit, jak je dnes vidí vyhledávače a AI sys
 2. AI Search Strategie
 3. Implementace strategie
 4. Digital Authority
-5. Strategická konzultace (60 min)
+5. Strategická konzultace: 60 minut, 4 500 Kč, první krok každé spolupráce; cena se odečte z auditu
 
 ## Pro koho pracuje
 

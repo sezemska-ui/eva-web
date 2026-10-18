@@ -155,8 +155,6 @@ export default function Article() {
             "Validátory (schema.org, PageSpeed Insights) najdou chyby, které při běžném testování přehlédnete. Stojí za to je po nasazení spustit a jejich výsledky projít.",
             "Rychlost načítání není jen otázka pohodlí uživatele — ovlivňuje i to, jak snadno vás dokážou přečíst vyhledávače a AI systémy.",
           ]}
-          ctaLabel="Probrat Implementaci strategie →"
-          ctaHref="/sluzby/implementace-strategie"
         />
       </Section>
 

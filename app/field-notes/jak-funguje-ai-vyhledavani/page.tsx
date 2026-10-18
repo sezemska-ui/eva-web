@@ -376,13 +376,7 @@ export default function Article() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Jak vás AI vidí dnes?"
-          href="/sluzby/ai-search-visibility-audit"
-          ctaLabel="Zjistit, jak vás AI vidí →"
-          secondaryHref="/sluzby/strategicka-konzultace"
-          secondaryCtaLabel="Nevím, kde začít →"
-        >
+        <CtaBox title="Jak vás AI vidí dnes?">
           Zjistěte, jestli vás AI doporučuje, nebo místo vás vybírá konkurenci.
         </CtaBox>
       </Section>

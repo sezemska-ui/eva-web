@@ -1,8 +1,9 @@
 const SITE_URL = "https://www.searchstrategy.cz";
 export const CONSULTATION_FORM_URL = "https://script.google.com/macros/s/AKfycbyR-WfhVUrkw_K2-ENqtMZlUimWSXsH4rpW4NjmdaRP5an9X2cWGOt5p-ICPKcSHPA5qQ/exec";
+// Vstupní dotazník: na webu se nezobrazuje, posílá se klientům až po konzultaci
 export const FORM_URL = "https://script.google.com/macros/s/AKfycbzP3VLI0hSpFds4PHc9oMsynueY8snUzI_THmtx4B3K8AaZTFh6x-7B7YI1xFBMHg0P/exec";
 
-const services = [
+const services: { slug: string; name: string; description: string; price?: string }[] = [
   {
     slug: "ai-search-visibility-audit",
     name: "AI Search Visibility Audit",
@@ -32,6 +33,7 @@ const services = [
     name: "Strategická konzultace",
     description:
       "Individuální strategická konzultace zaměřená na zorientování v situaci firmy, posouzení její viditelnosti ve vyhledávání a AI a doporučení dalšího smysluplného kroku.",
+    price: "4500",
   },
 ];
 
@@ -104,6 +106,14 @@ export default function SiteJsonLd() {
         serviceType: s.name,
         provider: { "@id": `${SITE_URL}/#business` },
         areaServed: { "@type": "Country", name: "Česká republika" },
+        ...(s.price && {
+          offers: {
+            "@type": "Offer",
+            price: s.price,
+            priceCurrency: "CZK",
+            url: `${SITE_URL}/sluzby/${s.slug}`,
+          },
+        }),
       })),
     ],
   };

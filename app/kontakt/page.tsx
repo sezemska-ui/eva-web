@@ -1,12 +1,11 @@
-import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Section, ConsultationButton } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Kontakt — Eva Sezemská",
   description:
-    "Nejste si jistí, jak vás vyhledávače a AI systémy vnímají? Vyplňte krátký vstupní dotazník, nebo napište přímo.",
+    "Nejste si jistí, jak vás vyhledávače a AI systémy vnímají? Domluvte si konzultaci, nebo napište přímo.",
   path: "/kontakt",
 });
 export default function Kontakt() {
@@ -24,18 +23,12 @@ export default function Kontakt() {
       </Section>
       <Section>
         <div className="rounded-sm bg-cream p-6 text-ink">
-          <h2 className="mb-2 font-serif text-2xl text-ink">Vstupní dotazník</h2>
+          <h2 className="mb-2 font-serif text-2xl text-ink">Strategická konzultace</h2>
           <p className="mb-4 text-[15px] text-[#4b4536]">
-            Nejrychlejší cesta, jak začít — zabere 10–15 minut a pomůže mi
-            připravit náš první rozhovor tak, aby byl užitečný hned od
-            začátku.
+            Nejrychlejší cesta, jak začít — 60 minut na to, abychom společně
+            zjistili, kde je problém a jaký další krok dává smysl.
           </p>
-          <a
-            href={FORM_URL}
-            className="inline-block rounded-sm bg-navy-deep px-6 py-3 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-[#223652]"
-          >
-            Vyplnit vstupní dotazník →
-          </a>
+          <ConsultationButton />
         </div>
       </Section>
       <Section>

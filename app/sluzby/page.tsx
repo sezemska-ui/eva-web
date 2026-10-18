@@ -118,13 +118,10 @@ export default function Sluzby() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Kde začít?"
-          href="/sluzby/ai-search-visibility-audit"
-          ctaLabel="Zjistit, jak jste vidět →"
-        >
+        <CtaBox title="Kde začít?">
           Nevíte, proč vás zákazníci nenacházejí nebo nedostávají mezi
-          doporučeními? Začněte AI Search Visibility Auditem.
+          doporučeními? Začněte konzultací. Zjistíme, jestli je pro vás dalším
+          krokem AI Search Visibility Audit.
         </CtaBox>
       </Section>
     </>

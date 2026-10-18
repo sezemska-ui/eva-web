@@ -38,8 +38,9 @@ export default function PrivacyPolicy() {
           <span className="font-semibold text-cream">
             Konzultační formulář.
           </span>{" "}
-          Když si přes web domluvíte konzultaci, ukládám jméno, e-mail a
-          text vaší zprávy. Používám je výhradně k tomu, abych vám
+          Když si přes web domluvíte konzultaci, ukládám jméno, e-mail,
+          telefon (pokud ho uvedete), web firmy, navrhované termíny a text
+          vaší zprávy. Používám je výhradně k tomu, abych vám
           odpověděla a domluvila se s vámi na dalším postupu.
         </P>
         <P>
