@@ -1,6 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -53,11 +52,7 @@ export default function DigitalAuthority() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Budujte autoritu, kterou lze digitálně dohledat."
-          href={FORM_URL}
-          ctaLabel="Probrat Digital Authority →"
-        >
+        <CtaBox title="Budujte autoritu, kterou lze digitálně dohledat.">
           Pojďme probrat, jaké signály vaší firmě dnes chybí.
         </CtaBox>
       </Section>

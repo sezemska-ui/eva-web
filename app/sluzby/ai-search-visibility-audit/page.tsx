@@ -1,6 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -59,12 +58,9 @@ export default function Audit() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Zjistěte, koho systémy doporučují místo vás."
-          href={FORM_URL}
-          ctaLabel="Probrat AI Search Visibility Audit →"
-        >
-          Nejrychlejší cesta, jak začít, je krátký vstupní dotazník.
+        <CtaBox title="Zjistěte, koho systémy doporučují místo vás.">
+          Prvním krokem je konzultace. Pokud budete pokračovat auditem, cenu
+          konzultace odečtu z ceny auditu.
         </CtaBox>
       </Section>
     </>

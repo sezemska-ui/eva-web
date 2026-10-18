@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { H2, P, Section, ServiceCard, CtaBox, Annotated } from "@/components/Ui";
+import { H2, P, Section, ServiceCard, CtaBox, Annotated, ConsultationButton } from "@/components/Ui";
 import RecommendationTest from "@/components/RecommendationTest";
 import TamMotif from "@/components/TamMotif";
 import SignalFlow from "@/components/SignalFlow";
@@ -37,20 +37,7 @@ export default function Home() {
 
         <div className="mt-10 flex flex-col items-center gap-6">
           <SignalFlow />
-          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-5">
-            <Link
-              href="/sluzby/ai-search-visibility-audit"
-              className="inline-block rounded-sm bg-cream px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
-            >
-              Zjistit, jak jste vidět →
-            </Link>
-            <Link
-              href="/sluzby/strategicka-konzultace"
-              className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
-            >
-              Nevím, kde začít →
-            </Link>
-          </div>
+          <ConsultationButton tone="light" />
         </div>
       </Section>
 
@@ -209,13 +196,7 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <Section>
-        <CtaBox
-          title="Otázka není, jestli jste online."
-          href="/sluzby/ai-search-visibility-audit"
-          ctaLabel="Zjistit, jak jste vidět →"
-          secondaryHref="/sluzby/strategicka-konzultace"
-          secondaryCtaLabel="Nevím, kde začít →"
-        >
+        <CtaBox title="Otázka není, jestli jste online.">
           Otázka je, jestli jste tou odpovědí, kterou AI dá vašemu
           zákazníkovi.
         </CtaBox>

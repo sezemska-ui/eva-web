@@ -22,6 +22,38 @@ export default function StrategickaKonzultace() {
           Někdy stačí jeden rozhovor, aby bylo jasné, kde je skutečný problém
           a jaký další krok dává smysl.
         </P>
+
+        <div className="mt-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
+          <p className="mb-1 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span className="font-serif text-3xl text-cream">4 500 Kč</span>
+            <span className="text-[14px] text-cream/70">
+              nejsem plátce DPH · 60 minut · online nebo osobně
+            </span>
+          </p>
+          <p className="text-[14px] text-cream/70">
+            Pokud budete pokračovat AI Search Visibility Auditem, cenu
+            konzultace odečtu z ceny auditu.
+          </p>
+        </div>
+      </Section>
+
+      <Section>
+        <H2>Proč tato cena</H2>
+        <P>
+          Na každou konzultaci se připravuji dvě až dvě a půl hodiny předem.
+          Projdu váš web, profil na Googlu a otestuji, jak vás dnes vidí AI. Na
+          schůzku tak nepřicházím s prázdnýma rukama, ale s prvními zjištěními
+          o vaší firmě.
+        </P>
+      </Section>
+
+      <Section>
+        <H2>Konzultace je vždy první krok</H2>
+        <P>
+          Zjistíme, kde je skutečný problém a jaký další krok dává smysl. A obě
+          strany zjistíme, jestli si sedneme. Pokud vám nebudu umět pomoct,
+          řeknu vám to rovnou.
+        </P>
       </Section>
 
       <Section>
@@ -47,6 +79,42 @@ export default function StrategickaKonzultace() {
             </div>
           ))}
         </div>
+      </Section>
+
+      <Section>
+        <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
+          <blockquote className="flex flex-col gap-3 text-[15.5px] leading-relaxed text-cream/80">
+            <p>
+              „S Evou Sezemskou jsem spolupracovala na vylepšení svého webu a
+              její práci mohu jedině doporučit. Díky jejím odborným znalostem v
+              oblasti SEO, AI Search a optimalizace webu se jí podařilo společně
+              s IT specialistou dotáhnout můj web k dokonalosti.
+            </p>
+            <p>
+              Velmi oceňuji její profesionalitu, flexibilitu, pracovitost a
+              důraz na každý detail. Čas věnovaný spolupráci byl vždy maximálně
+              efektivně využitý a výsledky její práce mají skutečný přínos pro
+              mé podnikání. Díky jejímu úsilí je můj web lépe dohledatelný a mám
+              větší šanci oslovit nové klienty.
+            </p>
+            <p>
+              Pokud hledáte někoho, kdo své práci opravdu rozumí, přemýšlí nad
+              věcmi v souvislostech a odvádí svou práci s maximální péčí, Evu
+              mohu jedině doporučit. Děkuji za skvělou spolupráci! :)“
+            </p>
+          </blockquote>
+          <figcaption className="mt-4 font-mono text-[12px] text-cream/55">
+            Michaela Čížková, fotografka ·{" "}
+            <a
+              href="https://www.google.com/search?kgmid=/g/11zhdhh8r6"
+              target="_blank"
+              rel="noopener"
+              className="underline decoration-gold/40 underline-offset-4 hover:text-cream/80 hover:decoration-gold"
+            >
+              recenze na Googlu
+            </a>
+          </figcaption>
+        </figure>
       </Section>
 
       <Section>

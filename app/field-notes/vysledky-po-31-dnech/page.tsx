@@ -368,8 +368,6 @@ export default function Article() {
             "NAP konzistence je základ. Pokud se vaše adresa nebo telefon liší napříč katalogy, AI si vás může hůř ověřit jako důvěryhodnou entitu.",
             "Změny mohou být vidět rychle. Technická optimalizace může přinést měřitelný posun během měsíce — i když jde spíš o souhrn víc změn najednou, ne o jednu kouzelnou úpravu.",
           ]}
-          ctaLabel="Probrat AI Search Visibility Audit →"
-          ctaHref="/sluzby/ai-search-visibility-audit"
         />
       </Section>
 

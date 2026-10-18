@@ -1,6 +1,5 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
-import { FORM_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -57,11 +56,7 @@ export default function Strategie() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Máte audit. Teď potřebujete plán."
-          href={FORM_URL}
-          ctaLabel="Probrat strategii →"
-        >
+        <CtaBox title="Máte audit. Teď potřebujete plán.">
           Pojďme probrat, jak by mohla vypadat strategie pro vaši firmu.
         </CtaBox>
       </Section>

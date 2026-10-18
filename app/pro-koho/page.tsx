@@ -140,11 +140,7 @@ export default function ProKoho() {
       </Section>
 
       <Section>
-        <CtaBox
-          title="Nejste si jistí, kam patříte?"
-          href="/sluzby/strategicka-konzultace"
-          ctaLabel="Strategická konzultace (60 minut) →"
-        >
+        <CtaBox title="Nejste si jistí, kam patříte?">
           60 minut na to, abychom zjistili, kde začít.
         </CtaBox>
       </Section>

@@ -80,8 +80,6 @@ export default function Article() {
             "Klíčová slova musí být konkrétní a přirozená — obecné fráze jako „kvalitní služby“ AI nic neřeknou.",
             "Strategie není jednorázová oprava — je to soubor návazných kroků, které se ověřují měřením v čase, ne odhadem.",
           ]}
-          ctaLabel="Probrat AI Search Strategii →"
-          ctaHref="/sluzby/ai-search-strategie"
         />
       </Section>
 
