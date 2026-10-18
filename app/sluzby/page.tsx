@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
+import ServicePath from "@/components/ServicePath";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -10,33 +11,6 @@ export const metadata: Metadata = pageMetadata({
     "Audit, strategie, implementace a digitální autorita — čtyři kroky k tomu, aby vás vyhledávače a AI dohledaly, pochopily a doporučily.",
   path: "/sluzby",
 });
-
-const services = [
-  {
-    n: "01",
-    title: "AI Search Visibility Audit",
-    href: "/sluzby/ai-search-visibility-audit",
-    text: "Zjistíme, jak vás skutečně vidí Google a AI. Testuji konkrétní zákaznické scénáře, konkurenci, digitální entitu, obsah, technické základy a signály autority.",
-  },
-  {
-    n: "02",
-    title: "AI Search Strategie",
-    href: "/sluzby/ai-search-strategie",
-    text: "Z diagnostiky vytvoříme plán. Určíme, kde potřebujete být vidět, pro jaké rozhodovací situace a jaké změny k tomu povedou.",
-  },
-  {
-    n: "03",
-    title: "Implementace strategie",
-    href: "/sluzby/implementace-strategie",
-    text: "Strategie musí skončit změnou. Na začátku si rozdělíme, co uděláte vy, co váš webmaster a co já. Hlídám priority a pořadí kroků, aby se technické, obsahové, strukturální a lokální úpravy opravdu dostaly na web.",
-  },
-  {
-    n: "04",
-    title: "Digital Authority",
-    href: "/sluzby/digital-authority",
-    text: "Budujeme vaši digitální autoritu — důkazy, které podporují vaši důvěryhodnost. Web, Google, média, katalogy, recenze a další zdroje skládáme do konzistentního digitálního obrazu firmy.",
-  },
-];
 
 export default function Sluzby() {
   return (
@@ -63,58 +37,8 @@ export default function Sluzby() {
       </Section>
 
       <Section>
-        <H2>Nezačínáme optimalizací. Začínáme otázkou.</H2>
-        <div className="flex flex-col gap-4">
-          <Link href="/sluzby/ai-search-visibility-audit" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Víte, jak vás AI vidí a proč vás nevybírá?</span>
-            <span className="text-sm text-gold-light">AI Search Visibility Audit →</span>
-          </Link>
-          <Link href="/sluzby/ai-search-strategie" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Víte, co změnit?</span>
-            <span className="text-sm text-gold-light">AI Search Strategie →</span>
-          </Link>
-          <Link href="/sluzby/implementace-strategie" className="group flex flex-col gap-1 border-b border-white/10 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Potřebujete pomoct změny nasadit?</span>
-            <span className="text-sm text-gold-light">Implementace strategie →</span>
-          </Link>
-          <Link href="/sluzby/digital-authority" className="group flex flex-col gap-1 py-3 transition-colors hover:border-gold/40 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="text-[15px] text-cream/85">Má vaše značka dost důkazů, že jí lze věřit?</span>
-            <span className="text-sm text-gold-light">Digital Authority →</span>
-          </Link>
-        </div>
-
-        <div className="mt-6 flex items-center gap-3 text-cream/30">
-          <span className="h-px flex-1 bg-white/10" />
-          <span className="font-mono text-[11px] uppercase tracking-widest">nebo</span>
-          <span className="h-px flex-1 bg-white/10" />
-        </div>
-
-        <Link href="/sluzby/strategicka-konzultace" className="group mt-4 flex flex-col gap-1 rounded-sm border border-gold/30 bg-white/5 p-4 transition-colors hover:border-gold/50 sm:flex-row sm:items-center sm:justify-between">
-          <span className="text-[15px] text-cream/85">Nejste si jistí, kde začít?</span>
-          <span className="text-sm text-gold-light">Strategická konzultace →</span>
-        </Link>
-      </Section>
-
-      <Section>
-        {services.map((s) => (
-          <div key={s.n} className="mb-8 border-l border-white/15 pl-5">
-            <div className="mb-1 font-mono text-[12px] text-gold">{s.n}</div>
-            <h3 className="mb-2 font-serif text-xl text-cream">{s.title}</h3>
-            <p className="mb-2 text-[15px] text-cream/75">{s.text}</p>
-            <Link href={s.href} className="text-sm text-gold-light underline decoration-gold/40 underline-offset-4">
-              Prozkoumat →
-            </Link>
-          </div>
-        ))}
-      </Section>
-
-      <Section>
-        <H2>Jedna služba často nestačí.</H2>
-        <P>
-          Některé firmy potřebují pouze zjistit, kde mají problém. Jiné
-          potřebují celý proces od diagnostiky po dlouhodobé budování
-          digitální autority.
-        </P>
+        <H2>Jak vám mohu pomoci</H2>
+        <ServicePath />
       </Section>
 
       <Section>
