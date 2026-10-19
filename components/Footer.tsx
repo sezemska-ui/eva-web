@@ -21,7 +21,7 @@ export default function Footer() {
         <span className="hidden text-cream/20 lg:inline">·</span>
         <span className="flex gap-x-3">
           <a
-            href="https://www.linkedin.com/in/eva-sezemská-466292417/"
+            href="https://www.linkedin.com/in/eva-sezemska/"
             target="_blank"
             rel="noopener noreferrer"
             className={linkClass}
