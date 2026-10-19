@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta } from "@/components/ArticleParts";
+import { ArticleMeta, AuthorBox } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import { getNote } from "@/lib/fieldNotes";
 
 const TITLE = "Jak budovat AI viditelnost v čase — Eva Sezemská";
 const DESCRIPTION =
@@ -15,7 +16,10 @@ export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
   path: URL_PATH,
-  article: { publishedTime: "2026-10-04" },
+  article: {
+    publishedTime: getNote(URL_PATH).datePublished,
+    modifiedTime: getNote(URL_PATH).dateModified,
+  },
 });
 
 const linkClass =
@@ -30,11 +34,10 @@ export default function Article() {
         headline="Jak budovat AI viditelnost v čase"
         description={DESCRIPTION}
         url={URL_PATH}
-        datePublished="2026-10-04"
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "AI viditelnost v čase" }]} />
-        <ArticleMeta category="Budování AI viditelnosti · Case Note · část 4/4" date="4. 10. 2026" />
+        <ArticleMeta category="Budování AI viditelnosti · Case Note · část 4/4" href="/field-notes/jak-budovat-ai-viditelnost-v-case" />
         <H1>Jak budovat AI viditelnost v čase</H1>
         <P>
           <strong className={strongClass}>Autorka:</strong> Eva Sezemská, AI Search
@@ -482,6 +485,10 @@ export default function Article() {
             – technické požadavky a základní doporučení pro vyhledávání.
           </li>
         </ul>
+      </Section>
+
+      <Section>
+        <AuthorBox />
       </Section>
 
       <Section>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, AuthorBox, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -19,11 +19,10 @@ export default function Article() {
         headline="Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech"
         description="Případová studie o tom, jak se AI viditelnost fotografky Michaely Čížkové zvýšila z 20 % na 76,7 % za 31 dní."
         url="/field-notes/vysledky-po-31-dnech"
-        datePublished="2026-09-18"
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Výsledky po 31 dnech" }]} />
-        <ArticleMeta category="Výsledky a měření · samostatné testování" date="18. 9. 2026" />
+        <ArticleMeta category="Výsledky a měření · samostatné testování" href="/field-notes/vysledky-po-31-dnech" />
         <H1>Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech</H1>
         <P>
           Michaela Čížková je profesionální fotografka od roku 2022, žije v
@@ -372,6 +371,7 @@ export default function Article() {
       </Section>
 
       <Section>
+        <AuthorBox />
         <RelatedNotes
           notes={[
             { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },

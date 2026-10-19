@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { H1, H2, P, Section } from "@/components/Ui";
-import { ArticleMeta, WhatThisMeans, RelatedNotes } from "@/components/ArticleParts";
+import { ArticleMeta, WhatThisMeans, AuthorBox, RelatedNotes } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -19,11 +19,10 @@ export default function Article() {
         headline="Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“"
         description="Případová studie o technickém a strategickém nasazení pro AI viditelnost."
         url="/field-notes/co-jsme-museli-nasadit"
-        datePublished="2026-09-01"
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Co jsme museli nasadit" }]} />
-        <ArticleMeta category="AI Search Strategie · Case Note · část 2/4" date="1. 9. 2026" />
+        <ArticleMeta category="AI Search Strategie · Case Note · část 2/4" href="/field-notes/co-jsme-museli-nasadit" />
         <H1>Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“</H1>
         <P>
           Nový, rychlý, hezký web na Next.js. A přesto by bez dalšího kroku
@@ -84,6 +83,7 @@ export default function Article() {
       </Section>
 
       <Section>
+        <AuthorBox />
         <RelatedNotes
           notes={[
             { title: "Jak AI zaměnila identitu mé klientky", href: "/field-notes/proc-ai-zamenila-identitu" },

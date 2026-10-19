@@ -15,7 +15,7 @@ export function pageMetadata({
   title: string;
   description: string;
   path: string;
-  article?: { publishedTime: string };
+  article?: { publishedTime: string; modifiedTime?: string };
 }): Metadata {
   return {
     title,
@@ -29,7 +29,11 @@ export function pageMetadata({
       title,
       description,
       images: [IMAGE],
-      ...(article && { publishedTime: article.publishedTime, authors: ["Eva Sezemská"] }),
+      ...(article && {
+        publishedTime: article.publishedTime,
+        modifiedTime: article.modifiedTime,
+        authors: ["Eva Sezemská"],
+      }),
     },
     twitter: {
       card: "summary",
