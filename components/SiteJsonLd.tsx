@@ -56,7 +56,7 @@ export default function SiteJsonLd() {
           addressLocality: "Mladá Boleslav",
           addressCountry: "CZ",
         },
-        sameAs: ["https://www.linkedin.com/in/eva-sezemská-466292417/"],
+        sameAs: ["https://www.linkedin.com/in/eva-sezemska/"],
         worksFor: { "@id": `${SITE_URL}/#business` },
       },
       {

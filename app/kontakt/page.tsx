@@ -59,7 +59,7 @@ export default function Kontakt() {
         <P>
           Nebo přes{" "}
           <a
-            href="https://www.linkedin.com/in/eva-sezemská-466292417/"
+            href="https://www.linkedin.com/in/eva-sezemska/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
