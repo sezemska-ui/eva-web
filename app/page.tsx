@@ -44,35 +44,41 @@ export default function Home() {
 
       {/* 02 VÝSLEDKY A RECENZE */}
       <Section>
-        <div className="grid gap-8 md:grid-cols-2 md:items-start">
-          <div>
-            <BigNumber n="z 6 na 23" label="doporučení z 30 za 31 dní" />
-            <p className="mb-4 mt-4 text-[15.5px] leading-relaxed text-cream/75">
-              Fotografka Michaela Čížková z Českého ráje. Tři AI systémy
-              (ChatGPT, Google AI Overview a Perplexity) ji na začátku
-              doporučily v 6 z 30 testovaných zákaznických dotazů. Po 31 dnech
-              úprav ve 23.
-            </p>
-            <Link href="/field-notes/vysledky-po-31-dnech" className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold">
-              Celá případová studie →
-            </Link>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Review author="Michaela Čížková, fotografka">
-              „Díky jejímu úsilí je můj web lépe dohledatelný a mám větší
-              šanci oslovit nové klienty. (…) Pokud hledáte někoho, kdo své
-              práci opravdu rozumí, přemýšlí nad věcmi v souvislostech a
-              odvádí svou práci s maximální péčí, Evu mohu jedině doporučit.“
-            </Review>
-            <Review author="Lukáš Kaudl">
-              „Ještě předtím, než nás vůbec kontaktovala, si sama udělala
-              předběžný audit firmy, aby nám mohla ukázat konkrétní poznatky a
-              důkazy, jak si naše firma stojí z pohledu umělé inteligence. (…)
-              Dostali jsme naprosto skvělé výsledky. Podrobné analýzy,
-              konkrétní data, hodnoty a především jasná doporučení, co a jak
-              vylepšit. (…) Za nás naprostá špička!“
-            </Review>
-          </div>
+        <BigNumber n="z 6 na 23" label="doporučení z 30 za 31 dní" />
+        <p className="mb-4 mt-4 max-w-[60ch] text-[15.5px] leading-relaxed text-cream/75">
+          Fotografka Michaela Čížková z Českého ráje. Tři AI systémy
+          (ChatGPT, Google AI Overview a Perplexity) ji na začátku
+          doporučily v 6 z 30 testovaných zákaznických dotazů. Po 31 dnech
+          úprav ve 23.
+        </p>
+        <Link href="/field-notes/vysledky-po-31-dnech" className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold">
+          Celá případová studie →
+        </Link>
+
+        {/* Při třech a více recenzích předělat na posouvací řádek */}
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <Review
+            author="Michaela Čížková, fotografka"
+            service="Případová studie"
+            link={{ href: "/field-notes/vysledky-po-31-dnech", label: "Přečíst studii →" }}
+          >
+            „Díky jejímu úsilí je můj web lépe dohledatelný a mám větší
+            šanci oslovit nové klienty. (…) Pokud hledáte někoho, kdo své
+            práci opravdu rozumí, přemýšlí nad věcmi v souvislostech a
+            odvádí svou práci s maximální péčí, Evu mohu jedině doporučit.“
+          </Review>
+          <Review
+            author="Lukáš Kaudl, Přijedeme Umyjeme"
+            service="AI audit viditelnosti"
+            link={{ href: "/sluzby/ai-search-visibility-audit", label: "Poptat audit →" }}
+          >
+            „Ještě předtím, než nás vůbec kontaktovala, si sama udělala
+            předběžný audit firmy, aby nám mohla ukázat konkrétní poznatky a
+            důkazy, jak si naše firma stojí z pohledu umělé inteligence. (…)
+            Dostali jsme naprosto skvělé výsledky. Podrobné analýzy,
+            konkrétní data, hodnoty a především jasná doporučení, co a jak
+            vylepšit. (…) Za nás naprostá špička!“
+          </Review>
         </div>
       </Section>
 
@@ -160,10 +166,23 @@ export default function Home() {
   );
 }
 
-// Citace z recenze na Googlu
-function Review({ author, children }: { author: string; children: React.ReactNode }) {
+// Citace z recenze na Googlu: podpis, služba a odkaz na navazující stránku
+function Review({
+  author,
+  service,
+  link,
+  children,
+}: {
+  author: string;
+  service?: string;
+  link: { href: string; label: string };
+  children: React.ReactNode;
+}) {
   return (
-    <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
+    <figure className="flex flex-col rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
+      {service && (
+        <div className="mb-3 font-mono text-[11px] uppercase tracking-wider text-gold">{service}</div>
+      )}
       <blockquote className="text-[15.5px] leading-relaxed text-cream/80">
         <p>{children}</p>
       </blockquote>
@@ -178,6 +197,12 @@ function Review({ author, children }: { author: string; children: React.ReactNod
           recenze na Googlu
         </a>
       </figcaption>
+      <Link
+        href={link.href}
+        className="mt-auto self-start pt-5 text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+      >
+        {link.label}
+      </Link>
     </figure>
   );
 }
