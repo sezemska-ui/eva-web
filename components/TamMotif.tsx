@@ -6,6 +6,25 @@ const nodes = [
   { label: "MEDIA", angle: 198 },
 ];
 
+// Paprsky nezačínají ve středu, ale až za slovem „tam“, a končí kousek před
+// popiskem. Mezera kolem slova je elipsa (v procentech plochy motivu).
+const GAP_X = 22;
+const GAP_Y = 20;
+const END = 0.78;
+
+function ray(angleDeg: number, radius: number) {
+  const p = pointOnCircle(angleDeg, radius);
+  const dx = p.x - 50;
+  const dy = p.y - 50;
+  const start = 1 / Math.hypot(dx / GAP_X, dy / GAP_Y);
+  return {
+    x1: 50 + dx * start,
+    y1: 50 + dy * start,
+    x2: 50 + dx * END,
+    y2: 50 + dy * END,
+  };
+}
+
 function pointOnCircle(angleDeg: number, radius: number) {
   const rad = (angleDeg * Math.PI) / 180;
   return {
@@ -21,24 +40,22 @@ export default function TamMotif() {
     <div className="relative mx-auto h-[260px] w-full max-w-[420px] sm:h-[320px] sm:max-w-[480px]">
       <svg
         viewBox="0 0 100 100"
+        preserveAspectRatio="none"
         className="absolute inset-0 h-full w-full"
         aria-hidden="true"
       >
         {nodes.map((n, i) => {
-          const p = pointOnCircle(n.angle, radius);
+          const r = ray(n.angle, radius);
           return (
             <line
               key={n.label}
-              x1="50"
-              y1="50"
-              x2={p.x}
-              y2={p.y}
+              {...r}
               stroke="var(--gold)"
-              strokeWidth="0.25"
+              strokeWidth="1"
+              vectorEffect="non-scaling-stroke"
               opacity="0.45"
-              strokeDasharray="40"
               style={{
-                animation: `drawRay 0.6s ease-out ${0.3 + i * 0.08}s both`,
+                animation: `fadeRay 0.6s ease-out ${0.3 + i * 0.08}s both`,
               }}
             />
           );
