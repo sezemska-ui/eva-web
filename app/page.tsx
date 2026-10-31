@@ -57,27 +57,22 @@ export default function Home() {
               Celá případová studie →
             </Link>
           </div>
-          <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
-            <blockquote className="text-[15.5px] leading-relaxed text-cream/80">
-              <p>
-                „Díky jejímu úsilí je můj web lépe dohledatelný a mám větší
-                šanci oslovit nové klienty. (…) Pokud hledáte někoho, kdo své
-                práci opravdu rozumí, přemýšlí nad věcmi v souvislostech a
-                odvádí svou práci s maximální péčí, Evu mohu jedině doporučit.“
-              </p>
-            </blockquote>
-            <figcaption className="mt-4 font-mono text-[12px] text-cream/55">
-              Michaela Čížková, fotografka ·{" "}
-              <a
-                href="https://www.google.com/search?kgmid=/g/11zhdhh8r6"
-                target="_blank"
-                rel="noopener"
-                className="underline decoration-gold/40 underline-offset-4 hover:text-cream/80 hover:decoration-gold"
-              >
-                recenze na Googlu
-              </a>
-            </figcaption>
-          </figure>
+          <div className="flex flex-col gap-6">
+            <Review author="Michaela Čížková, fotografka">
+              „Díky jejímu úsilí je můj web lépe dohledatelný a mám větší
+              šanci oslovit nové klienty. (…) Pokud hledáte někoho, kdo své
+              práci opravdu rozumí, přemýšlí nad věcmi v souvislostech a
+              odvádí svou práci s maximální péčí, Evu mohu jedině doporučit.“
+            </Review>
+            <Review author="Lukáš Kaudl">
+              „Ještě předtím, než nás vůbec kontaktovala, si sama udělala
+              předběžný audit firmy, aby nám mohla ukázat konkrétní poznatky a
+              důkazy, jak si naše firma stojí z pohledu umělé inteligence. (…)
+              Dostali jsme naprosto skvělé výsledky. Podrobné analýzy,
+              konkrétní data, hodnoty a především jasná doporučení, co a jak
+              vylepšit. (…) Za nás naprostá špička!“
+            </Review>
+          </div>
         </div>
       </Section>
 
@@ -162,5 +157,27 @@ export default function Home() {
         </CtaBox>
       </Section>
     </>
+  );
+}
+
+// Citace z recenze na Googlu
+function Review({ author, children }: { author: string; children: React.ReactNode }) {
+  return (
+    <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
+      <blockquote className="text-[15.5px] leading-relaxed text-cream/80">
+        <p>{children}</p>
+      </blockquote>
+      <figcaption className="mt-4 font-mono text-[12px] text-cream/55">
+        {author} ·{" "}
+        <a
+          href="https://www.google.com/search?kgmid=/g/11zhdhh8r6"
+          target="_blank"
+          rel="noopener"
+          className="underline decoration-gold/40 underline-offset-4 hover:text-cream/80 hover:decoration-gold"
+        >
+          recenze na Googlu
+        </a>
+      </figcaption>
+    </figure>
   );
 }
