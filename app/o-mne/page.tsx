@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Eyebrow, H1, H2, P, Section, Annotated } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Photo, Section, Annotated } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -28,6 +28,12 @@ export default function OMne() {
           SEO, ale také to, jak dobře je firma pochopená, propojená a
           potvrzená v digitálním prostředí.
         </P>
+        <Photo
+          src="/images/eva-sezemska-pri-praci.webp"
+          alt="Eva Sezemská pracuje u notebooku"
+          width={1600}
+          height={900}
+        />
       </Section>
 
       <Section>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Photo, Section, CtaBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -94,6 +94,13 @@ export default function ProKoho() {
           možnostmi, když se zákazník zeptá vyhledávače nebo AI, koho si má
           vybrat.
         </P>
+        <Photo
+          src="/images/web-stranka-pro-koho.webp"
+          alt="Ruce na klávesnici notebooku, na obrazovce stránka Pro koho"
+          width={800}
+          height={600}
+          maxWidth={640}
+        />
       </Section>
 
       {groups.map((g) => (

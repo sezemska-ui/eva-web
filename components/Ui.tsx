@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -29,6 +30,33 @@ export function Lede({ children }: { children: React.ReactNode }) {
 
 export function P({ children }: { children: React.ReactNode }) {
   return <p className="mb-4 text-[15.5px] leading-relaxed text-cream/75">{children}</p>;
+}
+
+// Fotka přes šířku obsahu; menší originály omezit přes maxWidth, ať se nerozmazávají
+export function Photo({
+  src,
+  alt,
+  width,
+  height,
+  maxWidth,
+}: {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  maxWidth?: number;
+}) {
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      sizes={`(max-width: 896px) 100vw, ${maxWidth ?? 848}px`}
+      style={maxWidth ? { maxWidth } : undefined}
+      className="mt-8 h-auto w-full rounded-sm"
+    />
+  );
 }
 
 export function Section({ children }: { children: React.ReactNode }) {

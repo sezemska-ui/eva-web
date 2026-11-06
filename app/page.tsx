@@ -137,11 +137,11 @@ export default function Home() {
       <Section>
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image
-            src="/images/eva-portrait-laptop.png"
+            src="/images/eva-sezemska-portret.webp"
             alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi"
             width={220}
-            height={220}
-            className="h-[220px] w-[220px] flex-none rounded-sm object-cover grayscale-[15%]"
+            height={275}
+            className="h-[275px] w-[220px] flex-none rounded-sm object-cover"
           />
           <div>
             <H2>Dívám se na vyhledávání z druhé strany.</H2>
