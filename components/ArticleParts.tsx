@@ -32,7 +32,7 @@ export function AuthorBox() {
   return (
     <div className="mt-10 flex gap-4 rounded-sm first:mt-0 border border-gold/30 bg-white/5 p-5 sm:p-6">
       <Image
-        src="/images/eva-portrait.png"
+        src="/images/eva-portrait.jpg"
         alt="Eva Sezemská"
         width={56}
         height={56}

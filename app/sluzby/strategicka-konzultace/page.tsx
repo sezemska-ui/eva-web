@@ -1,4 +1,4 @@
-import { Eyebrow, H1, H2, P, Section } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Photo, Section } from "@/components/Ui";
 import ConsultationForm from "@/components/ConsultationForm";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
@@ -45,6 +45,13 @@ export default function StrategickaKonzultace() {
           schůzku tak nepřicházím s prázdnýma rukama, ale s prvními zjištěními
           o vaší firmě.
         </P>
+        <Photo
+          src="/images/konzultace-priprava.webp"
+          alt="Příprava na konzultaci: poznámkový blok, káva a notebook na stole"
+          width={680}
+          height={533}
+          maxWidth={560}
+        />
       </Section>
 
       <Section>
