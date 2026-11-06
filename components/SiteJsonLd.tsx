@@ -48,7 +48,7 @@ export default function SiteJsonLd() {
         jobTitle: "AI Search Strategist",
         description: "Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé inteligence.",
         url: SITE_URL,
-        image: `${SITE_URL}/images/eva-portrait.png`,
+        image: `${SITE_URL}/images/eva-portrait.jpg`,
         email: "sezemska@searchstrategy.cz",
         address: {
           "@type": "PostalAddress",
@@ -66,7 +66,7 @@ export default function SiteJsonLd() {
         name: "Eva Sezemská — AI Search Strategist",
         description: "Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé inteligence.",
         url: SITE_URL,
-        image: `${SITE_URL}/images/eva-portrait.png`,
+        image: `${SITE_URL}/images/eva-portrait.jpg`,
         email: "sezemska@searchstrategy.cz",
         address: {
           "@type": "PostalAddress",

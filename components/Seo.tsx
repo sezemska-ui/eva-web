@@ -21,7 +21,7 @@ export function ArticleJsonLd({
     url: `${SITE_URL}${url}`,
     datePublished: note.datePublished,
     dateModified: note.dateModified,
-    image: `${SITE_URL}/images/eva-portrait.png`,
+    image: `${SITE_URL}/images/eva-portrait.jpg`,
     author: {
       "@type": "Person",
       name: "Eva Sezemská",

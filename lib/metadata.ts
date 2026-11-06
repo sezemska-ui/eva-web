@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const SITE_NAME = "Eva Sezemská — AI Search Strategist";
-const IMAGE = { url: "/images/eva-portrait.png", width: 800, height: 800, alt: "Eva Sezemská" };
+const IMAGE = { url: "/images/eva-portrait.jpg", width: 800, height: 800, alt: "Eva Sezemská" };
 
 // Metadata stránky včetně náhledů pro sdílení. Next.js slučuje metadata jen mělce,
 // takže stránka bez vlastního openGraph by zdědila og:url, og:title a og:description
