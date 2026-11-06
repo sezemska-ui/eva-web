@@ -28,8 +28,8 @@ export default function Home() {
         </h1>
 
         <p className="mb-4 max-w-[52ch] text-[17px] leading-relaxed text-cream/90">
-          Pomáhám firmám a e-shopům modernizovat jejich SEO strategii pro éru
-          umělé inteligence.
+          Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé
+          inteligence.
         </p>
 
         <p className="mb-10 max-w-[52ch] text-[15px] text-cream/70">
