@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Služby — Eva Sezemská",
   description:
-    "Audit, strategie, implementace a digitální autorita — čtyři kroky k tomu, aby vás vyhledávače a AI dohledaly, pochopily a doporučily.",
+    "Úvodní konzultace, audit, strategie, implementace a budování důvěryhodnosti — kroky k tomu, aby vás vyhledávače a AI dohledaly, pochopily a doporučily.",
   path: "/sluzby",
 });
 
@@ -17,7 +17,7 @@ export default function Sluzby() {
     <>
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby" }]} />
-        <Eyebrow>Services / 01–04</Eyebrow>
+        <Eyebrow>Služby / 00–04</Eyebrow>
         <H1>Od prvního zjištění k dlouhodobé digitální autoritě.</H1>
         <P>
           Pomáhám firmám zjistit, co se děje ve chvíli, kdy jejich zákazník
@@ -45,7 +45,7 @@ export default function Sluzby() {
         <CtaBox title="Kde začít?">
           Nevíte, proč vás zákazníci nenacházejí nebo nedostávají mezi
           doporučeními? Začněte konzultací. Zjistíme, jestli je pro vás dalším
-          krokem AI Search Visibility Audit.
+          krokem Audit AI viditelnosti.
         </CtaBox>
       </Section>
     </>

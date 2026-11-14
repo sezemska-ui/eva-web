@@ -3,39 +3,69 @@ export const CONSULTATION_FORM_URL = "https://script.google.com/macros/s/AKfycby
 // Vstupní dotazník: na webu se nezobrazuje, posílá se klientům až po konzultaci
 export const FORM_URL = "https://script.google.com/macros/s/AKfycbzP3VLI0hSpFds4PHc9oMsynueY8snUzI_THmtx4B3K8AaZTFh6x-7B7YI1xFBMHg0P/exec";
 
-const services: { slug: string; name: string; description: string; price?: string }[] = [
+// Názvy, popisy a ceny musí odpovídat textům na webu (ServicePath.tsx a stránky služeb)
+const services: {
+  slug: string;
+  name: string;
+  description: string;
+  price?: string;
+  priceRange?: [number, number];
+}[] = [
+  {
+    slug: "strategicka-konzultace",
+    name: "Úvodní konzultace",
+    description:
+      "60 minut. Přijdu s prvními zjištěními o vaší firmě a řekneme si, jestli a jaký audit má smysl. Pokud se pro audit rozhodnete, cenu konzultace z něj odečtu.",
+    price: "4500",
+  },
   {
     slug: "ai-search-visibility-audit",
-    name: "AI Search Visibility Audit",
+    name: "Audit AI viditelnosti",
     description:
-      "Diagnostika toho, jak firmu skutečně vidí vyhledávače, AI systémy a digitální ekosystém. Testuje zákaznické scénáře, konkurenci, digitální entitu, obsah, technické základy a signály autority.",
+      "Diagnostika: zjistím, jestli vás AI doporučuje, odkud o vás čerpá, proč dává přednost konkurenci a co řešit jako první. Hotovo obvykle do 15 pracovních dnů.",
+    priceRange: [20000, 40000],
   },
   {
     slug: "ai-search-strategie",
-    name: "AI Search Strategie",
+    name: "Strategie AI viditelnosti",
     description:
-      "Strategie propojující zákaznické rozhodovací situace, vyhledávání, AI, obsah, digitální entitu, lokální viditelnost a autoritu do prioritizovaného plánu změn.",
+      "Zjištění z auditu převedu na hotové texty, strukturu webu a podklady, které váš webmaster jen vloží na web.",
+    priceRange: [15000, 50000],
   },
   {
     slug: "implementace-strategie",
-    name: "Implementace strategie",
+    name: "Implementace",
     description:
-      "Implementace technických, obsahových, strukturálních, lokálních a AI-readability změn podle priorit strategie. Práci si na začátku rozdělí klient, jeho webmaster a Eva Sezemská, která nasazení koordinuje.",
+      "Převezmu komunikaci s webmasterem, zkontroluji nasazení a ověřím, jak se změny projevují v odpovědích AI. Cenu řeknu předem.",
   },
   {
     slug: "digital-authority",
-    name: "Digital Authority",
+    name: "Budování důvěryhodnosti",
     description:
-      "Budování digitální autority firmy prostřednictvím konzistentních signálů z webu, Googlu, recenzí, médií, katalogů, partnerů a dalších zdrojů.",
-  },
-  {
-    slug: "strategicka-konzultace",
-    name: "Strategická konzultace",
-    description:
-      "Individuální strategická konzultace zaměřená na zorientování v situaci firmy, posouzení její viditelnosti ve vyhledávání a AI a doporučení dalšího smysluplného kroku.",
-    price: "4500",
+      "Dlouhodobá péče o recenze, profily, zmínky mimo váš web a pravidelné měření doporučení. Cena individuálně, obvykle na minimálně 3 měsíce.",
   },
 ];
+
+function serviceOffer(s: (typeof services)[number]) {
+  const url = `${SITE_URL}/sluzby/${s.slug}`;
+  if (s.price) {
+    return { "@type": "Offer", price: s.price, priceCurrency: "CZK", url };
+  }
+  if (s.priceRange) {
+    return {
+      "@type": "Offer",
+      priceCurrency: "CZK",
+      url,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: s.priceRange[0],
+        maxPrice: s.priceRange[1],
+        priceCurrency: "CZK",
+      },
+    };
+  }
+  return undefined;
+}
 
 export default function SiteJsonLd() {
   const graph = {
@@ -84,7 +114,7 @@ export default function SiteJsonLd() {
         founder: { "@id": `${SITE_URL}/#person` },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "AI Search služby",
+          name: "Služby a ceny",
           itemListElement: services.map((s) => ({
             "@type": "Offer",
             itemOffered: { "@id": `${SITE_URL}/sluzby/${s.slug}#service` },
@@ -108,14 +138,7 @@ export default function SiteJsonLd() {
         serviceType: s.name,
         provider: { "@id": `${SITE_URL}/#business` },
         areaServed: { "@type": "Country", name: "Česká republika" },
-        ...(s.price && {
-          offers: {
-            "@type": "Offer",
-            price: s.price,
-            priceCurrency: "CZK",
-            url: `${SITE_URL}/sluzby/${s.slug}`,
-          },
-        }),
+        ...(serviceOffer(s) && { offers: serviceOffer(s) }),
       })),
     ],
   };

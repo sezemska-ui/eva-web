@@ -71,7 +71,13 @@ export function Section({ children }: { children: React.ReactNode }) {
 export const CONSULTATION_HREF = "/sluzby/strategicka-konzultace";
 export const CONSULTATION_LABEL = "Domluvit konzultaci →";
 
-export function ConsultationButton({ tone = "dark" }: { tone?: "dark" | "light" }) {
+export function ConsultationButton({
+  tone = "dark",
+  label = CONSULTATION_LABEL,
+}: {
+  tone?: "dark" | "light";
+  label?: string;
+}) {
   const colors =
     tone === "dark"
       ? "bg-navy-deep text-cream hover:bg-[#223652]"
@@ -81,7 +87,7 @@ export function ConsultationButton({ tone = "dark" }: { tone?: "dark" | "light" 
       href={CONSULTATION_HREF}
       className={`inline-block rounded-sm px-6 py-3 text-sm font-semibold transition-colors duration-200 ${colors}`}
     >
-      {CONSULTATION_LABEL}
+      {label}
     </Link>
   );
 }
@@ -141,5 +147,33 @@ export function BigNumber({ n, label }: { n: string; label: string }) {
       <span className="font-serif text-4xl text-gold-light">{n}</span>
       <span className="text-[15px] text-cream/80">{label}</span>
     </div>
+  );
+}
+
+// Krémový rámeček s fakty o službě (cena, termín…). Na mobilu popisek nad textem.
+export function FactBox({ rows }: { rows: [string, string][] }) {
+  return (
+    <dl className="mt-6 rounded-sm border-l-4 border-gold bg-cream px-5 py-2 text-ink sm:px-6">
+      {rows.map(([label, text]) => (
+        <div
+          key={label}
+          className="flex flex-col gap-1 border-b border-ink/10 py-3 last:border-b-0 sm:flex-row sm:gap-6"
+        >
+          <dt className="flex-none pt-[2px] font-mono text-[11px] font-semibold uppercase tracking-wider text-[#7a6434] sm:w-32">
+            {label}
+          </dt>
+          <dd className="text-[15px] leading-relaxed text-ink">{text}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+// Řádek s cenou na stránce služby
+export function PriceNote({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="mt-6 rounded-sm border-l-4 border-gold bg-cream px-5 py-4 text-[15px] leading-relaxed text-ink sm:px-6">
+      <strong className="font-semibold">Cena:</strong> {children}
+    </p>
   );
 }

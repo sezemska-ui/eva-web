@@ -1,10 +1,10 @@
-import { Eyebrow, H1, H2, P, Section, CtaBox } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Section, CtaBox, FactBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
-  title: "AI Search Visibility Audit — Eva Sezemská",
+  title: "Audit AI viditelnosti — Eva Sezemská",
   description:
     "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
   path: "/sluzby/ai-search-visibility-audit",
@@ -14,14 +14,22 @@ export default function Audit() {
   return (
     <>
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "AI Search Visibility Audit" }]} />
-        <Eyebrow>AI Search Visibility Audit</Eyebrow>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Audit AI viditelnosti" }]} />
+        <Eyebrow>Audit AI viditelnosti</Eyebrow>
         <H1>Nejprve zjistíme, kde skutečně stojíte.</H1>
         <P>
           Než začneme něco optimalizovat, potřebujeme vědět, jak vaši firmu
           skutečně vidí vyhledávače, AI systémy a digitální ekosystém kolem
           vás.
         </P>
+        <FactBox
+          rows={[
+            ["Cena", "20 000–40 000 Kč podle velikosti firmy a webu. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace odečtu."],
+            ["Termín", "Obvykle do 15 pracovních dnů od potvrzení."],
+            ["Co dostanete", "Zprávu v PDF, webovou aplikaci s výsledky a 60minutové projití výsledků."],
+            ["Váš čas", "Nepotřebuji přístupy do webu ani analytiky. Váš čas zabere jen závěrečné projití, případně pár doplňujících otázek."],
+          ]}
+        />
       </Section>
 
       <Section>
@@ -33,23 +41,35 @@ export default function Audit() {
       </Section>
 
       <Section>
-        <H2>Co testuji</H2>
-        <div className="flex flex-col gap-5">
+        <H2>Co audit prověří</H2>
+        <ul className="flex flex-col gap-5">
           {[
-            ["01 — AI Visibility", "Jak si vedete v relevantních zákaznických dotazech."],
-            ["02 — Decision Moment", "Kdy vás systém může považovat za relevantní, ale přesto doporučí konkurenci."],
-            ["03 — Competition", "Kdo dostává doporučení místo vás."],
-            ["04 — Digital Entity", "Jak konzistentně systémy chápou, kdo jste — včetně shody NAP údajů napříč platformami."],
-            ["05 — Content", "Zda váš obsah odpovídá skutečným rozhodovacím situacím zákazníků."],
-            ["06 — Technical Foundation", "Co může vyhledávačům a AI komplikovat pochopení webu."],
-            ["07 — Authority", "Jaké externí signály potvrzují vaši existenci, relevanci a důvěryhodnost."],
+            ["01 — Viditelnost v AI", "Jestli vás ChatGPT, Perplexity a AI v Googlu doporučí u dotazů, které pokládají vaši zákazníci."],
+            ["02 — Chvíle rozhodnutí", "Kdy vás AI zná, a přesto doporučí někoho jiného."],
+            ["03 — Konkurence", "Koho AI doporučuje místo vás a čím ji přesvědčil."],
+            ["04 — Údaje o firmě", "Jestli vás AI správně pozná: shoduje se název, adresa a telefon všude, kde o vás čte?"],
+            ["05 — Obsah webu", "Jestli web odpovídá na otázky, které zákazníci řeší, když se rozhodují."],
+            ["06 — Technické základy", "Co brání vyhledávačům a AI web přečíst."],
+            ["07 — Důvěryhodnost", "Co o vás říkají jiné zdroje: recenze, katalogy, média."],
           ].map(([t, d]) => (
-            <div key={t} className="border-l border-white/15 pl-5">
+            <li key={t} className="border-l border-white/15 pl-5">
               <h3 className="mb-1 font-serif text-lg text-cream">{t}</h3>
               <p className="text-[15px] text-cream/75">{d}</p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
+      </Section>
+
+      <Section>
+        <H2>Jak testuji</H2>
+        <P>
+          Každý audit stojí na skutečných testech, ne na odhadech. Dotazy, které
+          by položili vaši zákazníci, zadávám ve třech nástrojích – ChatGPT,
+          Perplexity a AI v Googlu. Každý dotaz opakuji, protože AI neodpovídá
+          pokaždé stejně, a každou odpověď ukládám jako doklad. Ve zprávě
+          rozlišuji, co je ověřené, co je pravděpodobné a co je potřeba ještě
+          ověřit.
+        </P>
       </Section>
 
       <Section>

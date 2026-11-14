@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 const recommended = [
   { name: "Zámecký Hotel Hrubá Skála", note: "wellness vtesané do skalního masivu, romantická zámecká atmosféra" },
   { name: "Grand Hotel Praha (Jičín)", note: "privátní wellness centrum v historickém centru" },
@@ -11,8 +7,6 @@ const recommended = [
 ];
 
 export default function RecommendationTest() {
-  const [revealed, setRevealed] = useState(false);
-
   return (
     <div className="rounded-sm border border-white/10 bg-navy-mid/40 p-6 md:p-8">
       <div className="mb-5 font-mono text-[11px] uppercase tracking-widest text-cream/45">
@@ -23,24 +17,20 @@ export default function RecommendationTest() {
         „Romantický wellness hotel v Českém ráji“
       </p>
 
-      {!revealed ? (
-        <button
-          onClick={() => setRevealed(true)}
-          className="rounded-sm bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
-        >
+      {/* <details> funguje i bez JavaScriptu a seznam je ve zdrojovém kódu stránky */}
+      <details className="group">
+        <summary className="inline-block cursor-pointer list-none rounded-sm bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light group-open:hidden [&::-webkit-details-marker]:hidden">
           Zobrazit, koho AI doporučila →
-        </button>
-      ) : (
+        </summary>
         <div className="animate-[fadeInUp_0.4s_ease-out_both]">
           <div className="mb-4 font-mono text-[11px] uppercase tracking-widest text-gold">
             AI doporučila těchto 5 podniků
           </div>
           <ul className="flex flex-col gap-3">
-            {recommended.map((r, i) => (
+            {recommended.map((r) => (
               <li
                 key={r.name}
                 className="flex flex-col gap-0.5 border-b border-white/10 pb-3 last:border-b-0"
-                style={{ animationDelay: `${i * 0.06}s` }}
               >
                 <span className="text-[15px] font-medium text-cream">{r.name}</span>
                 <span className="text-[13px] text-cream/55">{r.note}</span>
@@ -53,7 +43,7 @@ export default function RecommendationTest() {
             přichází úplně.
           </p>
         </div>
-      )}
+      </details>
     </div>
   );
 }
