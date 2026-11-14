@@ -258,7 +258,7 @@ const obecneQuestions = [
     q: "Kolik mi spolupráce zabere času?",
     a: (
       <P>
-        U auditu téměř žádný. Nepotřebuji přístupy, vycházím z
+        U auditu téměř žádný. Nepotřebuji přístupy do webu, vycházím z
         veřejně dostupných zdrojů. Váš čas zabere úvodní
         konzultace a hodinové projití výsledků.
       </P>
@@ -328,7 +328,7 @@ const obecnePlain = [
   },
   {
     q: obecneQuestions[12].q,
-    a: "U auditu téměř žádný. Nepotřebuji přístupy, vycházím z veřejně dostupných zdrojů. Váš čas zabere úvodní konzultace a hodinové projití výsledků.",
+    a: "U auditu téměř žádný. Nepotřebuji přístupy do webu, vycházím z veřejně dostupných zdrojů. Váš čas zabere úvodní konzultace a hodinové projití výsledků.",
   },
   {
     q: obecneQuestions[13].q,
