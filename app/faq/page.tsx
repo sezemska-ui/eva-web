@@ -224,7 +224,7 @@ const obecneQuestions = [
     q: "Kolik stojí audit AI viditelnosti?",
     a: (
       <P>
-        Obvykle 20 000–40 000 Kč podle velikosti firmy a webu.
+        Obvykle 20 000–40 000 Kč podle velikosti firmy a webu.
         Živnostníci a malé firmy jsou u spodní hranice, hotely s
         vícejazyčným webem nebo firmy s více provozovnami u horní.
         Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace
@@ -316,7 +316,7 @@ const obecnePlain = [
   },
   {
     q: obecneQuestions[9].q,
-    a: "Obvykle 20 000–40 000 Kč podle velikosti firmy a webu. Živnostníci a malé firmy jsou u spodní hranice, hotely s vícejazyčným webem nebo firmy s více provozovnami u horní. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace z auditu odečtu.",
+    a: "Obvykle 20 000–40 000 Kč podle velikosti firmy a webu. Živnostníci a malé firmy jsou u spodní hranice, hotely s vícejazyčným webem nebo firmy s více provozovnami u horní. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace z auditu odečtu.",
   },
   {
     q: obecneQuestions[10].q,

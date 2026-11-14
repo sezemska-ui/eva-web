@@ -29,7 +29,7 @@ export function Lede({ children }: { children: React.ReactNode }) {
 }
 
 export function P({ children }: { children: React.ReactNode }) {
-  return <p className="mb-4 text-[15.5px] leading-relaxed text-cream/75">{children}</p>;
+  return <p className="mb-4 max-w-[65ch] text-[15.5px] leading-relaxed text-cream/75">{children}</p>;
 }
 
 // Fotka přes šířku obsahu; menší originály omezit přes maxWidth, ať se nerozmazávají
@@ -162,18 +162,27 @@ export function FactBox({ rows }: { rows: [string, string][] }) {
           <dt className="flex-none pt-[2px] font-mono text-[11px] font-semibold uppercase tracking-wider text-[#7a6434] sm:w-32">
             {label}
           </dt>
-          <dd className="text-[15px] leading-relaxed text-ink">{text}</dd>
+          <dd className="max-w-[60ch] text-[15px] leading-relaxed text-ink">{text}</dd>
         </div>
       ))}
     </dl>
   );
 }
 
-// Řádek s cenou na stránce služby
-export function PriceNote({ children }: { children: React.ReactNode }) {
+
+// Seznam se zlatými pomlčkami (stejný styl jako „Pro koho nejsem“)
+export function DashList({ items }: { items: string[] }) {
   return (
-    <p className="mt-6 rounded-sm border-l-4 border-gold bg-cream px-5 py-4 text-[15px] leading-relaxed text-ink sm:px-6">
-      <strong className="font-semibold">Cena:</strong> {children}
-    </p>
+    <ul className="mb-4 flex max-w-[65ch] flex-col">
+      {items.map((t) => (
+        <li
+          key={t}
+          className="flex gap-4 border-b border-white/10 py-3 text-[15.5px] leading-relaxed text-cream/80 last:border-b-0"
+        >
+          <span aria-hidden="true" className="flex-none font-mono text-[13px] text-gold">—</span>
+          <span>{t}</span>
+        </li>
+      ))}
+    </ul>
   );
 }

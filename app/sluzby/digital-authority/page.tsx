@@ -1,4 +1,4 @@
-import { Eyebrow, H1, H2, P, Section, CtaBox, PriceNote } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Section, CtaBox, FactBox, DashList } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -18,22 +18,27 @@ export default function DigitalAuthority() {
         <Eyebrow>Budování důvěryhodnosti</Eyebrow>
         <H1>Vaše firma má autoritu. Je vidět i digitálně?</H1>
         <P>Dobrá firma nemusí být automaticky dobře pochopitelná digitálními systémy.</P>
-        <PriceNote>
-          individuálně, obvykle jako měsíční spolupráce na minimálně 3 měsíce. AI reaguje na změny postupně, proto má smysl měřit delší dobu.
-        </PriceNote>
+        <FactBox
+          rows={[
+            ["Cena", "Individuálně, obvykle jako měsíční spolupráce."],
+            ["Doba", "Minimálně 3 měsíce. AI reaguje na změny postupně, proto má smysl měřit delší dobu."],
+          ]}
+        />
       </Section>
 
       <Section>
         <H2>Co dostanete</H2>
         <P>Každý měsíc:</P>
-        <ul className="mb-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-cream/80 marker:text-gold">
-          <li>zopakuji test klíčových dotazů a ukážu, jak se počet doporučení mění,</li>
-          <li>pomohu s recenzemi – jak o ně žádat a jak na ně odpovídat,</li>
-          <li>udržím aktuální údaje na Googlu, Firmy.cz a v oborových katalozích,</li>
-          <li>navrhnu, kde a jak získat zmínky mimo váš web (místní média, oborové portály, partneři),</li>
-          <li>navrhnu obsah, který vaši odbornost dokládá – případové studie, reference s čísly,</li>
-          <li>shrnu výsledky a domluvíme další kroky.</li>
-        </ul>
+        <DashList
+          items={[
+            "zopakuji test klíčových dotazů a ukážu, jak se počet doporučení mění,",
+            "pomohu s recenzemi – jak o ně žádat a jak na ně odpovídat,",
+            "udržím aktuální údaje na Googlu, Firmy.cz a v oborových katalozích,",
+            "navrhnu, kde a jak získat zmínky mimo váš web (místní média, oborové portály, partneři),",
+            "navrhnu obsah, který vaši odbornost dokládá – případové studie, reference s čísly,",
+            "shrnu výsledky a domluvíme další kroky.",
+          ]}
+        />
       </Section>
 
       <Section>

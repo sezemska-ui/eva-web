@@ -1,4 +1,4 @@
-import { Eyebrow, H1, H2, P, Section, CtaBox, PriceNote } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Section, CtaBox, FactBox, DashList } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -22,9 +22,12 @@ export default function Strategie() {
           rozhodovací situace, vyhledávání, AI, obsah, digitální entitu a
           autoritu.
         </P>
-        <PriceNote>
-          15 000–50 000 Kč podle rozsahu. Přesnou cenu stanovím podle výsledků auditu.
-        </PriceNote>
+        <FactBox
+          rows={[
+            ["Cena", "15 000–50 000 Kč podle rozsahu. Přesnou cenu stanovím podle výsledků auditu."],
+            ["Výstup", "Podklady připravené k vložení na web a plán kroků s prioritami."],
+          ]}
+        />
       </Section>
 
       <Section>
@@ -33,17 +36,15 @@ export default function Strategie() {
           Strategie je rozpis opravy. Zjištění z auditu převedu na podklady, se
           kterými můžete vy nebo váš webmaster rovnou pracovat:
         </P>
-        <ul className="mb-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-cream/80 marker:text-gold">
-          <li>návrh struktury webu – které stránky přidat, upravit nebo sloučit,</li>
-          <li>hotové texty klíčových stránek, které odpovídají na skutečné otázky vašich zákazníků,</li>
-          <li>podklady pro strukturovaná data – strojově čitelné údaje o firmě a nabídce pro vyhledávače a AI,</li>
-          <li>doporučení pro profily na Googlu, Firmy.cz a dalších místech, odkud AI čerpá,</li>
-          <li>témata dalšího obsahu a pořadí, v jakém je zpracovat.</li>
-        </ul>
-        <P>
-          Výstupem jsou podklady připravené k vložení na web a plán kroků s
-          prioritami.
-        </P>
+        <DashList
+          items={[
+            "návrh struktury webu – které stránky přidat, upravit nebo sloučit,",
+            "hotové texty klíčových stránek, které odpovídají na skutečné otázky vašich zákazníků,",
+            "podklady pro strukturovaná data – strojově čitelné údaje o firmě a nabídce pro vyhledávače a AI,",
+            "doporučení pro profily na Googlu, Firmy.cz a dalších místech, odkud AI čerpá,",
+            "témata dalšího obsahu a pořadí, v jakém je zpracovat.",
+          ]}
+        />
       </Section>
 
       <Section>
@@ -56,17 +57,19 @@ export default function Strategie() {
 
       <Section>
         <H2>Strategie řeší</H2>
-        <ul className="list-inside list-disc text-[15px] text-cream/75 space-y-1">
-          <li>klíčové zákaznické scénáře</li>
-          <li>priority</li>
-          <li>obsahovou architekturu</li>
-          <li>digitální entitu</li>
-          <li>lokální viditelnost</li>
-          <li>AI Search</li>
-          <li>externí zdroje a signály autority</li>
-          <li>technické priority</li>
-          <li>měření</li>
-        </ul>
+        <DashList
+          items={[
+            "klíčové zákaznické scénáře",
+            "priority",
+            "obsahovou architekturu",
+            "digitální entitu",
+            "lokální viditelnost",
+            "AI Search",
+            "externí zdroje a signály autority",
+            "technické priority",
+            "měření",
+          ]}
+        />
       </Section>
 
       <Section>

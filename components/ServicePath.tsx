@@ -6,21 +6,21 @@ const steps = [
   {
     label: "00",
     title: "Úvodní konzultace",
-    price: "4 500 Kč",
+    price: "4 500 Kč",
     href: "/sluzby/strategicka-konzultace",
     text: "60 minut. Přijdu s prvními zjištěními o vaší firmě a řekneme si, jestli a jaký audit má smysl. Pokud se pro audit rozhodnete, cenu konzultace z něj odečtu.",
   },
   {
     label: "01",
     title: "Audit AI viditelnosti",
-    price: "20 000–40 000 Kč",
+    price: "20 000–40 000 Kč",
     href: "/sluzby/ai-search-visibility-audit",
     text: "Diagnostika: zjistím, jestli vás AI doporučuje, odkud o vás čerpá, proč dává přednost konkurenci a co řešit jako první. Hotovo obvykle do 15 pracovních dnů.",
   },
   {
     label: "02",
     title: "Strategie AI viditelnosti",
-    price: "15 000–50 000 Kč",
+    price: "15 000–50 000 Kč",
     href: "/sluzby/ai-search-strategie",
     text: "Zjištění z auditu převedu na hotové texty, strukturu webu a podklady, které váš webmaster jen vloží na web.",
   },
@@ -48,22 +48,42 @@ export default function ServicePath() {
         vám dává smysl.
       </p>
       <ol className="flex flex-col border-l border-white/15 pl-5">
-        {steps.map((s) => (
-          <li key={s.href} className="border-b border-white/10 py-5 first:pt-0 last:border-b-0 last:pb-0">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-gold">
-              {s.label}
-            </div>
-            <h3 className="mb-1 font-serif text-xl text-cream">{s.title}</h3>
-            <p className="mb-2 text-[15px] font-semibold text-gold-light">{s.price}</p>
-            <p className="mb-2 text-[15px] text-cream/75">{s.text}</p>
-            <Link
-              href={s.href}
-              className="text-sm text-gold-light underline decoration-gold/40 underline-offset-4 hover:decoration-gold"
+        {steps.map((s, i) => {
+          const featured = i === 0;
+          return (
+            <li
+              key={s.href}
+              className={
+                featured
+                  ? "mb-5 rounded-sm border border-gold/45 bg-gold/[0.06] p-5 sm:p-6"
+                  : "border-b border-white/10 py-5 last:border-b-0 last:pb-0"
+              }
             >
-              Více →
-            </Link>
-          </li>
-        ))}
+              <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-gold">
+                {s.label}
+                {featured && <span className="text-gold-light"> · Začněte zde</span>}
+              </div>
+              {/* Ceník jako menu: na počítači název, tečkovaná linka a cena na jednom řádku */}
+              <div className="mb-2 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
+                <h3 className="font-serif text-xl text-cream">{s.title}</h3>
+                <span
+                  aria-hidden="true"
+                  className="hidden min-w-8 flex-1 border-b border-dotted border-gold/35 sm:block"
+                />
+                <p className="whitespace-nowrap text-[15px] font-semibold tabular-nums text-gold-light">
+                  {s.price}
+                </p>
+              </div>
+              <p className="mb-2 max-w-[65ch] text-[15px] leading-relaxed text-cream/75">{s.text}</p>
+              <Link
+                href={s.href}
+                className="text-sm text-gold-light underline decoration-gold/40 underline-offset-4 hover:decoration-gold"
+              >
+                Více →
+              </Link>
+            </li>
+          );
+        })}
       </ol>
       <div className="mt-10 flex flex-col gap-6">
         <details className="group border-l-2 border-gold pl-5">

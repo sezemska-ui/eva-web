@@ -1,4 +1,4 @@
-import { Eyebrow, H1, H2, P, Section, CtaBox, PriceNote } from "@/components/Ui";
+import { Eyebrow, H1, H2, P, Section, CtaBox, FactBox, DashList } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
@@ -22,9 +22,11 @@ export default function Implementace() {
           pomáhám změny dostat do webu a digitálního ekosystému firmy. Na
           začátku si rozdělíme, co uděláte vy, co váš webmaster a co já.
         </P>
-        <PriceNote>
-          podle rozsahu, vždy ji řeknu předem.
-        </PriceNote>
+        <FactBox
+          rows={[
+            ["Cena", "Podle rozsahu, vždy ji řeknu předem."],
+          ]}
+        />
       </Section>
 
       <Section>
@@ -34,12 +36,14 @@ export default function Implementace() {
           technické detaily, převezmu komunikaci s webmasterem za vás – vím, co
           přesně potřebuje, a ušetříte si vysvětlování i čas:
         </P>
-        <ul className="mb-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-cream/80 marker:text-gold">
-          <li>předám webmasterovi zadání a podklady a zodpovím jeho dotazy,</li>
-          <li>zkontroluji, že je vše nasazené správně (texty, strukturovaná data, technická nastavení),</li>
-          <li>upravím profily na Googlu, Firmy.cz a dalších místech, pokud mi k nim dáte přístup,</li>
-          <li>po nasazení ověřím, jak se změny projevují v odpovědích AI.</li>
-        </ul>
+        <DashList
+          items={[
+            "předám webmasterovi zadání a podklady a zodpovím jeho dotazy,",
+            "zkontroluji, že je vše nasazené správně (texty, strukturovaná data, technická nastavení),",
+            "upravím profily na Googlu, Firmy.cz a dalších místech, pokud mi k nim dáte přístup,",
+            "po nasazení ověřím, jak se změny projevují v odpovědích AI.",
+          ]}
+        />
       </Section>
 
       <Section>

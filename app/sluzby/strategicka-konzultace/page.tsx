@@ -25,7 +25,7 @@ export default function StrategickaKonzultace() {
 
         <div className="mt-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
           <p className="mb-1 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="font-serif text-3xl text-cream">4 500 Kč</span>
+            <span className="font-serif text-3xl text-cream">4 500 Kč</span>
             <span className="text-[14px] text-cream/70">
               nejsem plátce DPH · 60 minut · online nebo osobně
             </span>

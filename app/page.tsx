@@ -22,7 +22,8 @@ export default function Home() {
         </div>
 
         <h1 className="mb-6 font-serif text-4xl leading-[1.15] tracking-tight text-cream md:text-5xl">
-          Doporučí vás AI, když se zákazník zeptá na váš obor?
+          Doporučí vás AI, když se zákazník zeptá na{" "}
+          <span className="italic text-gold-light">váš obor</span>?
         </h1>
 
         <p className="mb-4 max-w-[56ch] text-[17px] leading-relaxed text-cream/90">
