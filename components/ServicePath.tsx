@@ -65,10 +65,11 @@ export default function ServicePath() {
           </li>
         ))}
       </ol>
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
-        <div>
+      <div className="mt-10 flex flex-col gap-8">
+        <div className="border-l-2 border-gold pl-5">
+          <div className="mb-1 font-mono text-[11px] uppercase tracking-wider text-gold">Cena</div>
           <h3 className="mb-2 font-serif text-lg text-cream">Na čem cena závisí?</h3>
-          <p className="text-[14.5px] leading-relaxed text-cream/70">
+          <p className="max-w-[62ch] text-[15px] leading-relaxed text-cream/75">
             Spodní hranice odpovídá živnostníkům a malým firmám do tří
             zaměstnanců s jednoduchým webem. Horní hranice se týká například
             hotelu s vícejazyčným webem, mnoha službami nebo několika
@@ -77,9 +78,10 @@ export default function ServicePath() {
             konzultaci.
           </p>
         </div>
-        <div>
+        <div className="border-l-2 border-gold pl-5">
+          <div className="mb-1 font-mono text-[11px] uppercase tracking-wider text-gold">Postup</div>
           <h3 className="mb-2 font-serif text-lg text-cream">Proč jsou kroky oddělené?</h3>
-          <p className="text-[14.5px] leading-relaxed text-cream/70">
+          <p className="max-w-[62ch] text-[15px] leading-relaxed text-cream/75">
             Nemusíte hned investovat do celého řešení. Audit vám ukáže, co a v
             jakém pořadí má smysl řešit. Některé kroky zvládnete sami nebo s
             webmasterem, jiné můžete nechat na později. Rozhodujete se postupně,
