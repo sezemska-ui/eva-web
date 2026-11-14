@@ -27,7 +27,7 @@ export default function Audit() {
             ["Cena", "20 000–40 000 Kč podle velikosti firmy a webu. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace odečtu."],
             ["Termín", "Obvykle do 15 pracovních dnů od potvrzení."],
             ["Co dostanete", "Zprávu v PDF, webovou aplikaci s výsledky a 60minutové projití výsledků."],
-            ["Váš čas", "Nepotřebuji přístupy do webu ani analytiky. Váš čas zabere jen závěrečné projití, případně pár doplňujících otázek."],
+            ["Váš čas", "Nepotřebuji přístupy do webu. Váš čas zabere jen závěrečné projití, případně pár doplňujících otázek."],
           ]}
         />
       </Section>
