@@ -4,7 +4,8 @@
 export type FieldNote = {
   href: string;
   title: string;
-  group: "guide" | "caseStudy";
+  // guide = průvodce, caseStudy = série o fotografce, audit = samostatné případové studie z auditů
+  group: "guide" | "caseStudy" | "audit";
   // Označení dílu v případové studii, např. „Díl 1/4“
   part?: string;
   datePublished: string; // RRRR-MM-DD
@@ -12,6 +13,13 @@ export type FieldNote = {
 };
 
 export const fieldNotes: FieldNote[] = [
+  {
+    href: "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad",
+    title: "Případová studie: Jak AI vyhledávače doporučují firmu na čištění fasád",
+    group: "audit",
+    datePublished: "2026-11-14",
+    dateModified: "2026-11-14",
+  },
   {
     href: "/field-notes/jak-funguje-ai-vyhledavani",
     title: "Jak funguje AI vyhledávání a čím se liší od klasického Googlu",
@@ -77,6 +85,9 @@ const byNewest = (a: FieldNote, b: FieldNote) => b.datePublished.localeCompare(a
 
 // Průvodci od nejnovějšího
 export const guides = fieldNotes.filter((n) => n.group === "guide").sort(byNewest);
+
+// Případové studie z auditů od nejnovější
+export const audits = fieldNotes.filter((n) => n.group === "audit").sort(byNewest);
 
 // Díly případové studie v pořadí čtení (podle data vydání)
 export const caseStudy = fieldNotes
