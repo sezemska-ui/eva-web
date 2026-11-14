@@ -91,12 +91,16 @@ export function CtaBox({
   children,
 }: {
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) {
   return (
     <div className="rounded-sm bg-cream p-8 text-ink">
       <h2 className="mb-3 font-serif text-2xl text-ink">{title}</h2>
-      <p className="mb-5 text-[15px] text-[#4b4536]">{children}</p>
+      {children ? (
+        <p className="mb-5 text-[15px] text-[#4b4536]">{children}</p>
+      ) : (
+        <div className="mb-5" />
+      )}
       <ConsultationButton />
     </div>
   );

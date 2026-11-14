@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { H1, H2, P, Section, CtaBox } from "@/components/Ui";
 import { ArticleMeta, AuthorBox } from "@/components/ArticleParts";
 import { ArticleJsonLd, Breadcrumbs } from "@/components/Seo";
@@ -52,6 +53,37 @@ function DataTable({ head, rows }: { head: [string, string]; rows: [string, stri
         </tbody>
       </table>
     </div>
+  );
+}
+
+// Screenshot z testu s popiskem
+function Screenshot({
+  src,
+  alt,
+  width,
+  height,
+  maxWidth,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  maxWidth: number;
+  caption: string;
+}) {
+  return (
+    <figure className="my-8" style={{ maxWidth }}>
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        sizes={`(max-width: 896px) 100vw, ${maxWidth}px`}
+        className="h-auto w-full rounded-sm border border-white/10"
+      />
+      <figcaption className="mt-3 text-[13px] italic leading-relaxed text-cream/55">{caption}</figcaption>
+    </figure>
   );
 }
 
@@ -228,7 +260,14 @@ export default function Article() {
             mu čtyři kladná hodnocení.
           </li>
         </ul>
-        {/* SCREENSHOT 1: odpověď ChatGPT na dotaz, jestli je firma spolehlivá – doplnit obrázek */}
+        <Screenshot
+          src="/images/chatgpt-spolehlivost-prijedeme-umyjeme.webp"
+          alt="Odpověď ChatGPT na dotaz, jestli je Přijedeme Umyjeme spolehlivá firma: malý počet hodnocení je důvod k opatrnosti, ne důkaz problému"
+          width={1100}
+          height={1058}
+          maxWidth={720}
+          caption="Odpověď ChatGPT na dotaz, jestli je firma spolehlivá (říjen 2026): firmu jen zmínil, čtyři hodnocení mu nestačila."
+        />
         <P>
           Pro srovnání jsem stejnou otázku položila u konkurenta, který má přes
           150 hodnocení na Firmy.cz. Všechny tři nástroje ho doporučily,
@@ -292,7 +331,14 @@ export default function Article() {
           fasád tak vůbec nebyl. Když AI hledala firmu na čištění fasád, sahala
           do této kategorie, jenže tam chyběl.
         </P>
-        {/* SCREENSHOT 2: profil firmy na Firmy.cz před převzetím – „Zatím neověřená firma“ a špatný obor – doplnit obrázek */}
+        <Screenshot
+          src="/images/firmy-cz-neovereny-profil-prijedeme-umyjeme.webp"
+          alt="Profil Přijedeme Umyjeme na Firmy.cz s upozorněním Zatím neověřená firma a činnostmi poradenství, příprava staveniště a velkoobchod"
+          width={705}
+          height={730}
+          maxWidth={520}
+          caption="Profil firmy na Firmy.cz před převzetím (23. 10. 2026): neověřený, údaje jen z rejstříku a obor mimo čištění fasád."
+        />
         <P>
           Firma tak stála na jedné noze. Když AI její web našla, doporučila ji
           ve 28 z 35 případů. Jiná cesta k doporučení ale nevedla.
@@ -354,7 +400,6 @@ export default function Article() {
           přesto Google v Režimu AI doporučil, jednou jako první. Stránka
           odpovídala na otázku skoro doslova.
         </P>
-        {/* SCREENSHOT 3: Google Režim AI doporučuje firmu u dotazu na Zlín – doplnit obrázek */}
         <P>
           Stejně dopadl dotaz v Brně a Karlových Varech: Google firmu doporučil
           v 6 ze 6 odpovědí ve městech, kde vůbec nepůsobí.
@@ -465,9 +510,7 @@ export default function Article() {
       </Section>
 
       <Section>
-        <CtaBox title="Chcete vědět, co o vaší firmě říká AI, když se zákazník zeptá, jestli jste spolehliví?">
-          Udělám vám krátký předběžný test.
-        </CtaBox>
+        <CtaBox title="Chcete vědět, co o vaší firmě říká AI, když se zákazník zeptá, jestli jste spolehliví?" />
         <p className="mt-6 text-[13px] italic text-cream/50">
           Eva Sezemská, searchstrategy.cz · Test proběhl v říjnu 2026.
         </p>
