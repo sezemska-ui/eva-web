@@ -65,11 +65,18 @@ export default function ServicePath() {
           </li>
         ))}
       </ol>
-      <div className="mt-10 flex flex-col gap-8">
-        <div className="border-l-2 border-gold pl-5">
-          <div className="mb-1 font-mono text-[11px] uppercase tracking-wider text-gold">Cena</div>
-          <h3 className="mb-2 font-serif text-lg text-cream">Na čem cena závisí?</h3>
-          <p className="max-w-[62ch] text-[15px] leading-relaxed text-cream/75">
+      <div className="mt-10 flex flex-col gap-6">
+        <details className="group border-l-2 border-gold pl-5">
+          <summary className="flex cursor-pointer list-none items-end justify-between gap-4 [&::-webkit-details-marker]:hidden">
+            <div>
+              <div className="mb-1 font-mono text-[11px] uppercase tracking-wider text-gold">Cena</div>
+              <h3 className="font-serif text-lg text-cream">Na čem cena závisí?</h3>
+            </div>
+            <span aria-hidden="true" className="shrink-0 font-mono text-lg text-gold transition-transform duration-200 group-open:rotate-45">
+              +
+            </span>
+          </summary>
+          <p className="mt-3 max-w-[62ch] text-[15px] leading-relaxed text-cream/75">
             Spodní hranice odpovídá živnostníkům a malým firmám do tří
             zaměstnanců s jednoduchým webem. Horní hranice se týká například
             hotelu s vícejazyčným webem, mnoha službami nebo několika
@@ -77,17 +84,24 @@ export default function ServicePath() {
             individuálně. Přesnou cenu vám vždy řeknu předem, po úvodní
             konzultaci.
           </p>
-        </div>
-        <div className="border-l-2 border-gold pl-5">
-          <div className="mb-1 font-mono text-[11px] uppercase tracking-wider text-gold">Postup</div>
-          <h3 className="mb-2 font-serif text-lg text-cream">Proč jsou kroky oddělené?</h3>
-          <p className="max-w-[62ch] text-[15px] leading-relaxed text-cream/75">
+        </details>
+        <details className="group border-l-2 border-gold pl-5">
+          <summary className="flex cursor-pointer list-none items-end justify-between gap-4 [&::-webkit-details-marker]:hidden">
+            <div>
+              <div className="mb-1 font-mono text-[11px] uppercase tracking-wider text-gold">Postup</div>
+              <h3 className="font-serif text-lg text-cream">Proč jsou kroky oddělené?</h3>
+            </div>
+            <span aria-hidden="true" className="shrink-0 font-mono text-lg text-gold transition-transform duration-200 group-open:rotate-45">
+              +
+            </span>
+          </summary>
+          <p className="mt-3 max-w-[62ch] text-[15px] leading-relaxed text-cream/75">
             Nemusíte hned investovat do celého řešení. Audit vám ukáže, co a v
             jakém pořadí má smysl řešit. Některé kroky zvládnete sami nebo s
             webmasterem, jiné můžete nechat na později. Rozhodujete se postupně,
             podle výsledků.
           </p>
-        </div>
+        </details>
       </div>
     </>
   );
