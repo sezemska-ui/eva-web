@@ -29,7 +29,7 @@ export function Lede({ children }: { children: React.ReactNode }) {
 }
 
 export function P({ children }: { children: React.ReactNode }) {
-  return <p className="mb-4 text-[15.5px] leading-relaxed text-cream/75">{children}</p>;
+  return <p className="mb-4 max-w-[65ch] text-[15.5px] leading-relaxed text-cream/75">{children}</p>;
 }
 
 // Fotka přes šířku obsahu; menší originály omezit přes maxWidth, ať se nerozmazávají
@@ -71,7 +71,13 @@ export function Section({ children }: { children: React.ReactNode }) {
 export const CONSULTATION_HREF = "/sluzby/strategicka-konzultace";
 export const CONSULTATION_LABEL = "Domluvit konzultaci →";
 
-export function ConsultationButton({ tone = "dark" }: { tone?: "dark" | "light" }) {
+export function ConsultationButton({
+  tone = "dark",
+  label = CONSULTATION_LABEL,
+}: {
+  tone?: "dark" | "light";
+  label?: string;
+}) {
   const colors =
     tone === "dark"
       ? "bg-navy-deep text-cream hover:bg-[#223652]"
@@ -81,7 +87,7 @@ export function ConsultationButton({ tone = "dark" }: { tone?: "dark" | "light" 
       href={CONSULTATION_HREF}
       className={`inline-block rounded-sm px-6 py-3 text-sm font-semibold transition-colors duration-200 ${colors}`}
     >
-      {CONSULTATION_LABEL}
+      {label}
     </Link>
   );
 }
@@ -141,5 +147,42 @@ export function BigNumber({ n, label }: { n: string; label: string }) {
       <span className="font-serif text-4xl text-gold-light">{n}</span>
       <span className="text-[15px] text-cream/80">{label}</span>
     </div>
+  );
+}
+
+// Krémový rámeček s fakty o službě (cena, termín…). Na mobilu popisek nad textem.
+export function FactBox({ rows }: { rows: [string, string][] }) {
+  return (
+    <dl className="mt-6 rounded-sm border-l-4 border-gold bg-cream px-5 py-2 text-ink sm:px-6">
+      {rows.map(([label, text]) => (
+        <div
+          key={label}
+          className="flex flex-col gap-1 border-b border-ink/10 py-3 last:border-b-0 sm:flex-row sm:gap-6"
+        >
+          <dt className="flex-none pt-[2px] font-mono text-[11px] font-semibold uppercase tracking-wider text-[#7a6434] sm:w-32">
+            {label}
+          </dt>
+          <dd className="max-w-[60ch] text-[15px] leading-relaxed text-ink">{text}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+
+// Seznam se zlatými pomlčkami (stejný styl jako „Pro koho nejsem“)
+export function DashList({ items }: { items: string[] }) {
+  return (
+    <ul className="mb-4 flex max-w-[65ch] flex-col">
+      {items.map((t) => (
+        <li
+          key={t}
+          className="flex gap-4 border-b border-white/10 py-3 text-[15.5px] leading-relaxed text-cream/80 last:border-b-0"
+        >
+          <span aria-hidden="true" className="flex-none font-mono text-[13px] text-gold">—</span>
+          <span>{t}</span>
+        </li>
+      ))}
+    </ul>
   );
 }

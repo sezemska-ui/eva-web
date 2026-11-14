@@ -22,7 +22,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Jak AI zaměnila identitu" }]} />
-        <ArticleMeta category="AI Search Visibility Audit · Case Note · část 1/4" href="/field-notes/proc-ai-zamenila-identitu" />
+        <ArticleMeta category="Audit AI viditelnosti · Case Note · část 1/4" href="/field-notes/proc-ai-zamenila-identitu" />
         <H1>Jak AI zaměnila identitu mé klientky — a co to prozradilo o její viditelnosti</H1>
         <P>
           Fotografka s kvalitním portfoliem a spokojenými klienty. A přesto ji
