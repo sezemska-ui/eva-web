@@ -22,20 +22,20 @@ export default function Home() {
         </div>
 
         <h1 className="mb-6 font-serif text-4xl leading-[1.15] tracking-tight text-cream md:text-5xl">
-          Buďte{" "}
-          <span className="italic text-gold-light">tam</span>, kde vás
-          zákazníci hledají.
+          Doporučí vás AI, když se zákazník zeptá na{" "}
+          <span className="italic text-gold-light">váš obor</span>?
         </h1>
 
-        <p className="mb-4 max-w-[52ch] text-[17px] leading-relaxed text-cream/90">
-          Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé
-          inteligence.
+        <p className="mb-4 max-w-[56ch] text-[17px] leading-relaxed text-cream/90">
+          Zákazníci se čím dál častěji ptají ChatGPT nebo Googlu „kde najdu
+          dobrý…“ a vaše jméno přitom neznají. Zjistím, jestli vás AI
+          doporučuje, proč dává přednost konkurenci a co změnit, aby jmenovala
+          i vás.
         </p>
 
         <p className="mb-10 max-w-[52ch] text-[15px] text-cream/70">
-          Když zákazník nezná vaše jméno, nezačíná u vaší značky. Začíná
-          otázkou — a tu si dnes čím dál častěji zodpoví ještě předtím, než
-          na vás vůbec narazí.
+          Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé
+          inteligence.
         </p>
 
         <div className="animate-[fadeInUp_0.8s_ease-out_0.15s_both]">
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <ConsultationButton tone="light" />
+          <ConsultationButton tone="light" label="Domluvit úvodní konzultaci →" />
         </div>
       </Section>
 
@@ -74,7 +74,7 @@ export default function Home() {
           </Review>
           <Review
             author="Lukáš Kaudl, Přijedeme Umyjeme"
-            service="AI audit viditelnosti"
+            service="Audit AI viditelnosti"
             link={{ href: "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad", label: "Přečíst studii →" }}
           >
             „Ještě předtím, než nás vůbec kontaktovala, si sama udělala

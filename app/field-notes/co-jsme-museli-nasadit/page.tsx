@@ -22,7 +22,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Co jsme museli nasadit" }]} />
-        <ArticleMeta category="AI Search Strategie · Case Note · část 2/4" href="/field-notes/co-jsme-museli-nasadit" />
+        <ArticleMeta category="Strategie AI viditelnosti · Case Note · část 2/4" href="/field-notes/co-jsme-museli-nasadit" />
         <H1>Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“</H1>
         <P>
           Nový, rychlý, hezký web na Next.js. A přesto by bez dalšího kroku

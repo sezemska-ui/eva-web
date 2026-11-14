@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Strategická konzultace — Eva Sezemská",
+  title: "Úvodní konzultace — Eva Sezemská",
   description:
     "Individuální 60minutová konzultace pro firmy, které nevědí, kde začít s viditelností ve vyhledávání a AI, a potřebují doporučení dalšího kroku.",
   path: "/sluzby/strategicka-konzultace",
@@ -15,8 +15,8 @@ export default function StrategickaKonzultace() {
   return (
     <>
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Strategická konzultace" }]} />
-        <Eyebrow>Strategická konzultace</Eyebrow>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Úvodní konzultace" }]} />
+        <Eyebrow>Úvodní konzultace</Eyebrow>
         <H1>60 minut na to, abychom zjistili, kde začít.</H1>
         <P>
           Někdy stačí jeden rozhovor, aby bylo jasné, kde je skutečný problém
@@ -25,13 +25,13 @@ export default function StrategickaKonzultace() {
 
         <div className="mt-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
           <p className="mb-1 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="font-serif text-3xl text-cream">4 500 Kč</span>
+            <span className="font-serif text-3xl text-cream">4 500 Kč</span>
             <span className="text-[14px] text-cream/70">
               nejsem plátce DPH · 60 minut · online nebo osobně
             </span>
           </p>
           <p className="text-[14px] text-cream/70">
-            Pokud budete pokračovat AI Search Visibility Auditem, cenu
+            Pokud budete pokračovat auditem AI viditelnosti, cenu
             konzultace odečtu z ceny auditu.
           </p>
         </div>

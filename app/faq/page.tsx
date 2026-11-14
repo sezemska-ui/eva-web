@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "FAQ — Eva Sezemská",
   description:
-    "Odpovědi na otázky o AI Search viditelnosti, auditu, strategii, implementaci a digitální autoritě.",
+    "Odpovědi na otázky o AI viditelnosti, cenách, auditu, strategii, implementaci a budování důvěryhodnosti.",
   path: "/faq",
 });
 
@@ -121,8 +121,8 @@ const obecneQuestions = [
     q: "Nevím, jestli potřebujeme celý audit. Můžeme se nejdříve sejít a probrat naši situaci?",
     a: (
       <P>
-        Samozřejmě. Ne vždy je potřeba začít kompletním AI Search
-        Visibility Auditem. Nejdříve se můžeme sejít na krátkou konzultaci,
+        Samozřejmě. Ne vždy je potřeba začít kompletním auditem AI
+        viditelnosti. Nejdříve se můžeme sejít na krátkou konzultaci,
         ujasnit si situaci a podle toho zvolit další postup.
       </P>
     ),
@@ -220,6 +220,60 @@ const obecneQuestions = [
       </>
     ),
   },
+  {
+    q: "Kolik stojí audit AI viditelnosti?",
+    a: (
+      <P>
+        Obvykle 20 000–40 000 Kč podle velikosti firmy a webu.
+        Živnostníci a malé firmy jsou u spodní hranice, hotely s
+        vícejazyčným webem nebo firmy s více provozovnami u horní.
+        Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace
+        z auditu odečtu.
+      </P>
+    ),
+  },
+  {
+    q: "Musím si po auditu objednat strategii?",
+    a: (
+      <P>
+        Ne. Audit vám sám ukáže, co a v jakém pořadí řešit.
+        Některé kroky zvládnete sami nebo s webmasterem. Strategie
+        dává smysl, když chcete doporučení rozpracovat do hotových
+        textů a technických podkladů.
+      </P>
+    ),
+  },
+  {
+    q: "Kdo provede úpravy na webu?",
+    a: (
+      <P>
+        Úpravy nejsou součástí auditu ani strategie. Ve strategii
+        dodám hotové podklady, které váš webmaster jen vloží na web.
+        Pokud chcete, převezmu komunikaci s webmasterem a kontrolu
+        nasazení jako samostatnou službu.
+      </P>
+    ),
+  },
+  {
+    q: "Kolik mi spolupráce zabere času?",
+    a: (
+      <P>
+        U auditu téměř žádný. Nepotřebuji přístupy do webu, vycházím z
+        veřejně dostupných zdrojů. Váš čas zabere úvodní
+        konzultace a hodinové projití výsledků.
+      </P>
+    ),
+  },
+  {
+    q: "Zaručíte mi první místo v odpovědích AI?",
+    a: (
+      <P>
+        Ne, to nemůže poctivě zaručit nikdo. Zaručím vám, že
+        budete vědět, na čem vaše viditelnost v AI stojí, kde je
+        slabá a co ji může posílit.
+      </P>
+    ),
+  },
 ];
 
 // Plochý text odpovědí pro FAQPage schema (bez formátování, pro AI a vyhledávače)
@@ -238,7 +292,7 @@ const obecnePlain = [
   },
   {
     q: obecneQuestions[3].q,
-    a: "Ne vždy je potřeba začít kompletním AI Search Visibility Auditem. Nejdříve se lze sejít na krátkou konzultaci, ujasnit situaci a podle toho zvolit další postup.",
+    a: "Ne vždy je potřeba začít kompletním auditem AI viditelnosti. Nejdříve se lze sejít na krátkou konzultaci, ujasnit situaci a podle toho zvolit další postup.",
   },
   {
     q: obecneQuestions[4].q,
@@ -259,6 +313,26 @@ const obecnePlain = [
   {
     q: obecneQuestions[8].q,
     a: "U nové firmy může trvat déle, než se informace stabilně objeví ve vyhledávání a AI doporučeních. Základem je web s jasnými informacemi, Google Business Profil, recenze a zmínky napříč internetem. Přesnou lhůtu nelze slíbit.",
+  },
+  {
+    q: obecneQuestions[9].q,
+    a: "Obvykle 20 000–40 000 Kč podle velikosti firmy a webu. Živnostníci a malé firmy jsou u spodní hranice, hotely s vícejazyčným webem nebo firmy s více provozovnami u horní. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace z auditu odečtu.",
+  },
+  {
+    q: obecneQuestions[10].q,
+    a: "Ne. Audit vám sám ukáže, co a v jakém pořadí řešit. Některé kroky zvládnete sami nebo s webmasterem. Strategie dává smysl, když chcete doporučení rozpracovat do hotových textů a technických podkladů.",
+  },
+  {
+    q: obecneQuestions[11].q,
+    a: "Úpravy nejsou součástí auditu ani strategie. Ve strategii dodám hotové podklady, které váš webmaster jen vloží na web. Pokud chcete, převezmu komunikaci s webmasterem a kontrolu nasazení jako samostatnou službu.",
+  },
+  {
+    q: obecneQuestions[12].q,
+    a: "U auditu téměř žádný. Nepotřebuji přístupy do webu, vycházím z veřejně dostupných zdrojů. Váš čas zabere úvodní konzultace a hodinové projití výsledků.",
+  },
+  {
+    q: obecneQuestions[13].q,
+    a: "Ne, to nemůže poctivě zaručit nikdo. Zaručím vám, že budete vědět, na čem vaše viditelnost v AI stojí, kde je slabá a co ji může posílit.",
   },
 ];
 

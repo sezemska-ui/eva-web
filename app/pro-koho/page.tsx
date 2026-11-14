@@ -20,6 +20,7 @@ const groups: {
   focus: string;
   caseLink?: GroupLink;
   start: GroupLink[];
+  price: string;
 }[] = [
   {
     n: "01",
@@ -28,8 +29,9 @@ const groups: {
       "Zákazník se ptá „kde v okolí…“ a nezná vaše jméno. Odpověď se skládá z map, recenzí, katalogů a vašeho webu. Stačí, aby si tyto zdroje protiřečily, a doporučení dostane někdo jiný.",
     focus:
       "Google Business Profil, mapy, recenze, katalogy a to, jestli všude říkají totéž co váš web.",
+    price: "audit obvykle 20 000–30 000 Kč.",
     start: [
-      { label: "AI Search Visibility Audit", href: "/sluzby/ai-search-visibility-audit" },
+      { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
     ],
   },
   {
@@ -43,8 +45,9 @@ const groups: {
       label: "Proč AI zaměnila identitu",
       href: "/field-notes/proc-ai-zamenila-identitu",
     },
+    price: "audit obvykle kolem 20 000 Kč.",
     start: [
-      { label: "Strategická konzultace (60 minut)", href: "/sluzby/strategicka-konzultace" },
+      { label: "Úvodní konzultace (60 minut)", href: "/sluzby/strategicka-konzultace" },
     ],
   },
   {
@@ -54,9 +57,10 @@ const groups: {
       "Váš zákazník si dodavatele vybírá týdny. Než vám napíše, zeptá se AI, kdo v oboru za to stojí. Pokud vaši odbornost nic nepotvrzuje, v odpovědi nejste.",
     focus:
       "Jak je vaše odbornost čitelná z webu, referencí, zmínek v médiích a oborových katalozích.",
+    price: "audit obvykle 25 000–40 000 Kč.",
     start: [
-      { label: "AI Search Visibility Audit", href: "/sluzby/ai-search-visibility-audit" },
-      { label: "Digital Authority", href: "/sluzby/digital-authority" },
+      { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
+      { label: "Budování důvěryhodnosti", href: "/sluzby/digital-authority" },
     ],
   },
 ];
@@ -127,6 +131,7 @@ export default function ProKoho() {
                 </span>
               ))}
             </Row>
+            <Row label="Orientační cena">{g.price}</Row>
           </dl>
         </Section>
       ))}

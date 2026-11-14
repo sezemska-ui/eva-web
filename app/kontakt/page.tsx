@@ -23,7 +23,7 @@ export default function Kontakt() {
       </Section>
       <Section>
         <div className="rounded-sm bg-cream p-6 text-ink">
-          <h2 className="mb-2 font-serif text-2xl text-ink">Strategická konzultace</h2>
+          <h2 className="mb-2 font-serif text-2xl text-ink">Úvodní konzultace</h2>
           <p className="mb-4 text-[15px] text-[#4b4536]">
             Nejrychlejší cesta, jak začít — 60 minut na to, abychom společně
             zjistili, kde je problém a jaký další krok dává smysl.
