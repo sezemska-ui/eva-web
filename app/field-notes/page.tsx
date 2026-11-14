@@ -1,5 +1,5 @@
 import NoteList from "@/components/NoteList";
-import { caseStudy, guides } from "@/lib/fieldNotes";
+import { audits, caseStudy, guides } from "@/lib/fieldNotes";
 import { Eyebrow, H1, P, Section } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
 import type { Metadata } from "next";
@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Field Notes — Eva Sezemská",
   description:
-    "Průvodce AI vyhledáváním a případová studie z praxe: jak Google a AI systémy rozhodují o tom, koho zákazník uvidí.",
+    "Průvodce AI vyhledáváním a případové studie z praxe: jak Google a AI systémy rozhodují o tom, koho zákazník uvidí.",
   path: "/field-notes",
 });
 
@@ -36,6 +36,14 @@ export default function FieldNotes() {
           Jak AI vyhledávání funguje a co znamená pro firmy.
         </p>
         <NoteList notes={guides} />
+      </Section>
+
+      <Section>
+        <Eyebrow>Audity AI viditelnosti · {count(audits.length, "studie", "studie", "studií")}</Eyebrow>
+        <p className="mb-6 text-[14px] text-cream/60">
+          Co ukázal audit AI viditelnosti u konkrétních firem.
+        </p>
+        <NoteList notes={audits} />
       </Section>
 
       <Section>

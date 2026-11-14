@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/field-notes/vysledky-po-31-dnech",
     "/field-notes/jak-budovat-ai-viditelnost-v-case",
     "/field-notes/jak-funguje-ai-vyhledavani",
+    "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad",
     "/kontakt",
     "/ochrana-osobnich-udaju",
   ];

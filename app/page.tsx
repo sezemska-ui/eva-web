@@ -75,7 +75,7 @@ export default function Home() {
           <Review
             author="Lukáš Kaudl, Přijedeme Umyjeme"
             service="AI audit viditelnosti"
-            link={{ href: "/sluzby/ai-search-visibility-audit", label: "Poptat audit →" }}
+            link={{ href: "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad", label: "Přečíst studii →" }}
           >
             „Ještě předtím, než nás vůbec kontaktovala, si sama udělala
             předběžný audit firmy, aby nám mohla ukázat konkrétní poznatky a
