@@ -1,5 +1,6 @@
 import { Eyebrow, H1, H2, P, Section, CtaBox, FactBox } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
+import { SITE_URL } from "@/components/SiteJsonLd";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -9,6 +10,25 @@ export const metadata: Metadata = pageMetadata({
     "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
   path: "/sluzby/ai-search-visibility-audit",
 });
+
+const VIDEO = {
+  src: "/videos/ukazka-auditu-ai-viditelnosti.mp4",
+  poster: "/images/ukazka-auditu-ai-viditelnosti.webp",
+};
+
+const videoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Ukázka výstupu auditu AI viditelnosti",
+  description:
+    "Ukázková webová aplikace s výsledky auditu AI viditelnosti pro fiktivní firmu: shrnutí, zjištění s doklady, výsledky testu v ChatGPT, Googlu a Perplexity, srovnání s konkurencí a seznam kroků.",
+  thumbnailUrl: `${SITE_URL}${VIDEO.poster}`,
+  contentUrl: `${SITE_URL}${VIDEO.src}`,
+  uploadDate: "2026-11-15",
+  duration: "PT1M21S",
+  inLanguage: "cs",
+  publisher: { "@id": `${SITE_URL}/#business` },
+};
 
 export default function Audit() {
   return (
@@ -70,6 +90,37 @@ export default function Audit() {
           rozlišuji, co je ověřené, co je pravděpodobné a co je potřeba ještě
           ověřit.
         </P>
+      </Section>
+
+      <Section>
+        <H2>Ukázka výstupu</H2>
+        <P>
+          Spolu se zprávou v PDF dostanete webovou aplikaci s výsledky. Ve
+          videu je ukázková verze: firma i data jsou vymyšlené, struktura je
+          stejná jako u skutečného auditu.
+        </P>
+        <figure className="mt-6">
+          <video
+            controls
+            muted
+            playsInline
+            preload="none"
+            poster={VIDEO.poster}
+            aria-label="Video: ukázka webové aplikace s výsledky auditu AI viditelnosti"
+            className="aspect-video w-full rounded-sm border border-white/10 bg-navy-deep"
+          >
+            <source src={VIDEO.src} type="video/mp4" />
+          </video>
+          <figcaption className="mt-3 max-w-[65ch] text-[14px] leading-relaxed text-cream/60">
+            Video bez zvuku, s titulky, 1:21. Ukazuje shrnutí s hlavními čísly,
+            zjištění s doklady, výsledky testu v ChatGPT, Googlu a Perplexity,
+            srovnání s konkurencí a seznam kroků, které si odškrtáváte.
+          </figcaption>
+        </figure>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+        />
       </Section>
 
       <Section>
