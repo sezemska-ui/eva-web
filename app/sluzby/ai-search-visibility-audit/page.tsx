@@ -25,7 +25,7 @@ const videoSchema = {
   thumbnailUrl: `${SITE_URL}${VIDEO.poster}`,
   contentUrl: `${SITE_URL}${VIDEO.src}`,
   uploadDate: "2026-11-15",
-  duration: "PT1M21S",
+  duration: "PT58S",
   inLanguage: "cs",
   publisher: { "@id": `${SITE_URL}/#business` },
 };
@@ -112,7 +112,7 @@ export default function Audit() {
             <source src={VIDEO.src} type="video/mp4" />
           </video>
           <figcaption className="mt-3 max-w-[65ch] text-[14px] leading-relaxed text-cream/60">
-            Video bez zvuku, s titulky, 1:21. Ukazuje shrnutí s hlavními čísly,
+            Video bez zvuku, s titulky, 58 s. Ukazuje shrnutí s hlavními čísly,
             zjištění s doklady, výsledky testu v ChatGPT, Googlu a Perplexity,
             srovnání s konkurencí a seznam kroků, které si odškrtáváte.
           </figcaption>
