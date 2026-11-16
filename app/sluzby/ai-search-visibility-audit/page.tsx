@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Audit AI viditelnosti — Eva Sezemská",
+  title: "Audit AI viditelnosti s akčním plánem — Eva Sezemská",
   description:
     "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
   path: "/sluzby/ai-search-visibility-audit",
@@ -34,8 +34,8 @@ export default function Audit() {
   return (
     <>
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Audit AI viditelnosti" }]} />
-        <Eyebrow>Audit AI viditelnosti</Eyebrow>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Audit AI viditelnosti s akčním plánem" }]} />
+        <Eyebrow>Audit AI viditelnosti s akčním plánem</Eyebrow>
         <H1>Nejprve zjistíme, kde skutečně stojíte.</H1>
         <P>
           Než začneme něco optimalizovat, potřebujeme vědět, jak vaši firmu
@@ -46,7 +46,7 @@ export default function Audit() {
           rows={[
             ["Cena", "20 000–40 000 Kč podle velikosti firmy a webu. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace odečtu."],
             ["Termín", "Obvykle do 15 pracovních dnů od potvrzení."],
-            ["Co dostanete", "Zprávu v PDF, webovou aplikaci s výsledky a 60minutové projití výsledků."],
+            ["Co dostanete", "Zprávu v PDF s akčním plánem, webovou aplikaci s výsledky a 60minutové projití výsledků."],
             ["Váš čas", "Nepotřebuji přístupy do webu. Váš čas zabere jen závěrečné projití, případně pár doplňujících otázek."],
           ]}
         />

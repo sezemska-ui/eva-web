@@ -45,7 +45,7 @@ export default function Sluzby() {
         <CtaBox title="Kde začít?">
           Nevíte, proč vás zákazníci nenacházejí nebo nedostávají mezi
           doporučeními? Začněte konzultací. Zjistíme, jestli je pro vás dalším
-          krokem Audit AI viditelnosti.
+          krokem audit AI viditelnosti s akčním plánem.
         </CtaBox>
       </Section>
     </>

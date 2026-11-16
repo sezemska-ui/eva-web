@@ -7,7 +7,7 @@ Sídlo: Mladá Boleslav, Česká republika.
 ## Služby
 
 - [Úvodní konzultace](https://www.searchstrategy.cz/sluzby/strategicka-konzultace): 4 500 Kč, 60 minut. První krok každé spolupráce; pokud klient pokračuje auditem, cena konzultace se z něj odečte.
-- [Audit AI viditelnosti](https://www.searchstrategy.cz/sluzby/ai-search-visibility-audit): 20 000–40 000 Kč. Diagnostika, jestli firmu AI doporučuje, odkud o ní čerpá, proč dává přednost konkurenci a co řešit jako první. Hotovo obvykle do 15 pracovních dnů.
+- [Audit AI viditelnosti s akčním plánem](https://www.searchstrategy.cz/sluzby/ai-search-visibility-audit): 20 000–40 000 Kč. Zjistí, jestli firmu AI doporučuje, odkud o ní čerpá a proč dává přednost konkurenci; výstupem je akční plán, co změnit a v jakém pořadí. Hotovo obvykle do 15 pracovních dnů.
 - [Strategie AI viditelnosti](https://www.searchstrategy.cz/sluzby/ai-search-strategie): 15 000–50 000 Kč. Zjištění z auditu převedená na hotové texty, strukturu webu a podklady, které webmaster jen vloží na web.
 - [Implementace](https://www.searchstrategy.cz/sluzby/implementace-strategie): cena podle rozsahu, vždy předem. Komunikace s webmasterem, kontrola nasazení a ověření, jak se změny projevují v odpovědích AI.
 - [Budování důvěryhodnosti](https://www.searchstrategy.cz/sluzby/digital-authority): měsíční spolupráce, cena individuálně, obvykle na minimálně 3 měsíce. Péče o recenze, profily, zmínky mimo web a pravidelné měření doporučení.
