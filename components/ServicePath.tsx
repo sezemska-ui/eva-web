@@ -8,35 +8,36 @@ const steps = [
     title: "Úvodní konzultace",
     price: "4 500 Kč",
     href: "/sluzby/strategicka-konzultace",
-    text: "60 minut. Přijdu s prvními zjištěními o vaší firmě a řekneme si, jestli a jaký audit má smysl. Pokud se pro audit rozhodnete, cenu konzultace z něj odečtu.",
+    note: "Cenu konzultace odečtu z auditu.",
+    text: "Odejdete s jasnou odpovědí, jestli vás AI dnes doporučuje a jestli má audit smysl. 60 minut, přijdu s prvními zjištěními o vaší firmě.",
   },
   {
     label: "01",
     title: "Audit AI viditelnosti s akčním plánem",
     price: "20 000–40 000 Kč",
     href: "/sluzby/ai-search-visibility-audit",
-    text: "Zjistím, jestli vás AI doporučuje, odkud o vás čerpá a proč dává přednost konkurenci. Dostanete akční plán: co změnit a v jakém pořadí. Hotovo obvykle do 15 pracovních dnů.",
+    text: "Budete vědět, proč vás AI nedoporučuje a čím začít. Zjistím, odkud o vás AI čerpá a čím ji přesvědčila konkurence. Dostanete akční plán: co změnit a v jakém pořadí. Hotovo obvykle do 15 pracovních dnů.",
   },
   {
     label: "02",
     title: "Strategie AI viditelnosti",
     price: "15 000–50 000 Kč",
     href: "/sluzby/ai-search-strategie",
-    text: "Zjištění z auditu převedu na hotové texty, strukturu webu a podklady, které váš webmaster jen vloží na web.",
+    text: "Váš webmaster dostane hotové podklady a nemusí nic vymýšlet. Zjištění z auditu převedu na texty, strukturu webu a technické podklady.",
   },
   {
     label: "03",
     title: "Implementace",
     price: "podle rozsahu",
     href: "/sluzby/implementace-strategie",
-    text: "Převezmu komunikaci s webmasterem, zkontroluji nasazení a ověřím, jak se změny projevují v odpovědích AI. Cenu řeknu předem.",
+    text: "Budu komunikovat s vaším webmasterem a vše zkontroluji za vás. Ověřím také, jak se změny projevují v odpovědích AI. Cenu řeknu předem.",
   },
   {
     label: "04",
     title: "Budování důvěryhodnosti",
     price: "měsíční spolupráce",
     href: "/sluzby/digital-authority",
-    text: "Dlouhodobá péče o recenze, profily, zmínky mimo váš web a pravidelné měření doporučení. Cena individuálně, obvykle na minimálně 3 měsíce.",
+    text: "Každý měsíc uvidíte, jak často vás AI doporučuje a jestli to roste. Starám se o recenze, profily a zmínky mimo váš web. Cena individuálně, obvykle na minimálně 3 měsíce.",
   },
 ];
 
@@ -81,6 +82,7 @@ export default function ServicePath() {
               >
                 Více →
               </Link>
+              {s.note && <span className="ml-3 text-sm text-cream/60">{s.note}</span>}
             </li>
           );
         })}

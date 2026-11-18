@@ -37,7 +37,7 @@ export default function Sluzby() {
       </Section>
 
       <Section>
-        <H2>Jak vám mohu pomoci</H2>
+        <H2>SEO a AI viditelnost: jak vám mohu pomoci</H2>
         <ServicePath />
       </Section>
 

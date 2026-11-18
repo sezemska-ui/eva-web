@@ -34,10 +34,13 @@ export default function Home() {
         </p>
 
         <p className="mb-10 max-w-[52ch] text-[15px] text-cream/70">
-          Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé
-          inteligence.
+          SEO pro AI vyhledávání: aby vás ChatGPT i Google doporučily, když se
+          zákazník zeptá na váš obor.
         </p>
 
+        <p className="mb-2 text-center font-serif text-xl italic text-cream/80">
+          Buďte tam, kde se zákazníci ptají:
+        </p>
         <div className="animate-[fadeInUp_0.8s_ease-out_0.15s_both]">
           <TamMotif />
         </div>
@@ -114,7 +117,7 @@ export default function Home() {
 
       {/* 04 JAK VÁM MOHU POMOCI */}
       <Section>
-        <H2>Jak vám mohu pomoci</H2>
+        <H2>SEO a AI viditelnost: jak vám mohu pomoci</H2>
         <ServicePath />
         <Link href="/pro-koho" className="mt-6 inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold">
           Pro koho pracuji →
