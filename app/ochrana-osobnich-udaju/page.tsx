@@ -75,7 +75,9 @@ export default function PrivacyPolicy() {
           Údaje z konzultačního formuláře a vstupního dotazníku zpracovávám
           na základě vašeho souhlasu a za účelem jednání o uzavření smlouvy
           (čl. 6 odst. 1 písm. b) a a) GDPR). Analytiku návštěvnosti
-          zpracovávám na základě vašeho souhlasu s cookies.
+          (Google Analytics a Microsoft Clarity) zpracovávám jen na základě
+          vašeho souhlasu s cookies (čl. 6 odst. 1 písm. a) GDPR). Bez
+          souhlasu se tyto nástroje nenačtou.
         </P>
       </Section>
 
@@ -104,6 +106,37 @@ export default function PrivacyPolicy() {
           uchovávám údaje ještě 3 roky kvůli případným právním nárokům, poté
           je bezpečně smažu.
         </P>
+        <P>
+          Záznamy návštěv v Microsoft Clarity se mažou po 30 dnech,
+          souhrnná data (teplotní mapy, statistiky) po 13 měsících.
+        </P>
+      </Section>
+
+      <Section>
+        <H2>Cookies</H2>
+        <P>
+          Analytické cookies se ukládají jen po kliknutí na „Přijmout“ v liště
+          na webu:
+        </P>
+        <ul className="mt-3 flex flex-col gap-2 text-[15px] text-cream/75">
+          <li>
+            <span className="text-cream">_ga, _ga_*</span> (Google
+            Analytics): rozlišení návštěvníků, platnost 2 roky.
+          </li>
+          <li>
+            <span className="text-cream">_clck</span> (Microsoft Clarity):
+            rozlišení návštěvníků, platnost 1 rok.
+          </li>
+          <li>
+            <span className="text-cream">_clsk</span> (Microsoft Clarity):
+            propojení stránek jedné návštěvy, platnost 1 den.
+          </li>
+        </ul>
+        <P>
+          Vaši volbu si web pamatuje v úložišti prohlížeče. Změnit ji můžete
+          smazáním dat webu searchstrategy.cz v nastavení prohlížeče; lišta se
+          pak zobrazí znovu.
+        </P>
       </Section>
 
       <Section>
@@ -112,7 +145,7 @@ export default function PrivacyPolicy() {
           Máte právo na přístup ke svým osobním údajům, jejich opravu nebo
           výmaz, omezení zpracování, přenositelnost údajů a právo vznést
           námitku proti zpracování. Souhlas s cookies můžete kdykoli odvolat
-          v nastavení prohlížeče. Pokud se domníváte, že vaše údaje
+          smazáním dat webu v nastavení prohlížeče (viz Cookies). Pokud se domníváte, že vaše údaje
           zpracovávám v rozporu se zákonem, máte právo podat stížnost u
           Úřadu pro ochranu osobních údajů (uoou.cz).
         </P>
