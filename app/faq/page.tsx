@@ -50,6 +50,27 @@ const obecneQuestions = [
     ),
   },
   {
+    q: "Co je GEO a AEO a jak se liší od SEO?",
+    a: (
+      <>
+        <P>
+          GEO (Generative Engine Optimization) a AEO (Answer Engine
+          Optimization) jsou nové názvy pro práci na tom, aby vás AI systémy,
+          jako ChatGPT, Perplexity nebo AI v Googlu, uváděly ve svých
+          odpovědích. V praxi jde o totéž, čemu říkám SEO pro AI vyhledávání.
+        </P>
+        <P>
+          Klasické SEO řeší, na kolikáté pozici jste ve výsledcích
+          vyhledávání. GEO a AEO řeší, jestli vás AI v odpovědi vůbec
+          jmenuje a jestli o vás říká správné věci. Základ je ale společný:
+          srozumitelný a technicky funkční web a důvěryhodné zmínky o vás i
+          mimo něj. Dobré SEO je proto pro AI viditelnost základem, ne
+          protikladem.
+        </P>
+      </>
+    ),
+  },
+  {
     q: "Co AI potřebuje, aby mohla mou firmu správně pochopit a doporučit?",
     a: (
       <>
@@ -284,54 +305,58 @@ const obecnePlain = [
   },
   {
     q: obecneQuestions[1].q,
-    a: "AI systémy musí pochopit, kdo jste, co nabízíte, pro koho a kde. Roli hraje stáří domény, nastavení on-page SEO, odborný obsah na webu, Google Business Profil s recenzemi a PR aktivity budující digitální identitu napříč internetem.",
+    a: "GEO (Generative Engine Optimization) a AEO (Answer Engine Optimization) jsou nové názvy pro práci na tom, aby vás AI systémy jako ChatGPT, Perplexity nebo AI v Googlu uváděly ve svých odpovědích. V praxi jde o SEO pro AI vyhledávání. Klasické SEO řeší pozici ve výsledcích vyhledávání, GEO a AEO to, jestli vás AI v odpovědi jmenuje a co o vás říká. Základ je společný: srozumitelný a technicky funkční web a důvěryhodné zmínky i mimo něj.",
   },
   {
     q: obecneQuestions[2].q,
-    a: "Sociální sítě oslovují hlavně lidi, kteří vás už znají. AI viditelnost cílí na potenciální zákazníky, kteří o vás ještě nevědí, a může vás dostat mezi firmy, které zvažují, i když finální rozhodnutí vždy dělá člověk.",
+    a: "AI systémy musí pochopit, kdo jste, co nabízíte, pro koho a kde. Roli hraje stáří domény, nastavení on-page SEO, odborný obsah na webu, Google Business Profil s recenzemi a PR aktivity budující digitální identitu napříč internetem.",
   },
   {
     q: obecneQuestions[3].q,
-    a: "Ne vždy je potřeba začít kompletním auditem AI viditelnosti. Nejdříve se lze sejít na krátkou konzultaci, ujasnit situaci a podle toho zvolit další postup.",
+    a: "Sociální sítě oslovují hlavně lidi, kteří vás už znají. AI viditelnost cílí na potenciální zákazníky, kteří o vás ještě nevědí, a může vás dostat mezi firmy, které zvažují, i když finální rozhodnutí vždy dělá člověk.",
   },
   {
     q: obecneQuestions[4].q,
-    a: "Záleží na stáří domény a dalších faktorech. U nové domény to může trvat měsíce, u starší domény se dobře nastavené on-page SEO může projevit během dnů až týdnů. Nelze to zobecnit ani slíbit.",
+    a: "Ne vždy je potřeba začít kompletním auditem AI viditelnosti. Nejdříve se lze sejít na krátkou konzultaci, ujasnit situaci a podle toho zvolit další postup.",
   },
   {
     q: obecneQuestions[5].q,
-    a: "Ano, na obsahu a digitální identitě. Technické kroky mohu v rámci implementace zajistit s vaším webmasterem. Na začátku si vždy rozdělíme, co uděláte vy, co webmaster a co já. Pro udržení AI viditelnosti je potřeba stále pracovat na odborném obsahu a budovat digitální identitu i mimo web.",
+    a: "Záleží na stáří domény a dalších faktorech. U nové domény to může trvat měsíce, u starší domény se dobře nastavené on-page SEO může projevit během dnů až týdnů. Nelze to zobecnit ani slíbit.",
   },
   {
     q: obecneQuestions[6].q,
-    a: "Ano, spolupráce s vlastním webmasterem nebo marketingovým týmem je běžná, na dálku i osobně, vždy s jednou odpovědnou kontaktní osobou.",
+    a: "Ano, na obsahu a digitální identitě. Technické kroky mohu v rámci implementace zajistit s vaším webmasterem. Na začátku si vždy rozdělíme, co uděláte vy, co webmaster a co já. Pro udržení AI viditelnosti je potřeba stále pracovat na odborném obsahu a budovat digitální identitu i mimo web.",
   },
   {
     q: obecneQuestions[7].q,
-    a: "Ano, v rámci strategie lze navrhnout posílení digitální autority mimo web — odborné články, média, rozhovory, partnerské weby, katalogy nebo profesní profily, podle oboru a cílových zákazníků.",
+    a: "Ano, spolupráce s vlastním webmasterem nebo marketingovým týmem je běžná, na dálku i osobně, vždy s jednou odpovědnou kontaktní osobou.",
   },
   {
     q: obecneQuestions[8].q,
-    a: "U nové firmy může trvat déle, než se informace stabilně objeví ve vyhledávání a AI doporučeních. Základem je web s jasnými informacemi, Google Business Profil, recenze a zmínky napříč internetem. Přesnou lhůtu nelze slíbit.",
+    a: "Ano, v rámci strategie lze navrhnout posílení digitální autority mimo web — odborné články, média, rozhovory, partnerské weby, katalogy nebo profesní profily, podle oboru a cílových zákazníků.",
   },
   {
     q: obecneQuestions[9].q,
-    a: "Obvykle 20 000–40 000 Kč podle velikosti firmy a webu. Živnostníci a malé firmy jsou u spodní hranice, hotely s vícejazyčným webem nebo firmy s více provozovnami u horní. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace z auditu odečtu.",
+    a: "U nové firmy může trvat déle, než se informace stabilně objeví ve vyhledávání a AI doporučeních. Základem je web s jasnými informacemi, Google Business Profil, recenze a zmínky napříč internetem. Přesnou lhůtu nelze slíbit.",
   },
   {
     q: obecneQuestions[10].q,
-    a: "Ne. Audit vám sám ukáže, co a v jakém pořadí řešit. Některé kroky zvládnete sami nebo s webmasterem. Strategie dává smysl, když chcete doporučení rozpracovat do hotových textů a technických podkladů.",
+    a: "Obvykle 20 000–40 000 Kč podle velikosti firmy a webu. Živnostníci a malé firmy jsou u spodní hranice, hotely s vícejazyčným webem nebo firmy s více provozovnami u horní. Přesnou cenu řeknu po úvodní konzultaci a cenu konzultace z auditu odečtu.",
   },
   {
     q: obecneQuestions[11].q,
-    a: "Úpravy nejsou součástí auditu ani strategie. Ve strategii dodám hotové podklady, které váš webmaster jen vloží na web. Pokud chcete, převezmu komunikaci s webmasterem a kontrolu nasazení jako samostatnou službu.",
+    a: "Ne. Audit vám sám ukáže, co a v jakém pořadí řešit. Některé kroky zvládnete sami nebo s webmasterem. Strategie dává smysl, když chcete doporučení rozpracovat do hotových textů a technických podkladů.",
   },
   {
     q: obecneQuestions[12].q,
-    a: "U auditu téměř žádný. Nepotřebuji přístupy do webu, vycházím z veřejně dostupných zdrojů. Váš čas zabere úvodní konzultace a hodinové projití výsledků.",
+    a: "Úpravy nejsou součástí auditu ani strategie. Ve strategii dodám hotové podklady, které váš webmaster jen vloží na web. Pokud chcete, převezmu komunikaci s webmasterem a kontrolu nasazení jako samostatnou službu.",
   },
   {
     q: obecneQuestions[13].q,
+    a: "U auditu téměř žádný. Nepotřebuji přístupy do webu, vycházím z veřejně dostupných zdrojů. Váš čas zabere úvodní konzultace a hodinové projití výsledků.",
+  },
+  {
+    q: obecneQuestions[14].q,
     a: "Ne, to nemůže poctivě zaručit nikdo. Zaručím vám, že budete vědět, na čem vaše viditelnost v AI stojí, kde je slabá a co ji může posílit.",
   },
 ];

@@ -28,6 +28,10 @@ export default function Sluzby() {
           jiné firmy místo nich a co je potřeba změnit, aby se jejich značka
           stala dohledatelnou, pochopitelnou a doporučitelnou.
         </P>
+        <P>
+          Někdy se tomu říká GEO (Generative Engine Optimization) nebo AEO.
+          Já tomu říkám SEO pro AI vyhledávání.
+        </P>
         <Link
           href="/pro-koho"
           className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
