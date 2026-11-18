@@ -27,9 +27,9 @@ const plexMono = IBM_Plex_Mono({
   weight: ["500"],
 });
 
-const TITLE = "Eva Sezemská — AI Search Strategist";
+const TITLE = "SEO pro AI vyhledávání | Eva Sezemská, Mladá Boleslav";
 const DESCRIPTION =
-  "Buďte tam, kde vás zákazníci hledají. Pomáhám firmám být vidět v AI vyhledávání, AI odpovědích i na mapách a platformách, kde se rozhoduje.";
+  "Zjistím, jestli vás ChatGPT a Google AI doporučují zákazníkům, proč dávají přednost konkurenci a co změnit. SEO pro AI vyhledávání.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.searchstrategy.cz"),

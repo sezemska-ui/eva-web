@@ -15,34 +15,34 @@ const services: {
     slug: "strategicka-konzultace",
     name: "Úvodní konzultace",
     description:
-      "60 minut. Přijdu s prvními zjištěními o vaší firmě a řekneme si, jestli a jaký audit má smysl. Pokud se pro audit rozhodnete, cenu konzultace z něj odečtu.",
+      "Odejdete s jasnou odpovědí, jestli vás AI dnes doporučuje a jestli má audit smysl. 60 minut, přijdu s prvními zjištěními o vaší firmě. Pokud se pro audit rozhodnete, cenu konzultace z něj odečtu.",
     price: "4500",
   },
   {
     slug: "ai-search-visibility-audit",
     name: "Audit AI viditelnosti s akčním plánem",
     description:
-      "Zjistím, jestli vás AI doporučuje, odkud o vás čerpá a proč dává přednost konkurenci. Dostanete akční plán: co změnit a v jakém pořadí. Hotovo obvykle do 15 pracovních dnů.",
+      "Budete vědět, proč vás AI nedoporučuje a čím začít. Zjistím, odkud o vás AI čerpá a čím ji přesvědčila konkurence. Dostanete akční plán: co změnit a v jakém pořadí. Hotovo obvykle do 15 pracovních dnů.",
     priceRange: [20000, 40000],
   },
   {
     slug: "ai-search-strategie",
     name: "Strategie AI viditelnosti",
     description:
-      "Zjištění z auditu převedu na hotové texty, strukturu webu a podklady, které váš webmaster jen vloží na web.",
+      "Váš webmaster dostane hotové podklady a nemusí nic vymýšlet. Zjištění z auditu převedu na texty, strukturu webu a technické podklady.",
     priceRange: [15000, 50000],
   },
   {
     slug: "implementace-strategie",
     name: "Implementace",
     description:
-      "Převezmu komunikaci s webmasterem, zkontroluji nasazení a ověřím, jak se změny projevují v odpovědích AI. Cenu řeknu předem.",
+      "Budu komunikovat s vaším webmasterem a vše zkontroluji za vás. Ověřím také, jak se změny projevují v odpovědích AI. Cenu řeknu předem.",
   },
   {
     slug: "digital-authority",
     name: "Budování důvěryhodnosti",
     description:
-      "Dlouhodobá péče o recenze, profily, zmínky mimo váš web a pravidelné měření doporučení. Cena individuálně, obvykle na minimálně 3 měsíce.",
+      "Každý měsíc uvidíte, jak často vás AI doporučuje a jestli to roste. Starám se o recenze, profily a zmínky mimo váš web. Cena individuálně, obvykle na minimálně 3 měsíce.",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function SiteJsonLd() {
         "@id": `${SITE_URL}/#person`,
         name: "Eva Sezemská",
         jobTitle: "AI Search Strategist",
-        description: "Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé inteligence.",
+        description: "SEO pro AI vyhledávání: pomáhám firmám, aby je ChatGPT i Google doporučily, když se zákazník zeptá na jejich obor.",
         url: SITE_URL,
         image: `${SITE_URL}/images/eva-portrait.jpg`,
         email: "sezemska@searchstrategy.cz",
@@ -94,7 +94,7 @@ export default function SiteJsonLd() {
         "@type": "ProfessionalService",
         "@id": `${SITE_URL}/#business`,
         name: "Eva Sezemská — AI Search Strategist",
-        description: "Pomáhám firmám modernizovat jejich SEO strategii pro éru umělé inteligence.",
+        description: "SEO pro AI vyhledávání: pomáhám firmám, aby je ChatGPT i Google doporučily, když se zákazník zeptá na jejich obor.",
         url: SITE_URL,
         image: `${SITE_URL}/images/eva-portrait.jpg`,
         email: "sezemska@searchstrategy.cz",
