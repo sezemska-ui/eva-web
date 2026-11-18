@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
         <P>
           Tyto zásady popisují, jaké osobní údaje na searchstrategy.cz
           shromažďuji, proč, jak dlouho je uchovávám a jaká máte práva. Platí
-          od 18. 10. 2026.
+          od 18. 11. 2026.
         </P>
       </Section>
 
@@ -60,6 +60,13 @@ export default function PrivacyPolicy() {
           návštěvníci přišli, jaké stránky si prohlédli). Tato data
           nepoužívám k identifikaci konkrétních osob.
         </P>
+        <P>
+          Web také používá Microsoft Clarity, který zaznamenává, jak
+          návštěvníci stránky používají (pohyb myši, klikání, posouvání),
+          a vytváří z toho anonymní záznamy a teplotní mapy. Obsah
+          formulářových polí se nezaznamenává. Záznamy mi pomáhají najít
+          místa, kde se návštěvníci na webu ztrácejí.
+        </P>
       </Section>
 
       <Section>
@@ -80,7 +87,10 @@ export default function PrivacyPolicy() {
           jako zpracovatel osobních údajů. Data z Google Analytics zpracovává
           Google Ireland Limited, přičemž část dat může být přenášena na
           servery Google LLC v USA v rámci standardních smluvních doložek
-          schválených Evropskou komisí. Údaje nikomu jinému neprodávám ani
+          schválených Evropskou komisí. Data z Microsoft Clarity zpracovává
+          Microsoft Ireland Operations Limited, přičemž část dat může být
+          přenášena na servery Microsoft Corporation v USA v rámci
+          standardních smluvních doložek. Údaje nikomu jinému neprodávám ani
           nepředávám k marketingovým účelům.
         </P>
       </Section>

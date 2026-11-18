@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Script from "next/script";
 
 const GA_MEASUREMENT_ID = "G-WGZSN42B17";
+const CLARITY_PROJECT_ID = "zfi6uqi202";
 const CONSENT_KEY = "cookie-consent";
 
 export default function GoogleAnalyticsConsent() {
@@ -39,6 +40,16 @@ export default function GoogleAnalyticsConsent() {
               gtag('config', '${GA_MEASUREMENT_ID}');
             `}
           </Script>
+          <Script id="clarity-init" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
+              window.clarity('consentv2', { ad_Storage: "denied", analytics_Storage: "granted" });
+            `}
+          </Script>
         </>
       )}
 
@@ -47,7 +58,8 @@ export default function GoogleAnalyticsConsent() {
           <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-[13px] text-cream/70">
               Tento web používá cookies pro měření návštěvnosti (Google
-              Analytics). Souhlasíte s jejich použitím?
+              Analytics) a pro anonymní záznam používání stránek (Microsoft
+              Clarity). Souhlasíte s jejich použitím?
             </p>
             <div className="flex flex-none gap-3">
               <button
