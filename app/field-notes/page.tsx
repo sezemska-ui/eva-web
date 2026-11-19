@@ -39,7 +39,7 @@ export default function FieldNotes() {
           Vlastní testy napříč oborem nebo regionem: koho AI doporučuje a proč.
         </p>
         {research.length > 0 ? (
-          <NoteList notes={research} />
+          <NoteList notes={research} showPart />
         ) : (
           <p className="text-[15px] text-cream/75">
             První výzkum vyjde v nejbližších dnech.

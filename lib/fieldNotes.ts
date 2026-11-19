@@ -15,6 +15,14 @@ export type FieldNote = {
 
 export const fieldNotes: FieldNote[] = [
   {
+    href: "/field-notes/ai-ubytovani-cesky-raj-pary-a-rodiny",
+    title: "Páry dostanou hotel, rodiny penzion: 30 odpovědí AI z Českého ráje",
+    group: "research",
+    part: "1. část ze 2",
+    datePublished: "2026-11-19",
+    dateModified: "2026-11-19",
+  },
+  {
     href: "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad",
     title: "Případová studie: Jak AI vyhledávače doporučují firmu na čištění fasád",
     group: "audit",
