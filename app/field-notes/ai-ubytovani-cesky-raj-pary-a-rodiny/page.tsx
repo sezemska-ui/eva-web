@@ -24,6 +24,8 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const strongClass = "font-semibold text-cream";
+const linkClass =
+  "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";
 const listClass = "mb-4 flex max-w-[65ch] list-disc flex-col gap-2 pl-5 marker:text-gold";
 const olClass =
   "mb-4 flex max-w-[65ch] list-decimal flex-col gap-3 pl-5 marker:font-mono marker:text-gold";
@@ -189,11 +191,8 @@ export default function Article() {
           Příklad dotazu pro rodiny: „Chceme s dětmi 4 a 8 let na víkend do
           Českého ráje. Doporuč nám ubytování.“ Pro páry: „Kam na romantický
           víkend ve dvou do Českého ráje? Doporuč nám ubytování.“ Všechna
-          znění a omezení testu uvádím v{" "}
-          <a
-            href="#metodika"
-            className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold"
-          >
+          znění, omezení testu a data ke stažení uvádím v{" "}
+          <a href="#metodika" className={linkClass}>
             metodice na konci
           </a>
           .
@@ -665,11 +664,20 @@ export default function Article() {
               nejmenuji.
             </>,
             <>
-              <strong className={strongClass}>Data:</strong> tabulku 42 odpovědí
-              (30 z hlavního testu a 12 z kontrolních opakování: dotaz, nástroj,
-              datum, doporučené podniky v pořadí, zdroje) sem doplním ke
-              stažení. Screenshoty všech odpovědí mám archivované a na vyžádání
-              je ukážu.
+              <strong className={strongClass}>Data ke stažení:</strong> tabulka
+              42 odpovědí: 30 z hlavního testu a 12 dalších z kontrolních
+              opakování (dotaz, nástroj, datum, doporučené podniky v pořadí,
+              zdroje) –{" "}
+              <a href="/data/kam-vas-posle-ai-data-1-cast.xlsx" download className={linkClass}>
+                Excel (.xlsx)
+              </a>{" "}
+              nebo{" "}
+              <a href="/data/kam-vas-posle-ai-data-1-cast.csv" download className={linkClass}>
+                CSV
+              </a>
+              . Data můžete volně použít s uvedením zdroje: Eva Sezemská,
+              searchstrategy.cz. Screenshoty všech odpovědí mám archivované a na
+              vyžádání je ukážu.
             </>,
             <>
               <strong className={strongClass}>Nezávislost:</strong> test jsem
@@ -762,7 +770,8 @@ export default function Article() {
         </P>
         <p className="mb-8 max-w-[65ch] text-[14px] italic leading-relaxed text-cream/55">
           Pro úplnost: audity AI viditelnosti nabízím jako službu. Proto je
-          výše přesně popsaná metodika, abyste si zjištění mohli ověřit sami.
+          výše přesně popsaná metodika a data jsou ke stažení, abyste si
+          zjištění mohli ověřit sami.
         </p>
         <CtaBox title="Jak AI doporučuje váš podnik a proč dává přednost konkurenci?">
           Napište mi. Společně probereme, zda je pro vás v této fázi vhodný
