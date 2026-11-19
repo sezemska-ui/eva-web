@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/field-notes/jak-budovat-ai-viditelnost-v-case",
     "/field-notes/jak-funguje-ai-vyhledavani",
     "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad",
+    "/field-notes/ai-ubytovani-cesky-raj-pary-a-rodiny",
     "/kontakt",
     "/ochrana-osobnich-udaju",
   ];
