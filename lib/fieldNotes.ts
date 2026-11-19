@@ -4,8 +4,9 @@
 export type FieldNote = {
   href: string;
   title: string;
-  // guide = průvodce, caseStudy = série o fotografce, audit = samostatné případové studie z auditů
-  group: "guide" | "caseStudy" | "audit";
+  // guide = průvodce, caseStudy = série o fotografce, audit = samostatné případové studie z auditů,
+  // research = vlastní výzkumy napříč oborem nebo regionem (víc firem, ne jeden klient)
+  group: "guide" | "caseStudy" | "audit" | "research";
   // Označení dílu v případové studii, např. „Díl 1/4“
   part?: string;
   datePublished: string; // RRRR-MM-DD
@@ -85,6 +86,9 @@ const byNewest = (a: FieldNote, b: FieldNote) => b.datePublished.localeCompare(a
 
 // Průvodci od nejnovějšího
 export const guides = fieldNotes.filter((n) => n.group === "guide").sort(byNewest);
+
+// Výzkumy od nejnovějšího
+export const research = fieldNotes.filter((n) => n.group === "research").sort(byNewest);
 
 // Případové studie z auditů od nejnovější
 export const audits = fieldNotes.filter((n) => n.group === "audit").sort(byNewest);
