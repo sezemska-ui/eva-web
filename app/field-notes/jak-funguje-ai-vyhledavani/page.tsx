@@ -23,10 +23,10 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const linkClass =
-  "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";
-const strongClass = "font-semibold text-cream";
-const listItemClass = "text-[15px] text-cream/80";
-const h3Class = "mb-3 mt-8 font-serif text-lg text-cream";
+  "text-ink underline decoration-rule underline-offset-4 hover:decoration-ink";
+const strongClass = "font-semibold text-ink";
+const listItemClass = "text-[15px] text-ink-2";
+const h3Class = "mb-3 mt-8 font-serif text-lg text-ink";
 
 // Stejný text jako ve viditelné sekci „Časté otázky“, pro FAQPage schema
 const faq = [
@@ -54,7 +54,7 @@ export default function Article() {
       />
       <FAQJsonLd items={faq} />
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Jak funguje AI vyhledávání" }]} />
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "Jak funguje AI vyhledávání" }]} />
         <ArticleMeta category="Průvodce" href="/field-notes/jak-funguje-ai-vyhledavani" />
         <H1>{HEADLINE}</H1>
         <P>
@@ -66,9 +66,9 @@ export default function Article() {
           )
         </P>
 
-        <div className="my-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
-          <p className="mb-3 text-[15px] font-semibold text-cream">Ve zkratce</p>
-          <ul className="flex flex-col gap-2 text-[14px] text-cream/70">
+        <div className="my-6 border border-rule bg-paper-2 p-5 sm:p-6">
+          <p className="mb-3 text-[15px] font-semibold text-ink">Ve zkratce</p>
+          <ul className="flex flex-col gap-2 text-[14px] text-ink-2">
             <li>
               Klasický Google vám ukáže seznam odkazů a vybíráte vy. AI
               vyhledávání informace porovná a rovnou vám doporučí několik
@@ -244,9 +244,9 @@ export default function Article() {
       <Section>
         <H2>Rozdíly v jedné tabulce</H2>
         <div className="overflow-x-auto">
-          <table className="w-full border-collapse text-[14px] text-cream/80">
+          <table className="w-full border-collapse text-[14px] text-ink-2">
             <thead>
-              <tr className="border-b border-white/10 text-left font-mono text-[11px] uppercase tracking-wider text-cream/45">
+              <tr className="border-b border-rule text-left font-mono text-[13px] tracking-[0.04em] text-muted">
                 <th className="py-3 pr-4">
                   <span className="sr-only">Otázka</span>
                 </th>
@@ -255,23 +255,23 @@ export default function Article() {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b border-white/10">
-                <th scope="row" className="py-3 pr-4 text-left font-normal text-cream">Co dostanete?</th>
+              <tr className="border-b border-rule">
+                <th scope="row" className="py-3 pr-4 text-left font-normal text-ink">Co dostanete?</th>
                 <td className="py-3 pr-4">seznam modrých odkazů</td>
                 <td className="py-3">hotovou odpověď s doporučením a popisem</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <th scope="row" className="py-3 pr-4 text-left font-normal text-cream">Kdo vybírá?</th>
+              <tr className="border-b border-rule">
+                <th scope="row" className="py-3 pr-4 text-left font-normal text-ink">Kdo vybírá?</th>
                 <td className="py-3 pr-4">vy</td>
                 <td className="py-3">AI, vy jen upřesňujete</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <th scope="row" className="py-3 pr-4 text-left font-normal text-cream">Jak se ptáte?</th>
+              <tr className="border-b border-rule">
+                <th scope="row" className="py-3 pr-4 text-left font-normal text-ink">Jak se ptáte?</th>
                 <td className="py-3 pr-4">spíš klíčovými slovy</td>
                 <td className="py-3">konverzačně, klidně celou větou</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <th scope="row" className="py-3 pr-4 text-left font-normal text-cream">Odkud se bere obsah?</th>
+              <tr className="border-b border-rule">
+                <th scope="row" className="py-3 pr-4 text-left font-normal text-ink">Odkud se bere obsah?</th>
                 <td className="py-3 pr-4">hlavně z webů</td>
                 <td className="py-3">
                   z celého internetu: weby, recenze, katalogy, firemní profily,
@@ -279,7 +279,7 @@ export default function Article() {
                 </td>
               </tr>
               <tr>
-                <th scope="row" className="py-3 pr-4 text-left font-normal text-cream">Jak může dopadnout vaše firma?</th>
+                <th scope="row" className="py-3 pr-4 text-left font-normal text-ink">Jak může dopadnout vaše firma?</th>
                 <td className="py-3 pr-4">jste na první straně, nebo na druhé a dál</td>
                 <td className="py-3">čtyři možnosti, viz níže</td>
               </tr>
@@ -288,7 +288,7 @@ export default function Article() {
         </div>
 
         <h3 className={h3Class}>Čtyři způsoby, jak s vámi AI může naložit</h3>
-        <ol className="flex list-decimal flex-col gap-3 pl-5 marker:text-gold">
+        <ol className="flex list-decimal flex-col gap-3 pl-5 marker:text-muted">
           <li className={listItemClass}>
             <strong className={strongClass}>V odpovědi vůbec nejste.</strong> AI
             o vás neví dost, nebo vás pro dané zadání nepovažuje za relevantní.

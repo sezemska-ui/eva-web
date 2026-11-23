@@ -1,4 +1,4 @@
-// Jediný seznam článků Field Notes. Používá ho přehled /field-notes
+// Jediný seznam článků sekce Z praxe. Používá ho přehled /field-notes
 // i úvodní stránka, aby se názvy a data nemohly rozejít.
 
 export type FieldNote = {

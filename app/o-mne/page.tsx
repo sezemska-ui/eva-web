@@ -56,28 +56,28 @@ export default function OMne() {
         </P>
         <div className="mt-4 flex flex-wrap justify-center gap-x-1 gap-y-4 text-center">
           <Annotated word="FOUND" note="lze vás najít" />
-          <span className="self-center text-cream/20">→</span>
+          <span className="self-center text-rule">→</span>
           <Annotated word="UNDERSTOOD" note="systémy chápou, kdo jste" />
-          <span className="self-center text-cream/20">→</span>
+          <span className="self-center text-rule">→</span>
           <Annotated word="RELEVANT" note="odpovídáte záměru" />
-          <span className="self-center text-cream/20">→</span>
+          <span className="self-center text-rule">→</span>
           <Annotated word="TRUSTED" note="existují důkazy" />
-          <span className="self-center text-cream/20">→</span>
+          <span className="self-center text-rule">→</span>
           <Annotated word="RECOMMENDED" note="dostanete se mezi možnosti" />
         </div>
       </Section>
 
       <Section>
-        <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
-          <h2 className="mb-4 font-serif text-2xl text-cream">
+        <div className="border border-rule bg-paper-2 p-6 sm:p-8">
+          <h2 className="mb-4 font-serif text-2xl text-ink">
             Přenáším autoritu firem z reálného světa do digitálního.
           </h2>
-          <p className="mb-4 text-[15.5px] leading-relaxed text-cream/75">
+          <p className="mb-4 text-[17px] leading-relaxed text-ink-2">
             Firma může mít roky zkušeností, stovky spokojených zákazníků,
             skvělou pověst a silné postavení ve svém regionu. Digitální
             systémy ale tuto autoritu nevnímají automaticky.
           </p>
-          <p className="text-[15.5px] leading-relaxed text-cream/75">
+          <p className="text-[17px] leading-relaxed text-ink-2">
             Potřebují ji vidět v datech, obsahu, vztazích, zmínkách,
             recenzích, strukturách a dalších signálech napříč webem. Mojí
             prací je tyto signály identifikovat, propojit a systematicky
@@ -88,7 +88,7 @@ export default function OMne() {
 
       <Section>
         <H2>Můj pohled stojí na průsečíku několika disciplín.</H2>
-        <p className="font-serif text-lg text-cream/80 leading-relaxed">
+        <p className="font-serif text-lg text-ink-2 leading-relaxed">
           SEO · Local Search · AI Search · Digital Entities · Content · Authority
         </p>
         <P>
@@ -107,9 +107,9 @@ export default function OMne() {
             ["03 — Prioritizuji", "Nezahlcuji klienta desítkami úkolů. Hledám zásahy s největším významem."],
             ["04 — Propojuji", "Web, Google, AI, obsah, lokální zdroje, recenze a externí autoritu vnímám jako jeden ekosystém."],
           ].map(([t, d]) => (
-            <div key={t} className="rounded-sm border border-white/10 p-4 sm:p-5">
-              <h3 className="mb-1 font-serif text-lg text-cream">{t}</h3>
-              <p className="text-[15px] text-cream/75">{d}</p>
+            <div key={t} className="border border-rule p-4 sm:p-5">
+              <h3 className="mb-1 font-serif text-lg text-ink">{t}</h3>
+              <p className="text-[15px] text-ink-2">{d}</p>
             </div>
           ))}
         </div>
@@ -145,19 +145,19 @@ export default function OMne() {
             alt="Eva Sezemská, AI Search Strategist"
             width={220}
             height={220}
-            className="h-[220px] w-[220px] flex-none rounded-sm object-cover"
+            className="h-[220px] w-[220px] flex-none object-cover"
           />
           <div className="flex-1">
-            <p className="mb-1 font-serif text-2xl text-cream">Eva Sezemská</p>
-            <p className="mb-5 text-[14px] text-cream/60">AI Search Strategist</p>
+            <p className="mb-1 font-serif text-2xl text-ink">Eva Sezemská</p>
+            <p className="mb-5 text-[14px] text-muted">AI Search Strategist</p>
 
             <div className="mb-4">
-              <div className="mb-1 font-mono text-[11px] uppercase tracking-widest text-gold">Focus</div>
-              <p className="text-[14px] text-cream/75">AI Search · Local Search · Digital Entities · Content · Authority</p>
+              <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">Focus</div>
+              <p className="text-[14px] text-ink-2">AI Search · Local Search · Digital Entities · Content · Authority</p>
             </div>
             <div className="mb-6">
-              <div className="mb-1 font-mono text-[11px] uppercase tracking-widest text-gold">Approach</div>
-              <p className="text-[14px] text-cream/75">Independent · Strategic · Evidence-led</p>
+              <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">Approach</div>
+              <p className="text-[14px] text-ink-2">Independent · Strategic · Evidence-led</p>
             </div>
 
             <H2>Proč právě AI Search?</H2>
@@ -176,13 +176,13 @@ export default function OMne() {
       </Section>
 
       <Section>
-        <H2>Field Notes</H2>
+        <H2>Z praxe</H2>
         <P>Pozorování a případové studie z reálné práce s klienty.</P>
         <Link
           href="/field-notes"
-          className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4"
+          className="inline-block text-base font-semibold text-ink underline decoration-rule underline-offset-[6px]"
         >
-          Prozkoumat Field Notes →
+          Prozkoumat zápisy z praxe
         </Link>
       </Section>
     </>

@@ -1,45 +1,68 @@
+import { BTN_PRIMARY, LABEL } from "./Ui";
+
+// Skutečná odpověď ChatGPT, zapsaná 23. 11. 2026. Na webu jen názvy podniků.
+export const TEST_QUERY = "Romantický wellness hotel v Českém ráji";
+export const TEST_TOOL = "ChatGPT";
+export const TEST_RECORDED = "Eva Sezemská dne 23. 11. 2026";
+
 const recommended = [
-  { name: "Zámecký Hotel Hrubá Skála", note: "wellness vtesané do skalního masivu, romantická zámecká atmosféra" },
-  { name: "Grand Hotel Praha (Jičín)", note: "privátní wellness centrum v historickém centru" },
-  { name: "Biokolna Suites & Spa", note: "prémiový butikový koncept, maximální soukromí" },
-  { name: "Černá louže", note: "komorní wellness, minimalistický design" },
-  { name: "Pivní Lázně Český Ráj", note: "originální pivní koupele, rodinná atmosféra" },
+  "EA Zámecký hotel Hrubá Skála",
+  "Cihloffka",
+  "Černá louže",
+  "Vila Čapek",
+  "Biokolna – Suites & Spa",
+  "Hotel Pošta",
 ];
+
+export const TEST_COUNT = recommended.length;
 
 export default function RecommendationTest() {
   return (
-    <div className="rounded-sm border border-white/10 bg-navy-mid/40 p-6 md:p-8">
-      <div className="mb-5 font-mono text-[11px] uppercase tracking-widest text-cream/45">
-        Reálný dotaz · Google AI Overview
-      </div>
-
-      <p className="mb-6 font-serif text-xl italic text-cream/90 md:text-2xl">
-        „Romantický wellness hotel v Českém ráji“
-      </p>
+    <div className="flex flex-col gap-6 border border-rule bg-paper p-6 sm:p-10">
+      <p className={LABEL}>odpověď {TEST_TOOL}</p>
 
       {/* <details> funguje i bez JavaScriptu a seznam je ve zdrojovém kódu stránky */}
       <details className="group">
-        <summary className="inline-block cursor-pointer list-none rounded-sm bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light group-open:hidden [&::-webkit-details-marker]:hidden">
-          Zobrazit, koho AI doporučila →
+        <summary className="group-open:hidden">
+          <span className="flex flex-col items-start gap-6">
+            <span className="font-serif text-[26px] leading-[1.3] text-ink sm:text-[28px]">
+              Koho by {TEST_TOOL} doporučil vašemu hostovi?
+            </span>
+            <span className="text-base leading-[1.6] text-ink-2">
+              Zkuste si nejdřív tipnout. Pak se podívejte na skutečnou odpověď.
+            </span>
+            <span className={BTN_PRIMARY}>Zobrazit, koho AI doporučila</span>
+          </span>
         </summary>
-        <div className="animate-[fadeInUp_0.4s_ease-out_both]">
-          <div className="mb-4 font-mono text-[11px] uppercase tracking-widest text-gold">
-            AI doporučila těchto 5 podniků
-          </div>
-          <ul className="flex flex-col gap-3">
-            {recommended.map((r) => (
+
+        {/* Vlastní obal: při otevření se zobrazí znovu, takže se řádky vypíšou postupně jako odpověď AI */}
+        <div className="hidden group-open:block">
+          <ol>
+            {recommended.map((name, i) => (
               <li
-                key={r.name}
-                className="flex flex-col gap-0.5 border-b border-white/10 pb-3 last:border-b-0"
+                key={name}
+                style={{ "--i": i } as React.CSSProperties}
+                className="typed-row flex items-baseline justify-between gap-6 border-t border-rule py-4"
               >
-                <span className="text-[15px] font-medium text-cream">{r.name}</span>
-                <span className="text-[13px] text-cream/55">{r.note}</span>
+                <span className="text-[18px] font-medium text-ink">{name}</span>
+                <span className={LABEL}>{String(i + 1).padStart(2, "0")}</span>
               </li>
             ))}
-          </ul>
-          <p className="mt-6 text-[14px] leading-relaxed text-cream/70">
+            {/* Prázdné místo na seznamu: tady chybí firma návštěvníka */}
+            <li
+              style={{ "--i": recommended.length + 1 } as React.CSSProperties}
+              className="typed-row flex items-baseline justify-between gap-6 border-y border-dashed border-muted py-4"
+            >
+              <span className="font-mono text-[15px] tracking-[0.04em] text-muted">vaše firma?</span>
+              <span className={LABEL}>{String(recommended.length + 1).padStart(2, "0")}</span>
+            </li>
+          </ol>
+          <p
+            style={{ "--i": recommended.length + 3 } as React.CSSProperties}
+            className="typed-row mt-5 text-[15px] leading-[1.6] text-ink-2"
+          >
             Ke každému podniku AI automaticky vygenerovala vlastní popis atmosféry a doporučení —
-            zdarma, bez jakékoli reklamy. Podnik, který na tomhle seznamu není, o tenhle moment
+            zdarma, bez jakékoli reklamy. Podnik, který na tomhle seznamu není, o&nbsp;tenhle moment
             přichází úplně.
           </p>
         </div>

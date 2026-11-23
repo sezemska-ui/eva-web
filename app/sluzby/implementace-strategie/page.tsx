@@ -60,20 +60,20 @@ export default function Implementace() {
         <H2>Co společně nasazujeme</H2>
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
-            <h3 className="mb-2 font-serif text-lg text-cream">Technické základy</h3>
-            <p className="text-[14px] text-cream/70">Schema.org, strukturovaná data, technická SEO infrastruktura, indexace, interní struktura.</p>
+            <h3 className="mb-2 font-serif text-lg text-ink">Technické základy</h3>
+            <p className="text-[14px] text-ink-2">Schema.org, strukturovaná data, technická SEO infrastruktura, indexace, interní struktura.</p>
           </div>
           <div>
-            <h3 className="mb-2 font-serif text-lg text-cream">Obsah</h3>
-            <p className="text-[14px] text-cream/70">Stránky služeb, lokální stránky, FAQ, obsahové clustery, obsah postavený na entitách.</p>
+            <h3 className="mb-2 font-serif text-lg text-ink">Obsah</h3>
+            <p className="text-[14px] text-ink-2">Stránky služeb, lokální stránky, FAQ, obsahové clustery, obsah postavený na entitách.</p>
           </div>
           <div>
-            <h3 className="mb-2 font-serif text-lg text-cream">Lokální viditelnost</h3>
-            <p className="text-[14px] text-cream/70">Google Business Profile, NAP, lokální signály a zdroje.</p>
+            <h3 className="mb-2 font-serif text-lg text-ink">Lokální viditelnost</h3>
+            <p className="text-[14px] text-ink-2">Google Business Profile, NAP, lokální signály a zdroje.</p>
           </div>
           <div>
-            <h3 className="mb-2 font-serif text-lg text-cream">Čitelnost pro AI</h3>
-            <p className="text-[14px] text-cream/70">Struktura informací, konzistence entity, llms.txt (pokud dává smysl), strojově čitelný obsah.</p>
+            <h3 className="mb-2 font-serif text-lg text-ink">Čitelnost pro AI</h3>
+            <p className="text-[14px] text-ink-2">Struktura informací, konzistence entity, llms.txt (pokud dává smysl), strojově čitelný obsah.</p>
           </div>
         </div>
       </Section>

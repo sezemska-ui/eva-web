@@ -23,14 +23,14 @@ export default function StrategickaKonzultace() {
           a jaký další krok dává smysl.
         </P>
 
-        <div className="mt-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
+        <div className="mt-6 border border-rule bg-paper-2 p-5 sm:p-6">
           <p className="mb-1 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="font-serif text-3xl text-cream">4 500 Kč</span>
-            <span className="text-[14px] text-cream/70">
+            <span className="font-serif text-3xl text-ink">4 500 Kč</span>
+            <span className="text-[14px] text-ink-2">
               nejsem plátce DPH · 60 minut · online nebo osobně
             </span>
           </p>
-          <p className="text-[14px] text-cream/70">
+          <p className="text-[14px] text-ink-2">
             Pokud budete pokračovat auditem AI viditelnosti, cenu
             konzultace odečtu z ceny auditu.
           </p>
@@ -80,17 +80,17 @@ export default function StrategickaKonzultace() {
             ["02", "Podívám se s vámi na to, jak vás dnes vidí vyhledávače a AI."],
             ["03", "Doporučím, jaký další krok dává v tuto chvíli smysl."],
           ].map(([n, t]) => (
-            <div key={n} className="flex gap-4 border-b border-white/10 pb-4 last:border-b-0">
-              <span className="font-mono text-[13px] text-gold">{n}</span>
-              <span className="text-[15px] text-cream/80">{t}</span>
+            <div key={n} className="flex gap-4 border-b border-rule pb-4 last:border-b-0">
+              <span className="font-mono text-[13px] text-muted">{n}</span>
+              <span className="text-[15px] text-ink-2">{t}</span>
             </div>
           ))}
         </div>
       </Section>
 
       <Section>
-        <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
-          <blockquote className="flex flex-col gap-3 text-[15.5px] leading-relaxed text-cream/80">
+        <figure className="border-l-2 border-rule bg-paper-2 px-5 py-5 sm:px-6">
+          <blockquote className="flex flex-col gap-3 text-[17px] leading-relaxed text-ink-2">
             <p>
               „S Evou Sezemskou jsem spolupracovala na vylepšení svého webu a
               její práci mohu jedině doporučit. Díky jejím odborným znalostem v
@@ -110,13 +110,13 @@ export default function StrategickaKonzultace() {
               mohu jedině doporučit. Děkuji za skvělou spolupráci! :)“
             </p>
           </blockquote>
-          <figcaption className="mt-4 font-mono text-[12px] text-cream/55">
+          <figcaption className="mt-4 font-mono text-[12px] text-muted">
             Michaela Čížková, fotografka ·{" "}
             <a
               href="https://www.google.com/search?kgmid=/g/11zhdhh8r6"
               target="_blank"
               rel="noopener"
-              className="underline decoration-gold/40 underline-offset-4 hover:text-cream/80 hover:decoration-gold"
+              className="underline decoration-rule underline-offset-4 hover:text-ink-2 hover:decoration-ink"
             >
               recenze na Googlu
             </a>

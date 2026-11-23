@@ -34,9 +34,9 @@ export default function Sluzby() {
         </P>
         <Link
           href="/pro-koho"
-          className="inline-block text-sm font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+          className="inline-block text-base font-semibold text-ink underline decoration-rule underline-offset-[6px] transition-colors duration-200 hover:decoration-ink"
         >
-          Pro koho pracuji →
+          Pro koho pracuji
         </Link>
       </Section>
 

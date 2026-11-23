@@ -54,15 +54,15 @@ export function Breadcrumbs({ items }: { items: { label: string; href?: string }
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <nav className="mb-6 flex flex-wrap gap-2 font-mono text-[11px] uppercase tracking-wider text-cream/40">
+      <nav aria-label="Drobečková navigace" className="mb-8 flex flex-wrap gap-x-2 font-mono text-[13px] tracking-[0.04em] text-muted">
         {items.map((item, i) => (
           <span key={i} className="flex items-center gap-2">
             {item.href ? (
-              <Link href={item.href} className="hover:text-cream/70">
+              <Link href={item.href} className="underline-offset-4 hover:text-ink hover:underline">
                 {item.label}
               </Link>
             ) : (
-              <span className="text-cream/60">{item.label}</span>
+              <span className="text-ink-2">{item.label}</span>
             )}
             {i < items.length - 1 && <span>/</span>}
           </span>

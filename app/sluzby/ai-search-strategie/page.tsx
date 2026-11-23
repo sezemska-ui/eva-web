@@ -50,7 +50,7 @@ export default function Strategie() {
       <Section>
         <H2>Kde chcete být doporučováni?</H2>
         <P>Nezačínáme klíčovým slovem. Začínáme zákazníkem:</P>
-        <p className="text-[14px] font-mono text-cream/60">
+        <p className="text-[14px] font-mono text-muted">
           ZÁKAZNÍK → ZÁMĚR → DOTAZ → SEARCH / AI → DOPORUČENÍ → KONVERZE
         </p>
       </Section>

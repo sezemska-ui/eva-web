@@ -21,7 +21,7 @@ export default function Article() {
         url="/field-notes/implementace-a-overeni"
       />
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Od strategie k nasazení" }]} />
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "Od strategie k nasazení" }]} />
         <ArticleMeta category="Implementace · Case Note · část 3/4" href="/field-notes/implementace-a-overeni" />
         <H1>
           Strategie nestačí. Jak jsme ji dostali na živý web — a co ukazuje
@@ -59,32 +59,32 @@ export default function Article() {
           data a obsah, až nakonec doplňkové kroky pro dlouhodobou autoritu.
         </P>
         <ul className="flex flex-col gap-3">
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">Technický základ</span>{" "}
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">Technický základ</span>{" "}
             — server-side rendering (Next.js), robots.txt a sitemap, aby byl
             web vůbec dostupný a čitelný pro crawling.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Strukturovaná data a obsah
             </span>{" "}
             — schema markup (Person, LocalBusiness/ProfessionalService,
             OfferCatalog, WebSite, WebPage, FAQPage, ImageObject) propojený s
             Wikidaty míst, title tagy, geo meta tagy a viditelná FAQ sekce.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">Obsah fotek</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">Obsah fotek</span> —
             přejmenování souborů fotografií (např.
             rodinne-foceni-jicin.png) a alt popisky, které si klientka
             spravuje sama přímo v Sanity CMS.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">Blog</span> — nová
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">Blog</span> — nová
             sekce, kterou webmaster propojil tak, že každý nový článek
             automaticky vygeneruje i vlastní BlogPosting schema.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">llms.txt</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">llms.txt</span> —
             nasazený přímo webmasterem na server.
           </li>
         </ul>
@@ -121,18 +121,18 @@ export default function Article() {
           Stejný test zachytil i výrazné zrychlení načítání hlavního obsahu
           stránky (LCP):
         </P>
-        <div className="grid grid-cols-2 gap-6 rounded-sm border border-white/10 p-5">
+        <div className="grid grid-cols-2 gap-6 border border-rule p-5">
           <div>
-            <div className="mb-1 font-mono text-[11px] uppercase tracking-widest text-cream/45">
+            <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">
               LCP — duben 2026
             </div>
-            <div className="font-serif text-3xl text-cream">14,5 s</div>
+            <div className="font-serif text-3xl text-ink">14,5 s</div>
           </div>
           <div>
-            <div className="mb-1 font-mono text-[11px] uppercase tracking-widest text-cream/45">
+            <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">
               LCP — září 2026
             </div>
-            <div className="font-serif text-3xl text-gold-light">2,9 s</div>
+            <div className="font-serif text-3xl text-ink">2,9 s</div>
           </div>
         </div>
         <P>
@@ -140,7 +140,7 @@ export default function Article() {
           jednotlivým úpravám izolovaně. V dalších dílech budu pracovat se
           standardizovanými testy stejných dotazů a sledovat vývoj v čase —
           přesně to shrnuje článek{" "}
-          <Link href="/field-notes/vysledky-po-31-dnech" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+          <Link href="/field-notes/vysledky-po-31-dnech" className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
             Od záměny identity k 23 z 30 doporučení
           </Link>
           , kde porovnávám výsledky po 31 dnech provozu.

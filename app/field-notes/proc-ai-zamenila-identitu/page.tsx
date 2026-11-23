@@ -21,7 +21,7 @@ export default function Article() {
         url="/field-notes/proc-ai-zamenila-identitu"
       />
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Jak AI zaměnila identitu" }]} />
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "Jak AI zaměnila identitu" }]} />
         <ArticleMeta category="Audit AI viditelnosti · Case Note · část 1/4" href="/field-notes/proc-ai-zamenila-identitu" />
         <H1>Jak AI zaměnila identitu mé klientky — a co to prozradilo o její viditelnosti</H1>
         <P>
@@ -63,7 +63,7 @@ export default function Article() {
         <P>
           Jak se to nakonec podařilo vyřešit a jaký to mělo dopad po měsíci
           provozu, popisuju v článku{" "}
-          <Link href="/field-notes/vysledky-po-31-dnech" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+          <Link href="/field-notes/vysledky-po-31-dnech" className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
             Od záměny identity k 23 z 30 doporučení
           </Link>
           .

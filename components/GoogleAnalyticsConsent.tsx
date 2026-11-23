@@ -54,9 +54,9 @@ export default function GoogleAnalyticsConsent() {
       )}
 
       {ready && consent === null && (
-        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-navy-deep/95 px-6 py-4 backdrop-blur">
-          <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-[13px] text-cream/70">
+        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-rule bg-paper py-4">
+          <div className="mx-auto box-content flex max-w-[1200px] flex-col gap-3 px-[clamp(16px,6vw,96px)] sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+            <p className="max-w-[70ch] text-[14px] leading-[1.6] text-ink-2">
               Tento web používá cookies pro měření návštěvnosti (Google
               Analytics) a pro anonymní záznam používání stránek (Microsoft
               Clarity). Souhlasíte s jejich použitím?
@@ -65,14 +65,14 @@ export default function GoogleAnalyticsConsent() {
               <button
                 type="button"
                 onClick={() => handleChoice("denied")}
-                className="rounded-sm border border-white/20 px-4 py-2 text-sm text-cream/70 transition-colors duration-200 hover:border-white/40"
+                className="min-h-11 border border-ink px-5 text-[15px] font-semibold text-ink transition-colors duration-200 hover:bg-ink hover:text-paper"
               >
                 Odmítnout
               </button>
               <button
                 type="button"
                 onClick={() => handleChoice("granted")}
-                className="rounded-sm bg-gold px-4 py-2 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
+                className="min-h-11 border border-navy bg-navy px-5 text-[15px] font-semibold text-on-navy transition-colors duration-200 hover:bg-navy-2"
               >
                 Přijmout
               </button>

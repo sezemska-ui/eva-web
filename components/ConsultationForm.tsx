@@ -6,8 +6,8 @@ import { CONSULTATION_FORM_URL } from "./SiteJsonLd";
 import { earliestDate, formatDate, isSelectable, toKey } from "@/lib/workdays";
 
 const inputClass =
-  "w-full rounded-sm border border-white/15 bg-transparent px-4 py-3 text-[15px] text-cream placeholder:text-cream/40 focus:border-gold/50 focus:outline-none";
-const labelClass = "mb-1.5 block text-[13px] text-cream/70";
+  "w-full border border-rule bg-transparent px-4 py-3 text-[15px] text-ink placeholder:text-muted focus:border-rule focus:outline-none";
+const labelClass = "mb-1.5 block text-[13px] text-ink-2";
 
 const MONTHS = [
   "leden", "únor", "březen", "duben", "květen", "červen",
@@ -80,7 +80,7 @@ function DatePicker({
     <div ref={rootRef} className="relative">
       <label htmlFor={id} className={labelClass}>
         {label}
-        {optional && <span className="text-cream/40"> (nepovinné)</span>}
+        {optional && <span className="text-muted"> (nepovinné)</span>}
       </label>
       <div className="flex gap-2">
         <button
@@ -89,7 +89,7 @@ function DatePicker({
           onClick={toggle}
           aria-haspopup="dialog"
           aria-expanded={open}
-          className={`${inputClass} text-left ${value ? "" : "text-cream/40"}`}
+          className={`${inputClass} text-left ${value ? "" : "text-muted"}`}
         >
           {value ? formatDate(value) : "Vyberte datum"}
         </button>
@@ -97,20 +97,20 @@ function DatePicker({
           <button
             type="button"
             onClick={() => onChange(null)}
-            className="flex-none rounded-sm border border-white/15 px-3 text-[13px] text-cream/60 hover:text-cream"
+            className="flex-none border border-rule px-3 text-[13px] text-muted hover:text-ink"
             aria-label={`Smazat: ${label}`}
           >
             ✕
           </button>
         )}
       </div>
-      {error && <p className="mt-1.5 text-[13px] text-gold-light">{error}</p>}
+      {error && <p className="mt-1.5 text-[13px] text-ink">{error}</p>}
 
       {open && view && today && (
         <div
           role="dialog"
           aria-label={label}
-          className="absolute left-0 z-20 mt-2 w-full max-w-[320px] rounded-sm border border-white/15 bg-navy-deep p-3 shadow-xl"
+          className="absolute left-0 z-20 mt-2 w-full max-w-[320px] border border-rule bg-navy p-3 shadow-xl"
         >
           <div className="mb-2 flex items-center justify-between">
             <button
@@ -118,25 +118,25 @@ function DatePicker({
               onClick={() => setView(new Date(view.getFullYear(), view.getMonth() - 1, 1))}
               disabled={!canGoBack}
               aria-label="Předchozí měsíc"
-              className="rounded-sm px-2 py-1 text-cream/70 hover:text-cream disabled:opacity-25"
+              className="px-2 py-1 text-ink-2 hover:text-ink disabled:opacity-25"
             >
               ←
             </button>
-            <span className="text-[14px] text-cream">
+            <span className="text-[14px] text-ink">
               {MONTHS[view.getMonth()]} {view.getFullYear()}
             </span>
             <button
               type="button"
               onClick={() => setView(new Date(view.getFullYear(), view.getMonth() + 1, 1))}
               aria-label="Další měsíc"
-              className="rounded-sm px-2 py-1 text-cream/70 hover:text-cream"
+              className="px-2 py-1 text-ink-2 hover:text-ink"
             >
               →
             </button>
           </div>
           <div className="grid grid-cols-7 gap-1 text-center">
             {WEEKDAY_HEADERS.map((w) => (
-              <span key={w} className="py-1 font-mono text-[11px] uppercase text-cream/40">
+              <span key={w} className="py-1 font-mono text-[13px] text-muted">
                 {w}
               </span>
             ))}
@@ -157,10 +157,10 @@ function DatePicker({
                   aria-pressed={!!selected}
                   className={`rounded-sm py-2 text-[14px] transition-colors ${
                     selected
-                      ? "bg-gold text-navy-deep"
+                      ? "bg-navy text-on-navy"
                       : selectable
-                        ? "text-cream hover:bg-white/10"
-                        : "cursor-not-allowed text-cream/20 line-through"
+                        ? "text-ink hover:bg-paper-2"
+                        : "cursor-not-allowed text-rule line-through"
                   }`}
                 >
                   {d.getDate()}
@@ -168,7 +168,7 @@ function DatePicker({
               );
             })}
           </div>
-          <p className="mt-2 text-[12px] text-cream/45">
+          <p className="mt-2 text-[12px] text-muted">
             Víkendy a svátky nejdou vybrat. Nejdřívější termín je za 3 pracovní dny.
           </p>
         </div>
@@ -242,8 +242,8 @@ export default function ConsultationForm() {
 
   if (status === "sent") {
     return (
-      <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
-        <p className="font-serif text-xl text-cream">
+      <div className="border border-rule bg-paper-2 p-6 sm:p-8">
+        <p className="font-serif text-xl text-ink">
           Díky. Ozvu se do 24 hodin v pracovní dny a termín potvrdím e-mailem.
         </p>
       </div>
@@ -251,11 +251,11 @@ export default function ConsultationForm() {
   }
 
   return (
-    <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
-      <h2 className="mb-2 font-serif text-2xl text-cream">
+    <div className="border border-rule bg-paper-2 p-6 sm:p-8">
+      <h2 className="mb-2 font-serif text-2xl text-ink">
         Pojďme si promluvit o vaší situaci.
       </h2>
-      <p className="mb-6 text-[15px] text-cream/70">
+      <p className="mb-6 text-[15px] text-ink-2">
         Napište mi pár vět o tom, co řešíte. Ozvu se do 24 hodin v pracovní dny
         a termín potvrdím.
       </p>
@@ -331,14 +331,14 @@ export default function ConsultationForm() {
           <legend className={labelClass}>Část dne</legend>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             {PARTS_OF_DAY.map((p) => (
-              <label key={p} className="flex items-center gap-2 text-[15px] text-cream/80">
+              <label key={p} className="flex items-center gap-2 text-[15px] text-ink-2">
                 <input
                   type="radio"
                   name="cast_dne"
                   value={p}
                   checked={castDne === p}
                   onChange={() => setCastDne(p)}
-                  className="h-4 w-4 accent-gold"
+                  className="h-4 w-4 accent-navy"
                 />
                 {p}
               </label>
@@ -357,11 +357,11 @@ export default function ConsultationForm() {
           className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden"
         />
 
-        <p className="text-[13px] text-cream/70">
+        <p className="text-[13px] text-ink-2">
           Odesláním formuláře souhlasíte se{" "}
           <Link
             href="/ochrana-osobnich-udaju"
-            className="underline decoration-gold/50 hover:decoration-gold"
+            className="underline decoration-rule hover:decoration-ink"
           >
             zpracováním osobních údajů
           </Link>
@@ -372,21 +372,21 @@ export default function ConsultationForm() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="inline-block rounded-sm bg-cream px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light disabled:opacity-60"
+            className="inline-flex min-h-12 items-center border border-navy bg-navy px-7 py-4 text-base font-semibold leading-none tracking-[0.02em] text-on-navy transition-colors duration-200 hover:bg-navy-2"
           >
             {status === "sending" ? "Odesílám…" : "Odeslat a domluvit konzultaci"}
           </button>
-          <p className="mt-2 text-[13px] text-cream/60">
+          <p className="mt-2 text-[13px] text-muted">
             Ozvu se do 24 hodin v pracovní dny a termín potvrdím.
           </p>
         </div>
 
         {status === "error" && (
-          <p className="text-[13px] text-cream/60">
+          <p className="text-[13px] text-muted">
             Něco se nepovedlo. Zkuste to prosím znovu, nebo napište přímo na{" "}
             <a
               href="mailto:sezemska@searchstrategy.cz"
-              className="underline decoration-gold/50"
+              className="underline decoration-rule"
             >
               sezemska@searchstrategy.cz
             </a>

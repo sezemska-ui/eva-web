@@ -1,65 +1,104 @@
 @import "tailwindcss";
 
-:root {
-  --navy-deep: #0B1726;
-  --navy-mid: #12233A;
-  --gold: #B89A5A;
-  --gold-light: #D4BC85;
-  --cream: #F3EEE4;
-  --ink: #1A2333;
-  --muted: #8a8577;
-  --line: rgba(243, 238, 228, 0.12);
-}
+/* Design systém „Katalogový zápis“: papír, inkoust, tmavě modrá a zlatá jen jako detail */
+@theme {
+  --color-paper: #F6F2EA;
+  --color-paper-2: #EFE9DD;
+  --color-ink: #1A2333;
+  --color-ink-2: #4F4A40;
+  --color-muted: #6F685B;
+  --color-rule: #D3CABA;
+  --color-navy: #0B1726;
+  --color-navy-2: #12233A;
+  --color-gold: #B89A5A;
+  --color-gold-text: #8C6F35;
+  --color-gold-on-navy: #D4BC85;
+  --color-on-navy: #EFE9DD;
+  --color-on-navy-2: #BDB6A8;
+  --color-on-navy-muted: #9C9586;
 
-@theme inline {
-  --color-navy-deep: var(--navy-deep);
-  --color-navy-mid: var(--navy-mid);
-  --color-gold: var(--gold);
-  --color-gold-light: var(--gold-light);
-  --color-cream: var(--cream);
-  --color-ink: var(--ink);
-  --color-muted: var(--muted);
-  --font-serif: var(--font-instrument-serif);
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-plex-mono);
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans: var(--font-manrope), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --radius-sm: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
-  background:
-    radial-gradient(1100px 550px at 12% -8%, rgba(184, 154, 90, 0.05), transparent 60%),
-    radial-gradient(900px 500px at 100% 0%, rgba(184, 154, 90, 0.03), transparent 55%),
-    linear-gradient(180deg, var(--navy-deep), var(--navy-mid) 45%, var(--navy-deep));
-  background-attachment: fixed;
-  color: var(--cream);
-  font-family: var(--font-sans), sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-paper-2);
+  color: var(--color-navy);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-gold-text);
+  outline-offset: 3px;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Úvodní stránka má sekce přes celou šířku, ostatní stránky čtou v užším sloupci */
+main:has(> [data-full-bleed]) {
+  max-width: none;
+  padding: 0;
+}
+
+/* Znak ES| : zlatá čárka jako kurzor, po načtení dvakrát blikne a zůstane */
+.es-cursor {
+  display: inline-block;
+  width: 0.07em;
+  height: 0.92em;
+  margin-left: 0.12em;
+  background: var(--color-gold);
+  transform: translateY(0.04em);
+  animation: es-blink 0.55s steps(1, end) 0.4s 4;
+}
+
+@keyframes es-blink {
+  50% { opacity: 0; }
+}
+
+/* Test doporučení: odpověď se vypisuje po řádcích jako v ChatGPT */
+.typed-row {
+  animation: typed-in 0.35s ease-out both;
+  animation-delay: calc(var(--i, 0) * 220ms);
+}
+
+@keyframes typed-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeRay {
-  from { opacity: 0; }
-}
-
-main > section {
-  animation: fadeInUp 0.55s ease-out both;
-}
-main > section:nth-of-type(1) { animation-delay: 0s; }
-main > section:nth-of-type(2) { animation-delay: 0.08s; }
-main > section:nth-of-type(3) { animation-delay: 0.16s; }
-main > section:nth-of-type(4) { animation-delay: 0.24s; }
-main > section:nth-of-type(5) { animation-delay: 0.32s; }
-main > section:nth-of-type(n+6) { animation-delay: 0.4s; }

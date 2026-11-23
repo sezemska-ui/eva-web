@@ -23,9 +23,9 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const linkClass =
-  "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";
-const strongClass = "font-semibold text-cream";
-const listItemClass = "text-[15px] text-cream/80";
+  "text-ink underline decoration-rule underline-offset-4 hover:decoration-ink";
+const strongClass = "font-semibold text-ink";
+const listItemClass = "text-[15px] text-ink-2";
 
 export default function Article() {
   return (
@@ -36,7 +36,7 @@ export default function Article() {
         url={URL_PATH}
       />
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "AI viditelnost v čase" }]} />
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "AI viditelnost v čase" }]} />
         <ArticleMeta category="Budování AI viditelnosti · Case Note · část 4/4" href="/field-notes/jak-budovat-ai-viditelnost-v-case" />
         <H1>Jak budovat AI viditelnost v čase</H1>
         <P>
@@ -99,7 +99,7 @@ export default function Article() {
             width={1600}
             height={900}
             sizes="(min-width: 896px) 848px, calc(100vw - 48px)"
-            className="h-auto w-full rounded-sm"
+            className="h-auto w-full"
           />
         </figure>
         <P>
@@ -108,11 +108,11 @@ export default function Article() {
           <strong className={strongClass}>během těch 31 dnů se měnilo víc věcí najednou</strong>,
           takže nelze s jistotou říct, která konkrétní úprava přispěla nejvíc.
         </P>
-        <blockquote className="my-6 rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-4">
-          <p className="mb-3 text-[15.5px] leading-relaxed text-cream/75">
+        <blockquote className="my-6 border-l-2 border-rule bg-paper-2 px-5 py-4">
+          <p className="mb-3 text-[17px] leading-relaxed text-ink-2">
             <strong className={strongClass}>Zajímavý poznatek z terénu:</strong>
           </p>
-          <p className="mb-3 text-[15.5px] leading-relaxed text-cream/75">
+          <p className="mb-3 text-[17px] leading-relaxed text-ink-2">
             <em>
               Při testování jsem narazila na zajímavý protipříklad – fotografku,
               která teprve začíná podnikat a nemá klasický web, jako web uvádí
@@ -122,7 +122,7 @@ export default function Article() {
               ne.
             </em>
           </p>
-          <p className="text-[15.5px] leading-relaxed text-cream/75">
+          <p className="text-[17px] leading-relaxed text-ink-2">
             <em>
               Ukazuje to, že v některých případech{" "}
               <strong className={strongClass}>může Google doporučit podnik i bez klasického webu</strong>,
@@ -149,7 +149,7 @@ export default function Article() {
             width={1300}
             height={1250}
             sizes="(min-width: 640px) 576px, calc(100vw - 48px)"
-            className="mx-auto h-auto w-full max-w-xl rounded-sm"
+            className="mx-auto h-auto w-full max-w-xl"
           />
         </figure>
         <ul className="flex flex-col gap-3">
@@ -332,40 +332,40 @@ export default function Article() {
           Michaelu jsou:
         </P>
         <div className="mb-6 overflow-x-auto">
-          <table className="w-full border-collapse text-[14px] text-cream/80">
+          <table className="w-full border-collapse text-[14px] text-ink-2">
             <thead>
-              <tr className="border-b border-white/10 text-left font-mono text-[11px] uppercase tracking-wider text-cream/45">
+              <tr className="border-b border-rule text-left font-mono text-[13px] tracking-[0.04em] text-muted">
                 <th scope="col" className="py-3 pr-4 font-normal">Aktivita</th>
                 <th scope="col" className="py-3 font-normal">Frekvence</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Žádost o recenzi</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Žádost o recenzi</td>
                 <td className="py-3">Po každém focení</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Odpověď na recenze</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Odpověď na recenze</td>
                 <td className="py-3">Průběžně</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Příspěvek na Instagramu a Facebooku</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Příspěvek na Instagramu a Facebooku</td>
                 <td className="py-3">1–2× týdně</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Příspěvek na Google Business Profile</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Příspěvek na Google Business Profile</td>
                 <td className="py-3">2× měsíčně</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Nový článek na blogu</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Nový článek na blogu</td>
                 <td className="py-3">1× za 2 měsíce</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Kontrola konzistence jména, adresy a telefonu (NAP)</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Kontrola konzistence jména, adresy a telefonu (NAP)</td>
                 <td className="py-3">Pravidelně</td>
               </tr>
               <tr>
-                <td className="py-3 pr-4 text-cream">Aktualizace cen ve schema markupu a v souboru llms.txt</td>
+                <td className="py-3 pr-4 text-ink">Aktualizace cen ve schema markupu a v souboru llms.txt</td>
                 <td className="py-3">Při každé změně ceníku</td>
               </tr>
             </tbody>

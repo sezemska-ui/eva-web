@@ -72,15 +72,15 @@ const notFor = [
 ];
 
 const linkClass =
-  "text-gold-light underline decoration-gold/40 underline-offset-4 transition-colors duration-200 hover:decoration-gold";
+  "text-ink underline decoration-rule underline-offset-4 transition-colors duration-200 hover:decoration-ink";
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-1 border-b border-white/10 py-3 last:border-b-0 sm:flex-row sm:gap-6">
-      <dt className="flex-none pt-[3px] font-mono text-[11px] uppercase tracking-wider text-cream/45 sm:w-40">
+    <div className="flex flex-col gap-1 border-b border-rule py-3 last:border-b-0 sm:flex-row sm:gap-6">
+      <dt className="flex-none pt-[3px] font-mono text-[13px] tracking-[0.04em] text-muted sm:w-40">
         {label}
       </dt>
-      <dd className="text-[15.5px] leading-relaxed text-cream/80">{children}</dd>
+      <dd className="text-[17px] leading-relaxed text-ink-2">{children}</dd>
     </div>
   );
 }
@@ -109,24 +109,24 @@ export default function ProKoho() {
 
       {groups.map((g) => (
         <Section key={g.n}>
-          <div className="mb-1 font-mono text-[12px] text-gold">{g.n}</div>
-          <h2 className="mb-4 font-serif text-2xl text-cream">{g.title}</h2>
+          <div className="mb-1 font-mono text-[12px] text-muted">{g.n}</div>
+          <h2 className="mb-4 font-serif text-2xl text-ink">{g.title}</h2>
           <dl>
             <Row label="Typická situace">{g.situation}</Row>
             <Row label="Na co se dívám">{g.focus}</Row>
             {g.caseLink && (
               <Row label="Z praxe">
                 <Link href={g.caseLink.href} className={linkClass}>
-                  {g.caseLink.label} →
+                  {g.caseLink.label}
                 </Link>
               </Row>
             )}
             <Row label="Kde začít">
               {g.start.map((s, i) => (
                 <span key={s.href}>
-                  {i > 0 && <span className="text-cream/60">, dlouhodobě{" "}</span>}
+                  {i > 0 && <span className="text-muted">, dlouhodobě{" "}</span>}
                   <Link href={s.href} className={linkClass}>
-                    {s.label} →
+                    {s.label}
                   </Link>
                 </span>
               ))}
@@ -142,9 +142,9 @@ export default function ProKoho() {
           {notFor.map((t) => (
             <li
               key={t}
-              className="flex gap-4 border-b border-white/10 py-3 text-[15.5px] leading-relaxed text-cream/80 last:border-b-0"
+              className="flex gap-4 border-b border-rule py-3 text-[17px] leading-relaxed text-ink-2 last:border-b-0"
             >
-              <span className="flex-none font-mono text-[13px] text-gold">—</span>
+              <span className="flex-none font-mono text-[13px] text-muted">—</span>
               <span>{t}</span>
             </li>
           ))}

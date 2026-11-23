@@ -22,9 +22,9 @@ export default function Kontakt() {
         </P>
       </Section>
       <Section>
-        <div className="rounded-sm bg-cream p-6 text-ink">
+        <div className="bg-paper-2 p-6 text-ink">
           <h2 className="mb-2 font-serif text-2xl text-ink">Úvodní konzultace</h2>
-          <p className="mb-4 text-[15px] text-[#4b4536]">
+          <p className="mb-4 text-[15px] text-ink-2">
             Nejrychlejší cesta, jak začít — 60 minut na to, abychom společně
             zjistili, kde je problém a jaký další krok dává smysl.
           </p>
@@ -39,9 +39,9 @@ export default function Kontakt() {
             ["02", "Ozvu se vám s tím, zda a jak vám mohu pomoci."],
             ["03", "Pokud dává spolupráce smysl, domluvíme další postup."],
           ].map(([n, t]) => (
-            <div key={n} className="flex gap-4 border-b border-white/10 pb-4 last:border-b-0">
-              <span className="font-mono text-[13px] text-gold">{n}</span>
-              <span className="text-[15px] text-cream/80">{t}</span>
+            <div key={n} className="flex gap-4 border-b border-rule pb-4 last:border-b-0">
+              <span className="font-mono text-[13px] text-muted">{n}</span>
+              <span className="text-[15px] text-ink-2">{t}</span>
             </div>
           ))}
         </div>
@@ -51,7 +51,7 @@ export default function Kontakt() {
           Nebo napište přímo:{" "}
           <a
             href="mailto:sezemska@searchstrategy.cz"
-            className="font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+            className="font-semibold text-ink underline decoration-rule underline-offset-4 transition-colors duration-200 hover:decoration-ink"
           >
             sezemska@searchstrategy.cz
           </a>
@@ -62,7 +62,7 @@ export default function Kontakt() {
             href="https://www.linkedin.com/in/eva-sezemska/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+            className="font-semibold text-ink underline decoration-rule underline-offset-4 transition-colors duration-200 hover:decoration-ink"
           >
             LinkedIn
           </a>{" "}
@@ -71,12 +71,12 @@ export default function Kontakt() {
             href="https://www.instagram.com/searchstrategy.cz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-cream underline decoration-gold/50 underline-offset-4 transition-colors duration-200 hover:decoration-gold"
+            className="font-semibold text-ink underline decoration-rule underline-offset-4 transition-colors duration-200 hover:decoration-ink"
           >
             Instagram
           </a>
         </P>
-        <p className="mt-2 font-mono text-[12px] text-cream/50">Mladá Boleslav</p>
+        <p className="mt-2 font-mono text-[12px] text-muted">Mladá Boleslav</p>
       </Section>
     </>
   );

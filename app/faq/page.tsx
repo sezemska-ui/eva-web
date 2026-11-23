@@ -24,7 +24,7 @@ const obecneQuestions = [
           Nejjednodušší způsob je otevřít Google nebo ChatGPT a zeptat se. Je
           ale potřeba dodržet základní kroky pro správné testování:
         </P>
-        <ul className="mb-4 flex flex-col gap-2 text-[15px] text-cream/80">
+        <ul className="mb-4 flex flex-col gap-2 text-[15px] text-ink-2">
           <li>— odpojte se od firemní wifi, použijte mobilní data,</li>
           <li>
             — zapněte Google v anonymním režimu (inkognito) a v ChatGPT nový
@@ -80,7 +80,7 @@ const obecneQuestions = [
           musí zejména pochopit, kdo jste, co nabízíte, pro koho a kde.
         </P>
         <P>V praxi u klientů např. sleduji:</P>
-        <ul className="mb-4 flex flex-col gap-2 text-[15px] text-cream/80">
+        <ul className="mb-4 flex flex-col gap-2 text-[15px] text-ink-2">
           <li>
             — jak dlouho váš web existuje. U nových webů pozoruji, že může
             trvat déle, než si vyhledávače a AI vytvoří dostatečně jasnou
@@ -374,12 +374,12 @@ export default function FAQ() {
           můžete udělat.
         </P>
 
-        <nav className="mb-2 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[12px] uppercase tracking-widest text-cream/50">
+        <nav className="mb-2 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[12px] tracking-[0.04em] text-muted">
           {categories.map((c) => (
             <a
               key={c.id}
               href={`#${c.id}`}
-              className="transition-colors duration-200 hover:text-gold-light"
+              className="transition-colors duration-200 hover:text-ink"
             >
               {c.label}
             </a>
@@ -394,11 +394,11 @@ export default function FAQ() {
             {obecneQuestions.map((item, i) => (
               <details
                 key={i}
-                className="group border-b border-white/10 py-4"
+                className="group border-b border-rule py-4"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-                  <span className="text-[15px] text-cream/90">{item.q}</span>
-                  <span className="shrink-0 font-mono text-lg text-gold transition-transform duration-200 group-open:rotate-45">
+                  <span className="text-[15px] text-ink-2">{item.q}</span>
+                  <span className="shrink-0 font-mono text-lg text-muted transition-transform duration-200 group-open:rotate-45">
                     +
                   </span>
                 </summary>
