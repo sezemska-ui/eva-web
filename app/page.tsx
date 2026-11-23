@@ -20,7 +20,8 @@ import NoteList from "@/components/NoteList";
 import { latestNotes } from "@/lib/fieldNotes";
 
 const CASE_STUDY_HREF = "/field-notes/vysledky-po-31-dnech";
-const GOOGLE_REVIEWS_HREF = "https://www.google.com/search?kgmid=/g/11zhdhh8r6";
+// Přímý odkaz na profil firmy na Googlu s recenzemi
+const GOOGLE_REVIEWS_HREF = "https://share.google/K6dCfHNYKXWieBgiI";
 
 const H2 = "font-serif text-[32px] font-normal leading-[1.15] tracking-[-0.005em] text-ink md:text-[40px] lg:text-[48px]";
 const BODY = "max-w-[34em] text-[18px] leading-[1.7] text-ink-2";
@@ -152,6 +153,7 @@ export default function Home() {
               <dt className={LABEL}>doporučeno</dt>
               <dd className="font-mono text-[15px] text-ink">{TEST_COUNT} podniků</dd>
             </dl>
+            <p className={LABEL}>Stav k&nbsp;datu zápisu. Odpovědi AI se mění.</p>
           </div>
           <RecommendationTest />
         </div>

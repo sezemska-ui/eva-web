@@ -35,7 +35,7 @@ export default function FieldNotes() {
           Výzkumy ·{" "}
           {research.length > 0 ? count(research.length, "výzkum", "výzkumy", "výzkumů") : "připravuji"}
         </Eyebrow>
-        <p className="mb-6 text-[14px] text-muted">
+        <p className="mb-6 text-[16px] text-ink-2">
           Vlastní testy napříč oborem nebo regionem: koho AI doporučuje a proč.
         </p>
         {research.length > 0 ? (
@@ -49,7 +49,7 @@ export default function FieldNotes() {
 
       <Section>
         <Eyebrow>Průvodce · {count(guides.length, "článek", "články", "článků")}</Eyebrow>
-        <p className="mb-6 text-[14px] text-muted">
+        <p className="mb-6 text-[16px] text-ink-2">
           Jak AI vyhledávání funguje a co znamená pro firmy.
         </p>
         <NoteList notes={guides} />
@@ -57,7 +57,7 @@ export default function FieldNotes() {
 
       <Section>
         <Eyebrow>Audity AI viditelnosti · {count(audits.length, "studie", "studie", "studií")}</Eyebrow>
-        <p className="mb-6 text-[14px] text-muted">
+        <p className="mb-6 text-[16px] text-ink-2">
           Co ukázal audit AI viditelnosti u konkrétních firem.
         </p>
         <NoteList notes={audits} />
@@ -65,7 +65,7 @@ export default function FieldNotes() {
 
       <Section>
         <Eyebrow>Případová studie · {count(caseStudy.length, "díl", "díly", "dílů")}</Eyebrow>
-        <p className="mb-6 text-[14px] text-muted">
+        <p className="mb-6 text-[16px] text-ink-2">
           Fotografka z Českého ráje: z 6 na 23 doporučení z 30 za 31 dní. Díly
           seřazené v pořadí čtení.
         </p>

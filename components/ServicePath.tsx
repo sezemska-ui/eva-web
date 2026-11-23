@@ -17,7 +17,7 @@ const steps = [
   },
   {
     label: "01",
-    title: "Audit AI viditelnosti s akčním plánem",
+    title: "Audit AI viditelnosti",
     price: "20 000–40 000 Kč",
     href: "/sluzby/ai-search-visibility-audit",
     short: "Zjistím, odkud AI o vás čerpá a čím ji přesvědčila konkurence. Dostanete plán změn seřazený podle priorit.",

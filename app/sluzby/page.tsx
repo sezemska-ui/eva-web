@@ -18,7 +18,7 @@ export default function Sluzby() {
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby" }]} />
         <Eyebrow>Služby / 00–04</Eyebrow>
-        <H1>Od prvního zjištění k dlouhodobé digitální autoritě.</H1>
+        <H1>Od prvního zjištění k dlouhodobé důvěryhodnosti.</H1>
         <P>
           Pomáhám firmám zjistit, co se děje ve chvíli, kdy jejich zákazník
           hledá bez znalosti jejich jména.
@@ -49,7 +49,7 @@ export default function Sluzby() {
         <CtaBox title="Kde začít?">
           Nevíte, proč vás zákazníci nenacházejí nebo nedostávají mezi
           doporučeními? Začněte konzultací. Zjistíme, jestli je pro vás dalším
-          krokem audit AI viditelnosti s akčním plánem.
+          krokem audit AI viditelnosti.
         </CtaBox>
       </Section>
     </>

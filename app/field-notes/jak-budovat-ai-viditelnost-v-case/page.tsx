@@ -37,7 +37,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "AI viditelnost v čase" }]} />
-        <ArticleMeta category="Budování AI viditelnosti · Case Note · část 4/4" href="/field-notes/jak-budovat-ai-viditelnost-v-case" />
+        <ArticleMeta category="Případová studie · část 5/5" href="/field-notes/jak-budovat-ai-viditelnost-v-case" />
         <H1>Jak budovat AI viditelnost v čase</H1>
         <P>
           <strong className={strongClass}>Autorka:</strong> Eva Sezemská, AI Search
@@ -49,25 +49,25 @@ export default function Article() {
         </P>
         <P>
           <em>
-            Toto je poslední díl čtyřdílné případové studie o AI viditelnosti
+            Toto je poslední díl pětidílné případové studie o AI viditelnosti
             fotografky Michaely Čížkové. Předchozí díly:{" "}
             <Link href="/field-notes/proc-ai-zamenila-identitu" className={linkClass}>
               Jak AI zaměnila identitu mé klientky
             </Link>{" "}
-            (část 1/4),{" "}
+            (část 1/5),{" "}
             <Link href="/field-notes/co-jsme-museli-nasadit" className={linkClass}>
               Co jsme museli nasadit, aby AI web přečetla
             </Link>{" "}
-            (část 2/4) a{" "}
+            (část 2/5),{" "}
             <Link href="/field-notes/implementace-a-overeni" className={linkClass}>
               Strategie nestačí – jak jsme ji dostali na živý web
             </Link>{" "}
-            (část 3/4). Výsledky měření najdete v samostatném článku{" "}
+            (část 3/5) a{" "}
             <Link href="/field-notes/vysledky-po-31-dnech" className={linkClass}>
               Od záměny identity k 23 z 30 doporučení: případová studie AI
               viditelnosti po 31 dnech
-            </Link>
-            .
+            </Link>{" "}
+            (část 4/5).
           </em>
         </P>
       </Section>
@@ -498,25 +498,26 @@ export default function Article() {
             <Link href="/field-notes/proc-ai-zamenila-identitu" className={linkClass}>
               Jak AI zaměnila identitu mé klientky
             </Link>{" "}
-            – část 1/4
+            – část 1/5
           </li>
           <li className={listItemClass}>
             <Link href="/field-notes/co-jsme-museli-nasadit" className={linkClass}>
               Co jsme museli nasadit, aby AI web přečetla
             </Link>{" "}
-            – část 2/4
+            – část 2/5
           </li>
           <li className={listItemClass}>
             <Link href="/field-notes/implementace-a-overeni" className={linkClass}>
               Strategie nestačí – jak jsme ji dostali na živý web
             </Link>{" "}
-            – část 3/4
+            – část 3/5
           </li>
           <li className={listItemClass}>
             <Link href="/field-notes/vysledky-po-31-dnech" className={linkClass}>
               Od záměny identity k 23 z 30 doporučení: případová studie AI
               viditelnosti po 31 dnech
-            </Link>
+            </Link>{" "}
+            – část 4/5
           </li>
         </ul>
       </Section>
