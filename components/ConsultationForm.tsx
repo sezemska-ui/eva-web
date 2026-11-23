@@ -6,7 +6,7 @@ import { CONSULTATION_FORM_URL } from "./SiteJsonLd";
 import { earliestDate, formatDate, isSelectable, toKey } from "@/lib/workdays";
 
 const inputClass =
-  "w-full border border-rule bg-transparent px-4 py-3 text-[15px] text-ink placeholder:text-muted focus:border-rule focus:outline-none";
+  "w-full border border-rule bg-transparent px-4 py-3 text-[15px] text-ink placeholder:text-muted focus:border-ink focus:outline-none user-invalid:border-error user-invalid:bg-error/5";
 const labelClass = "mb-1.5 block text-[13px] text-ink-2";
 
 const MONTHS = [
@@ -89,7 +89,7 @@ function DatePicker({
           onClick={toggle}
           aria-haspopup="dialog"
           aria-expanded={open}
-          className={`${inputClass} text-left ${value ? "" : "text-muted"}`}
+          className={`${inputClass} text-left ${value ? "" : "text-muted"} ${error ? "border-error bg-error/5" : ""}`}
         >
           {value ? formatDate(value) : "Vyberte datum"}
         </button>
@@ -104,13 +104,13 @@ function DatePicker({
           </button>
         )}
       </div>
-      {error && <p className="mt-1.5 text-[13px] text-ink">{error}</p>}
+      {error && <p className="mt-1.5 text-[13px] text-error">{error}</p>}
 
       {open && view && today && (
         <div
           role="dialog"
           aria-label={label}
-          className="absolute left-0 z-20 mt-2 w-full max-w-[320px] border border-rule bg-navy p-3 shadow-xl"
+          className="absolute left-0 z-20 mt-2 w-full max-w-[320px] border border-rule bg-paper p-3 shadow-[0_20px_50px_rgba(11,23,38,0.10)]"
         >
           <div className="mb-2 flex items-center justify-between">
             <button
@@ -122,7 +122,7 @@ function DatePicker({
             >
               ←
             </button>
-            <span className="text-[14px] text-ink">
+            <span className="text-[14px] font-medium text-ink">
               {MONTHS[view.getMonth()]} {view.getFullYear()}
             </span>
             <button
@@ -160,7 +160,7 @@ function DatePicker({
                       ? "bg-navy text-on-navy"
                       : selectable
                         ? "text-ink hover:bg-paper-2"
-                        : "cursor-not-allowed text-rule line-through"
+                        : "cursor-not-allowed text-muted/45 line-through"
                   }`}
                 >
                   {d.getDate()}

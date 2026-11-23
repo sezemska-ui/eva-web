@@ -16,6 +16,7 @@
   --color-on-navy: #EFE9DD;
   --color-on-navy-2: #BDB6A8;
   --color-on-navy-muted: #9C9586;
+  --color-error: #A8432F;
 
   --font-serif: var(--font-newsreader), Georgia, serif;
   --font-sans: var(--font-manrope), system-ui, -apple-system, sans-serif;
