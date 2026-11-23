@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Budování důvěryhodnosti — Eva Sezemská",
   description:
-    "Budování digitální autority skrze obsah a signály důvěryhodnosti — web, Google, média, katalogy a recenze skládané do konzistentního obrazu firmy.",
+    "Budování důvěryhodnosti skrze obsah a signály — web, Google, média, katalogy a recenze skládané do konzistentního obrazu firmy.",
   path: "/sluzby/digital-authority",
 });
 

@@ -31,7 +31,7 @@ const groups: {
       "Google Business Profil, mapy, recenze, katalogy a to, jestli všude říkají totéž co váš web.",
     price: "audit obvykle 20 000–30 000 Kč.",
     start: [
-      { label: "Audit AI viditelnosti s akčním plánem", href: "/sluzby/ai-search-visibility-audit" },
+      { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
     ],
   },
   {
@@ -59,7 +59,7 @@ const groups: {
       "Jak je vaše odbornost čitelná z webu, referencí, zmínek v médiích a oborových katalozích.",
     price: "audit obvykle 25 000–40 000 Kč.",
     start: [
-      { label: "Audit AI viditelnosti s akčním plánem", href: "/sluzby/ai-search-visibility-audit" },
+      { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
       { label: "Budování důvěryhodnosti", href: "/sluzby/digital-authority" },
     ],
   },

@@ -20,7 +20,7 @@ const services: {
   },
   {
     slug: "ai-search-visibility-audit",
-    name: "Audit AI viditelnosti s akčním plánem",
+    name: "Audit AI viditelnosti",
     description:
       "Budete vědět, proč vás AI nedoporučuje a čím začít. Zjistím, odkud o vás AI čerpá a čím ji přesvědčila konkurence. Dostanete akční plán: co změnit a v jakém pořadí. Hotovo obvykle do 15 pracovních dnů.",
     priceRange: [20000, 40000],

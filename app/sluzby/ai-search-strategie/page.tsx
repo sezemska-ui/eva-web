@@ -64,7 +64,7 @@ export default function Strategie() {
             "obsahovou architekturu",
             "digitální entitu",
             "lokální viditelnost",
-            "AI Search",
+            "AI vyhledávání",
             "externí zdroje a signály autority",
             "technické priority",
             "měření",

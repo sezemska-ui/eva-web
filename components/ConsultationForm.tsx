@@ -179,12 +179,15 @@ function DatePicker({
 
 const PARTS_OF_DAY = ["dopoledne", "odpoledne", "je mi to jedno"] as const;
 
-export default function ConsultationForm() {
+// variant="contact": krátká zpráva z /kontakt bez termínu a telefonu
+export default function ConsultationForm({ variant = "consultation" }: { variant?: "consultation" | "contact" }) {
+  const isContact = variant === "contact";
   const [jmeno, setJmeno] = useState("");
   const [email, setEmail] = useState("");
   const [telefon, setTelefon] = useState("");
   const [web, setWeb] = useState("");
   const [popis, setPopis] = useState("");
+  const [obor, setObor] = useState("");
   const [termin, setTermin] = useState<Date | null>(null);
   const [termin2, setTermin2] = useState<Date | null>(null);
   const [castDne, setCastDne] = useState<(typeof PARTS_OF_DAY)[number]>("je mi to jedno");
@@ -196,17 +199,19 @@ export default function ConsultationForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!termin) {
+    if (!isContact && !termin) {
       setTerminError("Vyberte prosím navrhovaný termín.");
       return;
     }
     setStatus("sending");
 
-    const terminText = formatDate(termin);
+    const terminText = termin ? formatDate(termin) : "";
     const termin2Text = termin2 ? formatDate(termin2) : "";
     // Apps Script zná jen pole jmeno, email, zprava, souhlas, website.
     // Nová pole proto jdou i na začátek zprávy, aby dorazila v každém případě.
-    const zprava = [
+    const zprava = isContact
+      ? ["Zpráva z kontaktního formuláře", `Web: ${web || "—"}`, `Obor: ${obor || "—"}`, "", popis].join("\n")
+      : [
       `Telefon: ${telefon || "—"}`,
       `Web: ${web}`,
       `Termín: ${terminText}`,
@@ -229,7 +234,8 @@ export default function ConsultationForm() {
           website,
           telefon,
           web,
-          termin: toKey(termin),
+          obor,
+          termin: termin ? toKey(termin) : "",
           termin2: termin2 ? toKey(termin2) : "",
           cast_dne: castDne,
         }),
@@ -244,7 +250,9 @@ export default function ConsultationForm() {
     return (
       <div className="border border-rule bg-paper-2 p-6 sm:p-8">
         <p className="font-serif text-xl text-ink">
-          Díky. Ozvu se do 24 hodin v pracovní dny a termín potvrdím e-mailem.
+          {isContact
+            ? "Díky. Ozvu se do 48 hodin v pracovní dny."
+            : "Díky. Ozvu se do 48 hodin v pracovní dny a termín potvrdím e-mailem."}
         </p>
       </div>
     );
@@ -253,11 +261,12 @@ export default function ConsultationForm() {
   return (
     <div className="border border-rule bg-paper-2 p-6 sm:p-8">
       <h2 className="mb-2 font-serif text-2xl text-ink">
-        Pojďme si promluvit o vaší situaci.
+        {isContact ? "Napište mi" : "Pojďme si promluvit o vaší situaci."}
       </h2>
       <p className="mb-6 text-[15px] text-ink-2">
-        Napište mi pár vět o tom, co řešíte. Ozvu se do 24 hodin v pracovní dny
-        a termín potvrdím.
+        {isContact
+          ? "Pár vět stačí. Ozvu se do 48 hodin v pracovní dny."
+          : "Napište mi pár vět o tom, co řešíte. Ozvu se do 48 hodin v pracovní dny a termín potvrdím."}
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -279,6 +288,7 @@ export default function ConsultationForm() {
           onChange={(e) => setEmail(e.target.value)}
           className={inputClass}
         />
+        {!isContact && (
         <input
           type="tel"
           placeholder="Telefon (nepovinné)"
@@ -287,10 +297,11 @@ export default function ConsultationForm() {
           onChange={(e) => setTelefon(e.target.value)}
           className={inputClass}
         />
+        )}
         <input
           type="url"
-          required
-          placeholder="Web firmy, např. https://vasefirma.cz"
+          required={!isContact}
+          placeholder={isContact ? "Web firmy (nepovinné)" : "Web firmy, např. https://vasefirma.cz"}
           autoComplete="url"
           value={web}
           onChange={(e) => setWeb(e.target.value)}
@@ -300,15 +311,25 @@ export default function ConsultationForm() {
           }}
           className={inputClass}
         />
+        {isContact && (
+          <input
+            type="text"
+            placeholder="Obor, např. hotel, řemeslo, fotografie"
+            value={obor}
+            onChange={(e) => setObor(e.target.value)}
+            className={inputClass}
+          />
+        )}
         <textarea
           required
-          placeholder="Co řešíte?"
+          placeholder={isContact ? "Zpráva" : "Co řešíte?"}
           value={popis}
           onChange={(e) => setPopis(e.target.value)}
           rows={4}
           className={inputClass}
         />
 
+        {!isContact && (<>
         <DatePicker
           id="termin"
           label="Navrhovaný termín"
@@ -345,6 +366,7 @@ export default function ConsultationForm() {
             ))}
           </div>
         </fieldset>
+        </>)}
 
         <input
           type="text"
@@ -374,11 +396,11 @@ export default function ConsultationForm() {
             disabled={status === "sending"}
             className="inline-flex min-h-12 items-center border border-navy bg-navy px-7 py-4 text-base font-semibold leading-none tracking-[0.02em] text-on-navy transition-colors duration-200 hover:bg-navy-2"
           >
-            {status === "sending" ? "Odesílám…" : "Odeslat a domluvit konzultaci"}
+            {status === "sending" ? "Odesílám…" : isContact ? "Odeslat zprávu" : "Odeslat a domluvit konzultaci"}
           </button>
-          <p className="mt-2 text-[13px] text-muted">
-            Ozvu se do 24 hodin v pracovní dny a termín potvrdím.
-          </p>
+          {!isContact && (
+            <p className="mt-2 text-[13px] text-muted">Ozvu se do 48 hodin v pracovní dny a termín potvrdím.</p>
+          )}
         </div>
 
         {status === "error" && (

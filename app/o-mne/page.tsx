@@ -17,7 +17,7 @@ export default function OMne() {
     <>
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "O mně" }]} />
-        <Eyebrow>About / Eva Sezemská · Mladá Boleslav</Eyebrow>
+        <Eyebrow>O mně / Eva Sezemská · Mladá Boleslav</Eyebrow>
         <H1>Dívám se na vyhledávání z druhé strany.</H1>
         <P>
           Zajímá mě okamžik, kdy zákazník ještě nehledá konkrétní firmu. Hledá
@@ -55,15 +55,15 @@ export default function OMne() {
           relevantní, důvěryhodná a nakonec doporučitelná.
         </P>
         <div className="mt-4 flex flex-wrap justify-center gap-x-1 gap-y-4 text-center">
-          <Annotated word="FOUND" note="lze vás najít" />
+          <Annotated word="nalezená" note="lze vás najít" />
           <span className="self-center text-rule">→</span>
-          <Annotated word="UNDERSTOOD" note="systémy chápou, kdo jste" />
+          <Annotated word="pochopená" note="systémy chápou, kdo jste" />
           <span className="self-center text-rule">→</span>
-          <Annotated word="RELEVANT" note="odpovídáte záměru" />
+          <Annotated word="relevantní" note="odpovídáte záměru" />
           <span className="self-center text-rule">→</span>
-          <Annotated word="TRUSTED" note="existují důkazy" />
+          <Annotated word="důvěryhodná" note="existují důkazy" />
           <span className="self-center text-rule">→</span>
-          <Annotated word="RECOMMENDED" note="dostanete se mezi možnosti" />
+          <Annotated word="doporučovaná" note="dostanete se mezi možnosti" />
         </div>
       </Section>
 
@@ -89,8 +89,12 @@ export default function OMne() {
       <Section>
         <H2>Můj pohled stojí na průsečíku několika disciplín.</H2>
         <p className="font-serif text-lg text-ink-2 leading-relaxed">
-          SEO · Local Search · AI Search · Digital Entities · Content · Authority
+          SEO · lokální vyhledávání · AI vyhledávání · digitální entity · obsah · důvěryhodnost
         </p>
+        <P>
+          Digitální entita je firma tak, jak ji chápou vyhledávače: jméno,
+          adresa, obor a vazby na další zdroje, které se navzájem potvrzují.
+        </P>
         <P>
           Jednotlivé disciplíny nevnímám odděleně. Důležité je, jak společně
           vytvářejí obraz firmy, který mohou vyhledávače a AI systémy
@@ -116,7 +120,19 @@ export default function OMne() {
       </Section>
 
       <Section>
-        <H2>Certifikace</H2>
+        <H2>Certifikace a čísla</H2>
+        <dl className="mb-8 mt-2 border-t border-rule">
+          {[
+            ["Certifikace", "HubSpot AEO Fundamentals, 08/2026"],
+            ["Otestováno", "přibližně 400 analyzovaných odpovědí AI"],
+            ["Obory", "hotely a ubytování, řemeslné služby (čištění fasád), fotografie"],
+          ].map(([k, v]) => (
+            <div key={k} className="flex flex-col gap-1 border-b border-rule py-4 sm:flex-row sm:gap-6">
+              <dt className="flex-none pt-[3px] font-mono text-[13px] tracking-[0.04em] text-muted sm:w-36">{k}</dt>
+              <dd className="text-[17px] leading-[1.65] text-ink">{v}</dd>
+            </div>
+          ))}
+        </dl>
         <P>
           V srpnu 2026 jsem absolvovala certifikaci HubSpot AEO Fundamentals
           (ID 64bh5v4s), zaměřenou na optimalizaci pro odpovědi AI systémů.
@@ -124,7 +140,9 @@ export default function OMne() {
         <P>
           Tento obor bývá označovaný také jako GEO (Generative Engine
           Optimization) nebo AEO (Answer Engine Optimization) — souhrnně pro
-          něj používám pojem AI Search.
+          něj používám pojem SEO pro AI vyhledávání: práce na tom, aby vás
+          AI systémy jako ChatGPT nebo Přehled od AI v Googlu jmenovaly ve
+          svých odpovědích.
         </P>
       </Section>
 
@@ -152,15 +170,15 @@ export default function OMne() {
             <p className="mb-5 text-[14px] text-muted">AI Search Strategist</p>
 
             <div className="mb-4">
-              <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">Focus</div>
-              <p className="text-[14px] text-ink-2">AI Search · Local Search · Digital Entities · Content · Authority</p>
+              <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">Zaměření</div>
+              <p className="text-[14px] text-ink-2">AI vyhledávání · lokální vyhledávání · digitální entity · obsah · důvěryhodnost</p>
             </div>
             <div className="mb-6">
-              <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">Approach</div>
-              <p className="text-[14px] text-ink-2">Independent · Strategic · Evidence-led</p>
+              <div className="mb-1 font-mono text-[13px] tracking-[0.04em] text-muted">Přístup</div>
+              <p className="text-[14px] text-ink-2">nezávisle · strategicky · na základě důkazů</p>
             </div>
 
-            <H2>Proč právě AI Search?</H2>
+            <H2>Proč právě AI vyhledávání?</H2>
             <P>
               Fascinuje mě okamžik, kdy technologie začne rozhodovat nejen o
               tom, co člověk najde, ale také o tom, co mu doporučí.

@@ -22,7 +22,7 @@ export default function Article() {
       />
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "Výsledky po 31 dnech" }]} />
-        <ArticleMeta category="Výsledky a měření · samostatné testování" href="/field-notes/vysledky-po-31-dnech" />
+        <ArticleMeta category="Případová studie · část 4/5" href="/field-notes/vysledky-po-31-dnech" />
         <H1>Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech</H1>
         <P>
           Michaela Čížková je profesionální fotografka od roku 2022, žije v

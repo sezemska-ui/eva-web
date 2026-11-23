@@ -1,5 +1,6 @@
 import { Eyebrow, H1, H2, P, Section, ConsultationButton } from "@/components/Ui";
 import { Breadcrumbs } from "@/components/Seo";
+import ConsultationForm from "@/components/ConsultationForm";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
@@ -13,7 +14,7 @@ export default function Kontakt() {
     <>
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Kontakt" }]} />
-        <Eyebrow>Contact</Eyebrow>
+        <Eyebrow>Kontakt</Eyebrow>
         <H1>Začněme tím, co dnes nefunguje.</H1>
         <P>
           Pokud si nejste jistí, jak vás vyhledávače a AI systémy vnímají,
@@ -45,6 +46,9 @@ export default function Kontakt() {
             </div>
           ))}
         </div>
+      </Section>
+      <Section>
+        <ConsultationForm variant="contact" />
       </Section>
       <Section>
         <P>

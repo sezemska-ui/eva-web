@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Audit AI viditelnosti s akčním plánem — Eva Sezemská",
+  title: "Audit AI viditelnosti — Eva Sezemská",
   description:
     "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
   path: "/sluzby/ai-search-visibility-audit",
@@ -34,8 +34,8 @@ export default function Audit() {
   return (
     <>
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Audit AI viditelnosti s akčním plánem" }]} />
-        <Eyebrow>Audit AI viditelnosti s akčním plánem</Eyebrow>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Audit AI viditelnosti" }]} />
+        <Eyebrow>Audit AI viditelnosti</Eyebrow>
         <H1>Nejprve zjistíme, kde skutečně stojíte.</H1>
         <P>
           Než začneme něco optimalizovat, potřebujeme vědět, jak vaši firmu

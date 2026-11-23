@@ -113,7 +113,7 @@ export default function StrategickaKonzultace() {
           <figcaption className="mt-4 font-mono text-[12px] text-muted">
             Michaela Čížková, fotografka ·{" "}
             <a
-              href="https://www.google.com/search?kgmid=/g/11zhdhh8r6"
+              href="https://share.google/K6dCfHNYKXWieBgiI"
               target="_blank"
               rel="noopener"
               className="underline decoration-rule underline-offset-4 hover:text-ink-2 hover:decoration-ink"
