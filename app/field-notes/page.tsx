@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Field Notes — Eva Sezemská",
+  title: "Z praxe — Eva Sezemská",
   description:
     "Průvodce AI vyhledáváním, vlastní výzkumy a případové studie z praxe: jak Google a AI systémy rozhodují o tom, koho zákazník uvidí.",
   path: "/field-notes",
@@ -21,8 +21,8 @@ export default function FieldNotes() {
   return (
     <>
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes" }]} />
-        <Eyebrow>Field Notes</Eyebrow>
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe" }]} />
+        <Eyebrow>Z praxe</Eyebrow>
         <H1>Co se skutečně děje ve vyhledávání.</H1>
         <P>
           Pozorování, testy a analýzy toho, jak Google, AI systémy a digitální
@@ -35,13 +35,13 @@ export default function FieldNotes() {
           Výzkumy ·{" "}
           {research.length > 0 ? count(research.length, "výzkum", "výzkumy", "výzkumů") : "připravuji"}
         </Eyebrow>
-        <p className="mb-6 text-[14px] text-cream/60">
+        <p className="mb-6 text-[14px] text-muted">
           Vlastní testy napříč oborem nebo regionem: koho AI doporučuje a proč.
         </p>
         {research.length > 0 ? (
           <NoteList notes={research} showPart />
         ) : (
-          <p className="text-[15px] text-cream/75">
+          <p className="text-[15px] text-ink-2">
             První výzkum vyjde v nejbližších dnech.
           </p>
         )}
@@ -49,7 +49,7 @@ export default function FieldNotes() {
 
       <Section>
         <Eyebrow>Průvodce · {count(guides.length, "článek", "články", "článků")}</Eyebrow>
-        <p className="mb-6 text-[14px] text-cream/60">
+        <p className="mb-6 text-[14px] text-muted">
           Jak AI vyhledávání funguje a co znamená pro firmy.
         </p>
         <NoteList notes={guides} />
@@ -57,7 +57,7 @@ export default function FieldNotes() {
 
       <Section>
         <Eyebrow>Audity AI viditelnosti · {count(audits.length, "studie", "studie", "studií")}</Eyebrow>
-        <p className="mb-6 text-[14px] text-cream/60">
+        <p className="mb-6 text-[14px] text-muted">
           Co ukázal audit AI viditelnosti u konkrétních firem.
         </p>
         <NoteList notes={audits} />
@@ -65,11 +65,11 @@ export default function FieldNotes() {
 
       <Section>
         <Eyebrow>Případová studie · {count(caseStudy.length, "díl", "díly", "dílů")}</Eyebrow>
-        <p className="mb-6 text-[14px] text-cream/60">
+        <p className="mb-6 text-[14px] text-muted">
           Fotografka z Českého ráje: z 6 na 23 doporučení z 30 za 31 dní. Díly
           seřazené v pořadí čtení.
         </p>
-        <div className="border-l border-white/15 pl-5">
+        <div className="border-l border-rule pl-5">
           <NoteList notes={caseStudy} showPart />
         </div>
       </Section>

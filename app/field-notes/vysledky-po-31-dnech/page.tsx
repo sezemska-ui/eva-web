@@ -21,7 +21,7 @@ export default function Article() {
         url="/field-notes/vysledky-po-31-dnech"
       />
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Výsledky po 31 dnech" }]} />
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "Výsledky po 31 dnech" }]} />
         <ArticleMeta category="Výsledky a měření · samostatné testování" href="/field-notes/vysledky-po-31-dnech" />
         <H1>Od záměny identity k 23 z 30 doporučení: případová studie AI viditelnosti po 31 dnech</H1>
         <P>
@@ -35,30 +35,30 @@ export default function Article() {
       </Section>
 
       <Section>
-        <div className="rounded-sm border border-gold/30 bg-white/5 p-6 sm:p-8">
-          <h2 className="mb-4 font-serif text-xl text-cream">
+        <div className="border border-rule bg-paper-2 p-6 sm:p-8">
+          <h2 className="mb-4 font-serif text-xl text-ink">
             Rychlý přehled případové studie
           </h2>
-          <div className="flex flex-col gap-4 text-[15px] text-cream/80">
+          <div className="flex flex-col gap-4 text-[15px] text-ink-2">
             <p>
-              <span className="font-semibold text-cream">Klient:</span>{" "}
+              <span className="font-semibold text-ink">Klient:</span>{" "}
               Michaela Čížková – profesionální fotografka z Českého ráje
               (Jičín, Turnov, Sobotka, Mladá Boleslav).
             </p>
             <p>
-              <span className="font-semibold text-cream">Problém:</span> V
+              <span className="font-semibold text-ink">Problém:</span> V
               květnovém testu se objevila pouze v 6 z 30 případů (20 %).
               Google AI Overview ji navíc v jedné odpovědi zaměnil za jinou
               fotografku a školitelku spojenou s Foto Škoda.
             </p>
             <p>
-              <span className="font-semibold text-cream">Řešení:</span> Web
+              <span className="font-semibold text-ink">Řešení:</span> Web
               prošel kompletní přestavbou (Next.js + Sanity CMS na Vercelu),
               ke které jsme přidali strukturovaná data, sjednocení NAP
               konzistence a nasazení analytických nástrojů.
             </p>
             <p>
-              <span className="font-semibold text-cream">
+              <span className="font-semibold text-ink">
                 Výsledek po 31 dnech:
               </span>{" "}
               Celková AI viditelnost vzrostla na 76,7 % (23/30 dotazů).
@@ -108,14 +108,14 @@ export default function Article() {
           Výsledek byl studenou sprchou:
         </P>
         <ul className="flex flex-col gap-3">
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Původní skóre viditelnosti
             </span>{" "}
             — pouze 6 ze 30 případů (20 %), z toho 3 na branded dotazy.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Záměna identity u Google AI
             </span>{" "}
             — na branded dotaz „Michaela Čížková fotografka – je dobrá?“
@@ -123,15 +123,15 @@ export default function Article() {
             školitelce spojené s Foto Škoda. Michaele tak přisoudil cizí
             identitu.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Slabá viditelnost u ChatGPT
             </span>{" "}
             — ChatGPT Michaelu doporučil jen v jednom z deseti dotazů a u
             lokálních dotazů na Jičín, Turnov či Sobotku ji nezmínil vůbec.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Nepřesné informace u Perplexity
             </span>{" "}
             — Perplexity tvrdila, že Michaela nemá studio, a odkazovala na
@@ -139,7 +139,7 @@ export default function Article() {
           </li>
         </ul>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             V čem byl technický problém?
           </span>{" "}
           Problém nebyl v kvalitě fotografií ani v recenzích (Michaela má na
@@ -147,23 +147,23 @@ export default function Article() {
           sémantickém dluhu původního webu:
         </P>
         <ul className="flex flex-col gap-3">
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Pomalé načítání (LCP 14,5 s, naměřeno v dubnu 2026)
             </span>{" "}
             — podle PageSpeed Insights vykazovala mobilní verze skóre
             výkonu pouze 57/100.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Chybějící strukturovaná data
             </span>{" "}
             — na webu neexistoval žádný schema markup (JSON-LD), který by AI
             systémům pomohl pochopit, kdo je autorka, jaké nabízí služby a v
             jaké oblasti působí.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">
               Nekonzistentní NAP údaje
             </span>{" "}
             — jméno, adresa a telefon se na webu a sociálních sítích mírně
@@ -172,7 +172,7 @@ export default function Article() {
         </ul>
         <P>
           Začátek tohoto příběhu jsem popsala v článku{" "}
-          <Link href="/field-notes/proc-ai-zamenila-identitu" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+          <Link href="/field-notes/proc-ai-zamenila-identitu" className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
             Jak AI zaměnila identitu mé klientky
           </Link>
           .
@@ -186,7 +186,7 @@ export default function Article() {
           volbu pro Český ráj, postupovali jsme takto:
         </P>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Krok 1: Technický základ na Next.js (Vercel).
           </span>{" "}
           V době, kdy jsem vstoupila do projektu, Michaela už spolupracovala
@@ -194,52 +194,52 @@ export default function Article() {
           Next.js + Sanity CMS, hostovaný na Vercelu, s důrazem na rychlost a
           čistý kód. Jak přesně spolupráce s webmasterem probíhala, popisuju
           v článku{" "}
-          <Link href="/field-notes/implementace-a-overeni" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+          <Link href="/field-notes/implementace-a-overeni" className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
             Strategie nestačí — jak jsme ji dostali na živý web
           </Link>
           .
         </P>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Krok 2: Strukturovaná data (JSON-LD Schema Markup).
           </span>{" "}
           Do kódu jsme přidali propojenou síť strukturovaných dat:
         </P>
         <ul className="flex flex-col gap-3">
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">Person</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">Person</span> —
             definice Michaely s propojením na její oficiální profily
             (sameAs).
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">LocalBusiness</span>{" "}
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">LocalBusiness</span>{" "}
             — označení studia v Mladějově s geo-souřadnicemi a spádovou
             oblastí (Jičín, Turnov, Sobotka, Mladá Boleslav).
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">OfferCatalog</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">OfferCatalog</span> —
             strukturovaný ceník a přehled hlavních služeb.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">WebSite</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">WebSite</span> —
             definice webu jako celku a jeho základních vlastností.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">WebPage</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">WebPage</span> —
             označení jednotlivých podstránek, aby AI rozuměla struktuře webu.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">ImageObject</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">ImageObject</span> —
             popisek profilové fotografie, aby AI měla jasně přiřazený vizuální
             podklad k autorčině identitě.
           </li>
-          <li className="text-[15px] text-cream/80">
-            <span className="font-semibold text-cream">FAQPage</span> —
+          <li className="text-[15px] text-ink-2">
+            <span className="font-semibold text-ink">FAQPage</span> —
             strukturovaná data k nejčastějším klientským dotazům.
           </li>
         </ul>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Krok 3: Nasazení souboru llms.txt.
           </span>{" "}
           Do kořenového adresáře webu jsme nahráli strukturovaný markdown
@@ -248,7 +248,7 @@ export default function Article() {
           nízkonákladový doplněk, ne jako klíčové opatření.
         </P>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Krok 4: Sjednocení NAP konzistence.
           </span>{" "}
           Upravili jsme zápis jména, telefonu, e-mailu a IČO na Google
@@ -256,7 +256,7 @@ export default function Article() {
           odpovídal webu.
         </P>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Krok 5: Analytická kontrola (GSC, GA4, Bing, Clarity).
           </span>{" "}
           Nasadili jsme Google Search Console, Bing Webmaster Tools, GA4 a
@@ -273,9 +273,9 @@ export default function Article() {
           sadě dotazů.
         </P>
         <div className="overflow-x-auto">
-          <table className="w-full border-collapse text-[14px] text-cream/80">
+          <table className="w-full border-collapse text-[14px] text-ink-2">
             <thead>
-              <tr className="border-b border-white/10 text-left font-mono text-[11px] uppercase tracking-wider text-cream/45">
+              <tr className="border-b border-rule text-left font-mono text-[13px] tracking-[0.04em] text-muted">
                 <th className="py-3 pr-4">AI systém</th>
                 <th className="py-3 pr-4">Květen 2026 (před)</th>
                 <th className="py-3 pr-4">Září 2026 (po 31 dnech)</th>
@@ -283,29 +283,29 @@ export default function Article() {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">ChatGPT</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">ChatGPT</td>
                 <td className="py-3 pr-4">10 % (1/10)</td>
-                <td className="py-3 pr-4 text-gold-light">90 % (9/10)</td>
+                <td className="py-3 pr-4 text-ink">90 % (9/10)</td>
                 <td className="py-3">+80</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Google AI Overview</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Google AI Overview</td>
                 <td className="py-3 pr-4">30 % (3/10)</td>
-                <td className="py-3 pr-4 text-gold-light">80 % (8/10)</td>
+                <td className="py-3 pr-4 text-ink">80 % (8/10)</td>
                 <td className="py-3">+50</td>
               </tr>
-              <tr className="border-b border-white/10">
-                <td className="py-3 pr-4 text-cream">Perplexity</td>
+              <tr className="border-b border-rule">
+                <td className="py-3 pr-4 text-ink">Perplexity</td>
                 <td className="py-3 pr-4">20 % (2/10)</td>
-                <td className="py-3 pr-4 text-gold-light">60 % (6/10)</td>
+                <td className="py-3 pr-4 text-ink">60 % (6/10)</td>
                 <td className="py-3">+40</td>
               </tr>
               <tr>
-                <td className="py-3 pr-4 font-semibold text-cream">Celková úspěšnost</td>
-                <td className="py-3 pr-4 font-semibold text-cream">20 % (6/30)</td>
-                <td className="py-3 pr-4 font-semibold text-gold-light">76,7 % (23/30)</td>
-                <td className="py-3 font-semibold text-cream">+56,7</td>
+                <td className="py-3 pr-4 font-semibold text-ink">Celková úspěšnost</td>
+                <td className="py-3 pr-4 font-semibold text-ink">20 % (6/30)</td>
+                <td className="py-3 pr-4 font-semibold text-ink">76,7 % (23/30)</td>
+                <td className="py-3 font-semibold text-ink">+56,7</td>
               </tr>
             </tbody>
           </table>

@@ -21,7 +21,7 @@ export default function Article() {
         url="/field-notes/co-jsme-museli-nasadit"
       />
       <Section>
-        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Field Notes", href: "/field-notes" }, { label: "Co jsme museli nasadit" }]} />
+        <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Z praxe", href: "/field-notes" }, { label: "Co jsme museli nasadit" }]} />
         <ArticleMeta category="Strategie AI viditelnosti · Case Note · část 2/4" href="/field-notes/co-jsme-museli-nasadit" />
         <H1>Nový web nestačí. Co jsme museli nasadit, aby ho AI vůbec „přečetla“</H1>
         <P>
@@ -65,7 +65,7 @@ export default function Article() {
           důvěryhodnost, kterou AI i lidé vyhodnocují jako důkaz skutečné
           expertízy. Konkrétní čísla, která tahle opatření přinesla po měsíci
           provozu, ukazuju v článku{" "}
-          <Link href="/field-notes/vysledky-po-31-dnech" className="text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
+          <Link href="/field-notes/vysledky-po-31-dnech" className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
             Od záměny identity k 23 z 30 doporučení
           </Link>
           .

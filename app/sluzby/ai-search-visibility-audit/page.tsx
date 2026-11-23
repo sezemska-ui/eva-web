@@ -72,9 +72,9 @@ export default function Audit() {
             ["06 — Technické základy", "Co brání vyhledávačům a AI web přečíst."],
             ["07 — Důvěryhodnost", "Co o vás říkají jiné zdroje: recenze, katalogy, média."],
           ].map(([t, d]) => (
-            <li key={t} className="border-l border-white/15 pl-5">
-              <h3 className="mb-1 font-serif text-lg text-cream">{t}</h3>
-              <p className="text-[15px] text-cream/75">{d}</p>
+            <li key={t} className="border-l border-rule pl-5">
+              <h3 className="mb-1 font-serif text-lg text-ink">{t}</h3>
+              <p className="text-[15px] text-ink-2">{d}</p>
             </li>
           ))}
         </ul>
@@ -107,11 +107,11 @@ export default function Audit() {
             preload="none"
             poster={VIDEO.poster}
             aria-label="Video: ukázka webové aplikace s výsledky auditu AI viditelnosti"
-            className="aspect-video w-full rounded-sm border border-white/10 bg-navy-deep"
+            className="aspect-video w-full border border-rule bg-navy"
           >
             <source src={VIDEO.src} type="video/mp4" />
           </video>
-          <figcaption className="mt-3 max-w-[65ch] text-[14px] leading-relaxed text-cream/60">
+          <figcaption className="mt-3 max-w-[65ch] text-[14px] leading-relaxed text-muted">
             Video bez zvuku, s titulky, 58 s. Ukazuje shrnutí s hlavními čísly,
             zjištění s doklady, výsledky testu v ChatGPT, Googlu a Perplexity,
             srovnání s konkurencí a seznam kroků, které si odškrtáváte.

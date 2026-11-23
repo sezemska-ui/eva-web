@@ -24,27 +24,27 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const linkClass =
-  "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";
-const strongClass = "font-semibold text-cream";
-const listClass = "mb-4 flex max-w-[65ch] list-disc flex-col gap-2 pl-5 marker:text-gold";
-const listItemClass = "text-[15px] leading-relaxed text-cream/80";
+  "text-ink underline decoration-rule underline-offset-4 hover:decoration-ink";
+const strongClass = "font-semibold text-ink";
+const listClass = "mb-4 flex max-w-[65ch] list-disc flex-col gap-2 pl-5 marker:text-muted";
+const listItemClass = "text-[15px] leading-relaxed text-ink-2";
 const thClass = "py-3 pr-4";
 const tdClass = "py-3 pr-4 tabular-nums";
 
 function DataTable({ head, rows }: { head: [string, string]; rows: [string, string][] }) {
   return (
     <div className="mb-6 max-w-[520px] overflow-x-auto">
-      <table className="w-full border-collapse text-[14.5px] text-cream/80">
+      <table className="w-full border-collapse text-[14.5px] text-ink-2">
         <thead>
-          <tr className="border-b border-white/10 text-left font-mono text-[11px] uppercase tracking-wider text-cream/45">
+          <tr className="border-b border-rule text-left font-mono text-[13px] tracking-[0.04em] text-muted">
             <th className={thClass}>{head[0]}</th>
             <th className="py-3 text-right">{head[1]}</th>
           </tr>
         </thead>
         <tbody>
           {rows.map(([a, b]) => (
-            <tr key={a} className="border-b border-white/10 last:border-b-0">
-              <th scope="row" className="py-3 pr-4 text-left font-normal text-cream">
+            <tr key={a} className="border-b border-rule last:border-b-0">
+              <th scope="row" className="py-3 pr-4 text-left font-normal text-ink">
                 {a}
               </th>
               <td className={`${tdClass} pr-0 text-right`}>{b}</td>
@@ -80,9 +80,9 @@ function Screenshot({
         width={width}
         height={height}
         sizes={`(max-width: 896px) 100vw, ${maxWidth}px`}
-        className="h-auto w-full rounded-sm border border-white/10"
+        className="h-auto w-full border border-rule"
       />
-      <figcaption className="mt-3 text-[13px] italic leading-relaxed text-cream/55">{caption}</figcaption>
+      <figcaption className="mt-3 text-[13px] italic leading-relaxed text-muted">{caption}</figcaption>
     </figure>
   );
 }
@@ -95,7 +95,7 @@ export default function Article() {
         <Breadcrumbs
           items={[
             { label: "Domů", href: "/" },
-            { label: "Field Notes", href: "/field-notes" },
+            { label: "Z praxe", href: "/field-notes" },
             { label: "AI a čištění fasád" },
           ]}
         />
@@ -110,9 +110,9 @@ export default function Article() {
           )
         </P>
 
-        <div className="my-6 rounded-sm border border-gold/30 bg-white/5 p-5 sm:p-6">
-          <p className="mb-3 text-[15px] font-semibold text-cream">Shrnutí</p>
-          <ul className="flex flex-col gap-2 text-[14.5px] leading-relaxed text-cream/75">
+        <div className="my-6 border border-rule bg-paper-2 p-5 sm:p-6">
+          <p className="mb-3 text-[15px] font-semibold text-ink">Shrnutí</p>
+          <ul className="flex flex-col gap-2 text-[14.5px] leading-relaxed text-ink-2">
             <li>
               — V říjnu 2026 jsem pro firmu Přijedeme Umyjeme otestovala, jak ji
               doporučují ChatGPT, Google Režim AI a Perplexity. Celkem 111
@@ -157,7 +157,7 @@ export default function Article() {
       <Section>
         <H2>Jak jsem testovala?</H2>
         <div className="mb-6 max-w-[70ch] border-l-2 border-gold pl-5">
-          <ul className="flex flex-col gap-2 text-[15px] leading-relaxed text-cream/80">
+          <ul className="flex flex-col gap-2 text-[15px] leading-relaxed text-ink-2">
             <li>
               — 15 dotazů, které by mohl položit skutečný zákazník: od „kdo
               vyčistí fasádu v Mladé Boleslavi“ po „je tahle firma spolehlivá?“
@@ -466,7 +466,7 @@ export default function Article() {
           Pokud jste místní řemeslník nebo služba, z tohoto testu plynou čtyři
           kroky:
         </P>
-        <ol className="mb-4 flex max-w-[65ch] list-decimal flex-col gap-3 pl-5 marker:font-mono marker:text-gold">
+        <ol className="mb-4 flex max-w-[65ch] list-decimal flex-col gap-3 pl-5 marker:font-mono marker:text-muted">
           <li className={listItemClass}>
             <strong className={strongClass}>Zkontrolujte svůj profil na Firmy.cz.</strong>{" "}
             Pokud vidíte „Zatím neověřená firma“, převezměte ho (přes „Přidat
@@ -494,8 +494,8 @@ export default function Article() {
 
       <Section>
         <H2>Co říká klient?</H2>
-        <figure className="rounded-sm border-l-2 border-gold/60 bg-white/5 px-5 py-5 sm:px-6">
-          <blockquote className="text-[15.5px] leading-relaxed text-cream/80">
+        <figure className="border-l-2 border-rule bg-paper-2 px-5 py-5 sm:px-6">
+          <blockquote className="text-[17px] leading-relaxed text-ink-2">
             <p>
               „Ještě předtím, než nás vůbec kontaktovala, si sama udělala
               předběžný audit firmy, aby nám mohla ukázat konkrétní poznatky a
@@ -503,7 +503,7 @@ export default function Article() {
               nás přesvědčilo, že přesně ví, co dělá.“
             </p>
           </blockquote>
-          <figcaption className="mt-4 font-mono text-[12px] text-cream/55">
+          <figcaption className="mt-4 font-mono text-[12px] text-muted">
             — Lukáš Kaudl, Přijedeme Umyjeme s.r.o.
           </figcaption>
         </figure>
@@ -511,7 +511,7 @@ export default function Article() {
 
       <Section>
         <CtaBox title="Chcete vědět, co o vaší firmě říká AI, když se zákazník zeptá, jestli jste spolehliví?" />
-        <p className="mt-6 text-[13px] italic text-cream/50">
+        <p className="mt-6 text-[13px] italic text-muted">
           Eva Sezemská, searchstrategy.cz · Test proběhl v říjnu 2026.
         </p>
         <AuthorBox />

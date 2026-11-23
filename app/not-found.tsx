@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Eyebrow, H1, P, Section } from "@/components/Ui";
+import { BTN_PRIMARY, Eyebrow, H1, P, Section } from "@/components/Ui";
 
 export default function NotFound() {
   return (
@@ -12,9 +12,9 @@ export default function NotFound() {
       </P>
       <Link
         href="/"
-        className="mt-4 inline-block rounded-sm bg-cream px-6 py-3 text-sm font-semibold text-navy-deep transition-colors duration-200 hover:bg-gold-light"
+        className={`mt-4 ${BTN_PRIMARY}`}
       >
-        Zpět na úvod →
+        Zpět na úvod
       </Link>
     </Section>
   );

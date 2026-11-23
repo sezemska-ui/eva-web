@@ -44,7 +44,7 @@ export default function DigitalAuthority() {
       <Section>
         <H2>Autorita nevzniká na jednom webu.</H2>
         <P>Vzniká z množství vzájemně propojených signálů:</P>
-        <p className="text-[14px] font-mono text-cream/60">
+        <p className="text-[14px] font-mono text-muted">
           WEB + GOOGLE + RECENZE + MÉDIA + KATALOGY + PARTNEŘI + ZMÍNKY = DŮVĚRYHODNOST
         </p>
       </Section>
@@ -59,9 +59,9 @@ export default function DigitalAuthority() {
             ["Kontext", "V jakých situacích jste relevantní."],
             ["Propojení", "Jak jste propojeni s místy, službami, lidmi a tématy."],
           ].map(([t, d]) => (
-            <div key={t} className="border-l border-white/15 pl-5">
-              <h3 className="mb-1 font-serif text-lg text-cream">{t}</h3>
-              <p className="text-[15px] text-cream/75">{d}</p>
+            <div key={t} className="border-l border-rule pl-5">
+              <h3 className="mb-1 font-serif text-lg text-ink">{t}</h3>
+              <p className="text-[15px] text-ink-2">{d}</p>
             </div>
           ))}
         </div>

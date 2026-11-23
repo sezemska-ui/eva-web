@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
       <Section>
         <H2>Jaké údaje shromažďuji a proč</H2>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Konzultační formulář.
           </span>{" "}
           Když si přes web domluvíte konzultaci, ukládám jméno, e-mail,
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
           odpověděla a domluvila se s vámi na dalším postupu.
         </P>
         <P>
-          <span className="font-semibold text-cream">Vstupní dotazník.</span>{" "}
+          <span className="font-semibold text-ink">Vstupní dotazník.</span>{" "}
           Pokud vám po konzultaci pošlu vstupní dotazník a vyplníte ho,
           ukládám údaje o vaší firmě a kontaktní osobě (název firmy, jméno,
           e-mail, telefon, web) a vaše odpovědi na otázky o byznysu, cílech a
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
           spolupráce.
         </P>
         <P>
-          <span className="font-semibold text-cream">
+          <span className="font-semibold text-ink">
             Analytika návštěvnosti.
           </span>{" "}
           Web používá Google Analytics (GA4), který pomocí cookies
@@ -118,17 +118,17 @@ export default function PrivacyPolicy() {
           Analytické cookies se ukládají jen po kliknutí na „Přijmout“ v liště
           na webu:
         </P>
-        <ul className="mt-3 flex flex-col gap-2 text-[15px] text-cream/75">
+        <ul className="mt-3 flex flex-col gap-2 text-[15px] text-ink-2">
           <li>
-            <span className="text-cream">_ga, _ga_*</span> (Google
+            <span className="text-ink">_ga, _ga_*</span> (Google
             Analytics): rozlišení návštěvníků, platnost 2 roky.
           </li>
           <li>
-            <span className="text-cream">_clck</span> (Microsoft Clarity):
+            <span className="text-ink">_clck</span> (Microsoft Clarity):
             rozlišení návštěvníků, platnost 1 rok.
           </li>
           <li>
-            <span className="text-cream">_clsk</span> (Microsoft Clarity):
+            <span className="text-ink">_clsk</span> (Microsoft Clarity):
             propojení stránek jedné návštěvy, platnost 1 den.
           </li>
         </ul>

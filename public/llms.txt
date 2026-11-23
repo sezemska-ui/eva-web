@@ -18,7 +18,7 @@ Sídlo: Mladá Boleslav, Česká republika.
 
 - [Pro koho](https://www.searchstrategy.cz/pro-koho): Pro koho Eva Sezemská pracuje — lokální firmy a provozovny, živnostníci a OSVČ, B2B firmy a služby — a pro koho ne.
 - [O mně](https://www.searchstrategy.cz/o-mne): Profil Evy Sezemské a jejího přístupu.
-- [Field Notes](https://www.searchstrategy.cz/field-notes): Pozorování a případové studie z reálné práce s klienty.
+- [Z praxe](https://www.searchstrategy.cz/field-notes): Pozorování a případové studie z reálné práce s klienty.
 - [Jak funguje AI vyhledávání](https://www.searchstrategy.cz/field-notes/jak-funguje-ai-vyhledavani): Průvodce rozdílem mezi AI vyhledáváním a klasickým Googlem a tím, co znamená pro firmy.
 - [Kam vás AI pošle na víkend v Českém ráji? 1. část: páry a rodiny](https://www.searchstrategy.cz/field-notes/ai-ubytovani-cesky-raj-pary-a-rodiny): Vlastní výzkum, 30 odpovědí ChatGPT, Přehledu od AI v Googlu a Perplexity: koho AI doporučuje k ubytování, odkud čerpá a kde chybuje.
 - [Případová studie: Jak AI vyhledávače doporučují firmu na čištění fasád](https://www.searchstrategy.cz/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad): Audit AI viditelnosti firmy Přijedeme Umyjeme, 111 odpovědí ChatGPT, Google Režimu AI a Perplexity: kdy AI firmu doporučí, odkud čerpá a co pomůže místním řemeslníkům.

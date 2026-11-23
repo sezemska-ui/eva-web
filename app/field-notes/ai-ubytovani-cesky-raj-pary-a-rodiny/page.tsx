@@ -23,14 +23,14 @@ export const metadata: Metadata = pageMetadata({
   },
 });
 
-const strongClass = "font-semibold text-cream";
+const strongClass = "font-semibold text-ink";
 const linkClass =
-  "text-cream underline decoration-gold/40 underline-offset-4 hover:decoration-gold";
-const listClass = "mb-4 flex max-w-[65ch] list-disc flex-col gap-2 pl-5 marker:text-gold";
+  "text-ink underline decoration-rule underline-offset-4 hover:decoration-ink";
+const listClass = "mb-4 flex max-w-[65ch] list-disc flex-col gap-2 pl-5 marker:text-muted";
 const olClass =
-  "mb-4 flex max-w-[65ch] list-decimal flex-col gap-3 pl-5 marker:font-mono marker:text-gold";
-const listItemClass = "text-[15px] leading-relaxed text-cream/80";
-const h3Class = "mb-3 mt-6 text-[16px] font-semibold text-cream";
+  "mb-4 flex max-w-[65ch] list-decimal flex-col gap-3 pl-5 marker:font-mono marker:text-muted";
+const listItemClass = "text-[15px] leading-relaxed text-ink-2";
+const h3Class = "mb-3 mt-6 text-[16px] font-semibold text-ink";
 
 // Tabulka s libovolným počtem sloupců. První sloupec je záhlaví řádku.
 // Na mobilu se posouvá uvnitř rámečku, stránka do strany neuteče.
@@ -48,11 +48,11 @@ function DataTable({
   return (
     <div className="mb-6 max-w-[760px] overflow-x-auto">
       <table
-        className="w-full border-collapse text-[14.5px] text-cream/80"
+        className="w-full border-collapse text-[14.5px] text-ink-2"
         style={minWidth ? { minWidth } : undefined}
       >
         <thead>
-          <tr className="border-b border-white/10 text-left align-bottom font-mono text-[11px] uppercase tracking-wider text-cream/45">
+          <tr className="border-b border-rule text-left align-bottom font-mono text-[13px] tracking-[0.04em] text-muted">
             {head.map((h, i) => (
               <th key={i} className="py-3 pr-4 font-normal">
                 {h}
@@ -64,8 +64,8 @@ function DataTable({
           {rows.map((row, r) => (
             <tr
               key={r}
-              className={`border-b border-white/10 align-top last:border-b-0 ${
-                highlight.includes(r) ? "font-semibold text-cream" : ""
+              className={`border-b border-rule align-top last:border-b-0 ${
+                highlight.includes(r) ? "font-semibold text-ink" : ""
               }`}
             >
               {row.map((cell, c) =>
@@ -73,7 +73,7 @@ function DataTable({
                   <th
                     key={c}
                     scope="row"
-                    className={`py-3 pr-4 text-left text-cream ${
+                    className={`py-3 pr-4 text-left text-ink ${
                       highlight.includes(r) ? "font-semibold" : "font-normal"
                     }`}
                   >
@@ -116,9 +116,9 @@ function Screenshot({
         width={width}
         height={height}
         sizes={`(max-width: 896px) 100vw, ${maxWidth}px`}
-        className="h-auto w-full rounded-sm border border-white/10"
+        className="h-auto w-full border border-rule"
       />
-      <figcaption className="mt-3 text-[13px] italic leading-relaxed text-cream/55">{caption}</figcaption>
+      <figcaption className="mt-3 text-[13px] italic leading-relaxed text-muted">{caption}</figcaption>
     </figure>
   );
 }
@@ -143,13 +143,13 @@ export default function Article() {
         <Breadcrumbs
           items={[
             { label: "Domů", href: "/" },
-            { label: "Field Notes", href: "/field-notes" },
+            { label: "Z praxe", href: "/field-notes" },
             { label: "Český ráj: páry a rodiny" },
           ]}
         />
         <ArticleMeta category="Výzkum · AI a ubytování" href={URL_PATH} />
         <H1>{HEADLINE}</H1>
-        <p className="mb-6 font-mono text-[12px] uppercase tracking-wider text-cream/55">
+        <p className="mb-6 font-mono text-[12px] tracking-[0.04em] text-muted">
           Test: 1.–19. 11. 2026 · 3 nástroje · 30 odpovědí v hlavním testu · 1. část ze 2
         </p>
 
@@ -768,7 +768,7 @@ export default function Article() {
           Ve 2. části testu se zaměřím na cyklisty a pěší turisty, včetně
           dotazu na Jičín a Prachovské skály. Na výsledky jsem zvědavá.
         </P>
-        <p className="mb-8 max-w-[65ch] text-[14px] italic leading-relaxed text-cream/55">
+        <p className="mb-8 max-w-[65ch] text-[14px] italic leading-relaxed text-muted">
           Pro úplnost: audity AI viditelnosti nabízím jako službu. Proto je
           výše přesně popsaná metodika a data jsou ke stažení, abyste si
           zjištění mohli ověřit sami.
@@ -777,7 +777,7 @@ export default function Article() {
           Napište mi. Společně probereme, zda je pro vás v této fázi vhodný
           audit AI viditelnosti.
         </CtaBox>
-        <p className="mt-6 text-[13px] italic text-cream/50">
+        <p className="mt-6 text-[13px] italic text-muted">
           Eva Sezemská, searchstrategy.cz · Test proběhl 1.–19. 11. 2026.
         </p>
         <AuthorBox />
