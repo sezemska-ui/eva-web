@@ -69,7 +69,7 @@ export default function Implementace() {
           </div>
           <div>
             <h3 className="mb-2 font-serif text-lg text-ink">Lokální viditelnost</h3>
-            <p className="text-[14px] text-ink-2">Google Business Profile, NAP, lokální signály a zdroje.</p>
+            <p className="text-[14px] text-ink-2">Profil firmy na Googlu, jednotné údaje o firmě (název, adresa, telefon), místní katalogy a zdroje.</p>
           </div>
           <div>
             <h3 className="mb-2 font-serif text-lg text-ink">Čitelnost pro AI</h3>

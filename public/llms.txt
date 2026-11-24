@@ -1,6 +1,6 @@
 # Eva Sezemská — AI Search Strategist
 
-> Eva Sezemská pomáhá firmám zjistit, jak je dnes vidí vyhledávače a AI systémy (ChatGPT, Perplexity, Google AI Overview), proč je v rozhodujících momentech někdy nahradí konkurence, a co změnit, aby byly lépe dohledatelné, pochopitelné a doporučitelné.
+> Eva Sezemská pomáhá firmám zjistit, jak je dnes vidí vyhledávače a AI systémy (ChatGPT, Perplexity, Přehled od AI v Googlu), proč je v rozhodujících momentech někdy nahradí konkurence, a co změnit, aby byly lépe dohledatelné, pochopitelné a doporučitelné.
 
 Obor: SEO pro AI vyhledávání, označované také jako GEO (Generative Engine Optimization) nebo AEO (Answer Engine Optimization).
 
@@ -16,7 +16,7 @@ Sídlo: Mladá Boleslav, Česká republika.
 
 ## Další stránky
 
-- [Pro koho](https://www.searchstrategy.cz/pro-koho): Pro koho Eva Sezemská pracuje — lokální firmy a provozovny, živnostníci a OSVČ, B2B firmy a služby — a pro koho ne.
+- [Pro koho](https://www.searchstrategy.cz/pro-koho): Pro koho Eva Sezemská pracuje — ubytování a hotely, řemesla a místní služby, živnostníci a osobní značky — a pro koho ne.
 - [O mně](https://www.searchstrategy.cz/o-mne): Profil Evy Sezemské a jejího přístupu.
 - [Z praxe](https://www.searchstrategy.cz/field-notes): Pozorování a případové studie z reálné práce s klienty.
 - [Jak funguje AI vyhledávání](https://www.searchstrategy.cz/field-notes/jak-funguje-ai-vyhledavani): Průvodce rozdílem mezi AI vyhledáváním a klasickým Googlem a tím, co znamená pro firmy.

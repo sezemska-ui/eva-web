@@ -75,8 +75,8 @@ export default function Strategie() {
       <Section>
         <H2>Výstup</H2>
         <P>
-          Strategický dokument s prioritizovanými kroky, podle kterého lze
-          následně realizovat jednotlivé změny.
+          Hotové texty a podklady k vložení na web a plán kroků s prioritami.
+          Podle něj změny provedete sami, s webmasterem, nebo v rámci implementace se mnou.
         </P>
       </Section>
 

@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Audit AI viditelnosti — Eva Sezemská",
   description:
-    "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Google AI Overview — a proč AI někdy doporučí konkurenci místo vás.",
+    "Zjistím, jak vás dnes vidí ChatGPT, Perplexity a Přehled od AI v Googlu — a proč AI někdy doporučí konkurenci místo vás.",
   path: "/sluzby/ai-search-visibility-audit",
 });
 
@@ -64,7 +64,7 @@ export default function Audit() {
         <H2>Co audit prověří</H2>
         <ul className="flex flex-col gap-5">
           {[
-            ["01 — Viditelnost v AI", "Jestli vás ChatGPT, Perplexity a AI v Googlu doporučí u dotazů, které pokládají vaši zákazníci."],
+            ["01 — Viditelnost v AI", "Jestli vás ChatGPT, Perplexity a Přehled od AI v Googlu doporučí u dotazů, které pokládají vaši zákazníci."],
             ["02 — Chvíle rozhodnutí", "Kdy vás AI zná, a přesto doporučí někoho jiného."],
             ["03 — Konkurence", "Koho AI doporučuje místo vás a čím ji přesvědčil."],
             ["04 — Údaje o firmě", "Jestli vás AI správně pozná: shoduje se název, adresa a telefon všude, kde o vás čte?"],
@@ -85,7 +85,7 @@ export default function Audit() {
         <P>
           Každý audit stojí na skutečných testech, ne na odhadech. Dotazy, které
           by položili vaši zákazníci, zadávám ve třech nástrojích – ChatGPT,
-          Perplexity a AI v Googlu. Každý dotaz opakuji, protože AI neodpovídá
+          Perplexity a Přehledu od AI v Googlu. Každý dotaz opakuji, protože AI neodpovídá
           pokaždé stejně, a každou odpověď ukládám jako doklad. Ve zprávě
           rozlišuji, co je ověřené, co je pravděpodobné a co je potřeba ještě
           ověřit.

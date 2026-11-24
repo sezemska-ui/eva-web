@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Pro koho — Eva Sezemská",
   description:
-    "Pro lokální firmy, živnostníky a B2B firmy, které chtějí být mezi možnostmi, když se zákazník zeptá vyhledávače nebo AI, koho si má vybrat.",
+    "Pro ubytování, řemesla a místní služby z Mladé Boleslavi, Českého ráje i odjinud, které chtějí být mezi doporučenými, když se zákazník zeptá vyhledávače nebo AI, koho si má vybrat.",
   path: "/pro-koho",
 });
 
@@ -24,43 +24,51 @@ const groups: {
 }[] = [
   {
     n: "01",
-    title: "Lokální firmy a provozovny",
+    title: "Ubytování a hotely",
     situation:
-      "Zákazník se ptá „kde v okolí…“ a nezná vaše jméno. Odpověď se skládá z map, recenzí, katalogů a vašeho webu. Stačí, aby si tyto zdroje protiřečily, a doporučení dostane někdo jiný.",
+      "Host napíše „chceme s dětmi na víkend do Českého ráje, doporuč nám ubytování“. AI odpoví několika jmény a ke každému přidá vlastní popis. V mém testu dávala párům hlavně hotely, rodinám penziony, a občas se spletla v tom, komu je podnik určený.",
     focus:
-      "Google Business Profil, mapy, recenze, katalogy a to, jestli všude říkají totéž co váš web.",
-    price: "audit obvykle 20 000–30 000 Kč.",
+      "Jestli vás AI řadí ke správnému typu hosta, co o vás píše a odkud to bere: web, Profil firmy na Googlu, rezervační portály, recenze a katalogy.",
+    caseLink: {
+      label: "Páry dostanou hotel, rodiny penzion: 30 odpovědí AI z Českého ráje",
+      href: "/field-notes/ai-ubytovani-cesky-raj-pary-a-rodiny",
+    },
+    price: "audit obvykle 20 000–30 000 Kč.",
     start: [
       { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
     ],
   },
   {
     n: "02",
-    title: "Živnostníci a OSVČ",
+    title: "Řemesla a místní služby",
     situation:
-      "Vaší značkou je vaše jméno. AI vás ale může zaměnit s někým jiným, nebo neví, čím se živíte a kde působíte.",
+      "Zákazník napíše „doporuč mi ověřenou firmu na čištění fasády“, nebo se rovnou zeptá „je tahle firma spolehlivá?“. Odpověď se skládá z map, recenzí, katalogů a vašeho webu. Stačí, aby si tyto zdroje protiřečily, a doporučení dostane někdo jiný.",
     focus:
-      "Jestli systémy chápou, kdo jste, co děláte a kde. A jestli pro to existují důkazy i mimo váš web.",
+      "Profil firmy na Googlu, mapy, recenze, katalogy, reference a to, jestli všude říkají totéž co váš web.",
     caseLink: {
-      label: "Proč AI zaměnila identitu",
-      href: "/field-notes/proc-ai-zamenila-identitu",
+      label: "Jak AI vyhledávače doporučují firmu na čištění fasád",
+      href: "/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad",
     },
-    price: "audit obvykle kolem 20 000 Kč.",
+    price: "audit obvykle 20 000–40 000 Kč podle počtu služeb a lokalit.",
     start: [
-      { label: "Úvodní konzultace (60 minut)", href: "/sluzby/strategicka-konzultace" },
+      { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
+      { label: "Budování důvěryhodnosti", href: "/sluzby/digital-authority" },
     ],
   },
   {
     n: "03",
-    title: "B2B firmy a služby",
+    title: "Živnostníci a osobní značky",
     situation:
-      "Váš zákazník si dodavatele vybírá týdny. Než vám napíše, zeptá se AI, kdo v oboru za to stojí. Pokud vaši odbornost nic nepotvrzuje, v odpovědi nejste.",
+      "Vaší značkou je vaše jméno, třeba jako fotografka nebo poradce. AI vás ale může zaměnit s někým jiným, nebo neví, čím se živíte a kde působíte.",
     focus:
-      "Jak je vaše odbornost čitelná z webu, referencí, zmínek v médiích a oborových katalozích.",
-    price: "audit obvykle 25 000–40 000 Kč.",
+      "Jestli systémy chápou, kdo jste, co děláte a kde. A jestli pro to existují důkazy i mimo váš web.",
+    caseLink: {
+      label: "Jak AI zaměnila identitu mé klientky",
+      href: "/field-notes/proc-ai-zamenila-identitu",
+    },
+    price: "audit obvykle kolem 20 000 Kč.",
     start: [
-      { label: "Audit AI viditelnosti", href: "/sluzby/ai-search-visibility-audit" },
-      { label: "Budování důvěryhodnosti", href: "/sluzby/digital-authority" },
+      { label: "Úvodní konzultace (60 minut)", href: "/sluzby/strategicka-konzultace" },
     ],
   },
 ];
@@ -93,10 +101,10 @@ export default function ProKoho() {
         <Eyebrow>Pro koho / 01–03</Eyebrow>
         <H1>Pro firmy, které mají dobrou pověst ve skutečnosti, ale AI o ní neví.</H1>
         <P>
-          Jsem Eva Sezemská, AI Search Strategist z Mladé Boleslavi. Pracuji s
-          lokálními firmami, živnostníky a B2B firmami, které chtějí být mezi
-          možnostmi, když se zákazník zeptá vyhledávače nebo AI, koho si má
-          vybrat.
+          Jsem Eva Sezemská, AI Search Strategist z Mladé Boleslavi. Pracuji
+          s ubytováním, řemesly a místními službami z Mladé Boleslavi, Českého
+          ráje i odjinud, které chtějí být mezi doporučenými, když se zákazník
+          zeptá vyhledávače nebo AI, koho si má vybrat.
         </P>
         <Photo
           src="/images/web-stranka-pro-koho.webp"

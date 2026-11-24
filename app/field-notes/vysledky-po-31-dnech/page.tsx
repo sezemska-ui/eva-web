@@ -48,7 +48,7 @@ export default function Article() {
             <p>
               <span className="font-semibold text-ink">Problém:</span> V
               květnovém testu se objevila pouze v 6 z 30 případů (20 %).
-              Google AI Overview ji navíc v jedné odpovědi zaměnil za jinou
+              Přehled od AI v Googlu ji navíc v jedné odpovědi zaměnil za jinou
               fotografku a školitelku spojenou s Foto Škoda.
             </p>
             <p>
@@ -62,7 +62,7 @@ export default function Article() {
                 Výsledek po 31 dnech:
               </span>{" "}
               Celková AI viditelnost vzrostla na 76,7 % (23/30 dotazů).
-              ChatGPT dosáhl 90 %, Google AI Overview 80 %, Perplexity 60 %.
+              ChatGPT dosáhl 90 %, Přehled od AI v Googlu 80 %, Perplexity 60 %.
               V klasickém vyhledávání Google dosáhla hlavní strana CTR
               17,24 % — i když je potřeba mít na paměti, že se tahle čísla
               zatím dělí mezi několik duplicitních variant URL, které ještě
@@ -104,7 +104,7 @@ export default function Article() {
         <P>
           Před zahájením jakýchkoliv prací jsme v květnu 2026 provedli audit
           AI viditelnosti. Otestovali jsme 10 reálných zákaznických dotazů
-          napříč třemi AI systémy: ChatGPT, Google AI Overview a Perplexity.
+          napříč třemi AI systémy: ChatGPT, Přehled od AI v Googlu a Perplexity.
           Výsledek byl studenou sprchou:
         </P>
         <ul className="flex flex-col gap-3">
@@ -119,7 +119,7 @@ export default function Article() {
               Záměna identity u Google AI
             </span>{" "}
             — na branded dotaz „Michaela Čížková fotografka – je dobrá?“
-            Google AI Overview zobrazil informace o jiné fotografce a
+            Přehled od AI v Googlu zobrazil informace o jiné fotografce a
             školitelce spojené s Foto Škoda. Michaele tak přisoudil cizí
             identitu.
           </li>
@@ -290,7 +290,7 @@ export default function Article() {
                 <td className="py-3">+80</td>
               </tr>
               <tr className="border-b border-rule">
-                <td className="py-3 pr-4 text-ink">Google AI Overview</td>
+                <td className="py-3 pr-4 text-ink">Přehled od AI v Googlu</td>
                 <td className="py-3 pr-4">30 % (3/10)</td>
                 <td className="py-3 pr-4 text-ink">80 % (8/10)</td>
                 <td className="py-3">+50</td>
