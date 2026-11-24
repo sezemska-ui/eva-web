@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Budování důvěryhodnosti — Eva Sezemská",
   description:
-    "Budování důvěryhodnosti skrze obsah a signály — web, Google, média, katalogy a recenze skládané do konzistentního obrazu firmy.",
+    "Recenze, katalogy, místní média a zmínky na jiných webech, aby AI věděla, že vám lidé věří. Měsíční spolupráce s pravidelným měřením doporučení.",
   path: "/sluzby/digital-authority",
 });
 
@@ -16,8 +16,12 @@ export default function DigitalAuthority() {
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Budování důvěryhodnosti" }]} />
         <Eyebrow>Budování důvěryhodnosti</Eyebrow>
-        <H1>Vaše firma má autoritu. Je vidět i digitálně?</H1>
-        <P>Dobrá firma nemusí být automaticky dobře pochopitelná digitálními systémy.</P>
+        <H1>Vaše firma má dobrou pověst. Ví o ní i AI?</H1>
+        <P>
+          AI doporučuje hlavně firmy, o kterých píšou i jiné weby: recenze,
+          katalogy, místní média a partneři. Pomáhám, aby se tam vaše pověst
+          objevila a zůstala aktuální.
+        </P>
         <FactBox
           rows={[
             ["Cena", "Individuálně, obvykle jako měsíční spolupráce."],
@@ -42,22 +46,22 @@ export default function DigitalAuthority() {
       </Section>
 
       <Section>
-        <H2>Autorita nevzniká na jednom webu.</H2>
-        <P>Vzniká z množství vzájemně propojených signálů:</P>
-        <p className="text-[14px] font-mono text-muted">
-          WEB + GOOGLE + RECENZE + MÉDIA + KATALOGY + PARTNEŘI + ZMÍNKY = DŮVĚRYHODNOST
-        </p>
+        <H2>Proč nestačí jen váš web</H2>
+        <P>
+          Co o sobě napíšete jen na vlastním webu, tomu AI věří méně. Když
+          totéž potvrzují recenze, katalogy, místní média a partneři, jmenuje
+          vás častěji.
+        </P>
       </Section>
 
       <Section>
         <H2>Co budujeme</H2>
         <div className="flex flex-col gap-4">
           {[
-            ["Konzistence", "Kdo jste a co nabízíte."],
-            ["Relevance", "S čím jste spojováni."],
-            ["Důvěra", "Kdo vás potvrzuje."],
-            ["Kontext", "V jakých situacích jste relevantní."],
-            ["Propojení", "Jak jste propojeni s místy, službami, lidmi a tématy."],
+            ["Stejné údaje všude", "Název, adresa, telefon a nabídka se shodují na webu, na Googlu i v katalozích."],
+            ["Recenze", "Pravidelně nové recenze a vaše odpovědi na ně."],
+            ["Zmínky jinde", "Články v místních médiích, oborové portály a weby partnerů."],
+            ["Důkazy odbornosti", "Případové studie a reference s konkrétními čísly."],
           ].map(([t, d]) => (
             <div key={t} className="border-l border-rule pl-5">
               <h3 className="mb-1 font-serif text-lg text-ink">{t}</h3>
@@ -68,13 +72,8 @@ export default function DigitalAuthority() {
       </Section>
 
       <Section>
-        <H2>Nestačí říct systémům, kdo jste.</H2>
-        <P>Potřebujete, aby to potvrzoval i zbytek internetu.</P>
-      </Section>
-
-      <Section>
-        <CtaBox title="Budujte autoritu, kterou lze digitálně dohledat.">
-          Pojďme probrat, jaké signály vaší firmě dnes chybí.
+        <CtaBox title="Zjistěte, co o vás dnes píšou jiné weby.">
+          Na konzultaci projdeme, kde o vaší firmě na internetu chybí zmínky.
         </CtaBox>
       </Section>
     </>

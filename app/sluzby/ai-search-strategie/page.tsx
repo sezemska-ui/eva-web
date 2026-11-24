@@ -16,11 +16,10 @@ export default function Strategie() {
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "Služby", href: "/sluzby" }, { label: "Strategie AI viditelnosti" }]} />
         <Eyebrow>Strategie AI viditelnosti</Eyebrow>
-        <H1>Vědět, co změnit, je začátek. Vědět, proč to změnit, je strategie.</H1>
+        <H1>Plán, co změnit, v jakém pořadí a proč.</H1>
         <P>
-          Na základě auditu vytvářím strategii, která propojuje zákaznické
-          rozhodovací situace, vyhledávání, AI, obsah, digitální entitu a
-          autoritu.
+          Ze zjištění auditu připravím konkrétní podklady: co změnit na webu
+          a v profilech, v jakém pořadí a proč právě tohle.
         </P>
         <FactBox
           rows={[
@@ -49,25 +48,27 @@ export default function Strategie() {
 
       <Section>
         <H2>Kde chcete být doporučováni?</H2>
-        <P>Nezačínáme klíčovým slovem. Začínáme zákazníkem:</P>
-        <p className="text-[14px] font-mono text-muted">
-          ZÁKAZNÍK → ZÁMĚR → DOTAZ → SEARCH / AI → DOPORUČENÍ → KONVERZE
-        </p>
+        <P>
+          Nezačínám klíčovými slovy, ale situacemi, ve kterých se vaši
+          zákazníci ptají AI. Třeba rodina, která hledá ubytování
+          s programem pro děti, nebo majitel domu, který chce ověřenou firmu
+          na fasádu. U každé situace řeším, co o vás AI musí vědět, aby vás
+          jmenovala.
+        </P>
       </Section>
 
       <Section>
         <H2>Strategie řeší</H2>
         <DashList
           items={[
-            "klíčové zákaznické scénáře",
-            "priority",
-            "obsahovou architekturu",
-            "digitální entitu",
-            "lokální viditelnost",
-            "AI vyhledávání",
-            "externí zdroje a signály autority",
-            "technické priority",
-            "měření",
+            "situace a dotazy, ve kterých chcete být v odpovědích AI,",
+            "pořadí kroků podle toho, co má největší dopad,",
+            "strukturu webu a obsah,",
+            "údaje o firmě, které si nesmí nikde odporovat,",
+            "Profil firmy na Googlu a místní katalogy,",
+            "recenze a zmínky na jiných webech,",
+            "technické překážky,",
+            "jak budeme měřit, jestli změny fungují.",
           ]}
         />
       </Section>

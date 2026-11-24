@@ -19,7 +19,7 @@ export default function Implementace() {
         <H1>Strategie bez implementace nic nezmění.</H1>
         <P>
           Proto nekončím u doporučení. Ve spolupráci s vaším webmasterem
-          pomáhám změny dostat do webu a digitálního ekosystému firmy. Na
+          pomáhám změny dostat na web, do profilu na Googlu a do katalogů. Na
           začátku si rozdělíme, co uděláte vy, co váš webmaster a co já.
         </P>
         <FactBox
@@ -47,13 +47,12 @@ export default function Implementace() {
       </Section>
 
       <Section>
-        <H2>Mluvím oběma jazyky.</H2>
+        <H2>Jsem mezi vámi a webmasterem.</H2>
         <P>
-          Klientovi vysvětluji technická rozhodnutí webmastera srozumitelně,
-          bez žargonu. Webmasterovi překládám byznysové priority klienta do
-          konkrétního zadání.
+          Vám vysvětlím, co webmaster dělá a proč, bez technických slov.
+          Webmasterovi dám přesné zadání: co, kde a v jakém tvaru.
         </P>
-        <P>Výsledkem je, že se obě strany nemusí učit jazyk té druhé — a implementace jde rychleji.</P>
+        <P>Nemusíte nic překládat ani hlídat a změny jsou na webu dřív.</P>
       </Section>
 
       <Section>
@@ -61,11 +60,11 @@ export default function Implementace() {
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <h3 className="mb-2 font-serif text-lg text-ink">Technické základy</h3>
-            <p className="text-[14px] text-ink-2">Schema.org, strukturovaná data, technická SEO infrastruktura, indexace, interní struktura.</p>
+            <p className="text-[14px] text-ink-2">Strukturovaná data (Schema.org), indexace, technické chyby a propojení stránek mezi sebou.</p>
           </div>
           <div>
             <h3 className="mb-2 font-serif text-lg text-ink">Obsah</h3>
-            <p className="text-[14px] text-ink-2">Stránky služeb, lokální stránky, FAQ, obsahové clustery, obsah postavený na entitách.</p>
+            <p className="text-[14px] text-ink-2">Stránky služeb a lokalit, odpovědi na časté otázky a články k tématům, na která se zákazníci ptají.</p>
           </div>
           <div>
             <h3 className="mb-2 font-serif text-lg text-ink">Lokální viditelnost</h3>
@@ -73,14 +72,14 @@ export default function Implementace() {
           </div>
           <div>
             <h3 className="mb-2 font-serif text-lg text-ink">Čitelnost pro AI</h3>
-            <p className="text-[14px] text-ink-2">Struktura informací, konzistence entity, llms.txt (pokud dává smysl), strojově čitelný obsah.</p>
+            <p className="text-[14px] text-ink-2">Přehledně uspořádané informace, všude stejné údaje o firmě a soubor llms.txt, pokud dává smysl.</p>
           </div>
         </div>
       </Section>
 
       <Section>
-        <H2>Priorita před objemem.</H2>
-        <P>Nejde o to udělat co nejvíc změn. Jde o to udělat správnou věc, na správném místě, ve správném pořadí.</P>
+        <H2>Méně změn, ale ty správné.</H2>
+        <P>Neděláme všechno najednou. Začínáme tím, co má na doporučení AI největší vliv, a zbytek přijde na řadu potom.</P>
       </Section>
 
       <Section>

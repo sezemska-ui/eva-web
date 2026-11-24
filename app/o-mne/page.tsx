@@ -24,9 +24,8 @@ export default function OMne() {
           odpověď.
         </P>
         <P>
-          Právě v tomto okamžiku vzniká prostor, ve kterém rozhoduje nejen
-          SEO, ale také to, jak dobře je firma pochopená, propojená a
-          potvrzená v digitálním prostředí.
+          V tu chvíli nerozhoduje jen pozice ve vyhledávání. Rozhoduje i to,
+          jestli o vás AI ví dost na to, aby vás jmenovala.
         </P>
         <Photo
           src="/images/eva-sezemska-pri-praci.webp"
@@ -49,10 +48,8 @@ export default function OMne() {
       <Section>
         <H2>Co vlastně dělám</H2>
         <P>
-          Pomáhám firmám pochopit, jak jejich digitální přítomnost funguje z
-          pohledu vyhledávačů a AI systémů. Neřeším pouze to, zda je firma
-          někde online — zajímá mě, zda je dohledatelná, pochopitelná,
-          relevantní, důvěryhodná a nakonec doporučitelná.
+          Zjišťuji, jestli vás vyhledávače a AI najdou, správně pochopí
+          a doporučí. A když ne, hledám, co jim v tom brání a co s tím udělat.
         </P>
         <div className="mt-4 flex flex-wrap justify-center gap-x-1 gap-y-4 text-center">
           <Annotated word="nalezená" note="lze vás najít" />
@@ -70,24 +67,24 @@ export default function OMne() {
       <Section>
         <div className="border border-rule bg-paper-2 p-6 sm:p-8">
           <h2 className="mb-4 font-serif text-2xl text-ink">
-            Přenáším autoritu firem z reálného světa do digitálního.
+            Dobrá pověst se do AI sama nepřenese.
           </h2>
           <p className="mb-4 text-[17px] leading-relaxed text-ink-2">
-            Firma může mít roky zkušeností, stovky spokojených zákazníků,
-            skvělou pověst a silné postavení ve svém regionu. Digitální
-            systémy ale tuto autoritu nevnímají automaticky.
+            Firma může mít roky zkušeností a stovky spokojených zákazníků,
+            a AI o tom přesto nemusí vědět. Fotografku z Českého ráje, se
+            kterou jsem pracovala, AI na začátku doporučila jen v 6 z 30
+            dotazů a jednou ji zaměnila s jinou osobou.
           </p>
           <p className="text-[17px] leading-relaxed text-ink-2">
-            Potřebují ji vidět v datech, obsahu, vztazích, zmínkách,
-            recenzích, strukturách a dalších signálech napříč webem. Mojí
-            prací je tyto signály identifikovat, propojit a systematicky
-            posilovat.
+            AI potřebuje vaši pověst vidět: na webu, v recenzích, v katalozích
+            a ve zmínkách na jiných webech. Hledám, kde chybí, a pomáhám ji
+            doplnit. U fotografky to po 31 dnech bylo 23 z 30.
           </p>
         </div>
       </Section>
 
       <Section>
-        <H2>Můj pohled stojí na průsečíku několika disciplín.</H2>
+        <H2>Co všechno sleduji</H2>
         <p className="font-serif text-lg text-ink-2 leading-relaxed">
           SEO · lokální vyhledávání · AI vyhledávání · digitální entity · obsah · důvěryhodnost
         </p>
@@ -96,9 +93,8 @@ export default function OMne() {
           adresa, obor a vazby na další zdroje, které se navzájem potvrzují.
         </P>
         <P>
-          Jednotlivé disciplíny nevnímám odděleně. Důležité je, jak společně
-          vytvářejí obraz firmy, který mohou vyhledávače a AI systémy
-          pochopit a použít.
+          Žádná z těch oblastí sama nestačí. AI si obraz firmy skládá ze všech
+          najednou, a když si zdroje odporují, doporučí raději někoho jiného.
         </P>
       </Section>
 
@@ -106,10 +102,10 @@ export default function OMne() {
         <H2>Jak pracuji</H2>
         <div className="flex flex-col gap-4">
           {[
-            ["01 — Začínám realitou", "Nejdříve testuji, co se skutečně děje."],
-            ["02 — Hledám příčinu", "Neřeším pouze symptom. Zajímá mě, proč systém firmu nevidí nebo nedoporučuje."],
-            ["03 — Prioritizuji", "Nezahlcuji klienta desítkami úkolů. Hledám zásahy s největším významem."],
-            ["04 — Propojuji", "Web, Google, AI, obsah, lokální zdroje, recenze a externí autoritu vnímám jako jeden ekosystém."],
+            ["01 — Začínám testem", "Než cokoli navrhnu, zadám dotazy vašich zákazníků do ChatGPT, Perplexity a Přehledu od AI v Googlu a odpovědi uložím."],
+            ["02 — Hledám příčinu", "Proč vás AI nedoporučuje? Chybí jí informace, odporují si zdroje, nebo vás plete s někým jiným?"],
+            ["03 — Určuji pořadí", "Dostanete jen kroky s největším dopadem, seřazené od nejdůležitějšího."],
+            ["04 — Ověřuji", "Po změnách test zopakuji a porovnám, jestli vás AI doporučuje častěji."],
           ].map(([t, d]) => (
             <div key={t} className="border border-rule p-4 sm:p-5">
               <h3 className="mb-1 font-serif text-lg text-ink">{t}</h3>
@@ -149,10 +145,9 @@ export default function OMne() {
       <Section>
         <H2>Nejsem agentura.</H2>
         <P>
-          Pracuji jako strategický partner. Neprodávám desítky oddělených
-          marketingových služeb. Nejprve potřebuji pochopit, kde je problém,
-          a potom navrhnout cestu, která odpovídá konkrétní firmě, jejím
-          zákazníkům a jejímu trhu.
+          Na každé zakázce pracuji osobně a mluvíte přímo se mnou.
+          Neprodávám balíčky služeb. Nejdřív zjistím, kde je problém,
+          a teprve potom navrhnu, co dělat právě u vaší firmy.
         </P>
       </Section>
 
@@ -180,14 +175,14 @@ export default function OMne() {
 
             <H2>Proč právě AI vyhledávání?</H2>
             <P>
-              Fascinuje mě okamžik, kdy technologie začne rozhodovat nejen o
-              tom, co člověk najde, ale také o tom, co mu doporučí.
+              Protože se mění, kdo vybírá. Dřív Google ukázal deset odkazů
+              a vybíral člověk. Dnes AI často vybere sama a člověku rovnou
+              napíše pár jmen.
             </P>
             <P>
-              A čím víc jsem tento proces zkoumala na konkrétních firmách,
-              tím jasnější bylo, že problém často není v tom, že by firma
-              neměla co nabídnout. Problém je v tom, že její skutečná
-              hodnota není digitálně dostatečně čitelná.
+              Když jsem to začala zkoumat na konkrétních firmách, opakovalo se
+              jedno: firma měla co nabídnout, ale AI o tom nevěděla dost.
+              A to se dá změnit.
             </P>
           </div>
         </div>

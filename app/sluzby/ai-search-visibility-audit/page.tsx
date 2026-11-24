@@ -38,9 +38,8 @@ export default function Audit() {
         <Eyebrow>Audit AI viditelnosti</Eyebrow>
         <H1>Nejprve zjistíme, kde skutečně stojíte.</H1>
         <P>
-          Než začneme něco optimalizovat, potřebujeme vědět, jak vaši firmu
-          skutečně vidí vyhledávače, AI systémy a digitální ekosystém kolem
-          vás.
+          Než začneme cokoli měnit, potřebujeme vědět, jak vás dnes vidí
+          Google, AI a weby, ze kterých AI o firmách čerpá.
         </P>
         <FactBox
           rows={[
@@ -53,10 +52,12 @@ export default function Audit() {
       </Section>
 
       <Section>
-        <H2>Možná máte problém, který běžné SEO reporty neukážou.</H2>
+        <H2>Chyby, které běžný SEO report neukáže</H2>
         <P>
-          Firma může mít kvalitní web, dobré recenze, skvělý produkt,
-          sociální sítě, silnou historii — a přesto nebýt doporučována.
+          V mém testu v Českém ráji AI doporučila rodinám Hotel Pošta, ale
+          odkaz vedl na pobočku České pošty. Fotografku z mé případové studie
+          AI zaměnila s jinou osobou. Takové chyby odhalí jen test odpovědí
+          AI, ne pozice ve vyhledávání.
         </P>
       </Section>
 
