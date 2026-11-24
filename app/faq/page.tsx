@@ -156,7 +156,7 @@ const questions = [
     q: "Nevím, jestli potřebujeme celý audit. Můžeme se nejdříve sejít a probrat naši situaci?",
     a: (
       <P>
-        Samozřejmě. Ne vždy je potřeba začít kompletním auditem AI
+        Ano. Ne vždy je potřeba začít kompletním auditem AI
         viditelnosti. Nejdříve se můžeme sejít na krátkou konzultaci,
         ujasnit si situaci a podle toho zvolit další postup.
       </P>

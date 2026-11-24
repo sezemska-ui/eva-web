@@ -13,7 +13,7 @@ export const BTN_PRIMARY =
 export const BTN_SECONDARY =
   "inline-flex min-h-12 items-center border border-ink bg-transparent px-7 py-4 text-base font-semibold leading-none tracking-[0.02em] text-ink transition-colors duration-200 hover:bg-ink hover:text-paper";
 export const BTN_ON_NAVY =
-  "inline-flex min-h-12 items-center border border-on-navy bg-transparent px-7 py-4 text-base font-semibold leading-none tracking-[0.02em] text-on-navy transition-colors duration-200 hover:bg-on-navy hover:text-navy";
+  "inline-flex min-h-12 items-center border border-on-navy bg-on-navy px-7 py-4 text-base font-semibold leading-none tracking-[0.02em] text-navy transition-colors duration-200 hover:border-paper hover:bg-paper";
 
 // Textový odkaz s jemnou linkou
 export const TEXT_LINK =
