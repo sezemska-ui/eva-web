@@ -48,10 +48,9 @@ export default function Home() {
             Doporučí vás AI, když se zákazník zeptá na váš obor?
           </h1>
           <p className="max-w-[34em] text-[18px] leading-[1.7] tracking-[0.005em] text-ink-2 md:text-[21px]">
-            Zákazníci se čím dál častěji ptají ChatGPT nebo Googlu „kde najdu
-            dobrý…“ a&nbsp;vaše jméno přitom neznají. Zjistím, jestli vás AI
-            doporučuje, proč dává přednost konkurenci a&nbsp;co změnit, aby
-            jmenovala i&nbsp;vás.
+            Váš zákazník napíše do ChatGPT nebo Googlu „kde najdu dobrý…“
+            a&nbsp;AI mu doporučí konkurenci. Zjistím, jestli vás AI doporučuje,
+            proč dává přednost jiným a&nbsp;co změnit, aby jmenovala i&nbsp;vás.
           </p>
           <p className={LABEL}>SEO pro AI vyhledávání — ChatGPT, Přehled od AI, Perplexity</p>
           <div className="mt-1 flex flex-wrap gap-4">
@@ -76,7 +75,7 @@ export default function Home() {
           />
           {/* Karta Zápis: jediný prvek se stínem */}
           <div className="absolute bottom-0 left-0 w-[min(340px,88%)] border border-rule bg-paper p-6 shadow-[0_20px_50px_rgba(11,23,38,0.10)] sm:p-7">
-            <p className="font-mono text-[12px] tracking-[0.04em] text-muted">Zápis — fotografka, Český ráj</p>
+            <p className="font-mono text-[12px] tracking-[0.04em] text-muted">Případová studie — fotografka, Český ráj</p>
             <p className="mb-2.5 mt-3.5 font-serif text-[52px] font-light leading-none tracking-[-0.02em] text-ink sm:text-[64px]">
               6 → 23
             </p>
