@@ -26,7 +26,7 @@ export default function RecommendationTest() {
         <summary className="group-open:hidden">
           <span className="flex flex-col items-start gap-6">
             <span className="font-serif text-[26px] leading-[1.3] text-ink sm:text-[28px]">
-              Koho by {TEST_TOOL} doporučil vašemu hostovi?
+              Koho by {TEST_TOOL} doporučil vašemu zákazníkovi?
             </span>
             <span className="text-base leading-[1.6] text-ink-2">
               Zkuste si nejdřív tipnout. Pak se podívejte na skutečnou odpověď.

@@ -50,10 +50,24 @@ export default function Home() {
           </h1>
           <p className="max-w-[34em] text-[18px] leading-[1.7] tracking-[0.005em] text-ink-2 md:text-[21px]">
             Váš zákazník napíše do ChatGPT nebo Googlu „kde najdu dobrý…“
-            a&nbsp;AI mu doporučí konkurenci. Zjistím, jestli vás AI doporučuje,
-            proč dává přednost jiným a&nbsp;co změnit, aby jmenovala i&nbsp;vás.
+            a&nbsp;AI mu doporučí konkurenci.
           </p>
-          <p className={LABEL}>SEO pro AI vyhledávání — ChatGPT, Přehled od AI, Perplexity</p>
+          <div className="flex flex-col gap-3">
+            <p className="text-[17px] font-semibold text-ink">Zjistím pro vás:</p>
+            <ul className="flex flex-col gap-2.5">
+              {[
+                "jestli vás AI doporučuje a na jaké dotazy,",
+                "proč dává přednost konkurenci,",
+                "co změnit jako první, aby jmenovala i vás.",
+              ].map((t) => (
+                <li key={t} className="flex gap-3 text-[17px] leading-[1.55] text-ink-2 md:text-[19px]">
+                  <span aria-hidden="true" className="mt-[0.7em] h-px w-4 flex-none bg-gold" />
+                  <span>{t}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className={LABEL}>SEO pro AI vyhledávání — aby vás ChatGPT i&nbsp;Google uvedly mezi doporučenými</p>
           <div className="mt-1 flex flex-wrap gap-4">
             <Link href={CONSULTATION_HREF} className={BTN_PRIMARY}>
               Domluvit úvodní konzultaci
@@ -182,8 +196,8 @@ export default function Home() {
         <div className={`${WRAP} ${SECTION_Y} flex flex-col gap-12`}>
           <div className="flex max-w-[760px] flex-col gap-6">
             <SectionLabel>05 — z praxe</SectionLabel>
-            <h2 className={H2}>Jak přemýšlím</h2>
-            <p className={BODY}>Pozorování a&nbsp;případové studie z&nbsp;reálné práce s&nbsp;klienty.</p>
+            <h2 className={H2}>Co jsem zjistila u&nbsp;firem jako je ta vaše</h2>
+            <p className={BODY}>Skutečné testy a&nbsp;výsledky z&nbsp;ubytování, řemesel a&nbsp;služeb.</p>
           </div>
           <NoteList notes={latestNotes(3)} />
           <div>
@@ -206,11 +220,11 @@ export default function Home() {
         />
         <div className="flex flex-col gap-6">
           <SectionLabel>06 — o autorce</SectionLabel>
-          <h2 className={H2}>Dívám se na vyhledávání z druhé strany.</h2>
+          <h2 className={H2}>S&nbsp;kým budete mluvit</h2>
           <p className={BODY}>
             Jsem Eva Sezemská, AI Search Strategist z&nbsp;Mladé Boleslavi.
-            Zajímá mě, co se stane ve chvíli, kdy zákazník nezná jméno firmy
-            a&nbsp;požádá AI, aby mu někoho doporučila.
+            Na každé zakázce pracuji osobně: testy dělám sama a&nbsp;výsledky
+            vám vysvětlím bez odborných slov.
           </p>
           <div>
             <Link href="/o-mne" className={BTN_SECONDARY}>
