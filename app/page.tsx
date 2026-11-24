@@ -44,7 +44,7 @@ export default function Home() {
         className={`${WRAP} grid grid-cols-1 items-center gap-12 pb-20 pt-14 md:pb-28 md:pt-20 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-24 lg:pb-40 lg:pt-32`}
       >
         <div className="flex flex-col gap-7">
-          <p className={LABEL}>Mladá Boleslav — hotely a&nbsp;B2B</p>
+          <p className={LABEL}>Mladá Boleslav a&nbsp;Český ráj — ubytování, řemesla, služby</p>
           <h1 className="font-serif text-[42px] font-light leading-[1.08] tracking-[-0.01em] text-ink md:text-[60px] xl:text-[72px]">
             Doporučí vás AI, když se zákazník zeptá na váš obor?
           </h1>
