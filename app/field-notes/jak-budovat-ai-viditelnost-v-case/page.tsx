@@ -95,7 +95,7 @@ export default function Article() {
         <figure className="my-6">
           <Image
             src="/images/ai-viditelnost-pred-a-po-31-dnech.png"
-            alt="Srovnání úspěšnosti doporučení Michaely Čížkové v ChatGPT, Google AI Overview a Perplexity: květen 2026 a září 2026, celkově z 20 % na 76,7 %"
+            alt="Srovnání úspěšnosti doporučení Michaely Čížkové v ChatGPT, Přehledu od AI v Googlu a Perplexity: květen 2026 a září 2026, celkově z 20 % na 76,7 %"
             width={1600}
             height={900}
             sizes="(min-width: 896px) 848px, calc(100vw - 48px)"
@@ -117,7 +117,7 @@ export default function Article() {
               Při testování jsem narazila na zajímavý protipříklad – fotografku,
               která teprve začíná podnikat a nemá klasický web, jako web uvádí
               svůj Instagram profil (silnější než ten Michaelin), k tomu aktivní
-              Google Business Profile s recenzemi a IČO. V Google AI Overview se
+              Profil firmy na Googlu s recenzemi a IČO. V Přehledu od AI v Googlu se
               přesto objevila jako doporučení, zatímco v ostatních AI systémech
               ne.
             </em>
@@ -302,7 +302,7 @@ export default function Article() {
               href="https://developers.google.com/search/docs/appearance/ai-features"
               className={linkClass}
             >
-              Google AI Overview
+              Přehled od AI v Googlu
             </a>{" "}
             do odpovědi použije i obsah recenze.
           </strong>{" "}
@@ -353,7 +353,7 @@ export default function Article() {
                 <td className="py-3">1–2× týdně</td>
               </tr>
               <tr className="border-b border-rule">
-                <td className="py-3 pr-4 text-ink">Příspěvek na Google Business Profile</td>
+                <td className="py-3 pr-4 text-ink">Příspěvek v Profilu firmy na Googlu</td>
                 <td className="py-3">2× měsíčně</td>
               </tr>
               <tr className="border-b border-rule">

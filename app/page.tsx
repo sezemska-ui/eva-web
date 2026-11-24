@@ -28,11 +28,12 @@ const BODY = "max-w-[34em] text-[18px] leading-[1.7] text-ink-2";
 const SECTION_Y = "py-20 md:py-28 lg:py-40";
 const TWO_COLS = "grid grid-cols-1 gap-x-[clamp(48px,6vw,96px)] gap-y-12 md:grid-cols-2";
 
+// Skutečné dotazy z testů pro klienty (viz Z praxe)
 const queries = [
-  "Kam na víkend?",
-  "Kterého dodavatele mám vybrat?",
-  "Který hotel má nejlepší zázemí pro děti?",
-  "Který produkt bys mi doporučil?",
+  { q: "Chceme s dětmi na víkend do Českého ráje. Doporuč nám ubytování.", obor: "ubytování" },
+  { q: "Cena nehraje roli. Kam bys nás poslal?", obor: "ubytování" },
+  { q: "Doporuč mi ověřenou firmu na čištění fasády.", obor: "čištění fasád" },
+  { q: "Je tahle firma spolehlivá?", obor: "čištění fasád" },
 ];
 
 export default function Home() {
@@ -43,15 +44,14 @@ export default function Home() {
         className={`${WRAP} grid grid-cols-1 items-center gap-12 pb-20 pt-14 md:pb-28 md:pt-20 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-24 lg:pb-40 lg:pt-32`}
       >
         <div className="flex flex-col gap-7">
-          <p className={LABEL}>Mladá Boleslav — hotely a&nbsp;B2B</p>
+          <p className={LABEL}>Mladá Boleslav a&nbsp;Český ráj — ubytování, řemesla, služby</p>
           <h1 className="font-serif text-[42px] font-light leading-[1.08] tracking-[-0.01em] text-ink md:text-[60px] xl:text-[72px]">
             Doporučí vás AI, když se zákazník zeptá na váš obor?
           </h1>
           <p className="max-w-[34em] text-[18px] leading-[1.7] tracking-[0.005em] text-ink-2 md:text-[21px]">
-            Zákazníci se čím dál častěji ptají ChatGPT nebo Googlu „kde najdu
-            dobrý…“ a&nbsp;vaše jméno přitom neznají. Zjistím, jestli vás AI
-            doporučuje, proč dává přednost konkurenci a&nbsp;co změnit, aby
-            jmenovala i&nbsp;vás.
+            Váš zákazník napíše do ChatGPT nebo Googlu „kde najdu dobrý…“
+            a&nbsp;AI mu doporučí konkurenci. Zjistím, jestli vás AI doporučuje,
+            proč dává přednost jiným a&nbsp;co změnit, aby jmenovala i&nbsp;vás.
           </p>
           <p className={LABEL}>SEO pro AI vyhledávání — ChatGPT, Přehled od AI, Perplexity</p>
           <div className="mt-1 flex flex-wrap gap-4">
@@ -76,7 +76,7 @@ export default function Home() {
           />
           {/* Karta Zápis: jediný prvek se stínem */}
           <div className="absolute bottom-0 left-0 w-[min(340px,88%)] border border-rule bg-paper p-6 shadow-[0_20px_50px_rgba(11,23,38,0.10)] sm:p-7">
-            <p className="font-mono text-[12px] tracking-[0.04em] text-muted">Zápis — fotografka, Český ráj</p>
+            <p className="font-mono text-[12px] tracking-[0.04em] text-muted">Případová studie — fotografka, Český ráj</p>
             <p className="mb-2.5 mt-3.5 font-serif text-[52px] font-light leading-none tracking-[-0.02em] text-ink sm:text-[64px]">
               6 → 23
             </p>
@@ -91,7 +91,7 @@ export default function Home() {
       {/* 01 KLIENTI */}
       <section className="bg-paper-2">
         <div className={`${WRAP} ${SECTION_Y} flex flex-col gap-12`}>
-          <p className={LABEL}>01 — co říkají klienti</p>
+          <p className={LABEL}>01 — co říkají klienti z různých oborů</p>
           <div className={TWO_COLS}>
             <Review
               quote="„Díky jejímu úsilí je můj web lépe dohledatelný…“"
@@ -102,7 +102,7 @@ export default function Home() {
             <Review
               quote="„Dostali jsme naprosto skvělé výsledky.“"
               author="Lukáš Kaudl"
-              meta="Přijedeme Umyjeme — audit AI viditelnosti"
+              meta="Přijedeme Umyjeme, čištění fasád — Audit AI viditelnosti"
               studyHref="/field-notes/jak-ai-doporucuje-firmu-na-cisteni-fasad"
             />
           </div>
@@ -115,15 +115,16 @@ export default function Home() {
           <p className={LABEL}>02 — kde se rozhoduje</p>
           <h2 className={H2}>Vaši zákazníci vás nehledají vždy jménem.</h2>
           <p className={BODY}>
-            V&nbsp;těchto momentech se rozhoduje ještě předtím, než zákazník
-            navštíví váš web.
+            Tohle jsou skutečné dotazy z&nbsp;mých testů pro klienty. AI na ně
+            odpoví jmény konkrétních podniků. Kdo mezi nimi chybí, přijde
+            o&nbsp;zákazníka dřív, než si otevře jeho web.
           </p>
         </div>
         <ul className="border-b border-rule">
-          {queries.map((q, i) => (
+          {queries.map(({ q, obor }) => (
             <li key={q} className="flex items-baseline justify-between gap-6 border-t border-rule py-[22px]">
-              <span className="font-serif text-[22px] leading-[1.3] text-ink md:text-[26px]">{q}</span>
-              <span className={`${LABEL} whitespace-nowrap`}>dotaz {String(i + 1).padStart(2, "0")}</span>
+              <span className="font-serif text-[22px] leading-[1.3] text-ink md:text-[26px]">„{q}“</span>
+              <span className={`${LABEL} whitespace-nowrap`}>{obor}</span>
             </li>
           ))}
         </ul>

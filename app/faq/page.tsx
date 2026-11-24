@@ -64,7 +64,7 @@ const questions = [
         <P>
           GEO (Generative Engine Optimization) a AEO (Answer Engine
           Optimization) jsou nové názvy pro práci na tom, aby vás AI systémy,
-          jako ChatGPT, Perplexity nebo AI v Googlu, uváděly ve svých
+          jako ChatGPT, Perplexity nebo Přehled od AI v Googlu, uváděly ve svých
           odpovědích. V praxi jde o totéž, čemu říkám SEO pro AI vyhledávání.
         </P>
         <P>
@@ -107,7 +107,7 @@ const questions = [
             může citovat,
           </li>
           <li>
-            — u lokálních firem máte založený min. Google Business Profil a
+            — u lokálních firem máte založený aspoň Profil firmy na Googlu a
             sbíráte na něm recenze,
           </li>
           <li>
@@ -252,7 +252,7 @@ const questions = [
         <P>
           Naprostým základem je web, ze kterého může AI vyhledávač čerpat
           informace o nabídce, lokalitě a o cílových zákaznících. Podle
-          oboru je také důležité založit Google Business Profil, sbírat
+          oboru je také důležité založit Profil firmy na Googlu, sbírat
           recenze a budovat zmínky a registrace v odborných katalozích
           napříč internetem.
         </P>
@@ -339,11 +339,11 @@ const questionsPlain = [
   },
   {
     q: questions[1].q,
-    a: "GEO (Generative Engine Optimization) a AEO (Answer Engine Optimization) jsou nové názvy pro práci na tom, aby vás AI systémy jako ChatGPT, Perplexity nebo AI v Googlu uváděly ve svých odpovědích. V praxi jde o SEO pro AI vyhledávání. Klasické SEO řeší pozici ve výsledcích vyhledávání, GEO a AEO to, jestli vás AI v odpovědi jmenuje a co o vás říká. Základ je společný: srozumitelný a technicky funkční web a důvěryhodné zmínky i mimo něj.",
+    a: "GEO (Generative Engine Optimization) a AEO (Answer Engine Optimization) jsou nové názvy pro práci na tom, aby vás AI systémy jako ChatGPT, Perplexity nebo Přehled od AI v Googlu uváděly ve svých odpovědích. V praxi jde o SEO pro AI vyhledávání. Klasické SEO řeší pozici ve výsledcích vyhledávání, GEO a AEO to, jestli vás AI v odpovědi jmenuje a co o vás říká. Základ je společný: srozumitelný a technicky funkční web a důvěryhodné zmínky i mimo něj.",
   },
   {
     q: questions[2].q,
-    a: "AI systémy musí pochopit, kdo jste, co nabízíte, pro koho a kde. Roli hraje stáří domény, nastavení on-page SEO, odborný obsah na webu, Google Business Profil s recenzemi a PR aktivity budující digitální identitu napříč internetem.",
+    a: "AI systémy musí pochopit, kdo jste, co nabízíte, pro koho a kde. Roli hraje stáří domény, nastavení on-page SEO, odborný obsah na webu, Profil firmy na Googlu s recenzemi a PR aktivity budující digitální identitu napříč internetem.",
   },
   {
     q: questions[3].q,
@@ -371,7 +371,7 @@ const questionsPlain = [
   },
   {
     q: questions[9].q,
-    a: "U nové firmy může trvat déle, než se informace stabilně objeví ve vyhledávání a AI doporučeních. Základem je web s jasnými informacemi, Google Business Profil, recenze a zmínky napříč internetem. Přesnou lhůtu nelze slíbit.",
+    a: "U nové firmy může trvat déle, než se informace stabilně objeví ve vyhledávání a AI doporučeních. Základem je web s jasnými informacemi, Profil firmy na Googlu, recenze a zmínky napříč internetem. Přesnou lhůtu nelze slíbit.",
   },
   {
     q: questions[10].q,

@@ -17,9 +17,8 @@ export default function Kontakt() {
         <Eyebrow>Kontakt</Eyebrow>
         <H1>Začněme tím, co dnes nefunguje.</H1>
         <P>
-          Pokud si nejste jistí, jak vás vyhledávače a AI systémy vnímají,
-          první krok nemusí být další marketingová aktivita. Nejprve
-          zjistíme, kde skutečně stojíte.
+          Pokud nevíte, jestli vás AI doporučuje, nezačínejte novou reklamou
+          ani dalším webem. Nejdřív zjistíme, jak to dnes je.
         </P>
       </Section>
       <Section>

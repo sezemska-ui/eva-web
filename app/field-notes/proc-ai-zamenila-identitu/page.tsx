@@ -36,13 +36,13 @@ export default function Article() {
       <Section>
         <H2>Co testování ukázalo</H2>
         <P>
-          Testování napříč ChatGPT, Google AI Overview a Perplexity ukázalo,
+          Testování napříč ChatGPT, Přehledem od AI v Googlu a Perplexity ukázalo,
           že klientku nedoporučily v naprosté většině zadaných dotazů — ve
           výsledcích se opakovaně objevovala jen 4–5 zavedených jmen s delší
           historií a víc recenzemi.
         </P>
         <P>
-          Google AI Overview navíc zaměnil identitu klientky s jinou
+          Přehled od AI v Googlu navíc zaměnil identitu klientky s jinou
           fotografkou stejného jména — jasný signál, že digitální entita
           nebyla dost jasně ukotvená.
         </P>
