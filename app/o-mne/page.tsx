@@ -17,7 +17,7 @@ export default function OMne() {
     <>
       <Section>
         <Breadcrumbs items={[{ label: "Domů", href: "/" }, { label: "O mně" }]} />
-        <Eyebrow>O mně / Eva Sezemská · Mladá Boleslav</Eyebrow>
+        <Eyebrow>O mně / Eva Sezemská, Mladá Boleslav</Eyebrow>
         <H1>Dívám se na vyhledávání z druhé strany.</H1>
         <P>
           Zajímá mě okamžik, kdy zákazník ještě nehledá konkrétní firmu. Hledá
@@ -124,7 +124,7 @@ export default function OMne() {
         <dl className="mb-8 mt-2 border-t border-rule">
           {[
             ["Certifikace", "HubSpot AEO Fundamentals, 08/2026"],
-            ["Otestováno", "přibližně 400 analyzovaných odpovědí AI"],
+            ["Otestováno", "téměř 400 analyzovaných odpovědí AI"],
             ["Obory", "hotely a ubytování, řemeslné služby (čištění fasád), fotografie"],
           ].map(([k, v]) => (
             <div key={k} className="flex flex-col gap-1 border-b border-rule py-4 sm:flex-row sm:gap-6">
