@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative pb-14">
+        <div className="relative sm:pb-14">
           <Image
             src="/images/portret-navy-sako.jpg"
             alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi"
@@ -75,15 +75,15 @@ export default function Home() {
             className="ml-auto block aspect-[4/5] w-full max-w-[480px] object-cover"
           />
           {/* Karta Zápis: jediný prvek se stínem */}
-          <div className="absolute bottom-0 left-0 w-[min(340px,88%)] border border-rule bg-paper p-6 shadow-[0_20px_50px_rgba(11,23,38,0.10)] sm:p-7">
-            <p className="font-mono text-[12px] tracking-[0.04em] text-muted">Případová studie — fotografka, Český ráj</p>
-            <p className="mb-2.5 mt-3.5 font-serif text-[52px] font-light leading-none tracking-[-0.02em] text-ink sm:text-[64px]">
+          <div className="relative -mt-12 ml-auto mr-3 w-[78%] border border-rule bg-card p-4 shadow-[0_20px_50px_rgba(11,23,38,0.12)] sm:absolute sm:bottom-0 sm:left-0 sm:m-0 sm:w-[min(340px,88%)] sm:p-7">
+            <p className="font-mono text-[11px] tracking-[0.04em] text-gold-text sm:text-[12px]">Případová studie — fotografka, Český ráj</p>
+            <p className="mb-2 mt-2 font-serif text-[40px] font-light leading-none tracking-[-0.02em] text-ink sm:mb-2.5 sm:mt-3.5 sm:text-[64px]">
               6 → 23
             </p>
-            <p className="text-[15px] leading-[1.55] text-ink-2">
+            <p className="text-[14px] leading-[1.5] text-ink-2 sm:text-[15px] sm:leading-[1.55]">
               Doporučení ve 30 dotazech napříč třemi AI systémy, na začátku a&nbsp;po 31 dnech.
             </p>
-            <p className="mt-3.5 font-mono text-[12px] tracking-[0.04em] text-muted">3 nástroje, 30 dotazů, 31 dní</p>
+            <p className="mt-3.5 hidden font-mono text-[12px] tracking-[0.04em] text-muted sm:block">3 nástroje, 30 dotazů, 31 dní</p>
           </div>
         </div>
       </section>
@@ -91,8 +91,8 @@ export default function Home() {
       {/* 01 KLIENTI */}
       <section className="bg-paper-2">
         <div className={`${WRAP} ${SECTION_Y} flex flex-col gap-12`}>
-          <p className={LABEL}>01 — co říkají klienti z různých oborů</p>
-          <div className={TWO_COLS}>
+          <SectionLabel>01 — co říkají klienti z různých oborů</SectionLabel>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <Review
               quote="„Díky jejímu úsilí je můj web lépe dohledatelný…“"
               author="Michaela Čížková"
@@ -112,7 +112,7 @@ export default function Home() {
       {/* 02 KDE SE ROZHODUJE */}
       <section className={`${WRAP} ${SECTION_Y} ${TWO_COLS} items-start`}>
         <div className="flex flex-col gap-6">
-          <p className={LABEL}>02 — kde se rozhoduje</p>
+          <SectionLabel>02 — kde se rozhoduje</SectionLabel>
           <h2 className={H2}>Vaši zákazníci vás nehledají vždy jménem.</h2>
           <p className={BODY}>
             Tohle jsou skutečné dotazy z&nbsp;mých testů pro klienty. AI na ně
@@ -120,11 +120,11 @@ export default function Home() {
             o&nbsp;zákazníka dřív, než si otevře jeho web.
           </p>
         </div>
-        <ul className="border-b border-rule">
+        <ul className="flex flex-col gap-3">
           {queries.map(({ q, obor }) => (
-            <li key={q} className="flex items-baseline justify-between gap-6 border-t border-rule py-[22px]">
-              <span className="font-serif text-[22px] leading-[1.3] text-ink md:text-[26px]">„{q}“</span>
-              <span className={`${LABEL} whitespace-nowrap`}>{obor}</span>
+            <li key={q} className="flex flex-col gap-2 border-l-2 border-gold bg-paper-2 px-5 py-4 md:px-6 md:py-5">
+              <span className="font-mono text-[12px] tracking-[0.04em] text-gold-text">{obor}</span>
+              <span className="font-serif text-[21px] leading-[1.3] text-ink md:text-[25px]">„{q}“</span>
             </li>
           ))}
         </ul>
@@ -134,7 +134,7 @@ export default function Home() {
       <section className="bg-paper-2">
         <div className={`${WRAP} ${SECTION_Y} ${TWO_COLS} items-start`}>
           <div className="flex flex-col gap-6">
-            <p className={LABEL}>03 — test doporučení</p>
+            <SectionLabel>03 — test doporučení</SectionLabel>
             <h2 className={H2}>Co se stane, když zákazník nezná vaše jméno?</h2>
             <p className={BODY}>
               Tohle je skutečný výstup {TEST_TOOL} na běžný zákaznický dotaz — bez
@@ -163,7 +163,7 @@ export default function Home() {
       {/* 04 SLUŽBY */}
       <section className={`${WRAP} ${SECTION_Y} flex flex-col gap-12`}>
         <div className="flex max-w-[760px] flex-col gap-6">
-          <p className={LABEL}>04 — jak vám mohu pomoci</p>
+          <SectionLabel>04 — jak vám mohu pomoci</SectionLabel>
           <h2 className={H2}>Každá spolupráce začíná rozhovorem.</h2>
           <p className={BODY}>Další kroky volíte podle toho, co vám dává smysl.</p>
         </div>
@@ -181,7 +181,7 @@ export default function Home() {
       <section className="bg-paper-2">
         <div className={`${WRAP} ${SECTION_Y} flex flex-col gap-12`}>
           <div className="flex max-w-[760px] flex-col gap-6">
-            <p className={LABEL}>05 — z praxe</p>
+            <SectionLabel>05 — z praxe</SectionLabel>
             <h2 className={H2}>Jak přemýšlím</h2>
             <p className={BODY}>Pozorování a&nbsp;případové studie z&nbsp;reálné práce s&nbsp;klienty.</p>
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
           className="block aspect-[3/2] w-full object-cover"
         />
         <div className="flex flex-col gap-6">
-          <p className={LABEL}>06 — o autorce</p>
+          <SectionLabel>06 — o autorce</SectionLabel>
           <h2 className={H2}>Dívám se na vyhledávání z druhé strany.</h2>
           <p className={BODY}>
             Jsem Eva Sezemská, AI Search Strategist z&nbsp;Mladé Boleslavi.
@@ -244,6 +244,16 @@ export default function Home() {
   );
 }
 
+// Štítek sekce se zlatou linkou, aby se sekce na mobilu vizuálně oddělily
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="flex items-start gap-3 font-mono text-[13px] leading-[1.5] tracking-[0.04em] text-gold-text">
+      <span aria-hidden="true" className="mt-[0.75em] h-px w-8 flex-none bg-gold" />
+      {children}
+    </p>
+  );
+}
+
 // Citace z recenze na Googlu: podpis, odkaz na studii a na celou recenzi
 function Review({
   quote,
@@ -257,11 +267,14 @@ function Review({
   studyHref: string;
 }) {
   return (
-    <figure className="flex flex-col gap-6 border-t border-rule pt-7">
+    <figure className="flex flex-col gap-5 border border-rule bg-card p-6 shadow-[0_12px_32px_rgba(11,23,38,0.06)] sm:p-8">
+      <p className="text-[20px] leading-none tracking-[0.12em] text-gold" aria-label="Hodnocení 5 z 5 hvězdiček">
+        ★★★★★
+      </p>
       <blockquote className="font-serif text-[26px] leading-[1.3] text-ink md:text-[30px] lg:text-[34px]">
         <p>{quote}</p>
       </blockquote>
-      <figcaption className="flex flex-col gap-1">
+      <figcaption className="flex flex-col gap-1 border-t border-rule pt-5">
         <span className="text-[17px] font-semibold text-ink">{author}</span>
         <span className={LABEL}>{meta}</span>
       </figcaption>

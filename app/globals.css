@@ -3,7 +3,8 @@
 /* Design systém „Katalogový zápis“: papír, inkoust, tmavě modrá a zlatá jen jako detail */
 @theme {
   --color-paper: #F6F2EA;
-  --color-paper-2: #EFE9DD;
+  --color-paper-2: #ECE4D5;
+  --color-card: #FDFBF7;
   --color-ink: #1A2333;
   --color-ink-2: #4F4A40;
   --color-muted: #6F685B;

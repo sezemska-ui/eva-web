@@ -68,12 +68,12 @@ export default function ServicePath({ compact = false }: { compact?: boolean }) 
       )}
       <ol className="border-b border-rule">
         {(steps as Step[]).map((s) => (
-          <li key={s.href} className="border-t border-rule">
+          <li key={s.href} className={s.tag ? "border-l-2 border-t border-gold border-t-rule bg-paper-2 px-5 md:px-6" : "border-t border-rule"}>
             <Link
               href={s.href}
               className="group grid grid-cols-1 items-baseline gap-x-8 gap-y-3 py-8 text-ink lg:gap-x-12 md:grid-cols-[140px_minmax(0,1fr)_190px] lg:grid-cols-[200px_minmax(0,1fr)_220px]"
             >
-              <span className={LABEL}>{s.tag ?? s.label}</span>
+              <span className={s.tag ? "font-mono text-[13px] tracking-[0.04em] text-gold-text" : LABEL}>{s.tag ?? s.label}</span>
               <div className="flex min-w-0 flex-col gap-2">
                 <h3 className="font-serif text-[24px] font-normal leading-[1.25] decoration-rule underline-offset-[5px] group-hover:underline md:text-[28px]">
                   {s.title}
