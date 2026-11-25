@@ -29,7 +29,7 @@ export default function OMne() {
         </P>
         <Photo
           src="/images/eva-sezemska-pri-praci.webp"
-          alt="Eva Sezemská pracuje u notebooku"
+          alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi, pracuje u notebooku"
           width={1600}
           height={900}
         />
@@ -155,7 +155,7 @@ export default function OMne() {
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image
             src="/images/eva-portrait.jpg"
-            alt="Eva Sezemská, AI Search Strategist"
+            alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi"
             width={220}
             height={220}
             className="h-[220px] w-[220px] flex-none object-cover"
