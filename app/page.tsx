@@ -212,7 +212,7 @@ export default function Home() {
       <section className={`${WRAP} ${SECTION_Y} ${TWO_COLS} items-center`}>
         <Image
           src="/images/zapisnik.jpg"
-          alt="Ruční poznámky z testování odpovědí AI v zápisníku"
+          alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi, zapisuje do zápisníku poznámky z testování odpovědí AI"
           width={800}
           height={1200}
           sizes="(max-width: 768px) 100vw, 560px"

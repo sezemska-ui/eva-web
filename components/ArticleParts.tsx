@@ -32,7 +32,7 @@ export function AuthorBox() {
     <div className="mt-14 flex gap-5 border-y border-rule py-7 first:mt-0">
       <Image
         src="/images/eva-portrait.jpg"
-        alt="Eva Sezemská"
+        alt="Eva Sezemská, AI Search Strategist z Mladé Boleslavi"
         width={56}
         height={56}
         className="h-14 w-14 flex-none object-cover"

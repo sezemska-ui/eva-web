@@ -6,7 +6,7 @@ const IMAGE = {
   url: "/images/og-searchstrategy.jpg",
   width: 1200,
   height: 630,
-  alt: "Eva Sezemská – Doporučí vás AI, když se zákazník zeptá na váš obor?",
+  alt: "Eva Sezemská, AI Search Strategist z Mladé Boleslavi – Doporučí vás AI, když se zákazník zeptá na váš obor?",
 };
 
 // Metadata stránky včetně náhledů pro sdílení. Next.js slučuje metadata jen mělce,

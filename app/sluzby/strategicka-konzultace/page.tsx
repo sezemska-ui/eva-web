@@ -47,7 +47,7 @@ export default function StrategickaKonzultace() {
         </P>
         <Photo
           src="/images/konzultace-priprava.webp"
-          alt="Příprava na konzultaci: poznámkový blok, káva a notebook na stole"
+          alt="Eva Sezemská, AI Search Strategist, při přípravě na konzultaci: poznámkový blok, káva a notebook na stole"
           width={680}
           height={533}
           maxWidth={560}
